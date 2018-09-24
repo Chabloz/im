@@ -9,14 +9,15 @@ let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
 ```
 réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent.*
 
- 1. Retourner un tableau avec les valeurs doublée
- 2. Retourner un tableau ne contenant que les valeurs impairs
- 3. Retourner un tableau ne contenant pas le premier élément
- 4. Retourner un tableau ne contenant pas le dernier élément
- 5. Retourner la somme des nombres
- 6. Retourner le plus grand nombre
- 7. Indiquer si le tableau contient au moins un nombre multiple de 5
- 8. Indiquer si le tableau ne contient que des nombres positifs
+ 1. Afficher tous les nombres dans la console
+ 2. Retourner un tableau avec les valeurs doublée
+ 3. Retourner un tableau ne contenant que les valeurs impairs
+ 4. Retourner un tableau ne contenant pas le premier élément
+ 5. Retourner un tableau ne contenant pas le dernier élément
+ 6. Retourner la somme des nombres
+ 7. Retourner le plus grand nombre
+ 8. Indiquer si le tableau contient au moins un nombre multiple de 5
+ 9. Indiquer si le tableau ne contient que des nombres positifs
 
 ## Tableau de chaînes de caractères
 
@@ -57,6 +58,6 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 3. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjE1Nzg5OCwtMTIzMTUwMjQxOCwtOT
-k2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbLTE2Njk4ODAwMTAsMTA5MjE1Nzg5OCwtMT
+IzMTUwMjQxOCwtOTk2NTkzMDcwXX0=
 -->
