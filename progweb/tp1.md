@@ -40,7 +40,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  
 ## Tableau d'objets
 
-A partir de la structures de donnée suivante:
+A partir du tableau représentant des cercles dans un plan suivant:
 
 ```js
 let objects = [
@@ -55,6 +55,6 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMxNzUzMTAxLC0xMjMxNTAyNDE4LC05OT
-Y1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbLTU2MDUxNzEyMywtMTIzMTUwMjQxOCwtOT
+k2NTkzMDcwXX0=
 -->
