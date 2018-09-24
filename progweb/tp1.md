@@ -55,13 +55,13 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
 1. Retourner toutes les aires des cercles
 2. Retourner tous les cercles de couleur rouge
-3. Retourner un tableau des points des centres des cercles
+3. Retourner tous les centres des cercles
 4. 
 5. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
 6. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzODc3OTQ2MywtODMxODIxMjk2LC0xNj
+eyJoaXN0b3J5IjpbMTYxMDIwMjEyMCwtODMxODIxMjk2LC0xNj
 Y5ODgwMDEwLDEwOTIxNTc4OTgsLTEyMzE1MDI0MTgsLTk5NjU5
 MzA3MF19
 -->
