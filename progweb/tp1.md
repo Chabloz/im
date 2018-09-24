@@ -1,6 +1,6 @@
-# Exercice JS - Les Tableaux
+# Exercice JS - Tableaux
 
-## Tableau de nombres
+## Tableaux de nombres
 A partir du tableau de nombres suivant:
 ```js
 let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
@@ -18,7 +18,7 @@ réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  9. Indiquer si le tableau ne contient que des nombres positifs
  10. Retourner un tableau contenant les nombres pairs dans les premiers indices et les nombres impairs dans les indices restants  
 
-## Tableau de chaînes de caractères
+## Tableaux de chaînes de caractères
 A partir du tableau de mots suivant:
 
 ```js
@@ -36,7 +36,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  8. Retourner tous les mots contenant au moins deux **e**
  9. Indiquer si les chaines du tableau forment un palindrome (si elle sont lues dans l'ordre des indices du tableau). 
 
-## Tableau d'objets
+## Tableaux d'objets
 A partir du tableau représentant des cercles dans un plan suivant:
 ```js
 let circles = [
@@ -61,7 +61,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDEzNDA1NCwyMDQ0Nzc1Mzk2LDU5ND
+eyJoaXN0b3J5IjpbLTU1ODczNDAyOCwyMDQ0Nzc1Mzk2LDU5ND
 A4NTg2NiwtMzI1NjY5OTA2LDE1NDY1MTEyNDYsMTU0MTI4MzE0
 MSw5MDAxOTY5OTgsLTQ3OTM5MTE0NCwtODMxODIxMjk2LC0xNj
 Y5ODgwMDEwLDEwOTIxNTc4OTgsLTEyMzE1MDI0MTgsLTk5NjU5
