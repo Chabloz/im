@@ -31,10 +31,11 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  2. Indiquer si tous les mots font 5 lettres
  3. Retourner un tableau avec un mot de plus au début du tableau
  4. Retourner un tableau avec un mot de plus en fin de tableau
- 5. Retourner un tableau en remplaçant le mot du milieu par le mot **radar** (si le tableau à un nombre de mots impair
+ 5. Retourner un tableau en remplaçant le mot du milieu par le mot **radar** (si le tableau à un nombre de mots pair, remplacez le mot qui se situe à l'indice juste avant le milieu) 
  6. Retourner la concaténation de tous les mots 
  7. Retourner le mot qui vient en premier selon l'ordre alphabétique
  8. Retourner tous les mots contenant au moins deux **e**
+ 9. Indiquer si les chaines du tableau 
 
 
 ```js
@@ -49,6 +50,6 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2OTY1NTgyLC0xMjMxNTAyNDE4LC05OT
-Y1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbLTM1MTkwMTE2MiwtMTIzMTUwMjQxOCwtOT
+k2NTkzMDcwXX0=
 -->
