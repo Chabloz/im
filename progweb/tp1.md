@@ -18,7 +18,7 @@ réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  7. Retourner le plus grand nombre
  8. Indiquer si le tableau contient au moins un nombre multiple de 5
  9. Indiquer si le tableau ne contient que des nombres positifs
- 10. Retourner un tableau contenant les pairs  
+ 10. Retourner un tableau contenant les nombres pairs dans les premiers indices et les nombres impairs dans les indices restants  
 
 ## Tableau de chaînes de caractères
 
@@ -60,7 +60,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 5. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjQ4MzM5NSwtODMxODIxMjk2LC0xNj
+eyJoaXN0b3J5IjpbLTQ3OTM5MTE0NCwtODMxODIxMjk2LC0xNj
 Y5ODgwMDEwLDEwOTIxNTc4OTgsLTEyMzE1MDI0MTgsLTk5NjU5
 MzA3MF19
 -->
