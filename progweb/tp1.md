@@ -9,10 +9,10 @@ let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
 ```
 réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ).
 
- 1. Retourner un tableau avec les valeurs du tableau initial doublée.
- 2. Retourner un tableau ne contenant que les valeurs pairs du tableau.
- 3. Retourner un tableau ne contenant pas le premier élément du tablea.
- 4. A parti
+ 1. Retourner un tableau avec les valeurs doublée.
+ 2. Retourner un tableau ne contenant que les valeurs pairs.
+ 3. Retourner un tableau ne contenant pas le premier élément.
+ 4. Retourner un tableau ne contenant pas 
 
 ```js
 let strings = ["ceçi", "est", "un", "tableau", "et", "un", "objet"];
@@ -25,5 +25,5 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODE5NTkzLC05OTY1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbODI0MDE4NTgyLC05OTY1OTMwNzBdfQ==
 -->
