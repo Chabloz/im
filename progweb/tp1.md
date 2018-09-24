@@ -12,7 +12,7 @@ let objects = [
   {x: 10, y:5 , r: 5, color: "red"}
 ];
 ```
-Réalisez les
+Réalisez les fonctionnalités suivantes sous la forme de fonction retournant le résultat demandé. Les structures des données initiales ne doivent pas être modifiées (
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNDM1NzcyNCwtOTk2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbLTEzNzQ3ODU5ODgsLTk5NjU5MzA3MF19
 -->
