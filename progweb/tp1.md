@@ -1,4 +1,5 @@
 # JS - Les Tableaux
+
 ## Tableau de nombres
 A partir du tableau de nombres suivant:
 ```js
@@ -16,6 +17,7 @@ réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  8. Indiquer si le tableau contient au moins un nombre multiple de 5
  9. Indiquer si le tableau ne contient que des nombres positifs
  10. Retourner un tableau contenant les nombres pairs dans les premiers indices et les nombres impairs dans les indices restants  
+
 ## Tableau de chaînes de caractères
 A partir du tableau de mots suivant:
 
@@ -33,6 +35,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  7. Retourner le mot qui vient en premier selon l'ordre alphabétique
  8. Retourner tous les mots contenant au moins deux **e**
  9. Indiquer si les chaines du tableau forment un palindrome (si elle sont lues dans l'ordre des indices du tableau). 
+
 ## Tableau d'objets
 A partir du tableau représentant des cercles dans un plan suivant:
 ```js
@@ -58,8 +61,8 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzM4MTYzNiwtMzI1NjY5OTA2LDE1ND
-Y1MTEyNDYsMTU0MTI4MzE0MSw5MDAxOTY5OTgsLTQ3OTM5MTE0
-NCwtODMxODIxMjk2LC0xNjY5ODgwMDEwLDEwOTIxNTc4OTgsLT
-EyMzE1MDI0MTgsLTk5NjU5MzA3MF19
+eyJoaXN0b3J5IjpbNTk0MDg1ODY2LC0zMjU2Njk5MDYsMTU0Nj
+UxMTI0NiwxNTQxMjgzMTQxLDkwMDE5Njk5OCwtNDc5MzkxMTQ0
+LC04MzE4MjEyOTYsLTE2Njk4ODAwMTAsMTA5MjE1Nzg5OCwtMT
+IzMTUwMjQxOCwtOTk2NTkzMDcwXX0=
 -->
