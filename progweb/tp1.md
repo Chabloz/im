@@ -5,6 +5,7 @@
 [filter](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter)
 [reduce](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/reduce)
 [slice](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/slice)
+[sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 
 
@@ -67,7 +68,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 3. Retourner tous les centres des cercles
 4. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NTAzNzU5NiwxNTQ2NTExMjQ2LDE1ND
+eyJoaXN0b3J5IjpbLTMyNTY2OTkwNiwxNTQ2NTExMjQ2LDE1ND
 EyODMxNDEsOTAwMTk2OTk4LC00NzkzOTExNDQsLTgzMTgyMTI5
 NiwtMTY2OTg4MDAxMCwxMDkyMTU3ODk4LC0xMjMxNTAyNDE4LC
 05OTY1OTMwNzBdfQ==
