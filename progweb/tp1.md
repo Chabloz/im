@@ -27,9 +27,11 @@ let strings = ["Sator", "Arepo", "Tenet", "Opera", "Rotas"];
 ```
 Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée. *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent.*
 
- 1. Retourner tous les mots contenant au moins un  **'e'**
- 2. Retourner tous les mots contenant au moins deux **'e'**
- 3. Indiquer si tous les mots font 5 lettres
+ 1. Retourner tous les mots contenant au moins un  **r**
+ 2. Indiquer si tous les mots font 5 lettres
+ 3. Retourner le mot qui veint en premi
+ 4. Retourner tous les mots contenant au moins deux **e**
+
 
 ```js
 
@@ -43,6 +45,6 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjE0NzM2NjQsLTEyMzE1MDI0MTgsLT
+eyJoaXN0b3J5IjpbLTExNjI0MzAzNTEsLTEyMzE1MDI0MTgsLT
 k5NjU5MzA3MF19
 -->
