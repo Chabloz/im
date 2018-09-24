@@ -18,6 +18,14 @@ réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne 
  7. Indiquer si le tableau contient au moins un nombre multiple de 5
  8. Indiquer si le tableau ne contient que des nombres positifs
 
+## Tableau de nombres
+
+A partir de la structures de donnée suivante:
+
+```js
+let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
+```
+
 ```js
 let strings = ["ceçi", "est", "un", "tableau", "et", "un", "objet"];
 let objects = [
@@ -29,5 +37,5 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3NTA5ODY3LC05OTY1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbMzE4Mjk1MTcwLC05OTY1OTMwNzBdfQ==
 -->
