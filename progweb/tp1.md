@@ -23,10 +23,13 @@ réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne 
 A partir de la structures de donnée suivante:
 
 ```js
-let strings = ["ceçi", "est", "un", "tableau", "et", "un", "objet"];
+let strings = ["Sator", "Arepo", "Tenet", "Opera", "Rotas"];
 ```
+Réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne doit pas être modifiée.
+
 
 ```js
+
 
 let objects = [
   {x: 20, y: 10 , r: 10, color: "red"},
@@ -37,5 +40,6 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzE1MDI0MTgsLTk5NjU5MzA3MF19
+eyJoaXN0b3J5IjpbODIyNDQ4MjA1LC0xMjMxNTAyNDE4LC05OT
+Y1OTMwNzBdfQ==
 -->
