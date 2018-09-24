@@ -1,4 +1,4 @@
-# JS - Array Exercices
+# JS - Les Tableaux
 
 ## Tableau de nombres
 
@@ -38,11 +38,11 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  9. Indiquer si les chaines du tableau forment un palindrome si elle sont lues dans l'ordre des indices.
 
  
+## Tableau d'objets
 
+A partir de la structures de donnée suivante:
 
 ```js
-
-
 let objects = [
   {x: 20, y: 10 , r: 10, color: "red"},
   {x: 10, y: 10 , r: 20, color: "green"},
@@ -50,8 +50,11 @@ let objects = [
   {x: 10, y:5 , r: 5, color: "red"}
 ];
 ```
+Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY4MDk0OTgsLTEyMzE1MDI0MTgsLTk5Nj
-U5MzA3MF19
+eyJoaXN0b3J5IjpbMTE1NzkyMjAxNSwtMTIzMTUwMjQxOCwtOT
+k2NTkzMDcwXX0=
 -->
