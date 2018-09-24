@@ -29,13 +29,13 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
  1. Retourner tous les mots contenant au moins un  **r**
  2. Indiquer si tous les mots font 5 lettres
- 3. Retourner un tableau avec un mot de plus au début du tableau
+ 3. Retourner un tableau avec un mot de plus en début du tableau
  4. Retourner un tableau avec un mot de plus en fin de tableau
- 5. Retourner un tableau en remplaçant le mot du milieu par le mot **radar** (si le tableau à un nombre de mots pair, remplacez le mot qui se situe à l'indice juste avant le milieu) 
+ 5. Retourner un tableau en remplaçant le mot du milieu par le mot **radar** (si le tableau à un nombre de mots pair, remplacer le mot qui se situe à l'indice juste avant le milieu) 
  6. Retourner la concaténation de tous les mots 
  7. Retourner le mot qui vient en premier selon l'ordre alphabétique
  8. Retourner tous les mots contenant au moins deux **e**
- 9. Indiquer si les chaines du tableau forment un palindrome si elle sont lues dans l'ordre des indices.
+ 9. Indiquer si les chaines du tableau forment un palindrome (si elle sont lues dans l'ordre des indices du tableau).
 
  
 ## Tableau d'objets
@@ -55,6 +55,6 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzkyMjAxNSwtMTIzMTUwMjQxOCwtOT
-k2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbLTE0ODQzMjU3NDAsLTEyMzE1MDI0MTgsLT
+k5NjU5MzA3MF19
 -->
