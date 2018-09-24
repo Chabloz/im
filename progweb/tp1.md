@@ -14,7 +14,8 @@ réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne 
  3. Retourner un tableau ne contenant pas le premier élément
  4. Retourner un tableau ne contenant pas le dernier élément
  5. Retourner la somme des nombres
- 6.  
+ 6. Retourner le plus grand nombre
+ 7. Indiquer si le tableau contient au moins un  
 
 ```js
 let strings = ["ceçi", "est", "un", "tableau", "et", "un", "objet"];
@@ -27,5 +28,5 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzg3MzI4MywtOTk2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbLTE1MzUxNjQ5NjMsLTk5NjU5MzA3MF19
 -->
