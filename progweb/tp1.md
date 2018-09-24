@@ -52,9 +52,11 @@ let objects = [
 ```
 Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée.
 
-
+1. Retourner toutes les surfaces des cercles
+2. Retourner tous les cercles de couleur rouge
+3. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDUxNzEyMywtMTIzMTUwMjQxOCwtOT
-k2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbLTEzNzM1NzI3OTYsLTEyMzE1MDI0MTgsLT
+k5NjU5MzA3MF19
 -->
