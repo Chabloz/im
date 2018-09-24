@@ -1,8 +1,11 @@
 # JS - Les Tableaux
 
 ## Ressources
-forEach
+[map](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/map)
+[filter](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter)
+
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
+
 
 ## Tableau de nombres
 
@@ -63,8 +66,8 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 3. Retourner tous les centres des cercles
 4. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjUxMTI0NiwxNTQxMjgzMTQxLDkwMD
-E5Njk5OCwtNDc5MzkxMTQ0LC04MzE4MjEyOTYsLTE2Njk4ODAw
-MTAsMTA5MjE1Nzg5OCwtMTIzMTUwMjQxOCwtOTk2NTkzMDcwXX
-0=
+eyJoaXN0b3J5IjpbLTE5MDYzMzc2MjgsMTU0NjUxMTI0NiwxNT
+QxMjgzMTQxLDkwMDE5Njk5OCwtNDc5MzkxMTQ0LC04MzE4MjEy
+OTYsLTE2Njk4ODAwMTAsMTA5MjE1Nzg5OCwtMTIzMTUwMjQxOC
+wtOTk2NTkzMDcwXX0=
 -->
