@@ -29,10 +29,12 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
  1. Retourner tous les mots contenant au moins un  **r**
  2. Indiquer si tous les mots font 5 lettres
- 3. 
- 4. Retourner la concaténation de tous les mots 
- 5. Retourner le mot qui vient en premier selon l'ordre alphabétique
- 6. Retourner tous les mots contenant au moins deux **e**
+ 3. Retourner un tableau avec un mot de plus au début du tableau
+ 4. Retourner un tableau avec un mot de plus en fin de tableau
+ 5. Retourner un tableau 
+ 6. Retourner la concaténation de tous les mots 
+ 7. Retourner le mot qui vient en premier selon l'ordre alphabétique
+ 8. Retourner tous les mots contenant au moins deux **e**
 
 
 ```js
@@ -47,6 +49,6 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzA0NDA0NDYsLTEyMzE1MDI0MTgsLT
-k5NjU5MzA3MF19
+eyJoaXN0b3J5IjpbLTYyMDY4ODI4MiwtMTIzMTUwMjQxOCwtOT
+k2NTkzMDcwXX0=
 -->
