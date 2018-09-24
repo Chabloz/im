@@ -1,18 +1,6 @@
 # JS - Les Tableaux
-
-## Ressources
-[map](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/map)
-[filter](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter)
-[reduce](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/reduce)
-[slice](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/slice)
-[sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
-[destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
-
-
 ## Tableau de nombres
-
 A partir du tableau de nombres suivant:
-
 ```js
 let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
 ```
@@ -28,9 +16,7 @@ réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  8. Indiquer si le tableau contient au moins un nombre multiple de 5
  9. Indiquer si le tableau ne contient que des nombres positifs
  10. Retourner un tableau contenant les nombres pairs dans les premiers indices et les nombres impairs dans les indices restants  
-
 ## Tableau de chaînes de caractères
-
 A partir du tableau de mots suivant:
 
 ```js
@@ -46,13 +32,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  6. Retourner la concaténation de tous les mots 
  7. Retourner le mot qui vient en premier selon l'ordre alphabétique
  8. Retourner tous les mots contenant au moins deux **e**
- 9. Indiquer si les chaines du tableau forment un palindrome (si elle sont lues dans l'ordre des indices du tableau).
-
- 
+ 9. Indiquer si les chaines du tableau forment un palindrome (si elle sont lues dans l'ordre des indices du tableau). 
 ## Tableau d'objets
-
 A partir du tableau représentant des cercles dans un plan suivant:
-
 ```js
 let circles = [
   {x: 20, y: 10 , r: 10, color: "red"},
@@ -67,9 +49,17 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 2. Retourner tous les cercles de couleur rouge
 3. Retourner tous les centres des cercles
 4. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
+
+## Ressources
+[map](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/map)
+[filter](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter)
+[reduce](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/reduce)
+[slice](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/slice)
+[sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
+[destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTY2OTkwNiwxNTQ2NTExMjQ2LDE1ND
-EyODMxNDEsOTAwMTk2OTk4LC00NzkzOTExNDQsLTgzMTgyMTI5
-NiwtMTY2OTg4MDAxMCwxMDkyMTU3ODk4LC0xMjMxNTAyNDE4LC
-05OTY1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbLTc3NzM4MTYzNiwtMzI1NjY5OTA2LDE1ND
+Y1MTEyNDYsMTU0MTI4MzE0MSw5MDAxOTY5OTgsLTQ3OTM5MTE0
+NCwtODMxODIxMjk2LC0xNjY5ODgwMDEwLDEwOTIxNTc4OTgsLT
+EyMzE1MDI0MTgsLTk5NjU5MzA3MF19
 -->
