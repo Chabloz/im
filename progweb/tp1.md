@@ -14,7 +14,8 @@ let objects = [
 ```
 Réalisez les fonctionnalités suivantes sous la forme de fonction retournant le résultat demandé. Les structures des données initiales ne doivent pas être modifiées ( structure *immutable* ).
 
+ 1. List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjEwODM5NiwtOTk2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbMTU4NDc3NjIyMCwtOTk2NTkzMDcwXX0=
 -->
