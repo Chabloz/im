@@ -12,11 +12,11 @@ let objects = [
   {x: 10, y:5 , r: 5, color: "red"}
 ];
 ```
-Réalisez les fonctionnalités suivantes sous la forme de fonction retournant le résultat demandé. Les structures des données initiales ne doivent pas être modifiées ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ).
+Réalisez les fonctionnalités suivantes. Les structures des données initiales ne doivent pas être modifiées ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ).
 
  1. A partir du tableau de nombres, retourne un tableau avec les valeurs doublée.
- 2. 
+ 2. A partir du tableau de nombres, retourne un tableau ne contenant que les valeurs pairs du tableau
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3Nzk4MjcsLTk5NjU5MzA3MF19
+eyJoaXN0b3J5IjpbMTMwNDg2OTM5MywtOTk2NTkzMDcwXX0=
 -->
