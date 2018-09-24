@@ -1,6 +1,10 @@
 # JS - Array Exercices
 
-A partir des trois struct suivants:
+A partir des trois structures de données suivantes:
+
+```js
+let numbers = 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTQ0ODcyN119
+eyJoaXN0b3J5IjpbMTg5MzUwNjY5OV19
 -->
