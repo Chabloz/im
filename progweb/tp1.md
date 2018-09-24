@@ -24,7 +24,7 @@ A partir du tableau de mots suivant:
 ```js
 let strings = ["Sator", "Arepo", "Tenet", "Opera", "Rotas"];
 ```
-Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée. *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent.*
+Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée.
 
  1. Retourner tous les mots contenant au moins un  **r**
  2. Indiquer si tous les mots font 5 lettres
@@ -61,8 +61,8 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0MDg1ODY2LC0zMjU2Njk5MDYsMTU0Nj
-UxMTI0NiwxNTQxMjgzMTQxLDkwMDE5Njk5OCwtNDc5MzkxMTQ0
-LC04MzE4MjEyOTYsLTE2Njk4ODAwMTAsMTA5MjE1Nzg5OCwtMT
-IzMTUwMjQxOCwtOTk2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbMjA0NDc3NTM5Niw1OTQwODU4NjYsLTMyNT
+Y2OTkwNiwxNTQ2NTExMjQ2LDE1NDEyODMxNDEsOTAwMTk2OTk4
+LC00NzkzOTExNDQsLTgzMTgyMTI5NiwtMTY2OTg4MDAxMCwxMD
+kyMTU3ODk4LC0xMjMxNTAyNDE4LC05OTY1OTMwNzBdfQ==
 -->
