@@ -12,10 +12,10 @@ let objects = [
   {x: 10, y:5 , r: 5, color: "red"}
 ];
 ```
-Réalisez les fonctionnalités suivantes sous la forme de fonction retournant le résultat demandé. Les structures des données initiales ne doivent pas être modifiées ( structure *immutable* ).
+Réalisez les fonctionnalités suivantes sous la forme de fonction retournant le résultat demandé. Les structures des données initiales ne doivent pas être modifiées ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ).
 
  1. List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDc3NjIyMCwtOTk2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbMTIxMTYzODM0MSwtOTk2NTkzMDcwXX0=
 -->
