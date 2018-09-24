@@ -7,7 +7,7 @@ A partir de la structures de donnée suivante:
 ```js
 let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
 ```
-réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). 
+réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Remarque: vos solutions se doivent bien sûr de rester fonctionnel même si le tableau initial était différent*
 
  1. Retourner un tableau avec les valeurs doublée
  2. Retourner un tableau ne contenant que les valeurs impairs
@@ -42,6 +42,6 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzgyMDE4MSwtMTIzMTUwMjQxOCwtOT
+eyJoaXN0b3J5IjpbLTIzMTE1MjgzMSwtMTIzMTUwMjQxOCwtOT
 k2NTkzMDcwXX0=
 -->
