@@ -12,7 +12,9 @@ let objects = [
   {x: 10, y:5 , r: 5, color: "red"}
 ];
 ```
-Réalisez les fonctionnalités suivantes sous la forme de fonction retournant le résultat demandé. Les structures des données initiales ne doivent pas être modifiées (
+Réalisez les fonctionnalités suivantes sous la forme de fonction retournant le résultat demandé. Les structures des données initiales ne doivent pas être modifiées ( structure *immutable* ).
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQ3ODU5ODgsLTk5NjU5MzA3MF19
+eyJoaXN0b3J5IjpbLTcxMjEwODM5NiwtOTk2NTkzMDcwXX0=
 -->
