@@ -12,6 +12,7 @@ let objects = [
   {x: 10, y:5 , r: 5, color: "red"}
 ];
 ```
+Réalisez les
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0Mjg1MzUzLC05OTY1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbMTQwNDM1NzcyNCwtOTk2NTkzMDcwXX0=
 -->
