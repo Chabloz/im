@@ -2,7 +2,7 @@
 
 ## Tableau de nombres
 
-A partir de la structures de donnée suivante:
+A partir du tableau de nombres suivant:
 
 ```js
 let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
@@ -20,7 +20,7 @@ réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
 ## Tableau de chaînes de caractères
 
-A partir de la structures de donnée suivante:
+A partir du tableau de mots suivant:
 
 ```js
 let strings = ["Sator", "Arepo", "Tenet", "Opera", "Rotas"];
@@ -55,6 +55,6 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQzMjU3NDAsLTEyMzE1MDI0MTgsLT
-k5NjU5MzA3MF19
+eyJoaXN0b3J5IjpbNzMxNzUzMTAxLC0xMjMxNTAyNDE4LC05OT
+Y1OTMwNzBdfQ==
 -->
