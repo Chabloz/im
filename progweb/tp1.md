@@ -1,4 +1,4 @@
-# JS - Les Tableaux
+# Exercice JS - Les Tableaux
 
 ## Tableau de nombres
 A partir du tableau de nombres suivant:
@@ -61,8 +61,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDc3NTM5Niw1OTQwODU4NjYsLTMyNT
-Y2OTkwNiwxNTQ2NTExMjQ2LDE1NDEyODMxNDEsOTAwMTk2OTk4
-LC00NzkzOTExNDQsLTgzMTgyMTI5NiwtMTY2OTg4MDAxMCwxMD
-kyMTU3ODk4LC0xMjMxNTAyNDE4LC05OTY1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbMTA5MDEzNDA1NCwyMDQ0Nzc1Mzk2LDU5ND
+A4NTg2NiwtMzI1NjY5OTA2LDE1NDY1MTEyNDYsMTU0MTI4MzE0
+MSw5MDAxOTY5OTgsLTQ3OTM5MTE0NCwtODMxODIxMjk2LC0xNj
+Y5ODgwMDEwLDEwOTIxNTc4OTgsLTEyMzE1MDI0MTgsLTk5NjU5
+MzA3MF19
 -->
