@@ -55,9 +55,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
 1. Retourner toutes les aires des cercles
 2. Retourner tous les cercles de couleur rouge
-3. 
+3. Retourner tous les cercles d
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Njk4ODAwMTAsMTA5MjE1Nzg5OCwtMT
-IzMTUwMjQxOCwtOTk2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbLTEzODk1NDcxOTIsLTE2Njk4ODAwMTAsMT
+A5MjE1Nzg5OCwtMTIzMTUwMjQxOCwtOTk2NTkzMDcwXX0=
 -->
