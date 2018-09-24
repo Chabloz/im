@@ -59,8 +59,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 3. Retourner tous les centres des cercles
 5. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3OTM5MTE0NCwtODMxODIxMjk2LC0xNj
-Y5ODgwMDEwLDEwOTIxNTc4OTgsLTEyMzE1MDI0MTgsLTk5NjU5
-MzA3MF19
+eyJoaXN0b3J5IjpbOTAwMTk2OTk4LC00NzkzOTExNDQsLTgzMT
+gyMTI5NiwtMTY2OTg4MDAxMCwxMDkyMTU3ODk4LC0xMjMxNTAy
+NDE4LC05OTY1OTMwNzBdfQ==
 -->
