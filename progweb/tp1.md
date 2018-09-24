@@ -55,9 +55,10 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
 1. Retourner toutes les aires des cercles
 2. Retourner tous les cercles de couleur rouge
-3. Retourner tous les cercles d
+3. Retourner tous les cercles de 10 unité sur l'axe des abscisses 
+4. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODk1NDcxOTIsLTE2Njk4ODAwMTAsMT
-A5MjE1Nzg5OCwtMTIzMTUwMjQxOCwtOTk2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbMjEwNzc3MTAzNCwtMTY2OTg4MDAxMCwxMD
+kyMTU3ODk4LC0xMjMxNTAyNDE4LC05OTY1OTMwNzBdfQ==
 -->
