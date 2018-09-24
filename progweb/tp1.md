@@ -44,7 +44,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 A partir du tableau représentant des cercles dans un plan suivant:
 
 ```js
-let objects = [
+let circles = [
   {x: 20, y: 10 , r: 10, color: "red"},
   {x: 10, y: 10 , r: 20, color: "green"},
   {x: 30, y: 25 , r: 15, color: "blue"},
@@ -55,10 +55,13 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 
 1. Retourner toutes les aires des cercles
 2. Retourner tous les cercles de couleur rouge
-3. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
+3. Retourner un tableau des points des centres des cercles
 4. 
+5. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
+6. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTgyMTI5NiwtMTY2OTg4MDAxMCwxMD
-kyMTU3ODk4LC0xMjMxNTAyNDE4LC05OTY1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbLTkzODc3OTQ2MywtODMxODIxMjk2LC0xNj
+Y5ODgwMDEwLDEwOTIxNTc4OTgsLTEyMzE1MDI0MTgsLTk5NjU5
+MzA3MF19
 -->
