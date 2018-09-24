@@ -1,5 +1,9 @@
 # JS - Les Tableaux
 
+## Ressources
+forEach
+[destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
+
 ## Tableau de nombres
 
 A partir du tableau de nombres suivant:
@@ -58,10 +62,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 2. Retourner tous les cercles de couleur rouge
 3. Retourner tous les centres des cercles
 4. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTI4MzE0MSw5MDAxOTY5OTgsLTQ3OT
-M5MTE0NCwtODMxODIxMjk2LC0xNjY5ODgwMDEwLDEwOTIxNTc4
-OTgsLTEyMzE1MDI0MTgsLTk5NjU5MzA3MF19
+eyJoaXN0b3J5IjpbMTU0NjUxMTI0NiwxNTQxMjgzMTQxLDkwMD
+E5Njk5OCwtNDc5MzkxMTQ0LC04MzE4MjEyOTYsLTE2Njk4ODAw
+MTAsMTA5MjE1Nzg5OCwtMTIzMTUwMjQxOCwtOTk2NTkzMDcwXX
+0=
 -->
