@@ -7,7 +7,7 @@ A partir de la structures de donnée suivante:
 ```js
 let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
 ```
-réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Remarque: vos solutions se doivent bien sûr de rester fonctionnel même si le tableau initial était différent*
+réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent*
 
  1. Retourner un tableau avec les valeurs doublée
  2. Retourner un tableau ne contenant que les valeurs impairs
@@ -25,7 +25,7 @@ A partir de la structures de donnée suivante:
 ```js
 let strings = ["Sator", "Arepo", "Tenet", "Opera", "Rotas"];
 ```
-Réalisez les fonctionnalités ci-dessous. La structure des donnée initiale ne doit pas être modifiée.
+Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée. *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent*
 
  1. Retourner tout les mots contenant la lettre 'e'
  2. Indiquer si tous les mots font 5 lettres
@@ -42,6 +42,6 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMTE1MjgzMSwtMTIzMTUwMjQxOCwtOT
-k2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbNjU1OTI1MTgxLC0xMjMxNTAyNDE4LC05OT
+Y1OTMwNzBdfQ==
 -->
