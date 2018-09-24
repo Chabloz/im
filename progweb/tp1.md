@@ -35,7 +35,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  6. Retourner la concaténation de tous les mots 
  7. Retourner le mot qui vient en premier selon l'ordre alphabétique
  8. Retourner tous les mots contenant au moins deux **e**
- 9. Indiquer si les chaines du tableau 
+ 9. Indiquer si les chaines du tableau forment un palindrome si elle sont lues dans l'ordre des indices.
+
+ 
 
 
 ```js
@@ -50,6 +52,6 @@ let objects = [
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MTkwMTE2MiwtMTIzMTUwMjQxOCwtOT
-k2NTkzMDcwXX0=
+eyJoaXN0b3J5IjpbNzY4MDk0OTgsLTEyMzE1MDI0MTgsLTk5Nj
+U5MzA3MF19
 -->
