@@ -2,7 +2,7 @@
 
 ## Sélecteurs CSS
 
-A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajoutez jQuery et un fichier javascript pour votre code. Puis réalisez les fonctionnalités suivantes:
+A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajouter jQuery et un fichier javascript pour votre code. Puis réaliser les fonctionnalités suivantes (*sans modifier le code HTML*):
 
  1. Au chargement de la page, les réponses du questionnaire doivent être invisibles
  2. Lorsque l’utilisateur clique sur une des questions, la réponse adéquate doit être affichée
@@ -12,5 +12,5 @@ A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajoutez jQuer
  6. Le petit formulaire en bas de page doit permettre l’ajout d’une nouvelle note dans la liste des notes
  7. Lorsque la souris passe sur une des notes, son fond devient rouge, il redevient de la couleur par défaut lorsque la souris quitte la note
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzgxMzI1OV19
+eyJoaXN0b3J5IjpbMTc4NzE0MTgwN119
 -->
