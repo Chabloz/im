@@ -3,7 +3,7 @@
 ## Tableaux de nombres
 A partir du tableau de nombres suivant:
 ```js
-let numbers = [3, 14, 15, 92 ,65, 35, 89, 79, 3, 38];
+let numbers = [3, 14, 15, 92 ,65, 35, 89, 79, 32, 38];
 ```
 réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent.*
 
@@ -61,9 +61,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2NDQ2NTExLC01NTg3MzQwMjgsMjA0ND
-c3NTM5Niw1OTQwODU4NjYsLTMyNTY2OTkwNiwxNTQ2NTExMjQ2
-LDE1NDEyODMxNDEsOTAwMTk2OTk4LC00NzkzOTExNDQsLTgzMT
-gyMTI5NiwtMTY2OTg4MDAxMCwxMDkyMTU3ODk4LC0xMjMxNTAy
-NDE4LC05OTY1OTMwNzBdfQ==
+eyJoaXN0b3J5IjpbLTEyODU5ODEyMzMsMjE2NDQ2NTExLC01NT
+g3MzQwMjgsMjA0NDc3NTM5Niw1OTQwODU4NjYsLTMyNTY2OTkw
+NiwxNTQ2NTExMjQ2LDE1NDEyODMxNDEsOTAwMTk2OTk4LC00Nz
+kzOTExNDQsLTgzMTgyMTI5NiwtMTY2OTg4MDAxMCwxMDkyMTU3
+ODk4LC0xMjMxNTAyNDE4LC05OTY1OTMwNzBdfQ==
 -->
