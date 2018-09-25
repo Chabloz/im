@@ -5,7 +5,7 @@
 A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajouter jQuery et un fichier javascript pour votre code. Puis réaliser les fonctionnalités suivantes (*sans modifier le code HTML*):
 
  1. Au chargement de la page, les réponses du questionnaire doivent être invisibles
- 2. Lorsque l’utilisateur clique sur une des questions, la réponse adéquate doit être affichée
+ 2. Lorsque l’utilisateur clique sur une des questions, la ou les réponses  adéquates doivent être affichées
  3. Au chargement de la page, toutes les questions du formulaire seront préfixées d’une numérotation Q1, Q2, etc ...
  4. Les définitions du « résumé jQuery » doivent s’afficher en rouge lorsque la souris passe sur eux et redevenir comme avant lorsque la souris quitte la définition
  5. Les liens qui font référence à une adresse HTTP externe doivent être mise en orange
@@ -14,5 +14,6 @@ A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajouter jQuer
 
 **Remarque**: cet exercice n'a qu'un but pédagogique (*vous faire travailler les sélecteurs CSS via jQuery*). Il est clair que normalement, la plupart des fonctionnalités réalisées ici devraient se faire en CSS et non en JS. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTM5NDQwMjFdfQ==
+eyJoaXN0b3J5IjpbLTE1ODk1MzQ2OTEsLTE0NTM5NDQwMjFdfQ
+==
 -->
