@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery DOM intro</title>	        
+    <style>
+      body {
+        color: #000;
+        background-color: #fff;
+      }
+      .questionnaire dt {
+        cursor: pointer;
+      }
+      dt {
+        padding: 5px 0;
+        font-weight: bold;
+      }
+      dd {
+        padding: 3px 3px 10px 3px;
+        background-color: #eee;
+      }
+      .highlight {
+        color: red;
+      }
+      .warning {
+        background-color: red;
+        color: white;
+      }
+      .externalLink {
+        color: orange;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+      }
+      textarea {
+        width: 100%;
+        border: solid black 1px;
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery</h1>
+    <div id="container">
+      <h2>Questionnaire jQuery</h2>
+      <dl class="questionnaire">
+        <dt>Comment afficher ou cacher un noeud du DOM avec jQuery ?</dt>
+        <dd>
+          $(selecteur).hide(), $(selecteur).show() ou $(selecteur).toggle()
+          (toggle passe de l'état visible à invisible et inversement)
+        </dd>
+        <dt>Comment lier une fonction à l'événement d'un click de souris ?</dt>
+        <dd>$(selecteur).on('click', (event) => { //code })</dd>
+        <dd><a href="#notes">voir la note en bas de page pour plus d'info sur la méthode on</a></dd>
+        <dd>ou avec: $(selecteur).click((event) => { //code })</dd>
+        <dt>Comment faire un "Hello World" en jQuery ?</dt>
+        <dd>
+          <pre>
+    $(() => {
+      alert('Hello World');
+    });
+          </pre>
+        </dd>
+      </dl>
+      <h2>Résumé de quelques fonctionnalités de jQuery</h2>
+      <dl>
+        <dt>Quelques sélecteurs</dt>
+        <dd>Par identifiant: "#id"</dd>
+        <dd>Par classe CSS: ".nomDeLaClasse"</dd>
+        <dd>Par nom de balise: "h2"</dd>
+        <dd>Par hiérarchie: ".nomDeLaClasse p"</dd>
+        <dd>Par attribut: input[type='text']</dd>
+        <dd>
+          Et bien d'autres:
+          <a href="https://api.jquery.com/category/selectors/">référence jQuery</a>
+        </dd>
+        <dt>Quelques méthodes</dt>
+        <dd>text(): récupère ou fixe le contenu texte d'un noeud du DOM</dd>
+        <dd>val(): récupère ou fixe la valeur d'un champ de formulaire</dd>
+        <dd>addClass(): ajoute une classe CSS à l'élément</dd>
+        <dd>removeClass(): supprime une classe CSS de l'élèment</dd>
+        <dd>toggleClass(): supprime (si présente) ou ajoute (si absente) une classe CSS</dd>
+        <dd>
+          each((index, elem) => {//code}) : exécute une fonction
+          sur tous les éléments du DOM selectionnés, le paramètre "index" indiquera
+          l'indice de l'élément dans la collection et le paramètre "elem" sera l'élément
+          DOM sur lequel la fonction s'éxécute. Exemple:
+          <pre>
+    $("a").each((i, elem) => {
+      let href = $(elem).attr("href");
+      console.log(`lien: ${href}`);
+    })
+          </pre>
+        </dd>
+        <dd>append(content): ajoute un contenu à la fin d'un élément</dd>
+        <dd>prepend(content): ajoute un contenu au début d'un élément</dd>
+        <dd>next(): retourne le frère suivant d'un noeud DOM</dd>
+        <dd>prev(): retourne le frère précédant d'un noeud</dd>
+        <dd>children(): retourne les descendants directes d'un noeud</dd>
+        <dd>parent(): retourne le noeud parent d'un noeud</dd>
+        <dd>clone(): fait une copie des éléments DOM. Avec l'appel clone(true), les gestionnaires d'événements seront aussi liés</dd>
+        <dt>Liste des principaux événements gérés par jQuery</dt>
+        <dd>change : modification d'un élément (ex: la sélection dans un liste déroulante)</dd>
+        <dd>click : click de souris</dd>
+        <dd>dblclick : double click</dd>
+        <dd>focus : un élément obtient le focus</dd>
+        <dd>keydown : une touche du clavier est enfoncée (ex: dans un champ "input text")</dd>
+        <dd>keyup : une touche du clavier est relachée</dd>
+        <dd>mousedown : le bouton de la souris est enfoncé</dd>
+        <dd>mousemove : le curseur de la souris bouge</dd>
+        <dd>mouseout : la souris passe en dehors de l'élément</dd>
+        <dd>mouseover : la souris passe sur l'élément</dd>
+        <dd>mouseup : le bouton de la souris est relâché</dd>
+        <dd>
+          Et d'autres:
+          <a href="https://api.jquery.com/category/events/">référence jQuery</a>
+        </dd>
+      </dl>
+      <h2>Notes</h2>
+      <div id="notes">
+        <p>
+          Attention: lorsque l'on crée des éléments DOM,
+          ceux-ci sont ajoutés sans les éventuels événements liés précedement
+          aux éléments du même type via JavaScript. jQuery apporte une solution
+          à ce problème grace au "delegated events" de la méthode <a href="https://api.jquery.com/on/">"on"</a>.
+        </p>
+      </div>
+      <form>
+        <label for="newNote">Nouvelle note</label>
+        <textarea id="newNote"></textarea>
+        <input type="submit" value="Ajouter" id="ajouter"/>
+      </form>
+    </div>
+  </body>
+</html>
