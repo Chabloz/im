@@ -2,14 +2,7 @@
 
 ## Sélecteurs CSS
 
-A partir du code HTML  les fonctionnalités suivantes en « jQuery » :
-• Au chargement de la page, les réponses du questionnaire doivent être invisibles.
-• Lorsque l’utilisateur clique sur une des questions, la réponse adéquate doit être affichée.
-• Au chargement de la page, toutes les questions du formulaire sont préfixées d’une numérotation respectant la syntaxe présentée dans la capture d’écran suivante :
-• Les définitions du « résumé jQuery » doivent s’afficher en rouge (via la CSS) lorsque la souris passe sur eux et redevenir comme avant lorsque la souris quitte la définition.
-• Les liens qui font référence à une adresse absolue doivent être mise en orange (via la CSS).
-• Le petit formulaire en bas de page doit permettre l’ajout d’une nouvelle note dans la liste des notes.
-• Lorsque la souris passe sur une des notes, son fond devient rouge (via la CSS), il redevient de la couleur par défaut lorsque la souris quitte la note.
+A partir du [code HTML fournit](resources/jqueryDomTraining.html) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNDc3NDIwMF19
+eyJoaXN0b3J5IjpbLTExODYzNjYyMTVdfQ==
 -->
