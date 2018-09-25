@@ -51,15 +51,13 @@
           (toggle passe de l'état visible à invisible et inversement)
         </dd>
         <dt>Comment lier une fonction à l'événement d'un click de souris ?</dt>
-        <dd>$(selecteur).on('click', (event) => { //code })</dd>
+        <dd>$(selecteur).on('click', event => { //code })</dd>
         <dd><a href="#notes">voir la note en bas de page pour plus d'info sur la méthode on</a></dd>
-        <dd>ou avec: $(selecteur).click((event) => { //code })</dd>
-        <dt>Comment faire un "Hello World" en jQuery ?</dt>
+        <dd>ou avec: $(selecteur).click(event => { //code })</dd>
+        <dt>Comment faire un "Hello World" en jQuery après le chargement du DOM ?</dt>
         <dd>
           <pre>
-    $(() => {
-      alert('Hello World');
-    });
+    $(() => console.log('Hello World'));
           </pre>
         </dd>
       </dl>
