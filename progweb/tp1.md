@@ -3,7 +3,7 @@
 ## Tableaux de nombres
 A partir du tableau de nombres suivant:
 ```js
-let numbers = [3, 14, 5, 92 ,65, 35, 89, 79, 3, 38];
+let numbers = [3, 14, 15, 92 ,65, 35, 89, 79, 3, 38];
 ```
 réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent.*
 
@@ -14,7 +14,7 @@ réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
  5. Retourner un tableau ne contenant pas le dernier élément
  6. Retourner la somme des nombres
  7. Retourner le plus grand nombre
- 8. Indiquer si le tableau contient au moins un nombre multiple de 5
+ 8. Indiquer si le tableau contient au moins un nombre multiple de 9
  9. Indiquer si le tableau ne contient que des nombres positifs
  10. Retourner un tableau contenant les nombres pairs dans les premiers indices et les nombres impairs dans les indices restants  
 
@@ -61,9 +61,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1ODczNDAyOCwyMDQ0Nzc1Mzk2LDU5ND
-A4NTg2NiwtMzI1NjY5OTA2LDE1NDY1MTEyNDYsMTU0MTI4MzE0
-MSw5MDAxOTY5OTgsLTQ3OTM5MTE0NCwtODMxODIxMjk2LC0xNj
-Y5ODgwMDEwLDEwOTIxNTc4OTgsLTEyMzE1MDI0MTgsLTk5NjU5
-MzA3MF19
+eyJoaXN0b3J5IjpbMjE2NDQ2NTExLC01NTg3MzQwMjgsMjA0ND
+c3NTM5Niw1OTQwODU4NjYsLTMyNTY2OTkwNiwxNTQ2NTExMjQ2
+LDE1NDEyODMxNDEsOTAwMTk2OTk4LC00NzkzOTExNDQsLTgzMT
+gyMTI5NiwtMTY2OTg4MDAxMCwxMDkyMTU3ODk4LC0xMjMxNTAy
+NDE4LC05OTY1OTMwNzBdfQ==
 -->
