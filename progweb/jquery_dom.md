@@ -11,6 +11,8 @@ A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajouter jQuer
  5. Les liens qui font référence à une adresse HTTP externe doivent être mise en orange
  6. Le petit formulaire en bas de page doit permettre l’ajout d’une nouvelle note dans la liste des notes
  7. Lorsque la souris passe sur une des notes, son fond devient rouge, il redevient de la couleur par défaut lorsque la souris quitte la note
+
+**Remarque**: cet exercices n'a qu'un but pédagogique pour vous faire travailler les sélecteurs CSS via jquery. Il est clair que normalement, la plupart des fonctionnalités réalisée ici devrait se faire en CSS et non en JS 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NzE0MTgwN119
+eyJoaXN0b3J5IjpbLTE0MDAzNjYxNDddfQ==
 -->
