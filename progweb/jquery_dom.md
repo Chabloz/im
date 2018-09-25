@@ -12,7 +12,7 @@ A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajouter jQuer
  6. Le petit formulaire en bas de page doit permettre l’ajout d’une nouvelle note dans la liste des notes
  7. Lorsque la souris passe sur une des notes, son fond devient rouge, il redevient de la couleur par défaut lorsque la souris quitte la note
 
-**Remarque**: cet exercices n'a qu'un but pédagogique pour vous faire travailler les sélecteurs CSS via jquery. Il est clair que normalement, la plupart des fonctionnalités réalisée ici devrait se faire en CSS et non en JS 
+**Remarque**: cet exercice n'a qu'un but pédagogique (*vous faire travailler les sélecteurs CSS via jQuery*). Il est clair que normalement, la plupart des fonctionnalités réalisées ici devraient se faire en CSS et non en JS. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDAzNjYxNDddfQ==
+eyJoaXN0b3J5IjpbLTE0NTM5NDQwMjFdfQ==
 -->
