@@ -54,10 +54,10 @@
         <dd>$(selecteur).on('click', event => { //code })</dd>
         <dd><a href="#notes">voir la note en bas de page pour plus d'info sur la méthode on</a></dd>
         <dd>ou avec: $(selecteur).click(event => { //code })</dd>
-        <dt>Comment faire un "Hello World" en jQuery après le chargement du DOM ?</dt>
+        <dt>Comment faire un "Hello World" en jQuery après un click sur le body du document ?</dt>
         <dd>
           <pre>
-    $(() => console.log('Hello World'));
+    $("body").on("click", () => console.log("hello World!"));
           </pre>
         </dd>
       </dl>
