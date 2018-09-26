@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery - Manipulation du DOM</title>	
+    <style>
+      * {
+        font-family: Verdana, sans-serif;
+      }
+      .action {
+        padding: 20px;
+      }
+      .action div {
+        height: 16px;
+        padding: 0 0 0 20px;
+        margin: 0 20px 10px 0;
+        color: #356A99;
+        cursor: pointer;        
+        /* css cross browser pour éviter la selection de texte sur un double click sur les acttions  */
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;    
+      }
+      .action div:hover {
+        color: red;
+      }
+      #addAuthor {
+        background: no-repeat top left;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAq1BMVEX///+vr69kZGR5eXmqqqp/gICjo6NmZmd9fn2ura57e3tnZ2ekpaViYWGysrKCgoJ0dHSAgIB8e3tpammlpKWys7N+fn20tLRhYmKrrKumpqZvb2+zsrNxcnJ7fHtsbGtubm+srKytra19fX6npqZiYWKoqKmpqKh2dnZpaWlsbGylpaVxcnFgYF9kZWWmp6avsK+1tLSpqKl3dndqaWmoqKinp6ZgYGCxsbG6NTpBAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfUDB4RJgYHFNZiAAAAcklEQVR42mNgwA74BTm4UARYxUWZUQTE+Cw0UASELAwEkPQrczEzcuooyGtyQ/Qb8lkwKkmymOpr64EFOGQsGDkVWdSlRNh4wQJyzMYCsixqJuxMvLpwc6SNzLhRbNFS4WFCERDmYVNFEWBnkjBnIBcAAHPlB4jDJt7uAAAAAElFTkSuQmCC);
+      }
+      #delAuthor {
+        background: no-repeat top left;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEXJysnuUlPuWlnuLi7uSkruQULuNzjuHBzuExPuJSXuDAyZmpqampq3t7eamZqqq6u/vr+6urrGxsa+v76fn5+np6ecnJy9vL2+vr6cm5uam5q5urmzs7Ovr6/HxsebnJyjo6PKycruX1/MzMyZmZn////uAABhb3PUAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfWBh0JChzEv6A6AAABG0lEQVR4AQEQAe/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIgIBBAUGAwkHCCYmAAAAACIiAgEEBQYDCQcICiYAAAAAIiICAQQFBgMJBwgmJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL9gIckAqFBAAAAABJRU5ErkJggg==);
+      }
+      fieldset {
+        clear: both;
+        border: solid black 1px;
+        padding: 5px 10px 10px 10px;
+        margin: 5px;
+      }
+      legend {
+        font-weight: bold;
+        border: solid black 1px;
+        background-color :#356A99;
+        color : white;
+        margin: 0 0 10px 0;
+        padding: 0 5px;
+      }
+      label {
+        display: block;
+        float: left;
+        min-width: 300px;
+        margin-bottom: 5px;
+      }
+      input {
+        margin: 0 0 5px 2px;
+        padding: 1px 5px;
+        width: 200px;
+        border: solid black 1px;
+        background-color : #eee;
+      }
+      input[type=submit] {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tp1 - Manipulation du DOM </h1>
+    <form action="http://www.w3schools.com/tags/form_action.asp" method="get" enctype="multipart/form-data" id="form">
+      <fieldset id="info">
+        <legend>Livre</legend>
+        <div class="field">
+          <label for="title">Titre du livre:</label>
+          <input type="text" name="title" id="title" placeholder="Titre" autofocus required>
+        </div>
+        <div class="field">
+          <label for="date">Date de la première édition:</label>
+          <input type="date" name="date" id="date">
+        </div>
+      </fieldset>            
+      <fieldset id="author">
+        <legend>Auteurs</legend>
+        <div class="action">
+          <div id="addAuthor">Ajouter un auteur</div>
+          <div id="delAuthor">Supprimer un auteur</div>
+        </div>
+        <div class="field">
+          <label for="author1">Nom de l'auteur:</label>
+          <input type="text" name="author1" id="author1" placeholder="Nom de l'auteur">
+        </div>
+      </fieldset>
+      <input type="submit" value="Ajouter le livre" name="add">
+    </form>
+  </body>
+</html>
