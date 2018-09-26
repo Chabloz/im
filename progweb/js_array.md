@@ -5,7 +5,7 @@ A partir du tableau de nombres suivant:
 ```js
 const numbers = Object.freeze([3, 14, 15, 92 ,65, 35, 89, 79, 32, 38]);
 ```
-réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent.*
+réalisez les fonctionnalités ci-dessous. La structure de données initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent.*
 
  1. Afficher tous les nombres dans la console
  2. Retourner un tableau avec les valeurs doublées
@@ -22,9 +22,9 @@ réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 A partir du tableau de mots suivant:
 
 ```js
-let strings = ["Sator", "Arepo", "Tenet", "Opera", "Rotas"];
+const strings = Object.freeze(["Sator", "Arepo", "Tenet", "Opera", "Rotas"]);
 ```
-Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée.
+Réalisez les fonctionnalités ci-dessous. La structure de données initiale ne doit pas être modifiée.
 
  1. Retourner tous les mots contenant au moins un  **r**
  2. Indiquer si tous les mots font 5 lettres
@@ -47,7 +47,7 @@ const circles = Object.freeze([
 ]);
 circles.forEach(Object.freeze);
 ```
-Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée.
+Réalisez les fonctionnalités ci-dessous. La structure de données initiale ne doit pas être modifiée.
 
 1. Retourner toutes les aires des cercles
 2. Retourner tous les cercles de couleur rouge
