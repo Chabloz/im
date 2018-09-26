@@ -82,6 +82,7 @@ const circles = Object.freeze([
   {x: 30, y: 25 , r: 15, color: "blue"},
   {x: 10, y:5 , r: 5, color: "red"}
 ]);
+circles.forEach(Object.freeze);
 console.log(circles);
 console.log("Retourner toutes les aires des cercles");
 let surfaces = circles.map(c => Math.PI * c.r * c.r); 
@@ -93,6 +94,9 @@ console.log("Retourner tous les centres des cercles");
 let centers = circles.map(c => ({x: c.x, y: c.y}));
 console.log(centers);
 console.log("Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses");
-let clones = [...circles];
-clones.forEach(c => c.x += 10);
+let clones = circles.map(c => {
+  let clone = {...c};
+  clone.x += 10;
+  return clone;
+});
 console.log(clones);
