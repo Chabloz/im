@@ -62,8 +62,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 [some](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/some)
 [every](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/every)
 [indexof](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/indexOf)
+[foreach](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTk5MzIyNywxNzI0MTI2OTgzLC0xMj
-g1OTgxMjMzXX0=
+eyJoaXN0b3J5IjpbNzM1NzQ1MjUxLDE0NDU5OTMyMjcsMTcyND
+EyNjk4MywtMTI4NTk4MTIzM119
 -->
