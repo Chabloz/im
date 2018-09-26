@@ -3,12 +3,12 @@
 ## Tableaux de nombres
 A partir du tableau de nombres suivant:
 ```js
-let numbers = [3, 14, 15, 92 ,65, 35, 89, 79, 32, 38];
+const numbers = Object.freeze([3, 14, 15, 92 ,65, 35, 89, 79, 32, 38]);
 ```
 réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnel même si le tableau initial était différent.*
 
  1. Afficher tous les nombres dans la console
- 2. Retourner un tableau avec les valeurs doublée
+ 2. Retourner un tableau avec les valeurs doublées
  3. Retourner un tableau ne contenant que les valeurs impairs
  4. Retourner un tableau ne contenant pas le premier élément
  5. Retourner un tableau ne contenant pas le dernier élément
@@ -39,12 +39,13 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 ## Tableaux d'objets
 A partir du tableau représentant des cercles dans un plan suivant:
 ```js
-let circles = [
+const circles = Object.freeze([
   {x: 20, y: 10 , r: 10, color: "red"},
   {x: 10, y: 10 , r: 20, color: "green"},
   {x: 30, y: 25 , r: 15, color: "blue"},
   {x: 10, y:5 , r: 5, color: "red"}
-];
+]);
+circles.forEach(Object.freeze);
 ```
 Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne doit pas être modifiée.
 
