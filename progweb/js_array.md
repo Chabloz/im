@@ -59,11 +59,9 @@ Réalisez les fonctionnalités ci-dessous. La structure de donnée initiale ne d
 [reduce](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/reduce)
 [slice](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/slice)
 [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/TypedArray/sort)
-
-every
-
+[some](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/some)
+[every](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/every)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzcxMzE5NTIsLTEyODU5ODEyMzNdfQ
-==
+eyJoaXN0b3J5IjpbMTcyNDEyNjk4MywtMTI4NTk4MTIzM119
 -->
