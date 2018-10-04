@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IM - Horaires</title>
     <style>
+      body {
+        font-family: monospace;
+        font-size: 1.2em;
+      }
       div.action {
         text-align: center;
         padding: 1rem;
       }
       button {
-        letter-spacing: 0.3rem;
-        font-size: 1.1rem;
+        letter-spacing: 0.3rem;        
       }
       table {
         width: 90%;
         margin: 0 auto;
-        border-collapse: collapse;    
+        border-collapse: collapse;           
       }
       th {
         text-align: center;
@@ -28,30 +31,38 @@
         padding: 0 0.5rem;
         border: solid black 1px;
       }
+      tr:nth-child(even) {
+        background: #eee;
+      }
+      .template {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <div id="container">
       <div class="action">
-        <button data-class-id="M45" class="btn-horaires">IM 45</button>
-        <button data-class-id="M46" class="btn-horaires">IM 46</button>
-        <button data-class-id="M47" class="btn-horaires">IM 47</button>
+        <button data-class-id="M45" class="btn-schedule">IM 45</button>
+        <button data-class-id="M46" class="btn-schedule">IM 46</button>
+        <button data-class-id="M47" class="btn-schedule">IM 47</button>
       </div>
-      <table id="horaire">
+      <table id="schedule">
         <thead>
           <tr>
-            <th>Dates</th>
-            <th>Heures</th>
+            <th>Date</th>
+            <th>Début</th>
+            <th>Fin</th>
             <th>Cours</th>
-            <th>Salles</th>
+            <th>Salle</th>
           </tr>
         </thead>               
         <tbody>        
-          <tr>
-            <td>Ceci</td>
-            <td>Est</td>
-            <td>Un</td>
-            <td>Exemple</td>
+          <tr class="template template-course">
+            <td class="date"></td>
+            <td class="start"></td>
+            <td class="end"></td>
+            <td class="course"></td>
+            <td class="room"></td>
           </tr>
         </tbody>
       </table>
