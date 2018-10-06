@@ -69,11 +69,11 @@ Toujours à l'aide d'une promesse, parcourez l'ensemble des *events* traités au
 
 ## Gestion des erreurs
 
-Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Afin de simplifier leur gestion, affichez simplement un message d'erreur générique (par exemple:  "Impossible d'afficher l'horaire. Merci d'essayez à nouveau dans quelques instants). Essayez de trouver le meilleur endroit où mettre ce message et la meilleur manière de l'afficher.
+Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Afin de simplifier leur gestion, affichez simplement un message d'erreur générique (par exemple:  "Impossible d'afficher l'horaire. Merci d'essayez à nouveau dans quelques instants"). Essayez de trouver le meilleur endroit où mettre ce message et la meilleur manière de l'afficher.
 
 ## Mémorisation du dernière horaire affiché
 Afin de peaufiner l'application
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTM1NjYxMzIsLTY0MTg3NjA5NV19
+eyJoaXN0b3J5IjpbODI5NTk2NjI2LC02NDE4NzYwOTVdfQ==
 -->
