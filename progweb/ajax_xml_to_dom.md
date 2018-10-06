@@ -51,7 +51,7 @@ const dateToHours = date => {
 }
 ```
 ## Gestion des événements
-Gérez les clicks sur les 3 boutons de classe css *btn-schedule*.  Lors d'un click, vous devez récupérer l'attribut *data-class-id* contenant l’identifiant la classe dont on veut l'horaire.  Vous pouvez utilisez la méthode [data](https://api.jquery.com/data/#data2) de jQuery. 
+Gérez les clicks sur les 3 boutons de classe css *btn-schedule*.  Lors d'un click, vous devez récupérer l'attribut *data-class-id* contenant l’identifiant de la classe dont on veut l'horaire.  Vous pouvez utilisez la méthode [data](https://api.jquery.com/data/#data2) de jQuery. 
 
 ## Requête AJAX
 Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de l'horaires associé. Le XML est  à récupérer via la méthode [$.ajax](https://api.jquery.com/jQuery.Ajax/)  . L'url des XML des différents horaires respecte l'exemple suivant:  https://chabloz.eu/files/horaires/M45.xml . Il vous suffit de remplacer M45 par l'identifiant de la classe pour obtenir les bonnes données. Essayez ensuite d'améliorer votre requête AJAX pour que l'utilisateur ne puisse pas charger plusieurs horaire en même temps. Pour ce faire, vous pouvez désactiver les boutons dés que l'un d'eux est cliqué, et les réactiver dés que la requête AJAX est finie.
@@ -78,6 +78,6 @@ Afin de peaufiner l'application, il serait ergonomique que l'application se souv
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcyMjk3NjQyLDM1MzQyNjg0MCwtNjQxOD
-c2MDk1XX0=
+eyJoaXN0b3J5IjpbLTEzMzAxOTM2NzcsNzcyMjk3NjQyLDM1Mz
+QyNjg0MCwtNjQxODc2MDk1XX0=
 -->
