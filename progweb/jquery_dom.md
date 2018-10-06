@@ -1,6 +1,6 @@
 # Exercice jQuery - DOM
 
-## Sélecteurs CSS
+## Sélecteurs CSS et événements
 
 A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajouter jQuery et un fichier javascript pour votre code. Puis réaliser les fonctionnalités suivantes (*sans modifier le code HTML*):
 
@@ -14,6 +14,6 @@ A partir du [code HTML donné](resources/jqueryDomTraining.html) , ajouter jQuer
 
 **Remarque**: cet exercice n'a qu'un but pédagogique (*vous faire travailler les sélecteurs CSS via jQuery*). Normalement, la plupart des fonctionnalités réalisées ici devraient se faire en CSS et non en JS. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDcwOTQ0MSwtMTU4OTUzNDY5MSwtMT
-Q1Mzk0NDAyMV19
+eyJoaXN0b3J5IjpbMjMyNzU3OTcwLC02ODA3MDk0NDEsLTE1OD
+k1MzQ2OTEsLTE0NTM5NDQwMjFdfQ==
 -->
