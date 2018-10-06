@@ -73,8 +73,10 @@ Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Af
 
 ## Mémorisation du dernière horaire affiché
 
-Afin de peaufiner l'application, il serait ergonomique que l'application se souvienne du dernier horaire affiché par l'utilisateur. Ainsi, lorsque l'utilisateur reviendra sur la page (ou s'il la recharge), l'horaire s'affiche sans autre action de sa part. Pour se faire, vous pouvez simplement utiliser localStorage.setItem
+Afin de peaufiner l'application, il serait ergonomique que l'application se souvienne du dernier horaire affiché par l'utilisateur. Ainsi, lorsque l'utilisateur reviendra sur la page (ou s'il la recharge), l'horaire s'affiche sans autre action de sa part. Pour se faire, vous pouvez simplement utiliser [localStorage.setItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/setItem) et [localStorage.getItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/getItem).
+
+
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5OTM3NzIyLC02NDE4NzYwOTVdfQ==
+eyJoaXN0b3J5IjpbMzUzNDI2ODQwLC02NDE4NzYwOTVdfQ==
 -->
