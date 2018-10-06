@@ -73,11 +73,11 @@ Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Af
 
 ## Mémorisation du dernière horaire affiché
 
-Afin de peaufiner l'application, il serait ergonomique que l'application se souvienne du dernier horaire affiché par l'utilisateur. Ainsi, lorsque l'utilisateur reviendra sur la page (ou s'il la recharge), l'horaire s'affiche sans autre action de sa part. Pour se faire, vous pouvez simplement utiliser [localStorage.setItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/setItem) et [localStorage.getItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/getItem) pour sauvegarder l'identifiant de la classe dans la mémoire du browser de l'utilisateur. Il vous suffira d'utiliser un *getItem* et si la valeur retournée n'est pas *null*, de charger l'horaire de manière identique à ce que vous avez déjà fait 
+Afin de peaufiner l'application, il serait ergonomique que l'application se souvienne du dernier horaire affiché par l'utilisateur. Ainsi, lorsque l'utilisateur reviendra sur la page (ou s'il la recharge), l'horaire s'affiche sans autre action de sa part. Pour se faire, vous pouvez simplement utiliser [localStorage.setItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/setItem) et [localStorage.getItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/getItem) pour sauvegarder l'identifiant de la classe dans la mémoire du browser de l'utilisateur. Il vous suffira d'utiliser un *getItem* et si la valeur retournée n'est pas *null*, de charger l'horaire de manière identique à ce que vous avez déjà (mais ne dupliquez pas votre code ! Utilisez une fonction).
 
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjIzNzg1NTEsMzUzNDI2ODQwLC02ND
-E4NzYwOTVdfQ==
+eyJoaXN0b3J5IjpbMTQyNjE5NzIwMSwzNTM0MjY4NDAsLTY0MT
+g3NjA5NV19
 -->
