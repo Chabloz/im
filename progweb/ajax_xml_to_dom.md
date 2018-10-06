@@ -68,12 +68,12 @@ En utilisant à chaque fois une promesse différente (méthode *then* de $.ajax)
 Toujours à l'aide d'une promesse, parcourez l'ensemble des *events* traités au point précédent et construisez un nouvel élément *tbody* contenant tous les *events* transformés en *tr*. **Indications**: pour transformer un *event* en *tr*, clonez le *tr* ayant la classe *template-course*, puis injectez les bonnes données dans chaque *td*. Pour obtenir les bonnes données, utilisez les fonctions de date du point *mise en place*. Finalement, dans une dernière promesse, remplacez le *tbody* de *#schedule* par votre *tbody* grâce à la méthode [replaceWith](http://api.jquery.com/replacewith/) .
 
 ## Gestion des erreurs
-Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Afin de simplifier leur gestion, Afficher simplement un message d'erreur générique (par exemple:  
+Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Afin de simplifier leur gestion, affichez simplement un message d'erreur générique (par exemple:  "Impossible d'afficher l'horaire. Merci d'essayez à nouveau dans quelques instants). Essayez de trouver le meilleur endroit où mettre ce message et la meilleur manière de l'afficher.
 
 ## Mémorisation du dernière horaire affiché
 Afin de peaufiner l'application
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MTgzODkzMSwtNjQxODc2MDk1XX0=
+eyJoaXN0b3J5IjpbLTQwMDk0NjgyOCwtNjQxODc2MDk1XX0=
 -->
