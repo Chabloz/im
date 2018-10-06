@@ -50,18 +50,22 @@ const dateToHours = date => {
   return `${hours}:${minutes}`;
 }
 ```
+
 ## Gestion des événements
+
 Gérez les clicks sur les 3 boutons de classe css *btn-schedule*.  Lors d'un click, vous devez récupérer l'attribut *data-class-id* contenant l’identifiant de la classe.  Vous pouvez utilisez la méthode [data](https://api.jquery.com/data/#data2) de jQuery. 
 
 ## Requête AJAX
+
 Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de l'horaire associé. Le XML est  à récupérer via la méthode [$.ajax](https://api.jquery.com/jQuery.Ajax/)  . L'url des XML des différents horaires respecte l'exemple suivant:  https://chabloz.eu/files/horaires/M45.xml . Il vous suffit de remplacer M45 par l'identifiant de la classe pour obtenir les bonnes données. Essayez ensuite d'améliorer votre requête AJAX pour que l'utilisateur ne puisse pas charger plusieurs horaires en même temps. Pour ce faire, vous pouvez désactiver les boutons dés que l'un d'eux est cliqué, et les réactiver dés que la requête AJAX est finie.
 
 ## Traitement des données
+
 En utilisant à chaque fois une promesse différente (méthode *then* de $.ajax) , réalisez les traitements dans l'ordre suivant:
 
  1. A l'aide de jQuery, récupérez les éléments *VEVENT* du DOM XML de l'horaire, et transformez le tout en tableau grâce à la méthode  [toArray](https://api.jquery.com/toArray).
- 2. Filtrez le tableau pour qu'il ne contienne que les éléments dont la date de début (élément *DTSTART*) se situe dans le futur. **Indications**: vous pouvez convertir *DTSTART* en objet *Date* grâce à *strToDate* (voir "mise en place" plus haut) . Il suffit alors de la comparer avec  *new Date()*; pour savoir si elle est dans le futur.
- 3. Triez les éléments par ordre chronologique. Vous pouvez comparer les éléments *DTSTART* entre eux grâce à un simple localCompare (sans avoir besoin de les convertir en objet *Date*).
+ 2. Filtrez le tableau pour qu'il ne contienne que les éléments dont la date de début (élément *DTSTART*) se situe dans le futur. **Indications**: vous pouvez convertir *DTSTART* en objet *Date* grâce à *strToDate* (voir "mise en place" plus haut) . Il suffit alors de la comparer avec *new Date()*; pour savoir si elle est dans le futur.
+ 3. Triez les éléments par ordre chronologique. Vous pouvez comparer les éléments *DTSTART* entre eux grâce à un simple *localCompare* (sans avoir besoin de les convertir en objet *Date*).
 
  ## Génération du DOM des horaires
 
@@ -78,6 +82,6 @@ Afin de peaufiner l'application, il serait ergonomique que l'application se souv
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTY1MjkwOCw3NzIyOTc2NDIsMzUzND
+eyJoaXN0b3J5IjpbLTIyOTE4MzA4OCw3NzIyOTc2NDIsMzUzND
 I2ODQwLC02NDE4NzYwOTVdfQ==
 -->
