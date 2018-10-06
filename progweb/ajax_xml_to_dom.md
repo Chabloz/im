@@ -54,7 +54,7 @@ const dateToHours = date => {
 Gérez les clicks sur les 3 boutons de classe css *btn-schedule*.  Lors d'un click, vous devez récupérer l'attribut *data-class-id* contenant l’identifiant la classe dont on veut l'horaire.  Vous pouvez utilisez la méthode [data](https://api.jquery.com/data/#data2) de jQuery. 
 
 ## Requête AJAX
-Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de l'horaires associé. Le XML est  à récupérer via la méthode [$.ajax](https://api.jquery.com/jQuery.Ajax/)  . L'url des XML des différents horaires respecte l'exemple suivant:  https://chabloz.eu/files/horaires/M45.xml . Il vous suffit de remplacer M45 par l'identifiant de la classe pour obtenir les bonnes données.
+Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de l'horaires associé. Le XML est  à récupérer via la méthode [$.ajax](https://api.jquery.com/jQuery.Ajax/)  . L'url des XML des différents horaires respecte l'exemple suivant:  https://chabloz.eu/files/horaires/M45.xml . Il vous suffit de remplacer M45 par l'identifiant de la classe pour obtenir les bonnes données. Essayez ensuite d'améliorer votre requête AJAX po 
 
 ## Traitement des données
 En utilisant à chaque fois une promesse différente (méthode *then* de $.ajax) , réalisez les traitements dans l'ordre suivant:
@@ -67,7 +67,10 @@ En utilisant à chaque fois une promesse différente (méthode *then* de $.ajax)
  
 Toujours à l'aide d'une promesse, parcourez l'ensemble des *events* traités au point précédent et construisez un nouvel élément *tbody* contenant tous les *events* transformés en *tr*. **Indications**: pour transformer un *event* en *tr*, clonez le *tr* ayant la classe *template-course*, puis injectez les bonnes données dans chaque *td*. Pour obtenir les bonnes données, utilisez les fonctions de date du point *mise en place*. Finalement, dans une dernière promesse, remplacez le *tbody* de *#schedule* par votre *tbody* grâce à la méthode [replaceWith](http://api.jquery.com/replacewith/) .
 
+## Mémorisation du dernière horaire affiché
+Afin de peaufiner l'application
+
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzExMzQ2LC02NDE4NzYwOTVdfQ==
+eyJoaXN0b3J5IjpbLTkxOTMxODUsLTY0MTg3NjA5NV19
 -->
