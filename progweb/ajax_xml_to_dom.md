@@ -57,7 +57,7 @@ Gérez les clicks sur les 3 boutons de classe css *btn-schedule*.  Lors d'un cli
 
 ## Requête AJAX
 
-Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de l'horaire associé. Le XML est  à récupérer via la méthode [$.ajax](https://api.jquery.com/jQuery.Ajax/)  . L'url des XML des différents horaires respecte l'exemple suivant:  https://chabloz.eu/files/horaires/M45.xml . Il vous suffit de remplacer M45 par l'identifiant de la classe pour obtenir les bonnes données. Essayez ensuite d'améliorer votre requête AJAX pour que l'utilisateur ne puisse pas charger plusieurs horaires en même temps. Pour ce faire, vous pouvez désactiver les boutons dés que l'un d'eux est cliqué, et les réactiver dés que la requête AJAX est finie (grâce à une fonction .
+Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de l'horaire associé. Le XML est  à récupérer via la méthode [$.ajax](https://api.jquery.com/jQuery.Ajax/)  . L'url des XML des différents horaires respecte l'exemple suivant:  https://chabloz.eu/files/horaires/M45.xml . Il vous suffit de remplacer M45 par l'identifiant de la classe pour obtenir les bonnes données. Essayez ensuite d'améliorer votre requête AJAX pour que l'utilisateur ne puisse pas charger plusieurs horaires en même temps. Pour ce faire, vous pouvez désactiver les boutons dés que l'un d'eux est cliqué, et les réactiver dés que la requête AJAX est finie (grâce à une fonction *then* de la *promise $.ajax*).
 
 ## Traitement des données
 
@@ -79,7 +79,7 @@ Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Af
 
 Afin de peaufiner l'application, il serait ergonomique que l'application se souvienne du dernier horaire affiché par l'utilisateur. Ainsi, lorsque l'utilisateur reviendra sur la page (ou s'il la recharge), l'horaire s'affiche sans autre action de sa part. Vous pouvez simplement utiliser [localStorage.setItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/setItem) et [localStorage.getItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/getItem) pour sauvegarder l'identifiant de la classe dans la mémoire du *browser* de l'utilisateur. Il vous suffira d'utiliser un *getItem* et si la valeur retournée n'est pas *null*, de charger l'horaire de manière identique à ce que vous avez déjà fait. (Mais ne dupliquez pas votre code, utilisez une fonction!)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ4ODA2MzA3LC0xMjk0MTU4MDIwLDEzMj
-gzMzI1ODQsLTIyOTE4MzA4OCw3NzIyOTc2NDIsMzUzNDI2ODQw
-LC02NDE4NzYwOTVdfQ==
+eyJoaXN0b3J5IjpbMjA1OTkzMDcwOCwtMTI5NDE1ODAyMCwxMz
+I4MzMyNTg0LC0yMjkxODMwODgsNzcyMjk3NjQyLDM1MzQyNjg0
+MCwtNjQxODc2MDk1XX0=
 -->
