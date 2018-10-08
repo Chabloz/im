@@ -64,7 +64,7 @@ Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de 
 En utilisant à chaque fois une promesse différente (méthode *then* de $.ajax) , réalisez les traitements dans l'ordre suivant:
 
  1. A l'aide de jQuery, récupérez les éléments *VEVENT* du DOM XML de l'horaire, et transformez le tout en tableau grâce à la méthode  [toArray](https://api.jquery.com/toArray).
- 2. Filtrez le tableau pour qu'il ne contienne que les éléments dont la date de début (élément *DTSTART*) se situe dans le futur. **Indications**: vous pouvez convertir *DTSTART* en objet *Date* grâce à *strToDate* (voir "mise en place" plus haut) . Il suffit alors de la comparer avec *new Date()*; pour savoir si elle est dans le futur.
+ 2. Filtrez le tableau pour qu'il ne contienne que les éléments dont la date de fin (élément *DTEND*) se situe dans le futur. **Indications**: vous pouvez convertir *DTEND* en objet *Date* grâce à *strToDate* (voir "mise en place" plus haut) . Il suffit alors de la comparer avec *new Date()*; pour savoir si elle est dans le futur.
  3. Triez les éléments par ordre chronologique. Vous pouvez comparer les éléments *DTSTART* entre eux grâce à un simple *localCompare* (sans avoir besoin de les convertir en objet *Date*).
 
  ## Génération du DOM des horaires
@@ -79,7 +79,7 @@ Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Af
 
 Afin de peaufiner l'application, il serait ergonomique que l'application se souvienne du dernier horaire affiché par l'utilisateur. Ainsi, lorsque l'utilisateur reviendra sur la page (ou s'il la recharge), l'horaire s'affiche sans autre action de sa part. Vous pouvez simplement utiliser [localStorage.setItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/setItem) et [localStorage.getItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/getItem) pour sauvegarder l'identifiant de la classe dans la mémoire du *browser* de l'utilisateur. Il vous suffira d'utiliser un *getItem* et si la valeur retournée n'est pas *null*, de charger l'horaire de manière identique à ce que vous avez déjà fait. (Mais ne dupliquez pas votre code, utilisez une fonction!)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTU3NjU4OTEsMTMyODMzMjU4NCwtMj
+eyJoaXN0b3J5IjpbLTEyOTQxNTgwMjAsMTMyODMzMjU4NCwtMj
 I5MTgzMDg4LDc3MjI5NzY0MiwzNTM0MjY4NDAsLTY0MTg3NjA5
 NV19
 -->
