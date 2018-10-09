@@ -12,7 +12,7 @@ Afin de faciliter la saisie de la localité (en Suisse uniquement) du formulaire
 
 http://api.geonames.org/postalCodeLookupJSON?username=comem&country=CH&postalcode=1401
 
-Une fois la liste reçue, il faut peupler le champ « localité » du formulaire avec les données reçues du WebService. La première *option* sera sélectionnée par défaut. 
+Une fois la liste reçue, il faut peupler le champ « localité » du formulaire avec les données reçues du WebService. La première *option* sera sélectionnée par défaut.
 
 ## WebService pour la carte statique de la localité
 
@@ -21,5 +21,5 @@ Une fois la liste reçue, il faut peupler le champ « localité » du formulaire
 http://staticmap.openstreetmap.de/staticmap.php?zoom=14&size=512x512&maptype=mapnik&center=46.7833333,6.65
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzNTk3NTk2XX0=
+eyJoaXN0b3J5IjpbNzAzMzMzMTAsNzgzNTk3NTk2XX0=
 -->
