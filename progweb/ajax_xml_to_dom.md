@@ -69,7 +69,7 @@ En utilisant à chaque fois une promesse différente (méthode *then* de $.ajax)
 
  ## Génération du DOM des horaires
 
-Toujours à l'aide d'une promesse, parcourez l'ensemble des *events* traités au point précédent et construisez un nouvel élément *tbody* contenant tous les *events* transformés en *tr*. **Indications**: pour transformer un *event* en *tr*, clonez le *tr* ayant la classe *template-course*, puis injectez les bonnes données dans chaque *td*. Utilisez les classes css présentent dans la template afin d'éviter un maximum d'être lié aux balises du DOM. Pour obtenir les bonnes données, utilisez les fonctions de date du point *mise en place*. Finalement, dans une dernière promesse, remplacez le *tbody* de *#schedule* par votre *tbody* (par exemple grâce à la méthode [replaceWith](http://api.jquery.com/replacewith/) .
+Toujours à l'aide d'une promesse, parcourez l'ensemble des *events* traités au point précédent et construisez un nouvel élément *tbody* contenant tous les *events* transformés en *tr*. **Indications**: pour transformer un *event* en *tr*, clonez le *tr* ayant la classe *template-course*, puis injectez les bonnes données dans chaque *td*. Utilisez les classes css présentent dans la template afin d'éviter un maximum d'être lié aux balises du DOM. Pour obtenir les bonnes données, utilisez les fonctions de date du point *mise en place*. Finalement, dans une dernière promesse, remplacez le *tbody* de *#schedule* par votre *tbody* (par exemple grâce à la méthode [replaceWith](http://api.jquery.com/replacewith/)) .
 
 ## Gestion des erreurs
 
@@ -79,8 +79,8 @@ Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Af
 
 Afin de peaufiner l'application, il serait ergonomique que l'application se souvienne du dernier horaire affiché par l'utilisateur. Ainsi, lorsque l'utilisateur reviendra sur la page (ou s'il la recharge), l'horaire s'affiche sans autre action de sa part. Vous pouvez simplement utiliser [localStorage.setItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/setItem) et [localStorage.getItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/getItem) pour sauvegarder l'identifiant de la classe dans la mémoire du *browser* de l'utilisateur. Il vous suffira d'utiliser un *getItem* et si la valeur retournée n'est pas *null*, de charger l'horaire de manière identique à ce que vous avez déjà fait. (Mais ne dupliquez pas votre code, utilisez une fonction!)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxOTgzODA3LDkwNjgxNTg4NiwtMTA4Mz
-I2NTU1NiwyMDU5OTMwNzA4LC0xMjk0MTU4MDIwLDEzMjgzMzI1
-ODQsLTIyOTE4MzA4OCw3NzIyOTc2NDIsMzUzNDI2ODQwLC02ND
-E4NzYwOTVdfQ==
+eyJoaXN0b3J5IjpbMTE0NjQyMzgxMCw5MDY4MTU4ODYsLTEwOD
+MyNjU1NTYsMjA1OTkzMDcwOCwtMTI5NDE1ODAyMCwxMzI4MzMy
+NTg0LC0yMjkxODMwODgsNzcyMjk3NjQyLDM1MzQyNjg0MCwtNj
+QxODc2MDk1XX0=
 -->
