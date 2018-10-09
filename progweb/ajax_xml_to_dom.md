@@ -35,7 +35,7 @@ const dateToFrCh = date => {
   if (month < 10) month = '0' + month;  
   if (day < 10) day = '0' + day;
   return `${dayName} ${day}.${month}`;
-}
+};
 /**
  * Convertit un objet Date au format heures:minutes en "local timezone"
  * 
@@ -48,7 +48,7 @@ const dateToHours = date => {
   if (hours < 10) hours = '0' + hours;  
   if (minutes < 10) minutes = '0' + minutes;    
   return `${hours}:${minutes}`;
-}
+};
 ```
 
 ## Gestion des événements
@@ -79,7 +79,7 @@ Grâce à la méthode *catch* des promesses, gérez les éventuelles erreurs. Af
 
 Afin de peaufiner l'application, il serait ergonomique que l'application se souvienne du dernier horaire affiché par l'utilisateur. Ainsi, lorsque l'utilisateur reviendra sur la page (ou s'il la recharge), l'horaire s'affiche sans autre action de sa part. Vous pouvez simplement utiliser [localStorage.setItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/setItem) et [localStorage.getItem](https://developer.mozilla.org/fr/docs/Web/API/Storage/getItem) pour sauvegarder l'identifiant de la classe dans la mémoire du *browser* de l'utilisateur. Il vous suffira d'utiliser un *getItem* et si la valeur retournée n'est pas *null*, de charger l'horaire de manière identique à ce que vous avez déjà fait. (Mais ne dupliquez pas votre code, utilisez une fonction!)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODMyNjU1NTYsMjA1OTkzMDcwOCwtMT
-I5NDE1ODAyMCwxMzI4MzMyNTg0LC0yMjkxODMwODgsNzcyMjk3
-NjQyLDM1MzQyNjg0MCwtNjQxODc2MDk1XX0=
+eyJoaXN0b3J5IjpbOTA2ODE1ODg2LC0xMDgzMjY1NTU2LDIwNT
+k5MzA3MDgsLTEyOTQxNTgwMjAsMTMyODMzMjU4NCwtMjI5MTgz
+MDg4LDc3MjI5NzY0MiwzNTM0MjY4NDAsLTY0MTg3NjA5NV19
 -->
