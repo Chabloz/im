@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Codes postaux</title>
+    <style>
+      #container {
+        margin: 0 auto;
+        text-align: center;
+      }      
+      fieldset {
+        border: solid black 1px;            
+        width: 500px;
+        padding: 5px  10px 10px 10px;   
+        margin: 5px auto;    
+      }
+      legend {
+        font-weight: bold;
+        border: solid black 1px;
+        background-color :#356A99;    
+        color : white;    
+        margin: 0 0 10px 0;
+        padding: 0 5px;
+      }
+      label {
+        display: block;        
+        font-weight: bold;    
+      }
+      input, select {
+        margin-bottom: 5px;
+        width: 200px;
+        border: solid black 1px;
+        background-color : #eee;    
+        padding: 1px 5px;
+        color: black;
+      }     
+    </style>
+  <body>
+    <div id="container">
+      <form>
+        <fieldset>
+          <legend>Localité</legend>
+          <label for="code">Code postal</label>
+          <input type="text" name="code" id="code"/>
+          <label for="localite">Localité</label>
+          <select name="localite" id="localite">
+            <option value=""></option>
+          </select>
+        </fieldset>
+      </form>
+      <div id="map">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=46.7833333,6.65&zoom=10&size=500x400&sensor=false&key=ABQIAAAA1nu4VMtb7TfHd-Dxiy9HmxRi_j0U6kJrkFvY4-OX2XYmEAa76BS_R3kzv5sXG5MMtQXVf5ySWN6_FQ" alt="map"/>
+      </div>
+    </div>
+  </body>
+</html>
