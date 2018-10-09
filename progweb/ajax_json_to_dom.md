@@ -8,7 +8,7 @@ A partir du [code HTML donné](resources/jqueryAjaxJson.html) , ajoutez les bali
 
 ## WebService pour les localités
 
-Afin de faciliter la saisie de la localité (en suisse uniquement) du formulaire, vous devez récupérer une liste des localités correspondantes au code postal  entré par l'utilisateur. Pour ce faire, écoutez les frappes au clavier de l'utilisateur lors de la saisie du code postal (événement *keyup*).  Si le code postal est bien **composé de 4 chiffres**, effectuez une requête au WebService de *geonames.org* afin que celui-ci vous fournisse la liste des localités. Voici un exemple d'url du WebService (vous n'avez qu'à y remplacer 1401 par le code postal du formulaire):
+Afin de faciliter la saisie de la localité (en Suisse uniquement) du formulaire, vous devez récupérer une liste des localités correspondantes au code postal  entré par l'utilisateur. Pour ce faire, écoutez les frappes au clavier de l'utilisateur lors de la saisie du code postal (événement *keyup*).  Si le code postal est bien **composé de 4 chiffres**, effectuez une requête au WebService de *geonames.org* afin que celui-ci vous fournisse la liste des localités. Voici un exemple d'url du WebService (vous n'avez qu'à y remplacer 1401 par le code postal du formulaire):
 
 http://api.geonames.org/postalCodeLookupJSON?username=comem&country=CH&postalcode=1401
 
@@ -21,5 +21,5 @@ Une fois la liste reçue, il faut peupler le champ « localité » du formulaire
 http://staticmap.openstreetmap.de/staticmap.php?zoom=14&size=512x512&maptype=mapnik&center=46.7833333,6.65
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTkyOTM0MF19
+eyJoaXN0b3J5IjpbNzgzNTk3NTk2XX0=
 -->
