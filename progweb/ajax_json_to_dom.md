@@ -18,9 +18,9 @@ Une fois la liste reçue, il faut peupler le champ « localité » du formulaire
 
  Afin de centrer la carte sur la localité choisie par l'utilisateur, vous devez écouter les changements dans la liste déroulante des localités (événement *change*). Dès qu'un changement a lieu, vous devez modifier la source de l'image afin d'y mettre les bonnes coordonnées. Aidez-vous des longitudes et latitudes fournies par le WebService précédent. Il vous faut donc les avoir sauvées précédemment (par exemple avec la méthode [data](https://api.jquery.com/data/) de jQuery). Le WebService pour les cartes est le suivant (il suffit d'y remplacer la latitude et la longitude en fin d'url par celle voulue):
  
-http://staticmap.openstreetmap.de/staticmap.php?zoom=14&size=512x512&maptype=mapnik&center=46.7833333,6.65
+https://chabloz.eu/map/staticmap.php?zoom=14&size=512x512&maptype=mapnik&center=46.7833333,6.65
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjE3MTM3NCw3MDMzMzMxMCw3ODM1OT
-c1OTZdfQ==
+eyJoaXN0b3J5IjpbMjEwMDIxOTU3NSwtNjEyMTcxMzc0LDcwMz
+MzMzEwLDc4MzU5NzU5Nl19
 -->
