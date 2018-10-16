@@ -28,7 +28,7 @@ Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swa
 
 1. Ne prendre que la partie *results* des données (pour que les promesses suivantes travaillent sur un tableau ne contenant que les données sur les films).
  2. Triez le tableau des films pour qu'il soit dans l'ordre des épisodes (l'épisode 1 en premier, ...)
- 3. Générez le DOM de chaque film en utilisant un clone de la template de classe CSS *tmpl-movie*. Lors de la génération du DOM d'un film,  ajoutez l'identifiant du film (l’identifiant de l'épisode) comme attribut *data-movie-id* sur l'élément racine du DOM du film.  Sauvegardez aussi cet identifiant et les URLs des planètes du film  sur le bouton de classe *.btn-planets* .
+ 3. Générez le DOM de chaque film en utilisant un clone de la template de classe CSS *tmpl-movie*. Lors de la génération du DOM d'un film,  ajoutez l'identifiant du film (l’identifiant de l'épisode) comme attribut *data-movie-id* sur l'élément racine du DOM du film.  Sauvegardez aussi cet identifiant et les URLs des planètes du film sur le bouton de classe *.btn-planets* .
  4. Injectez le DOM généré dans l'élément DOM de classe CSS *movies* de la page Web.
 
 ## SW planets
@@ -37,8 +37,8 @@ Vous devez gérer les clics de l'utilisateur sur les boutons de classes *.btn-pl
 
 1. Désactivez le bouton cliqué (pour éviter des chargements multiples des mêmes données)
 2. Chargez toutes les données des planètes du film dans un tableau (grâce à la fonction *loadUrls*). Puis lors de la résolution de la promesse :
-3. Triez les planètes par ordre alphabétique des nom
-4. Générez le DOM de chaque planète en utilisant un clone de la template de classe CSS *tmpl-planet* .
+3. Triez les planètes par ordre alphabétique des noms.
+4. Générez le DOM de chaque planète en utilisant un clone de la template de classe *tmpl-planet* .
 5. Injectez ce DOM au bon endroit dans la page Web (c.à.d. dans l'élément DOM de classe *planets* du film), Indication: utilisez l'identifiant du film pour retrouver le bon élément DOM.
 6. Réactivez le bouton cliqué.
 
@@ -52,6 +52,6 @@ Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un re
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc4NTA2NDUsLTIwNDUyMzczNzcsMz
-M5Nzc2MzkxLDE0MjI1ODM1MDZdfQ==
+eyJoaXN0b3J5IjpbLTgwNDIyNTY1LC0yMDQ1MjM3Mzc3LDMzOT
+c3NjM5MSwxNDIyNTgzNTA2XX0=
 -->
