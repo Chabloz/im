@@ -12,7 +12,7 @@ A partir du [code HTML donné](resources/jqueryAjaxChaining.html) , ajoutez les 
  * les requêtes AJAX seront finies. 
  * 
  * @param {array} urls Les URLs à charger
- * @return {Promise} Une Promise qui se résoudra à la fin des requetes AJAX
+ * @return {Promise} Une Promise qui se résoudra à la fin des requêtes AJAX
  */
 const loadUrls = async urls => {  
   let results = [];
@@ -52,6 +52,6 @@ Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un re
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzgyNzg1NiwtMjA0NTIzNzM3NywzMz
-k3NzYzOTEsMTQyMjU4MzUwNl19
+eyJoaXN0b3J5IjpbLTE0MTc4NTA2NDUsLTIwNDUyMzczNzcsMz
+M5Nzc2MzkxLDE0MjI1ODM1MDZdfQ==
 -->
