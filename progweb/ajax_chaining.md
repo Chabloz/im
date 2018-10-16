@@ -48,9 +48,9 @@ Il ne serait pas très performant de recharger à chaque clic les mêmes planèt
 
 ## Retour visuel AJAX
 
-Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un retour visuel pour l'utilisateur afin de l'informer qu'un chargement de données est en cours. Vous trouverez dans le HTML un *div.ajax-loader* stylisé en CSS pour afficher une icone de chargement au milieu de l'écran de l'utilisateur. Afin d'avoir une solution générique, il serait pratique de pouvoir afficher le retour visuel lors du début d'une requête AJAX et de le cacher lorsque plus aucune requête n'est en cours. Jquery génère des événements pratique documenté [ici](https://api.jquery.com/Ajax_Events/) . Essayez donc de capturer ces événements et de faire apparaître et disparaître l'icone aux moments opportuns. Pour le faire correctement, étudiez les style CSS de la page Web.  
+Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un retour visuel pour l'utilisateur afin de l'informer qu'un chargement de données est en cours. Vous trouverez dans le HTML un *div.ajax-loader* stylisé en CSS pour afficher une icone de chargement au milieu de l'écran de l'utilisateur. Afin d'avoir une solution générique, il serait pratique de pouvoir afficher le retour visuel lors du début d'une requête AJAX et de le cacher lorsque plus aucune requête n'est en cours. Jquery génère des événements pratiques documentés [ici](https://api.jquery.com/Ajax_Events/) . Essayez donc de capturer ces événements et de faire apparaître et disparaître l'icone aux moments opportuns. Pour le faire correctement, étudiez les style CSS de la page Web.  
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4OTY2MDQ3NywxNDIyNTgzNTA2XX0=
+eyJoaXN0b3J5IjpbMzM5Nzc2MzkxLDE0MjI1ODM1MDZdfQ==
 -->
