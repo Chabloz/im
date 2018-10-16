@@ -48,10 +48,11 @@ Il ne serait pas très performant de recharger à chaque clic les mêmes planèt
 
 ## Retour visuel AJAX
 
-Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un retour visuel pour l'utilisateur afin de l'informer qu'un chargement de données est en cours. Afin d'avoir une solution générique, il 
+Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un retour visuel pour l'utilisateur afin de l'informer qu'un chargement de données est en cours. Vous trouverez dans le HTML un div.ajax-loader* Afin d'avoir une solution générique, il serait pratique de pouvoir afficher le retour visuel lors du début d'une requête AJAX
+https://api.jquery.com/Ajax_Events/
 
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTczNjA0NSwxNDIyNTgzNTA2XX0=
+eyJoaXN0b3J5IjpbMTk2MjU2MDk0OCwxNDIyNTgzNTA2XX0=
 -->
