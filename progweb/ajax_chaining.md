@@ -24,7 +24,7 @@ const loadUrls = async urls => {
 ```
 ## SW movies
 
-Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swapi.co/)  (api Star Wars). Vous devez y récupérer la liste des films au format JSON via l'url suivante: https://swapi.co/api/films/. Si l'api n'est pas disponible (ou trop lente), vous pouvez utilisez le *mirroir disponible à l'url suivante: https://chabloz.eu/sw/films . Puis, en utilisant à chaque fois une promesse différente, réalisez les traitements dans l'ordre suivant:
+Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swapi.co/)  (api Star Wars). Vous devez y récupérer la liste des films au format JSON via l'url suivante: https://swapi.co/api/films/. Si l'api n'est pas disponible (ou trop lente), vous pouvez utilisez le *miroir* disponible à l'url suivante: https://chabloz.eu/sw/films . Puis, en utilisant à chaque fois une promesse différente, réalisez les traitements dans l'ordre suivant:
 
 1. Ne prendre que la partie *results* des données (pour que les promesses suivantes travaillent sur un tableau ne contenant que les données sur les films).
  2. Triez le tableau des films pour qu'il soit dans l'ordre des épisodes (l'épisode 1 en premier, ...)
@@ -53,5 +53,5 @@ Les requêtes AJAX peuvent prendre  du temps.
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDg3ODQyMThdfQ==
+eyJoaXN0b3J5IjpbMTQyMjU4MzUwNl19
 -->
