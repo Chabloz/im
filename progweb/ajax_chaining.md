@@ -48,10 +48,10 @@ Il ne serait pas très performant de recharger à chaque clic les mêmes planèt
 
 ## Retour visuel AJAX
 
-Les requêtes AJAX peuvent prendre  du temps. 
+Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un retour visuel pour l'utilisateur afin de l'informer qu'un chargement de données est en cours. Afin d'avoir une solution générique, il 
 
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjU4MzUwNl19
+eyJoaXN0b3J5IjpbMTcxNTczNjA0NSwxNDIyNTgzNTA2XX0=
 -->
