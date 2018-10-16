@@ -44,14 +44,14 @@ Vous devez gérer les clics de l'utilisateur sur les boutons de classes *.btn-pl
 
 ## Ce ne sont pas ces planètes que vous recherchez
 
-Il ne serait pas très performant de recharger à chaque clic les mêmes planètes d'un film. Puisque celles-ci sont présentes dans la DOM à la suite du premier clic sur le bouton, essayez d'optimiser votre code en le modifiant pour que les prochains clics ne fassent que disparaître et apparaître les planètes du film (*toggle*). 
+Il ne serait pas très performant de recharger à chaque clic les mêmes planètes d'un film. Puisque celles-ci sont présentes dans le DOM à la suite du premier clic sur le bouton, essayez d'optimiser votre code en le modifiant pour que les prochains clics ne fassent que disparaître et apparaître les planètes du film (*toggle*). 
 
 ## Retour visuel AJAX
 
-Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un retour visuel pour l'utilisateur afin de l'informer qu'un chargement de données est en cours. Vous trouverez dans le HTML un *div.ajax-loader* stylisé en CSS pour afficher une icone de chargement au milieu de l'écran de l'utilisateur. Afin d'avoir une solution générique, il serait pratique de pouvoir afficher le retour visuel lors du début d'une requête AJAX et de le cacher lorsque plus aucune requête n'est en cours. Jquery génère des événements pratiques documentés [ici](https://api.jquery.com/Ajax_Events/) . Essayez donc de capturer ces événements et de faire apparaître et disparaître l'icone aux moments opportuns. Pour le faire correctement, étudiez les style CSS de la page Web.  
+Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un retour visuel pour l'utilisateur afin de l'informer qu'un chargement de données est en cours. Vous trouverez dans le HTML un *div.ajax-loader* stylisé en CSS pour afficher une icone de chargement au milieu de l'écran de l'utilisateur. Afin d'avoir une solution générique, il serait pratique de pouvoir afficher le retour visuel lors du début d'une requête AJAX et de le cacher lorsque plus aucune requête n'est en cours. Jquery génère des événements pratiques documentés [ici](https://api.jquery.com/Ajax_Events/) . Essayez donc de capturer ces événements et de faire apparaître et disparaître l'icone aux moments opportuns. Pour le faire correctement, étudiez les styles CSS de la page Web.  
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTI1MDkxOSwtMjA0NTIzNzM3NywzMz
+eyJoaXN0b3J5IjpbMTEwMzgyNzg1NiwtMjA0NTIzNzM3NywzMz
 k3NzYzOTEsMTQyMjU4MzUwNl19
 -->
