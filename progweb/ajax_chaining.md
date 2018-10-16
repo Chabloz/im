@@ -24,7 +24,7 @@ const loadUrls = async urls => {
 ```
 ## SW movies
 
-Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swapi.co/)  (api Star Wars). Vous devez y récupérer la liste des films au format JSON via l'url suivante: https://swapi.co/api/films/.  Puis, en utilisant à chaque fois une promesse différente, réalisez les traitements dans l'ordre suivant:
+Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swapi.co/)  (api Star Wars). Vous devez y récupérer la liste des films au format JSON via l'url suivante: https://swapi.co/api/films/. Si l'api n'est pas disponible (ou  Puis, en utilisant à chaque fois une promesse différente, réalisez les traitements dans l'ordre suivant:
 
 1. Ne prendre que la partie *results* des données (pour que les promesses suivantes travaillent sur un tableau ne contenant que les données sur les films).
  2. Triez le tableau des films pour qu'il soit dans l'ordre des épisodes (l'épisode 1 en premier, ...)
@@ -46,8 +46,12 @@ Vous devez gérer les clics de l'utilisateur sur les boutons de classes *.btn-pl
 
 Il ne serait pas très performant de recharger à chaque clic les mêmes planètes d'un film. Puisque celle-ci sont présente dans la DOM à la suite du premier clic sur le bouton, essayez d'optimiser votre code en le modifiant pour que les prochains clics ne fassent que disparaître et apparaître les planètes du film (*toggle*). 
 
+## Retour visuel AJAX
+
+Les requêtes AJAX peuvent prendre  du temps. 
+
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzI3NjM5MjFdfQ==
+eyJoaXN0b3J5IjpbMTM1MzIzOTQwM119
 -->
