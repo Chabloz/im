@@ -44,7 +44,7 @@ Vous devez gérer les clics de l'utilisateur sur les boutons de classes *.btn-pl
 
 ## Ce ne sont pas ces planètes que vous recherchez
 
-Il ne serait pas très performant de recharger à chaque clic les mêmes planètes d'un film. Puisque celle-ci sont présente dans la DOM à la suite du premier clic sur le bouton, essayez d'optimiser votre code en le modifiant pour que les prochains clics ne fassent que disparaître et apparaître les planètes du film (*toggle*). 
+Il ne serait pas très performant de recharger à chaque clic les mêmes planètes d'un film. Puisque celles-ci sont présentes dans la DOM à la suite du premier clic sur le bouton, essayez d'optimiser votre code en le modifiant pour que les prochains clics ne fassent que disparaître et apparaître les planètes du film (*toggle*). 
 
 ## Retour visuel AJAX
 
@@ -52,6 +52,6 @@ Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un re
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDUyMzczNzcsMzM5Nzc2MzkxLDE0Mj
-I1ODM1MDZdfQ==
+eyJoaXN0b3J5IjpbMTIwNTI1MDkxOSwtMjA0NTIzNzM3NywzMz
+k3NzYzOTEsMTQyMjU4MzUwNl19
 -->
