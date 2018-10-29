@@ -2,7 +2,7 @@
 
 ## Mise en place
 
-**Objectifs**:  Récupérer des données d'un servcie REST. Charger plusieurs ressources en parallèles (grâce aux *promises*). 
+**Objectifs**:  Récupérer des données d'un service REST. Charger plusieurs ressources en parallèles (grâce aux *promises*). 
 
 A partir du [code HTML donné](resources/jqueryAjaxChaining.html) , ajoutez les balises "script" pour jQuery et [bootstrap](https://getbootstrap.com/), la css pour *bootstrap* et finalement un fichier javascript pour votre code.  Ajoutez la fonction suivante dans votre fichier de code:
 ```js
@@ -52,6 +52,6 @@ Les requêtes AJAX peuvent prendre  du temps. Il serait donc utile d'avoir un re
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDIyNTY1LC0yMDQ1MjM3Mzc3LDMzOT
-c3NjM5MSwxNDIyNTgzNTA2XX0=
+eyJoaXN0b3J5IjpbMTQzOTAwNTQ3OSwtODA0MjI1NjUsLTIwND
+UyMzczNzcsMzM5Nzc2MzkxLDE0MjI1ODM1MDZdfQ==
 -->
