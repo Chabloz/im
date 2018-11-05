@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Films</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+          font-family: Verdana,Arial,sans-serif;
+      }
+      h3 {
+          margin-bottom: 10px;
+      }
+      fieldset {
+          border: solid black 1px;
+          text-align: left;
+          padding: 5px  10px 10px 10px;
+          margin: 5px;
+      }
+      legend {
+          border: solid black 1px;
+          background-color :#eee;
+          color : black;
+          padding: 5px;
+      }
+      input {
+          border: solid black 1px;
+          background-color : #eee;
+          padding: 1px 5px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          color: black;
+      }
+      #results{
+          margin: 20px;
+      }
+      .rating {
+          display: inline-block;
+      }
+      .rating:before {
+          font-size: 1.1em;
+          color: red;
+          padding-right: 1em;
+      }
+      .rating0:before {
+          content: "☆☆☆☆☆";
+      }
+      .rating1:before {
+          content: "★☆☆☆☆";
+      }
+      .rating2:before {
+          content: "★★☆☆☆";
+      }
+      .rating3:before {
+          content: "★★★☆☆";
+      }
+      .rating4:before {
+          content: "★★★★☆";
+      }
+      .rating5:before {
+          content: "★★★★★";
+      }
+      .userReview {
+          white-space: nowrap;
+          margin-top: 10px;
+          font-size: 0.7em;
+      }
+      .rateIt {
+          cursor: pointer;
+      }
+      .rateIt:hover {
+          color: red;
+      }
+      .templateMovie {
+          border: solid black 1px;
+          padding-bottom: 10px;
+          border-width: 0 0 2px 0;
+          min-height: 130px;
+      }
+      .thumb {
+          float: left;
+          margin-right: 10px;
+          height: 130px;
+      }
+      .description {
+          margin-bottom: 20px;
+          font-size: 0.9em;
+      }
+      .review {
+          font-size: 0.7em;
+          white-space: nowrap;
+      }
+      .template {
+          display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Films à voir dans votre région</legend>
+      Ville: <input type="text" id="search" value="Lausanne"/>
+      <button id="btnSearch">Rechercher</button>
+    </fieldset>
+    <div id="results">
+      <div class="templateMovie" id="XXX">
+        <img src="image" class="thumb">
+        <h3 class="title">XXX</h3>
+        <div class="description">XXX</div>
+        <div class="review">
+          <span class="rating">XXX</span>
+          en moyenne sur <span class="votes">XXX</span> vote(s)
+        </div>
+        <div class="userReview">
+          Donnez votre avis:
+          <span class="rateIt rating5" data-rating="5"></span>
+          <span class="rateIt rating4" data-rating="4"></span>
+          <span class="rateIt rating3" data-rating="3"></span>
+          <span class="rateIt rating2" data-rating="2"></span>
+          <span class="rateIt rating1" data-rating="1"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
