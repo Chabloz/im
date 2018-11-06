@@ -3,10 +3,8 @@ const WS_THUMB = "https://chabloz.eu/movies/thumb/?id=";
 const WS_RATING_GET = "https://chabloz.eu/movies/rating/get/?id=";
 const WS_RATING_POST = "https://chabloz.eu/movies/rating/post/";
 
-
 const TMPL_MOVIE = $(".templateMovie").clone().removeClass("template");
 const TMPL_NO_RESULT = $(".templateNoResult").clone().removeClass("template");
-
 
 const searchMovies = async query => {
   return await $.ajax({url: `${WS_SEARCH}${query}`});
@@ -44,8 +42,6 @@ const ratingToDom = (xmlRating, movieId) => {
   $(".review", tmpl).show();
 }
 
-
-// recherche de film
 $("form").on("submit", async event => {
   event.preventDefault();
   let movies = await searchMovies($("#search").val());
