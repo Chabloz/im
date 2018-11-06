@@ -50,6 +50,7 @@ $(".movies").on("click", ".btn-planets", event => {
   let btn = $(event.currentTarget);
   let movieId = btn.data("movie-id");
   let phPlanets = $(`.tmpl-movie[data-movie-id='${movieId}'] .planets`);
+  // if allready loaded once, do a simple toggle of the list
   if (btn.data("loaded")) {
     phPlanets.toggle();
     return;
