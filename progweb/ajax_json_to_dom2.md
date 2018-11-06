@@ -19,7 +19,7 @@ Malheureusement ce WS ne fournit pas l’image de l’affiche du film, pour ce f
  
 ## Récupération des notations des films  
  
-Un troisième WS permet de récupérer les évaluations d'un films : https://chabloz.eu/movies/rating/get?id=XXX . XXX est a remplacer par  l’id du film. Le WS fournit ses résultats au format **XML**.  
+Un troisième WS permet de récupérer les évaluations d'un films : https://chabloz.eu/movies/rating/get/?id=XXX . XXX est a remplacer par  l’id du film. Le WS fournit ses résultats au format **XML**.  
  
 Pour chaque film, utilisez le WS pour aller chercher sa notation. Une fois les données reçues, ajoutez les deux informations (la notation et le nombre de votes) dans les *span* adéquats (*.rating* et *.votes* du film). 
 
@@ -27,7 +27,7 @@ Vous devez aussi ajoutez une classe CSS pour le *span.rating* de chaque film. Ce
  
 ## Gestion des notations de l’utilisateur  
  
-Un quatrième WS est disponible pour noter les films : https://chabloz.eu/movies/rating/post?id=XXX&rating=Y où XXX est l'identifiant du film et Y  la note de l’utilisateur (un entier entre 1 et 5 compris). Le WS fournit en réponse un XML avec les nouvelles valeurs de la note et du nombre de votes (prenant en compte ce nouveau vote). Vous devez gérer les *clics* sur les *span.rateIt* de chaque film afin d’envoyer la notation correspondante au WS. 
+Un quatrième WS est disponible pour noter les films : https://chabloz.eu/movies/rating/post/?id=XXX&rating=Y où XXX est l'identifiant du film et Y  la note de l’utilisateur (un entier entre 1 et 5 compris). Le WS fournit en réponse un XML avec les nouvelles valeurs de la note et du nombre de votes (prenant en compte ce nouveau vote). Vous devez gérer les *clics* sur les *span.rateIt* de chaque film afin d’envoyer la notation correspondante au WS. 
 
 Lors d’un *clic*, vous devez donc récupérer l’identifiant du film concerné et la note approprié (vous pouvez la récupérer dans l’attribut data-rating du *span* cliqué). Une fois ces données envoyées au serveur et le résultat reçu, vous devez mettre à jour l’affichage de la note et du nombre de vote du film afin que l’utilisateur s’aperçoive du changement sur la notation qu’il a provoqué.
 <!--stackedit_data:
