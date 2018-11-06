@@ -7,10 +7,15 @@
 Le backend est accessible via un Web Service (WS) en JSONP disponible en HTTPS. Ce WS comporte cinq *services*, un fournissant tous les messages du chat pour un utilisateur, un autre permettant l’ajout d’un message au chat, un permettant de se « connecter », un dernier permettant de se déconnecter et, finalement, un listant les utilisateurs connectés. Ces services sont respectivement disponibles via les url suivantes : 
 
 https://chabloz.eu/ws/chat/msg/get
+
 https://chabloz.eu/ws/chat/msg/add?msg=XXX 
+
 https://chabloz.eu/ws/chat/user/login?user=XXX
+
 https://chabloz.eu/ws/chat/user/logout
+
 https://chabloz.eu/ws/chat/user/online
+
 
 Pour éviter le problème *stateless* de HTTP, l'application utilisera le concept de session. Par défaut, la méthode *$.ajax* de jQuery  ne passe pas les cookies lors d'une requête [*CORS*](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing). Pour le forcer à le faire, il vous faut rajouter le code suivant (à mettre tout au début de votre code):
 ```js
