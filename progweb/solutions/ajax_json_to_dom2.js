@@ -6,16 +6,16 @@ const WS_RATING_POST = "https://chabloz.eu/movies/rating/post/";
 const TMPL_MOVIE = $(".templateMovie").clone().removeClass("template");
 const TMPL_NO_RESULT = $(".templateNoResult").clone().removeClass("template");
 
-const searchMovies = async query => {
-  return await $.ajax({url: `${WS_SEARCH}${query}`});
+const searchMovies = query => {
+  return $.ajax({url: `${WS_SEARCH}${query}`});
 };
 
-const loadRating = async id => {
-  return await $.ajax({url: `${WS_RATING_GET}${id}`});
+const loadRating = id => {
+  return $.ajax({url: `${WS_RATING_GET}${id}`});
 };
 
-const postRating = async (id, rating) => {
-  return await $.ajax({
+const postRating = (id, rating) => {
+  return $.ajax({
     url: WS_RATING_POST,
     data : {id, rating}
   });
