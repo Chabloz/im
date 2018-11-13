@@ -1,8 +1,8 @@
 const WS_GEONAMES = "http://api.geonames.org/postalCodeLookupJSON?username=comem&country=CH&postalcode=";
 const WS_MAP = "https://chabloz.eu/map/staticmap.php?zoom=14&size=512x512&maptype=mapnik&center=";
 
-const loadPlaces = async code => {
-  return await $.ajax({url : `${WS_GEONAMES}${code}`});
+const loadPlaces = code => {
+  return $.ajax({url : `${WS_GEONAMES}${code}`});
 };
 
 const changeMap = (lat, lng) => {
