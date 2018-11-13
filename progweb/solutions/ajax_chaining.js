@@ -6,12 +6,12 @@ const compareMovies = (m1, m2) => m1.episode_id - m2.episode_id;
 
 const comparePlanets = (p1, p2) => p1.name.localeCompare(p2.name);
 
-const loadUrls = async urls => {
+const loadUrls = urls => {
   let results = [];
   urls.forEach(url => {
     results.push($.ajax({url}));
   })
-  return await Promise.all(results);
+  return Promise.all(results);
 };
 
 const tmplMovie = movie => {
