@@ -90,7 +90,7 @@ Finalement, il serait utile *d'industrialiser* un peu les commandes qui vont nou
     "preview": "live-server dist/",
     "build": "webpack",
     "watch": "webpack --mode=development --watch"
-  }
+},
 ```
 Pour executer ces scripts, il suffira d'uiliser la commande npm suivante:
 
@@ -98,5 +98,5 @@ Pour executer ces scripts, il suffira d'uiliser la commande npm suivante:
 npm run nom_du_script 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzA4MDYyOF19
+eyJoaXN0b3J5IjpbODgzNDI0ODIsMTQzMzA4MDYyOF19
 -->
