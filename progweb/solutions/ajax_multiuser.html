@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Chat IM</title>
+    <meta charset="utf-8">
+    <style>
+      * {
+          font-family: verdana;
+      }
+      #container {
+          min-width: 35em;
+      }
+      h1 {
+          text-align: center;
+      }
+      #chat {
+          display: none;
+      }
+      #login, #chat {
+          text-align: center;
+          width: 90%;
+          margin: 0 auto;
+      }
+      #login label, #login button, #login input {
+          display: block;
+          margin: 1em auto;
+      }
+      #msg {
+          width: 50vw;
+      }
+      #online, #messages {
+          padding: 0.4em 0.8em;
+          font-size: 0.8em;
+          border: solid black 1px;
+          height: 60vh;
+          overflow: auto;
+          text-align: left;
+          display: inline-block;
+          margin: 0 0 2em 0;
+      }
+      #messages {
+          width: calc(90vw - 22em);
+          max-width: calc(90vw - 22em);
+          min-width: 20em;
+      }
+      #online {
+          width: 14em;
+      }
+      #online h4 {
+          padding: 0;
+          margin: 0 0 1em 0;
+          text-align: center;
+      }
+      .usernameOnline {
+          font-style: italic;
+      }
+      .username {
+          display: inline-block;
+          font-weight: bold;
+          vertical-align: top;
+      }
+      .username:before {
+          content: '[';
+      }
+      .username:after {
+          content: ']';
+      }
+      .message {
+          display: inline-block;
+          word-wrap: break-word;
+          max-width: calc(90vw - 39em);
+      }
+      .warning {
+          display: none;
+          margin: 1em auto;
+          max-width: 45em;
+          background-color: #ffccff;
+          color: red;
+          padding: 0.1em 0.4em;
+          border: solid red 1px;
+          font-size: 0.9em;
+      }
+      .template {
+          display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Chat IM</h1>
+      <div id="login">
+        <form id="form_login">
+          <label>Nickname</label>
+          <input type="text" id="nickname" maxlength="20">
+          <div class="warning" id="warnFormat">Votre nickname ne doit contenir que des caractères alphabétiques entre a et z.</div>
+          <div class="warning" id="warnInUse">Ce nickname est déjà utilisé, veuillez en choisir un autre s.v.p.</div>
+          <button id="btnLogin">Login</button>
+        </form>
+      </div>
+      <div id="chat">
+        <div id="messages">
+          <div class="template templateMsg">
+            <span class="username"></span>
+            <span class="message"></span>
+          </div>
+        </div>
+        <div id="online">
+          <h4>Online users</h4>
+          <div id="usersList">
+            <div class="template templateUser">
+              <span class="usernameOnline"></span>
+            </div>
+          </div>
+        </div>
+        <form id="form_chat">
+          <input type="text" id="msg" maxlength="200">
+          <button id="btnSend">Send</button>
+          <button id="btnLogout">Logout</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+const WS = "https://chabloz.eu/ws/chat/";
+const TMPL_MSG = $(".templateMsg").clone().removeClass('template');
+const TMPL_USER = $(".templateUser").clone().removeClass('template');
+let TIMER_GET_MSG;
+let TIMER_GET_ONLINE;
+/******************************************************************************
+ * Setup Ajax pour indiquer à jQuery de passer le cookie de session et l'id tab
+ ******************************************************************************/
+$.ajaxSetup({
+  data: {
+    idTab: new Date().getTime() //génère un id unique par Tab du browser
+  },
+  xhrFields: {
+    withCredentials: true
+  }
+});
+/******************************************************************************
+ * Templating d'un message
+ ******************************************************************************/
+let tmpl_message = message => {
+  let tmpl = TMPL_MSG.clone();
+  $(".username", tmpl).text(message.user.username);
+  $(".message", tmpl).text(message.message);
+  return tmpl;
+};
+/*******************************************************************************
+ * Templating d'un utilisateur "online"
+ ******************************************************************************/
+let tmpl_userOnline = user => {
+  let tmpl = TMPL_USER.clone();
+  $(".usernameOnline", tmpl).text(user.username);
+  return tmpl;
+};
+/******************************************************************************
+ * Récupération des messages
+ ******************************************************************************/
+let getMsg = async () => {
+  let messages = await $.ajax({url: `${WS}msg/get`});
+  let templates = messages.map(tmpl_message);
+  $("#messages").append(templates);
+  $("#messages").scrollTop($("#messages").prop('scrollHeight'));
+};
+/*******************************************************************************
+ * Récupération des utilisateurs "online"
+ ******************************************************************************/
+let getOnline = async () => {
+  let users = await $.ajax({url: `${WS}user/online`});
+  let templates = users.map(tmpl_userOnline);
+  $("#usersList").empty().append(templates);
+};
+/******************************************************************************
+ * Fomulaire de login
+ ******************************************************************************/
+$("#form_login").on("submit", async event => {
+  event.preventDefault();
+  let user = $("#nickname").val();
+  $(".warning").hide();
+  if (!user.match(/^[a-z]+$/i)) {
+    $("#warnFormat").show();
+    return;
+  }
+  let data = await $.ajax({url: `${WS}user/login`, data: {user}});
+  if (data.status !== "success") {
+    $("#warnInUse").show();
+    return;
+  }
+  $("#chat").trigger('CHAT_login');
+});
+/******************************************************************************
+ * Bouton de logout
+ ******************************************************************************/
+$("#btnLogout").on("click", async event => {
+  event.preventDefault();
+  await $.ajax({url: `${WS}user/logout`});
+  $("#chat").trigger('CHAT_logout');
+});
+/******************************************************************************
+ * Au login, initalisation du chat
+ ******************************************************************************/
+$("#chat").on("CHAT_login", function () {
+  $("#login").hide();
+  $("#chat").show();
+  $("#messages").empty();
+  $("#msg").val('');
+  $("#msg").focus();
+  TIMER_GET_MSG = setInterval(getMsg, 1000);
+  getOnline();
+  TIMER_GET_ONLINE = setInterval(getOnline, 5000);
+});
+/******************************************************************************
+ * Au logout, initalisation du formulaire de login
+ ******************************************************************************/
+$("#chat").on("CHAT_logout", function () {
+  clearInterval(TIMER_GET_MSG);
+  clearInterval(TIMER_GET_ONLINE);
+  $("#chat").hide();
+  $("#login").show();
+  $("#nickname").focus();
+});
+/******************************************************************************
+ * Envoit des messages
+ ******************************************************************************/
+$("#form_chat").on("submit", event => {
+  event.preventDefault();
+  let msg = $("#msg").val();
+  $.ajax({url: `${WS}msg/add`, data: {msg}});
+  $("#msg").val('').focus();
+});
+    </script>
+  </body>
+</html>
