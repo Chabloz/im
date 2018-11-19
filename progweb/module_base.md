@@ -5,6 +5,8 @@
 Pour architecturer une application, il est possible d'utiliser de multiples paradigmes ainsi que divers outils de conception. Un de ces outils est la programmation modulaire. Depuis ECMAScript 2015, JavaScript possède quelques outils syntaxiques pour la conception et l'utilisation de modules. Malheureusement, ces outils ne sont pas supporté par les browsers actuels. Comme certaines autres fonctionnalités des dernières versions d'ECMAScript ne le sont pas non-plus, nous allons mettre en place des outils permettant de pallier à cette problèmatique.
 
 **NPM**
+
+
 Npm (node module manager), est un des gestionnaires de module le plus utilisé pour JS. Il va entre autre nous servir à installer des modules, les mettre à jour et gérer leurs dépendances. Nous l'avons déjà installé en début de cours. 
 
 **Webpack**
@@ -98,6 +100,6 @@ Pour executer ces scripts, il suffira d'uiliser la commande npm suivante:
 npm run nom_du_script 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDA5MjI3NzMsODgzNDI0ODIsMTQzMz
+eyJoaXN0b3J5IjpbLTE2MTQ3MDg5MjEsODgzNDI0ODIsMTQzMz
 A4MDYyOF19
 -->
