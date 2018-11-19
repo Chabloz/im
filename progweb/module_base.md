@@ -6,7 +6,6 @@ Pour architecturer une application, il est possible d'utiliser de multiples para
 
 **NPM**
 
-
 Npm (node module manager), est un des gestionnaires de module le plus utilisé pour JS. Il va entre autre nous servir à installer des modules, les mettre à jour et gérer leurs dépendances. Nous l'avons déjà installé en début de cours. 
 
 **Webpack**
@@ -100,6 +99,6 @@ Pour executer ces scripts, il suffira d'uiliser la commande npm suivante:
 npm run nom_du_script 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTQ3MDg5MjEsODgzNDI0ODIsMTQzMz
+eyJoaXN0b3J5IjpbLTE4NDY0OTEzNjcsODgzNDI0ODIsMTQzMz
 A4MDYyOF19
 -->
