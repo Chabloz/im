@@ -9,7 +9,7 @@ Npm (node module manager), est un des gestionnaires de module le plus utilisé p
 
 **Webpack**
 
-Webpack va être notre *packager*. En simplifié, il va nous premettre de rassembler nos modules en un seul fichier JS qui sera notre *produit* finit  (une distribution de notre application). Webpack peut aussi nous permettre de *packager* les CSS, les templates HTML, ou d'autres ressources si besoin. Webpack étant lui-même un module, nous pouvons l'installer avec *npm*. Créez un nouveau dossier pour ce TP, initialisez le comme projet modulaire et installer le module Webpack. Voilà les commandes pour le faire (à executer dans votre nouveau dossier):
+Webpack va être notre *packager*. En simplifié, il va nous premettre de rassembler nos modules en un seul fichier JS qui sera notre *produit* finit  (une distribution de notre application). Webpack peut aussi nous permettre de *packager* les CSS, les templates HTML, ou d'autres ressources si besoin. Webpack étant lui-même un module, nous pouvons l'installer avec *npm*. Créez un nouveau dossier pour ce TP, initialisez le comme projet modulaire et installez le module Webpack. Voilà les commandes pour le faire (à executer dans votre nouveau dossier):
 
 ```js
 npm init -y
@@ -24,7 +24,7 @@ Afin de pouvoir utiliser les dernières syntaxes JavaScript, même celles non su
 npm install babel-loader @babel/core @babel/preset-env webpack --save-dev
 ```
 **Des modules globaux ? Exemple avec jQuery.**
-Certains modules seraient pratiques s'ils étaient accessibles à la totalité de nos autres modules. Nous allons le faire avec jQuery comme exemple. Attention toutefois, les *modules globaux* (appelés **plugins** dans l'outils Webpack) peuvent créer une dépendance forte entre votre code et le plugin. Essayez donc de créer le moins de dépendance possible pour que ne pas casser une des philosophies de base de la programmation modulaire qui est la portabilité des modules via leur indépendance. Pour installer jQuery en plugin, commencez par l'ajouter a vos modules via npm, puis nous configurerons Webpack pour l'utiliser comme plugin.
+Certains modules seraient pratiques s'ils étaient accessibles à la totalité de nos autres modules. Nous allons le faire avec jQuery comme exemple. Attention toutefois, les *modules globaux* (appelés **plugins** dans l'outils Webpack) peuvent créer une dépendance forte entre votre code et le plugin. Essayez donc de créer le moins de dépendance possible pour que ne pas casser une des philosophies de base de la programmation modulaire qui est la portabilité des modules via leur indépendance. Pour installer jQuery en plugin, commencez par l'ajouter à vos modules via npm, puis nous configurerons Webpack pour l'utiliser comme plugin.
 
 ```js
 npm install jquery --save
@@ -98,5 +98,6 @@ Pour executer ces scripts, il suffira d'uiliser la commande npm suivante:
 npm run nom_du_script 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgzNDI0ODIsMTQzMzA4MDYyOF19
+eyJoaXN0b3J5IjpbLTE2MDA5MjI3NzMsODgzNDI0ODIsMTQzMz
+A4MDYyOF19
 -->
