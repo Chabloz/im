@@ -97,7 +97,15 @@ Il ne reste plus qu'à modifier l'angle par défaut du mouvement de vos cercles 
 
 PS: Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles, vous pouver inverser les angles proposée ci-dessus. Ce qui donne:
 
+ - 'S' et 'A' simultanément appuyées: Nord-Est (1.75***π**)
+ - 'S' et 'D' simultanément appuyées: Nord-Ouest (1.25***π**)
+ - 'W' et 'A' simultanément appuyée: Sud-Est (0.25***π**)
+ - 'W et 'D' simultanément appuyée: Sud-Ouest (0.75***π**)
+ - 'S' appuyé: Nord (1.5***π**)
+ - 'A' appuyé: Est (0)
+ - 'W' appuyé: Sud (0.5***π**)
+ - 'D' appuyé: Ouest (**π**)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDA1NzM0NjUsMTkxNzMwOTg5OCwtOT
+eyJoaXN0b3J5IjpbLTE1MDIzOTAyMzUsMTkxNzMwOTg5OCwtOT
 kzNTQ3NzM1XX0=
 -->
