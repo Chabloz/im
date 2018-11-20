@@ -76,7 +76,7 @@ $(window).on("keydown", event => this.onKeyDown(event));
 $(window).on("keyup", event => this.onKeyUp(event));
 ``` 
 Il vous faut donc coder les méthodes *onKeyDown* et *onKeyUp*. Pour récupérer la touche actuellement appuyée par l'utilisateur, vous pouvez utiliser [
-event.key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) . Lors de l'appui d'une touche, stockez la dans votre structure de donnée et supprimer la lors de son relâchement. Si vous êtes en mode "insensible à la casse" (c'est le cas si le paramètre caseSensitive est à faux), vous pouvez transformer la lettre en majuscule avant de la stocker dans votre structure grâce à la méthode [toUpperCase](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/toUpperCase). 
+event.key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) . Lors de l'appui d'une touche, stockez la dans votre structure de données et supprimez la lors de son relâchement. Si vous êtes en mode "insensible à la casse" (c'est le cas si le paramètre caseSensitive est à faux), vous pouvez transformer la lettre en majuscule avant de la stocker dans votre structure grâce à la méthode [toUpperCase](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/toUpperCase). 
 
 Finalement, ajoutez une méthode *isKeyDown(key)* qui retournera *true* si la touche fournie en paramètre est présente dans votre structure des touches actuellement appuyées et *false* dans les autres cas.
 
@@ -96,5 +96,5 @@ Maintenant que nous somme capable de savoir la combinaison de touche actuellemen
 Il ne reste plus qu'à modifier l'angle par défaut du mouvement de vos cercles avec ces valeurs selon les touches appuyées par l'utilisateur. Si l'utilisateur n'a appuyé sur aucune de ces touches, ne bouger simplement pas les cercles. (Vous n'avez d'ailleurs ni besoin d'effacer, ni de redessiner tous vos cercles puisque rien ne bouge.)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MzU0NzczNV19
+eyJoaXN0b3J5IjpbMTkxNzMwOTg5OCwtOTkzNTQ3NzM1XX0=
 -->
