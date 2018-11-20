@@ -95,7 +95,7 @@ Maintenant que nous somme capable de savoir la combinaison de touche actuellemen
 
 Il ne reste plus qu'à modifier l'angle par défaut du mouvement de vos cercles avec ces valeurs selon les touches appuyées par l'utilisateur. Si l'utilisateur n'a appuyé sur aucune de ces touches, ne bouger simplement pas les cercles. (Vous n'avez d'ailleurs ni besoin d'effacer, ni de redessiner tous vos cercles puisque rien ne bouge.)
 
-PS: Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles, vous pouver inverser les angles proposée ci-dessus. Ce qui donne:
+PS: Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles, vous pouvez inverser les angles proposée ci-dessus. Ce qui donne:
 
  - 'S' et 'A' simultanément appuyées: Nord-Est (1.75***π**)
  - 'S' et 'D' simultanément appuyées: Nord-Ouest (1.25***π**)
@@ -106,6 +106,6 @@ PS: Si vous voulez donner l'impression de bouger la caméra plutôt que les cerc
  - 'W' appuyé: Sud (0.5***π**)
  - 'D' appuyé: Ouest (**π**)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDIzOTAyMzUsMTkxNzMwOTg5OCwtOT
+eyJoaXN0b3J5IjpbLTExMjUxNTkxMzksMTkxNzMwOTg5OCwtOT
 kzNTQ3NzM1XX0=
 -->
