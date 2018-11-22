@@ -88,8 +88,8 @@ Maintenant que nous sommes capables de savoir la combinaison de touche actuellem
  - 'W' et 'A' simultanément appuyées: Nord-Ouest (1.25***π**)
  - 'S' et 'D' simultanément appuyées: Sud-Est (0.25***π**)
  - 'S' et 'A' simultanément appuyées: Sud-Ouest (0.75***π**)
- - 'W' appuyé: Nord (1.5***π**)
- - 'D' appuyé: Est (0)
+ - 'W' appuyée: Nord (1.5***π**)
+ - 'D' appuyée: Est (0)
  - 'S' appuyée: Sud (0.5***π**)
  - 'A' appuyée: Ouest (**π**)
 
@@ -106,6 +106,6 @@ Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles,
  - 'W' appuyé: Sud (0.5***π**)
  - 'D' appuyé: Ouest (**π**)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDUyMTA1MSwxOTE3MzA5ODk4LC05OT
-M1NDc3MzVdfQ==
+eyJoaXN0b3J5IjpbLTEzMDE1NzEzODUsMTA1MDUyMTA1MSwxOT
+E3MzA5ODk4LC05OTM1NDc3MzVdfQ==
 -->
