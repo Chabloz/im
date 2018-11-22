@@ -103,9 +103,9 @@ Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles,
  - 'W et 'D' simultanément appuyées: Sud-Ouest (0.75***π**)
  - 'S' appuyée: Nord (1.5***π**)
  - 'A' appuyée: Est (0)
- - 'W' appuyé: Sud (0.5***π**)
- - 'D' appuyé: Ouest (**π**)
+ - 'W' appuyée: Sud (0.5***π**)
+ - 'D' appuyée: Ouest (**π**)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDE1NzEzODUsMTA1MDUyMTA1MSwxOT
+eyJoaXN0b3J5IjpbLTIwNzI5MjYxOTEsMTA1MDUyMTA1MSwxOT
 E3MzA5ODk4LC05OTM1NDc3MzVdfQ==
 -->
