@@ -77,7 +77,9 @@ Testez cette méthode d'animation avec votre automate cellulaire. Choisissez  un
  - Appliquez les régles **B/S** à votre automate.
  - Redessinez votre automate. Bien sûr, vous n'avez pas besoin de redessiner la grille.
 
-Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le jeu de la vie prendre vie grâce à votre boucle d'animation !
+Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie grâce à votre boucle d'animation !
+
+## 
 
 ## Gestion des touches du clavier
 
@@ -130,6 +132,6 @@ La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape d
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTczMjUyMywtMTQxMTI0Nzc4OSw3Nz
-UxOTAxNF19
+eyJoaXN0b3J5IjpbLTE2NjUyMzQ4NDksLTU3MTczMjUyMywtMT
+QxMTI0Nzc4OSw3NzUxOTAxNF19
 -->
