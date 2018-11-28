@@ -89,8 +89,10 @@ export function moduloEuclidian(op1, op2) {
 ```
 Cette fonction va nous éviter de nombreux formants algorithmiques de sélection (*if*) dans notre algorithme. En effet, si vous appliquez cette fonction sur un indice indiquant une cellule en dehors du tableau de l'automate, l'indice sera rectifié pour se situer à l'intérieur  du tableau. Par exemple, pour la cellule (0,0) du tableau, la position de son voisin de gauche indiqué par (-1,0) sera  rectifiée en (largeur du tableau - 1,0), ce qui correspondra bien à la position de la cellule de gauche dans un univers en tore plat. 
 
-Vous pouvez facilement tester votre nouvelle classe en modifiant l'*import* dans votre programme principal 
+Vous pouvez facilement tester votre nouvelle classe en modifiant l'*import* dans votre programme principal:
 ```js
+//import Automaton from "class/LifeLikeAutomaton"; // Univers en rectangle
+import Automaton from "class/LifeLikeAutomaton/InFlatTorus";
 ```
 
 
@@ -144,7 +146,7 @@ La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape d
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTIzMzM2MSw3MTM1NTYxMTcsLTE5Mz
-Q2MTg3NTcsLTU3MTczMjUyMywtMTQxMTI0Nzc4OSw3NzUxOTAx
-NF19
+eyJoaXN0b3J5IjpbODQ5NjIwMTE5LDcxMzU1NjExNywtMTkzND
+YxODc1NywtNTcxNzMyNTIzLC0xNDExMjQ3Nzg5LDc3NTE5MDE0
+XX0=
 -->
