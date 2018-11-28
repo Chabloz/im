@@ -87,7 +87,7 @@ export function moduloEuclidian(op1, op2) {
   return ((op1 % op2) + op2) % op2;
 }
 ```
-Cette fonction va nous éviter de nombreux formants algorithmiques de sélection (*if*) dans notre algorithme. En effet, il   
+Cette fonction va nous éviter de nombreux formants algorithmiques de sélection (*if*) dans notre algorithme. En effet, si vous appliquez cette fonction sur un indice indiquant un cellule en deh   
 
 
 ## Gestion des touches du clavier
@@ -141,6 +141,6 @@ La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape d
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYzNzQ1NzI1LC0xOTM0NjE4NzU3LC01Nz
+eyJoaXN0b3J5IjpbODgyMjM2NzkyLC0xOTM0NjE4NzU3LC01Nz
 E3MzI1MjMsLTE0MTEyNDc3ODksNzc1MTkwMTRdfQ==
 -->
