@@ -129,7 +129,6 @@ De la même manière, vous pouvez donner le contrôle à l'utilisateur sur diff�
 
  - Pause de l'animation
  - Nouvelle génération aléatoire  pour l'automate cellulaire  (*reset* dans la demo)
- - Changement de la taille des cases (*tile size*) 
  - Changement de la probabilité qu'une cellule soit à l'état vivant lors de la génération aléatoire.
  - Changement des règles **B/S** (la démo offre ce changement via la souris, mais d'autres solutions plus ergonomiques sont possibles)
  
@@ -141,7 +140,7 @@ La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape d
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDg3MjU1NDUsNzEzNTU2MTE3LC0xOT
-M0NjE4NzU3LC01NzE3MzI1MjMsLTE0MTEyNDc3ODksNzc1MTkw
-MTRdfQ==
+eyJoaXN0b3J5IjpbMTk5OTU0MDYxOCw3MTM1NTYxMTcsLTE5Mz
+Q2MTg3NTcsLTU3MTczMjUyMywtMTQxMTI0Nzc4OSw3NzUxOTAx
+NF19
 -->
