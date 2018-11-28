@@ -80,7 +80,7 @@ Testez cette méthode d'animation avec votre automate cellulaire. Choisissez  un
 Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie grâce à votre boucle d'animation !
 
 ## Tore plat
-De la même manière que le TP sur l'effet parallaxe, ajoutez une nouvelle classe *InFlatTorus* dans le dossier *class/LifeLikeAutomaton* (à créer). Elle héritera (*extends*) de la classe *LifeLikeAutomaton* et surchargera la méthode qui retourne le nombre de cellules vivantes dans le voisinage de Moore. Afin de simuler un tore plat, il vous suffit en effet de modifier la manière de considérer les voisins d'une cellule. Une méthode souvent utilisée pour la gestion de cycle en informatique et l'utilisation du modulo.
+De la même manière que le TP sur l'effet parallaxe, ajoutez une nouvelle classe *InFlatTorus* dans le dossier *class/LifeLikeAutomaton* (à créer). Elle héritera (*extends*) de la classe *LifeLikeAutomaton* et surchargera la méthode qui retourne le nombre de cellules vivantes dans le voisinage de Moore. Afin de simuler un tore plat, il vous suffit en effet de modifier la manière de considérer les voisins d'une cellule. Une méthode souvent utilisée pour la gestion de cycle en informatique est l'utilisation du [modulo](https://en.wikipedia.org/wiki/Modulo_operation). Comme vous pouvez le lire sur la page Wikipédia, l'implémentation dans les langages de programmations est très diversifiée. 
 
 ## Gestion des touches du clavier
 
@@ -133,6 +133,6 @@ La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape d
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDU4NTkwOTcsLTE5MzQ2MTg3NTcsLT
+eyJoaXN0b3J5IjpbLTExNzU1NDQ3MDIsLTE5MzQ2MTg3NTcsLT
 U3MTczMjUyMywtMTQxMTI0Nzc4OSw3NzUxOTAxNF19
 -->
