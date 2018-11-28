@@ -80,7 +80,7 @@ Testez cette méthode d'animation avec votre automate cellulaire. Choisissez  un
 Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie grâce à votre boucle d'animation !
 
 ## Tore plat
-De la même manière que le TP sur l'effet parallaxe, ajoutez un nouvelle classe *InFlatTorus* dans le dossier *class/LifeLikeAutomaton*(à créer). 
+De la même manière que le TP sur l'effet parallaxe, ajoutez une nouvelle classe *InFlatTorus* dans le dossier *class/LifeLikeAutomaton* (à créer). Elle héritera (*extends*) de la classe *LifeLikeAutomaton* et surchargera la méthode 
 
 ## Gestion des touches du clavier
 
@@ -133,6 +133,6 @@ La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape d
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMjk4MzExMywtNTcxNzMyNTIzLC0xND
+eyJoaXN0b3J5IjpbMTQwMTA0NTIwMSwtNTcxNzMyNTIzLC0xND
 ExMjQ3Nzg5LDc3NTE5MDE0XX0=
 -->
