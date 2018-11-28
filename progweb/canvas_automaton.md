@@ -87,7 +87,7 @@ export function moduloEuclidian(op1, op2) {
   return ((op1 % op2) + op2) % op2;
 }
 ```
-
+Elle va nous permett
 
 
 ## Gestion des touches du clavier
@@ -141,6 +141,6 @@ La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape d
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTE5Mzc2NTMsLTE5MzQ2MTg3NTcsLT
+eyJoaXN0b3J5IjpbLTE4ODI3ODk2OTQsLTE5MzQ2MTg3NTcsLT
 U3MTczMjUyMywtMTQxMTI0Nzc4OSw3NzUxOTAxNF19
 -->
