@@ -79,7 +79,8 @@ Testez cette méthode d'animation avec votre automate cellulaire. Choisissez  un
 
 Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie grâce à votre boucle d'animation !
 
-## 
+## Tore plat
+De la même manière que le TP sur l'effet parallaxe, ajoutez un nouvelle classe dans un dossier 
 
 ## Gestion des touches du clavier
 
@@ -132,6 +133,6 @@ La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape d
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjUyMzQ4NDksLTU3MTczMjUyMywtMT
-QxMTI0Nzc4OSw3NzUxOTAxNF19
+eyJoaXN0b3J5IjpbMjM3Njg4NjY2LC01NzE3MzI1MjMsLTE0MT
+EyNDc3ODksNzc1MTkwMTRdfQ==
 -->
