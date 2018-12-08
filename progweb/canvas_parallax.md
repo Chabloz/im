@@ -105,7 +105,9 @@ Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles,
  - 'A' appuyée: Est (0)
  - 'W' appuyée: Sud (0.5***π**)
  - 'D' appuyée: Ouest (**π**)
+
+Remarque: nos radians croissent dans un sens horaire 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzI5MjYxOTEsMTA1MDUyMTA1MSwxOT
-E3MzA5ODk4LC05OTM1NDc3MzVdfQ==
+eyJoaXN0b3J5IjpbMTMxNDMzNTI2NywtMjA3MjkyNjE5MSwxMD
+UwNTIxMDUxLDE5MTczMDk4OTgsLTk5MzU0NzczNV19
 -->
