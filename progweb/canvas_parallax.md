@@ -106,8 +106,8 @@ Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles,
  - 'W' appuyée: Sud (0.5***π**)
  - 'D' appuyée: Ouest (**π**)
 
-Remarque: comme vous l'avez peut-être remarqué, nos radians croissent dans la sens horaire plutôt que de le sens antihoraire rencontré habituellement sur un plan cartésien classique.  En effet,  l'axe des *y* croit vers le bas dans notre *canvas* (et non vers le haut comme habituellement représenté en mathématique). 
+**Remarque**: comme vous l'avez peut-être remarqué, nos radians croissent dans la sens horaire plutôt que de le sens antihoraire.  En effet,  l'axe des *Y* croit vers le bas dans notre *canvas* et non vers le haut comme on le voit couramment en mathématique. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjAzMzc2NzQsLTIwNzI5MjYxOTEsMT
-A1MDUyMTA1MSwxOTE3MzA5ODk4LC05OTM1NDc3MzVdfQ==
+eyJoaXN0b3J5IjpbMTY5MDU2NDcwNywtMjA3MjkyNjE5MSwxMD
+UwNTIxMDUxLDE5MTczMDk4OTgsLTk5MzU0NzczNV19
 -->
