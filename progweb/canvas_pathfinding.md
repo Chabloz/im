@@ -89,9 +89,10 @@ L'algorithme finale pour afficher les flèches du flot devient alors pour chaque
 
 Finalement, testez votre algorithme en dessinant ce flot dans votre programme principal.
 
-La gestion des mouvements sur la grille se fera en deuxième partie de ce TP.
+La gestion des mouvements sur la grille se fera en deuxième partie de ce TP. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDk2ODI5NTldfQ==
+eyJoaXN0b3J5IjpbLTEyOTQ0MjYyMTMsLTE3NDk2ODI5NTldfQ
+==
 -->
