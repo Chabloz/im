@@ -54,7 +54,7 @@ flowFieldTo(x, y, allowDiag = true) {
           frontier.push(next);
           this.flowMap[next.x][next.y] = {x: current.x, y: current.y};
         }
-      }
+      });
     }
     this.flowMap[x][y] = false;
   }
