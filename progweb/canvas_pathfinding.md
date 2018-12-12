@@ -96,7 +96,9 @@ Maintenant que nous possédons l'information nécessaire pour trouver n'importe 
 
 Commencez par créer dans votre programme principal une méthode qui s'occupera de la création de ce cercle. La position (x,y) du cercle devra coïncider avec le centre de la case qui servira à la génération (*spawn*) de nos entités. Pour trouver le centre de la case sur le *canvas*, il vous faudra donc multiplier les coordonnées (x,y) de la case de départ avec la taille des cases et de trouver le centre de la case. Vous pouvez spécifier une vitesse de 0.1 [px/ms] et une couleur de votre choix ou  aléatoire ( avec *randomcolor*).
 
+### Animation avec tween.js
 
+Cr
 
 
 
@@ -105,6 +107,6 @@ Commencez par créer dans votre programme principal une méthode qui s'occupera 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzE4MTc5ODksOTEyNDI5NDcxLC0xMj
-k0NDI2MjEzLC0xNzQ5NjgyOTU5XX0=
+eyJoaXN0b3J5IjpbMTQ3ODQ1OTI0Miw5MTI0Mjk0NzEsLTEyOT
+Q0MjYyMTMsLTE3NDk2ODI5NTldfQ==
 -->
