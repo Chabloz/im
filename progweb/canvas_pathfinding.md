@@ -110,7 +110,18 @@ Ensuite, créez (toujours dans votre programme principal) une méthode qui se ch
 - Récupérer les coordonnées (x,y) de la destination grâce à *flowMap*. Si aucune destination n'est disponible, s'arrêter là.
 - Transformer les coordonnées (x,y) de la destination en position (x,y) du centre de la case dans le *canvas*
 - Calculer la distance entre la position actuelle du cercle et la destination (grâce au **théorème de Pythagore**)
-- Créez la *tw
+- Créer et démarrer  la *tween* grâce au code suivant:
+
+```js
+new TWEEN.Tween(mob)
+  .to(dest, distance / mob.speed)
+  .onComplete(mob => {
+    this.createTweenMob(mob);
+  })
+.start();
+```
+
+
 
 
 
@@ -119,6 +130,6 @@ Ensuite, créez (toujours dans votre programme principal) une méthode qui se ch
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjk0MTY4Niw5MTI0Mjk0NzEsLTEyOT
-Q0MjYyMTMsLTE3NDk2ODI5NTldfQ==
+eyJoaXN0b3J5IjpbLTEwMzI2Njk3NDUsOTEyNDI5NDcxLC0xMj
+k0NDI2MjEzLC0xNzQ5NjgyOTU5XX0=
 -->
