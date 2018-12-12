@@ -121,6 +121,8 @@ new TWEEN.Tween(mob) // où mob est votre cercle
   .start(); // "démarre" l'animation d'interpolation
 ```
 
+### Boucle d'animation
+
 
 
 
@@ -130,6 +132,6 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE5MTMwNTM1LDkxMjQyOTQ3MSwtMTI5ND
-QyNjIxMywtMTc0OTY4Mjk1OV19
+eyJoaXN0b3J5IjpbLTg0NTQ4ODg3OSw4MTkxMzA1MzUsOTEyND
+I5NDcxLC0xMjk0NDI2MjEzLC0xNzQ5NjgyOTU5XX0=
 -->
