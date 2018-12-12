@@ -79,7 +79,7 @@ let angle = Math.atan2(destY - y, destX - x);
 ```
 Pour appliquer facilement cette rotation, effectuez une translation du *canvas* sur le centre de la case avec la méthode  [translate](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/translate), puis appliquez la rotation avec la méthode [rotate](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/rotate).  Affichez votre caractère grâce à la méthode [fillText](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/fillText). Enfin réinitialisez les modifications de translation et rotation grâce à la méthode [setTransform](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/setTransform). Pour plus de détail sur ces techniques, n’hésitez pas à consulter ce [tutoriel](https://developer.mozilla.org/fr/docs/Tutoriel_canvas/Transformations).
 
-L'algorithme finale pour afficher les flèches du flot devient alors pour chaque case:
+L'algorithme final pour afficher les flèches du flot devient alors pour chaque case:
 
 - calculer la position du centre de la case (x,y)
 - calculer l'angle entre (x,y) et la case suivante du flot disponible dans *flowMap*
@@ -93,6 +93,6 @@ La gestion des mouvements sur la grille se fera en deuxième partie de ce TP.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQ0MjYyMTMsLTE3NDk2ODI5NTldfQ
-==
+eyJoaXN0b3J5IjpbLTY5Nzk0MDk2NCwtMTI5NDQyNjIxMywtMT
+c0OTY4Mjk1OV19
 -->
