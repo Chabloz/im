@@ -98,7 +98,9 @@ Commencez par créer dans votre programme principal une méthode qui s'occupera 
 
 ### Animation avec tween.js
 
-Créez (toujours dans votre programme principal), une méthode qui se chargera de créer l'
+Commencez par installer le module *tween.js* dans v
+
+Créez (toujours dans votre programme principal), une méthode qui se chargera de créer l'animation du mouvement entre la position actuelle du cercle et la position du centre 
 
 
 
@@ -107,6 +109,6 @@ Créez (toujours dans votre programme principal), une méthode qui se chargera d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4NjUyOTgxLDkxMjQyOTQ3MSwtMTI5ND
-QyNjIxMywtMTc0OTY4Mjk1OV19
+eyJoaXN0b3J5IjpbMTg1Mzk2Mzc2Miw5MTI0Mjk0NzEsLTEyOT
+Q0MjYyMTMsLTE3NDk2ODI5NTldfQ==
 -->
