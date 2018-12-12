@@ -107,7 +107,9 @@ npm install @tweenjs/tween.js --save
 Ensuite, créez (toujours dans votre programme principal) une méthode qui se chargera d'initialiser l'animation du mouvement entre la position actuelle du cercle et la position du centre de la case de destination (trouvable via *flowMap*).  Cette méthode prendra une entité en paramètre (notre cercle) et s'occupera d'initialiser l'interpolation (*tween* ).  L'algorithme de cette méthode sera le suivant:
 
 - Trouver les coordonnées (x,y) de la case de la grille où se trouve notre cercle
--  Récupérer la destia
+- Récupérer les coordonnées (x,y) de la destination grâce à *flowMap*
+- Transformer les coordonnées (x,y) de la destination en position (x,y)  dans le *canvas*
+- 
 
 
 
@@ -116,6 +118,6 @@ Ensuite, créez (toujours dans votre programme principal) une méthode qui se ch
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0Nzk2MjYsOTEyNDI5NDcxLC0xMjk0ND
-I2MjEzLC0xNzQ5NjgyOTU5XX0=
+eyJoaXN0b3J5IjpbLTg5NjEzODQxNCw5MTI0Mjk0NzEsLTEyOT
+Q0MjYyMTMsLTE3NDk2ODI5NTldfQ==
 -->
