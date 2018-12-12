@@ -96,7 +96,7 @@ Maintenant que nous possédons l'information nécessaire pour trouver n'importe 
 
 Commencez par créer dans votre programme principal une méthode qui s'occupera de la création de ce cercle. La position (x,y) du cercle devra coïncider avec le centre de la case qui servira à la génération (*spawn*) de nos entités. Pour trouver le centre de la case sur le *canvas*, il vous faudra donc multiplier les coordonnées (x,y) de la case de départ avec la taille des cases et de trouver le centre de la case. Vous pouvez spécifier une vitesse de 0.1 [px/ms] et une couleur de votre choix ou  aléatoire ( avec *randomcolor*).
 
-### Animation avec tween.js
+### Animation avec interpolation (*tween*) grâce à tween.js 
 
 Commencez par installer le module [tween.js](https://github.com/tweenjs/tween.js/) dans votre projet. Voilà la commande pour le faire:
 
@@ -104,7 +104,7 @@ Commencez par installer le module [tween.js](https://github.com/tweenjs/tween.js
 npm install @tweenjs/tween.js --save
 ```
 
-Ensuite, créez (toujours dans votre programme principal) une méthode qui se chargera d'initialiser l'animation du mouvement entre la position actuelle du cercle et la position du centre de la case de destination (trouvable via *flowMap*).  
+Ensuite, créez (toujours dans votre programme principal) une méthode qui se chargera d'initialiser l'animation du mouvement entre la position actuelle du cercle et la position du centre de la case de destination (trouvable via *flowMap*).  Cette méthode prendra une entité en paramètre (notre cercle) et s'occupera d'initialiser l'interpolation (*tween* )
 
 
 
@@ -113,6 +113,6 @@ Ensuite, créez (toujours dans votre programme principal) une méthode qui se ch
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NTI2MDYzOCw5MTI0Mjk0NzEsLTEyOT
-Q0MjYyMTMsLTE3NDk2ODI5NTldfQ==
+eyJoaXN0b3J5IjpbODU2MTg0Nzc3LDkxMjQyOTQ3MSwtMTI5ND
+QyNjIxMywtMTc0OTY4Mjk1OV19
 -->
