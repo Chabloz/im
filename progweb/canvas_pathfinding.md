@@ -116,9 +116,9 @@ Ensuite, créez (toujours dans votre programme principal) une méthode *createTw
 new TWEEN.Tween(mob) // où mob est votre cercle
   .to(dest, distance / mob.speed) // ou dest est le {x,y} de la destination
   .onComplete(mob => {
-    createTweenMob(mob); // indique qu'à la fin de l'interpolation, il faut recom
+    createTweenMob(mob); // indique qu'à la fin de l'interpolation, on recommence
   })
-  .start();
+  .start(); // "démarre" l'animation d'interpolation
 ```
 
 
@@ -130,6 +130,6 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk0ODg2MzEsOTEyNDI5NDcxLC0xMj
-k0NDI2MjEzLC0xNzQ5NjgyOTU5XX0=
+eyJoaXN0b3J5IjpbODE5MTMwNTM1LDkxMjQyOTQ3MSwtMTI5ND
+QyNjIxMywtMTc0OTY4Mjk1OV19
 -->
