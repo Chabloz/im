@@ -1,3 +1,4 @@
+
 # Canvas, animation, recherche de chemins
   
 
@@ -89,10 +90,19 @@ L'algorithme final pour afficher les flèches du flot devient alors pour chaque 
 
 Finalement, testez votre algorithme en dessinant ce flot dans votre programme principal.
 
-La gestion des mouvements sur la grille se fera en deuxième partie de ce TP. 
+## Génération et mouvement d'entités 
+
+Maintenant que nous possédons l'information nécessaire pour trouver n'importe quel chemin d'un point de la grille à un autre, nous allons l'utiliser pour déplacer des entités (des cercles dans notre cas) sur un chemin entre une origine et une destination. Avant de coder une générateur d'entité (un *mob spawner* en langage Minecraft), nous allons nous contenter de faire bouger un seul cercle. 
+
+Commencez par créer dans votre programme principal une méthode qui s'occupera de la création de ce cercle. La position (x,y) du cercle devra coïncider avec le centre de la case qui servira à la génération (*spawn*) de nos entités. Pour trouver le centre de la case sur le *canvas*, il vous faudra donc multiplier les coordonnées (x,y) de la case de départ avec la taille des cases et de trouver le centre de la case. Vous pouvez spécifier une vitesse de 0.1 [px/ms] et une couleur de votre choix ou  aléatoire ( avec *randomcolor*).
+
+
+
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5Nzk0MDk2NCwtMTI5NDQyNjIxMywtMT
-c0OTY4Mjk1OV19
+eyJoaXN0b3J5IjpbOTEyNDI5NDcxLC0xMjk0NDI2MjEzLC0xNz
+Q5NjgyOTU5XX0=
 -->
