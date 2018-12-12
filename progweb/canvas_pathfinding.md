@@ -123,7 +123,9 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 
 ### Boucle d'animation
 
-Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *TWEEN.update()*. Créez donc une boucle d'animation avec *requestAnimationFrame* et appelez là. Votre méthode appelée 
+Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *TWEEN.update()*. Créez donc une boucle d'animation avec *requestAnimationFrame* et appelez là. Votre méthode appelée à chaque *frame*devra aussi se charger de dessiner le cercles et la grille.
+
+
 
 
 
@@ -133,7 +135,7 @@ Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *T
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NTgwNDQ2OSw1MTEyODUzNDAsLTg0NT
+eyJoaXN0b3J5IjpbMjA5MDAwODA0NSw1MTEyODUzNDAsLTg0NT
 Q4ODg3OSw4MTkxMzA1MzUsOTEyNDI5NDcxLC0xMjk0NDI2MjEz
 LC0xNzQ5NjgyOTU5XX0=
 -->
