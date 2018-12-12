@@ -123,7 +123,7 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 
 ### Boucle d'animation
 
-pour
+Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *TWEEN.update()*. Créez donc une boucle d'animation avec *requestAnimationFrame* et appelez là. Votre méthode appelée 
 
 
 
@@ -133,7 +133,7 @@ pour
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcyNzQwMzAsNTExMjg1MzQwLC04NDU0OD
-g4NzksODE5MTMwNTM1LDkxMjQyOTQ3MSwtMTI5NDQyNjIxMywt
-MTc0OTY4Mjk1OV19
+eyJoaXN0b3J5IjpbLTk0NTgwNDQ2OSw1MTEyODUzNDAsLTg0NT
+Q4ODg3OSw4MTkxMzA1MzUsOTEyNDI5NDcxLC0xMjk0NDI2MjEz
+LC0xNzQ5NjgyOTU5XX0=
 -->
