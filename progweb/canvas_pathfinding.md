@@ -104,8 +104,7 @@ Commencez par installer le module [tween.js](https://github.com/tweenjs/tween.js
 npm install @tweenjs/tween.js --save
 ```
 
-
-Ensuite, créez (toujours dans votre programme principal) une méthode qui se chargera de d'initialiser l'animation du mouvement entre la position actuelle du cercle et la position du centre 
+Ensuite, créez (toujours dans votre programme principal) une méthode qui se chargera de d'initialiser l'animation du mouvement entre la position actuelle du cercle et la position du centre de la case de destination (trouvable via *flowMap*).  
 
 
 
@@ -114,6 +113,6 @@ Ensuite, créez (toujours dans votre programme principal) une méthode qui se ch
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MjUxNDExNSw5MTI0Mjk0NzEsLTEyOT
-Q0MjYyMTMsLTE3NDk2ODI5NTldfQ==
+eyJoaXN0b3J5IjpbMzkzNjE4NjYzLDkxMjQyOTQ3MSwtMTI5ND
+QyNjIxMywtMTc0OTY4Mjk1OV19
 -->
