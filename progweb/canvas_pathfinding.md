@@ -123,6 +123,7 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 
 ### Boucle d'animation
 
+pour
 
 
 
@@ -132,7 +133,7 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTExMjg1MzQwLC04NDU0ODg4NzksODE5MT
-MwNTM1LDkxMjQyOTQ3MSwtMTI5NDQyNjIxMywtMTc0OTY4Mjk1
-OV19
+eyJoaXN0b3J5IjpbNDcyNzQwMzAsNTExMjg1MzQwLC04NDU0OD
+g4NzksODE5MTMwNTM1LDkxMjQyOTQ3MSwtMTI5NDQyNjIxMywt
+MTc0OTY4Mjk1OV19
 -->
