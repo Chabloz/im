@@ -98,7 +98,7 @@ Commencez par créer dans votre programme principal une méthode qui s'occupera 
 
 ### Animation avec tween.js
 
-Cr
+Créez (toujours dans votre programme principal), une méthode qui se chargera de créer l'
 
 
 
@@ -107,6 +107,6 @@ Cr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODQ1OTI0Miw5MTI0Mjk0NzEsLTEyOT
-Q0MjYyMTMsLTE3NDk2ODI5NTldfQ==
+eyJoaXN0b3J5IjpbMjU4NjUyOTgxLDkxMjQyOTQ3MSwtMTI5ND
+QyNjIxMywtMTc0OTY4Mjk1OV19
 -->
