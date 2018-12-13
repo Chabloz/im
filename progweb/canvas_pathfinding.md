@@ -118,7 +118,7 @@ new TWEEN.Tween(mob) // où mob est votre cercle
   .onComplete(mob => {
     createTweenMob(mob); // indique qu'à la fin de l'interpolation, on recommence
   })
-  .start(); // "démarre" l'animation d'interpolation
+  .start(); // "démarre" l'animation avec interpolation
 ```
 
 ### Boucle d'animation
@@ -136,7 +136,7 @@ Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *T
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxODkwNjkxNSwyMDkwMDA4MDQ1LDUxMT
-I4NTM0MCwtODQ1NDg4ODc5LDgxOTEzMDUzNSw5MTI0Mjk0NzEs
-LTEyOTQ0MjYyMTMsLTE3NDk2ODI5NTldfQ==
+eyJoaXN0b3J5IjpbLTE5ODI4NDAyMTksMjA5MDAwODA0NSw1MT
+EyODUzNDAsLTg0NTQ4ODg3OSw4MTkxMzA1MzUsOTEyNDI5NDcx
+LC0xMjk0NDI2MjEzLC0xNzQ5NjgyOTU5XX0=
 -->
