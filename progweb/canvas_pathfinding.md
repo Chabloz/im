@@ -134,9 +134,10 @@ Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *T
 
 
 
-
+  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODI4NDAyMTksMjA5MDAwODA0NSw1MT
-EyODUzNDAsLTg0NTQ4ODg3OSw4MTkxMzA1MzUsOTEyNDI5NDcx
-LC0xMjk0NDI2MjEzLC0xNzQ5NjgyOTU5XX0=
+eyJoaXN0b3J5IjpbMTg3Mjc5MDQzNywtMTk4Mjg0MDIxOSwyMD
+kwMDA4MDQ1LDUxMTI4NTM0MCwtODQ1NDg4ODc5LDgxOTEzMDUz
+NSw5MTI0Mjk0NzEsLTEyOTQ0MjYyMTMsLTE3NDk2ODI5NTldfQ
+==
 -->
