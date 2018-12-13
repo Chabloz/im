@@ -114,7 +114,7 @@ N'oubliez pas de l'importer. Ensuite, créez (toujours dans votre programme prin
 
 ```js
 new TWEEN.Tween(mob) // où mob est votre cercle
-  .to(dest, distance / mob.speed) // ou dest est le {x,y} de la destination
+  .to(dest, distance / mob.speed) // où dest est le {x,y} de la destination
   .onComplete(mob => {
     createTweenMob(mob); // indique qu'à la fin de l'interpolation, on recommence
   })
@@ -125,7 +125,7 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 
 Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *TWEEN.update()*. Créez donc une boucle d'animation avec *requestAnimationFrame* et appelez là. Votre méthode appelée à chaque *frame*devra aussi se charger de dessiner le cercles et la grille.
 
-**Remarque** :  l'utilisation de *tween.js* dans ce TP à un but pédagogique. Il serait en effet plus précis et performant de bouger les cercles sur la grille grâce aux angles disponibles via *flowMap* et de ne pas utiliser de technique d'interpolation. 
+
 
 
 
@@ -136,7 +136,8 @@ Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *T
 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI2MzQ2NDExLC0xOTgyODQwMjE5LDIwOT
-AwMDgwNDUsNTExMjg1MzQwLC04NDU0ODg4NzksODE5MTMwNTM1
-LDkxMjQyOTQ3MSwtMTI5NDQyNjIxMywtMTc0OTY4Mjk1OV19
+eyJoaXN0b3J5IjpbMjAwNjk0ODUxOSwzMjYzNDY0MTEsLTE5OD
+I4NDAyMTksMjA5MDAwODA0NSw1MTEyODUzNDAsLTg0NTQ4ODg3
+OSw4MTkxMzA1MzUsOTEyNDI5NDcxLC0xMjk0NDI2MjEzLC0xNz
+Q5NjgyOTU5XX0=
 -->
