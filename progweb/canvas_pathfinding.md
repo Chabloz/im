@@ -10,7 +10,7 @@ Afin de bien comprendre l'avantage d'un code modulaire, nous allons reprendre le
 
 Pour vous simplifier le travail, vous pouvez utiliser  ce [code HTML](resources/canvas_path_finding.html) afin d'avoir un design de base pour votre animation. Ensuite, récupérez le **contexte** graphique du *canvas* dans votre programme principal.   
 
-Vous trouverez une [démo ici](https://chabloz.eu/files/pathfinding/)
+Vous trouverez une [démo ici](https://chabloz.eu/files/pathfinding/).
 
 ## Recherche de chemin
   
@@ -127,8 +127,8 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *TWEEN.update()*. Créez donc une boucle d'animation avec *requestAnimationFrame* et appelez là. Votre méthode appelée à chaque *frame*devra aussi se charger de dessiner le cercles et la grille.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2MDcxMjM1LC0xNzI5Nzk0Nzg5LDIwMD
-Y5NDg1MTksMzI2MzQ2NDExLC0xOTgyODQwMjE5LDIwOTAwMDgw
-NDUsNTExMjg1MzQwLC04NDU0ODg4NzksODE5MTMwNTM1LDkxMj
-QyOTQ3MSwtMTI5NDQyNjIxMywtMTc0OTY4Mjk1OV19
+eyJoaXN0b3J5IjpbMTc4NzgxNjgyOSwtMTcyOTc5NDc4OSwyMD
+A2OTQ4NTE5LDMyNjM0NjQxMSwtMTk4Mjg0MDIxOSwyMDkwMDA4
+MDQ1LDUxMTI4NTM0MCwtODQ1NDg4ODc5LDgxOTEzMDUzNSw5MT
+I0Mjk0NzEsLTEyOTQ0MjYyMTMsLTE3NDk2ODI5NTldfQ==
 -->
