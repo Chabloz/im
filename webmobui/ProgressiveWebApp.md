@@ -45,8 +45,8 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  +----------------------------------+
  ```
  
- Pour simplifier votre *css*, vous pouvez utiliser les flexbox 
+ Pour simplifier votre *css*, vous pouvez utiliser les [CSS Grid Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base)  ou les flexbox 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjgxMzQ3MzMsLTE3MzQyNTY4MzEsNj
+eyJoaXN0b3J5IjpbLTEyMjU1NTg5OTksLTE3MzQyNTY4MzEsNj
 AxNzY4MTQyLDMwNTg5MDUzXX0=
 -->
