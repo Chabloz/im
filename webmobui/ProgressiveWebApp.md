@@ -13,14 +13,14 @@ ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, r
 Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquement proches des besoins suivants:
 
 -   L’application possède un haut de page contenant son titre.
--   Un menu offre à l’utilisateur le choix parmi 3 fonctionnalités , une gestion de liste des choses à faire (*todo list*), une gestion de favoris Web (*bookmarks*) et un agrégateur de flux RSS/ATOM.
+-   Un menu offre à l’utilisateur le choix parmi 3 fonctionnalités , une gestion de liste des choses à faire (*todo list*), une gestion de favoris Web (*bookmarks*) et un agrégateur de flux Rss/Atom.
 -   La fonctionnalité  Todo List  sera composée pour le moment d’un unique formulaire comprenant deux champs de saisie, un champ pour la  *chose à faire*  et un champ (facultatif) pour la date limite pour faire la chose.
--   Les deux autres fonctionnalités seront pour le moment uniquement composés d’un formulaire avec un champ de saisie pour l’url du favoris Web ou du flux RSS/ATOM.
--   L’application possédera un bas de page reprenant le nom de la  _WebApp_  et un numéro de version.
--   De plus la partie  _Todo List_  devra déjà contenir la tâche à faire suivante: “Finir les parties 1 et 2 du TP WebApp. A faire avant le 05.03.2018”
+-   Les deux autres fonctionnalités seront pour le moment uniquement composés d’un formulaire avec un champ de saisie pour l’url du favoris Web ou du flux Rss/Atom.
+-   L’application possédera un bas de page reprenant le nom de la  PWA  et un numéro de version.
+-   De plus la partie    devra déjà contenir la tâche à faire suivante: “Finir les parties 1 et 2 du TP WebApp. A faire avant le 05.03.2018”
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MjUwNzkyN119
+eyJoaXN0b3J5IjpbNTIzODg3OTZdfQ==
 -->
