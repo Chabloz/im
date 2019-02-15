@@ -24,9 +24,29 @@ Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquemen
 Afin de rendre l'application disponible sur le maximum de périphérique, réalisez la *css* adéquate pour un *responsive design*. 
 
 
+ +----------------------------------+
+ |      Header                      |
+ |                                  |
+ +----------------------------------+
+ |      Navigation                  |
+ +----------------------------------+
+ |                                  |
+ |      Contenu principal           |
+ |                                  |
+ |                                  |
+ |                                  |
+ |                                  |
+ |                                  |
+ |                                  |
+ |                                  |
+ |                                  |
+ |                                  |
+ +----------------------------------+
+ |      Footer                      |
+ +----------------------------------+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNT
-g5MDUzXX0=
+eyJoaXN0b3J5IjpbNDA2MTQyOTUsLTE3MzQyNTY4MzEsNjAxNz
+Y4MTQyLDMwNTg5MDUzXX0=
 -->
