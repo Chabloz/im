@@ -17,10 +17,12 @@ Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquemen
 -   La fonctionnalité *Todo List* sera composée pour le moment d’un unique formulaire comprenant deux champs de saisie, un champ pour la  *chose à faire*  et un champ (facultatif) pour la date limite pour faire la chose.
 -   Les deux autres fonctionnalités seront pour le moment uniquement composés d’un formulaire avec un champ de saisie pour l’url du favoris Web ou du flux Rss/Atom.
 -   L’application possédera un bas de page reprenant le nom de la  PWA  et un numéro de version.
--   De plus la partie *Todo List* devra déjà contenir la tâche à faire suivante: “Finir les parties HTML5 et Responsive”
+-   De plus la partie *Todo List* devra déjà contenir la tâche à faire suivante: “Finir les parties HTML5 et Responsive du TP du cours WebMobUi. A faire pour le mardi 26.02.2019”
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTc0MTEzMDNdfQ==
+eyJoaXN0b3J5IjpbMzA1ODkwNTNdfQ==
 -->
