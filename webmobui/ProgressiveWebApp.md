@@ -44,7 +44,9 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  |      Footer                      |
  +----------------------------------+
  ```
+ 
+ Pour simplifier votre *css*, vous pouvez utiliser les flexbox 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzIwOTk2OSwtMTczNDI1NjgzMSw2MD
-E3NjgxNDIsMzA1ODkwNTNdfQ==
+eyJoaXN0b3J5IjpbLTE5NjgxMzQ3MzMsLTE3MzQyNTY4MzEsNj
+AxNzY4MTQyLDMwNTg5MDUzXX0=
 -->
