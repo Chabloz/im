@@ -19,11 +19,12 @@ Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquemen
 -   L’application possédera un bas de page reprenant le nom de la  PWA  et un numéro de version.
 -   De plus la partie *Todo List* devra déjà contenir la tâche à faire suivante: “Finir les parties HTML5 et Responsive du TP du cours WebMobUi. A faire pour le mardi 26.02.2019”
 
-## Respo
+## Responsive
+Afin de rendre l'application disponible sur le maximum de périphérique 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMDU3MzU1NiwzMDU4OTA1M119
+eyJoaXN0b3J5IjpbLTE1NjI0MjUwNDcsMzA1ODkwNTNdfQ==
 -->
