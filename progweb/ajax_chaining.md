@@ -14,12 +14,12 @@ A partir du [code HTML donné](resources/jqueryAjaxChaining.html) , ajoutez les 
  * @param {array} urls Les URLs à charger
  * @return {Promise} Une Promise qui se résoudra à la fin des requêtes AJAX
  */
-const loadUrls = async urls => {  
+const loadUrls = urls => {  
   let results = [];
   urls.forEach(url => {
     results.push($.ajax({url}));        
   })    
-  return await Promise.all(results);  
+  return Promise.all(results);  
 }
 ```
 ## SW movies
