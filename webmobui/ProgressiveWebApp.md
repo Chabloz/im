@@ -21,6 +21,8 @@ Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquemen
 
 ## *Responsive*
 
+### *layout*
+
 Afin de rendre l'application disponible sur le maximum de périphérique, réalisez la *css* adéquate pour un *responsive design*.  Pour simplifier, essayez un design *vertical* comme proposé ci-après :
 
 ```ascii
@@ -47,8 +49,9 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  
  Pour le faire, vous pouvez utiliser [CSS Grid Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base)  ou [CSS Flexible Box Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox).
 
+### Media-queries
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE1MjQyMTEsLTE3MzQyNTY4MzEsNj
-AxNzY4MTQyLDMwNTg5MDUzXX0=
+eyJoaXN0b3J5IjpbMTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MD
+E3NjgxNDIsMzA1ODkwNTNdfQ==
 -->
