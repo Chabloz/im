@@ -46,7 +46,9 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  ```
  
  Pour le faire, vous pouvez utiliser [CSS Grid Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base)  ou [CSS Flexible Box Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox).
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDc3MTEyMSwtMTczNDI1NjgzMSw2MD
-E3NjgxNDIsMzA1ODkwNTNdfQ==
+eyJoaXN0b3J5IjpbLTE4ODE1MjQyMTEsLTE3MzQyNTY4MzEsNj
+AxNzY4MTQyLDMwNTg5MDUzXX0=
 -->
