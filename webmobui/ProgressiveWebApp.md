@@ -9,7 +9,6 @@ ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, r
 
 ## HTML5
 
-
 Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquement proches des besoins suivants:
 
 -   L’application possède un haut de page contenant son titre.
@@ -52,6 +51,7 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
 ### Media-queries
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDU3MTczMCwxMDk1NTI1OTY0LC0xNz
-M0MjU2ODMxLDYwMTc2ODE0MiwzMDU4OTA1M119
+eyJoaXN0b3J5IjpbMTA5NTk4MTIxMiwtMjgwNTcxNzMwLDEwOT
+U1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNTg5MDUz
+XX0=
 -->
