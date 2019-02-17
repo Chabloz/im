@@ -13,8 +13,8 @@ Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquemen
 
 -   L’application possède un haut de page contenant son titre.
 -   Un menu offre à l’utilisateur le choix parmi 4 fonctionnalités , les horaires des cours IM (*schedule*), une gestion de liste des choses à faire (*todo*), une gestion de favoris Web (*bookmarks*) et un agrégateur de flux Rss/Atom (*feeds*).
--   La fonctionnalité *Todo List* sera composée pour le moment d’un unique formulaire comprenant deux champs de saisie, un champ pour la  *chose à faire*  et un champ (facultatif) pour la date limite pour faire la chose.
--   Les deux autres fonctionnalités seront pour le moment uniquement composés d’un formulaire avec un champ de saisie pour l’url du favoris Web ou du flux Rss/Atom.
+-   La fonctionnalité *todo* sera composée pour le moment d’un unique formulaire comprenant deux champs de saisie, un champ pour la  *chose à faire*  et un champ (facultatif) pour la date limite pour faire la chose.
+-   Les autres fonctionnalités auront pour le moment un contenu vide.
 -   L’application possédera un bas de page reprenant le nom de la  PWA  ainsi que les informations sur votre personne (au minimum votre nom et email) en respectant les formats de micro-data proposé par [schema.org](http://schema.org/) pour une sémantique compréhensible par les principaux moteurs de recherche du Web.
 -   De plus la partie *Todo List* devra déjà contenir la tâche à faire suivante: “Finir les parties HTML5 et Responsive du TP du cours WebMobUi. A faire pour le mardi 26.02.2019”
 
@@ -65,9 +65,9 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTI4NTg4NjksMTEwMTE2NjQzNywzOT
-Q5NzA5MzEsMTg1NDc3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0
-OCwtNzA2MzU5MTkyLDI3MTM1NjgxMiwxNjEzOTQyMjQzLDQyOT
-UyMDM3LC0yODA1NzE3MzAsMTA5NTUyNTk2NCwtMTczNDI1Njgz
-MSw2MDE3NjgxNDIsMzA1ODkwNTNdfQ==
+eyJoaXN0b3J5IjpbNDAyMzc3NzYxLDExMDExNjY0MzcsMzk0OT
+cwOTMxLDE4NTQ3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1NDgs
+LTcwNjM1OTE5MiwyNzEzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1Mj
+AzNywtMjgwNTcxNzMwLDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEs
+NjAxNzY4MTQyLDMwNTg5MDUzXX0=
 -->
