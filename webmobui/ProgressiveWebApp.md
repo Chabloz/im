@@ -51,17 +51,16 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
 ### Media-queries et police d'icônes
 La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès  plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par défaut et d'ajouter un bouton d'accès pour l'afficher. L'utilisation  du caractère '☰' comme icone d'accès à la navigation s'est progressivement imposée. Utilisez des polices d’icônes plutôt que des images apportent certains avantages (la colorisation via css par exemple). De plus, si l'on utilise une police vectorielle, les icônes ne seront pas pixelisées sur  les écrans à forte densité de pixels (comme ceux des smartphones). Utilisez [l'app Icomoon](https://icomoon.io/app) et générez un police contenant au moins le caractère de menu et un caractère permettant d'indiquer un statut *en ligne / hors ligne* qui nous sera utile plus tard (comme par exemple l'icone de wifi, un nuage, un avion, ... ) .
 
-Une fois la police téléchargée dans votre projet, il reste à rendre la navigation *responsive*. Ajoutez la média queries suivante à votre *css*:
+Une fois la police téléchargée dans votre projet, il reste à rendre la navigation *responsive*. Ajoutez la média queries suivante à votre *css* pour cibler les écrans trop petits pour l'affichage de la navigation actuelle:
 ```css
-@media screen and (max-width: 30rem) {
-}
+screen and (max-width: 30rem)
 ```
-
+Puis réaliser la css nécessaire pour un affichage du menu en vertical plutôt qu'en horizo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NjQxNTkwOCwtNzA2MzU5MTkyLDI3MT
-M1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1NzE3MzAs
-MTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MDE3NjgxNDIsMzA1OD
-kwNTNdfQ==
+eyJoaXN0b3J5IjpbLTE2ODQ0MzcyOTMsLTcwNjM1OTE5MiwyNz
+EzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMw
+LDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNT
+g5MDUzXX0=
 -->
