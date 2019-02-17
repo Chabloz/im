@@ -49,9 +49,9 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  Pour le faire, vous pouvez utiliser [CSS Grid Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base)  et/ou [CSS Flexible Box Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox).
 
 ### Media-queries
-La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès à la navigation plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par défaut et d'ajouter un bouton d'accès pour l'afficher. Une méthode qui s'est progressivement imposée est l'utilisation  du caractère '☰' comme icone d'accès à la navigation. 
+La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès  plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par défaut et d'ajouter un bouton d'accès pour l'afficher. L'utilisation  du caractère '☰' comme icone d'accès à la navigation s'est progressivement imposée. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTA3NDQwMjksLTI4MDU3MTczMCwxMD
-k1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0MiwzMDU4OTA1
-M119
+eyJoaXN0b3J5IjpbNDI5NTIwMzcsLTI4MDU3MTczMCwxMDk1NT
+I1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0MiwzMDU4OTA1M119
+
 -->
