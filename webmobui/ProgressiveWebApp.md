@@ -62,10 +62,10 @@ Notre PWA sera une application à page unique. Le contenu de chaque page est soi
 
 Le défaut de  cette navigation simulée est qu'elle rend inutilisable les boutons  *back*  et  *forward* du browser, ainsi que l’utilisation des favoris (ou d’un lien direct) vers une des sections. En effet, pour le browser, il s’agit bien d’une unique page et la navigation interne n’est pas inscrite dans l’historique de navigation du browser.  *HTML5*  propose une solution pour la manipulation de l’historique de navigation grâce à l’API  *history*. Utilisez donc cette API pour rendre à nouveau fonctionnel les boutons  *back*  et  *forward*.  
 
-Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page (du DOM), affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
+Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MzgyODY2OSwzOTQ5NzA5MzEsMTg1ND
+eyJoaXN0b3J5IjpbMTEwMTE2NjQzNywzOTQ5NzA5MzEsMTg1ND
 c3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5MTky
 LDI3MTM1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1Nz
 E3MzAsMTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MDE3NjgxNDIs
