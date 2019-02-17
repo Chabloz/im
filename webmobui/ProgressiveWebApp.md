@@ -15,7 +15,7 @@ Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquemen
 -   Un menu offre à l’utilisateur le choix parmi 3 fonctionnalités , une gestion de liste des choses à faire (*todo list*), une gestion de favoris Web (*bookmarks*) et un agrégateur de flux Rss/Atom.
 -   La fonctionnalité *Todo List* sera composée pour le moment d’un unique formulaire comprenant deux champs de saisie, un champ pour la  *chose à faire*  et un champ (facultatif) pour la date limite pour faire la chose.
 -   Les deux autres fonctionnalités seront pour le moment uniquement composés d’un formulaire avec un champ de saisie pour l’url du favoris Web ou du flux Rss/Atom.
--   L’application possédera un bas de page reprenant le nom de la  PWA  et un numéro de version.
+-   L’application possédera un bas de page reprenant le nom de la  PWA  ainsi que les informations sur votre personne (au minimum votre nom et email) en respectant les formats de micro-data proposé par [schema.org](http://schema.org/) pour une sémantique compréhensible par les principaux moteurs de recherche du Web.
 -   De plus la partie *Todo List* devra déjà contenir la tâche à faire suivante: “Finir les parties HTML5 et Responsive du TP du cours WebMobUi. A faire pour le mardi 26.02.2019”
 
 ## *Responsive*
@@ -60,8 +60,9 @@ Puis réalisez la *css* nécessaire pour un affichage du menu en vertical plutô
 ## Application à page unique (*Single Page App*)
 Notre PWA sera une application à page unique. Le contenu de chaque page est soit dynamiquement chargé (via AJAX, LocalStorage, ou autre), soit déjà présent dans le DOM  et change simplement entre les états visible et invisible. Une combinaison de ces deux techniques est bien sûr possible. Nous allons pour le moment utilisé la variante "déjà présent dans le DOM". 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDc3NDgzLDI2MzE4ODk3MSwtMTA3NT
-I0OTU0OCwtNzA2MzU5MTkyLDI3MTM1NjgxMiwxNjEzOTQyMjQz
-LDQyOTUyMDM3LC0yODA1NzE3MzAsMTA5NTUyNTk2NCwtMTczND
-I1NjgzMSw2MDE3NjgxNDIsMzA1ODkwNTNdfQ==
+eyJoaXN0b3J5IjpbMzk0OTcwOTMxLDE4NTQ3NzQ4MywyNjMxOD
+g5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNzEzNTY4MTIs
+MTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMwLDEwOTU1Mj
+U5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNTg5MDUzXX0=
+
 -->
