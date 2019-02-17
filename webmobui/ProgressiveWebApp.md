@@ -49,9 +49,9 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  Pour le faire, vous pouvez utiliser [CSS Grid Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base)  et/ou [CSS Flexible Box Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox).
 
 ### Media-queries
-La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès  plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par défaut et d'ajouter un bouton d'accès pour l'afficher. L'utilisation  du caractère '☰' comme icone d'accès à la navigation s'est progressivement imposée. Utilisez des polices d'icone plutôt que des images apportent certains avantages (leurs colorisation via la css entre autres)
+La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès  plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par défaut et d'ajouter un bouton d'accès pour l'afficher. L'utilisation  du caractère '☰' comme icone d'accès à la navigation s'est progressivement imposée. Utilisez des polices d'icone plutôt que des images apportent certains avantages (un exemple: la colorisation via css). De plus, si l'on utilise une police vectorielle, les icônes ne seront pas pixelisées sur  les écrans a forte densité de pixel (comme ceux des smartphones)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDY3NTI0MCw0Mjk1MjAzNywtMjgwNT
+eyJoaXN0b3J5IjpbLTQzNDEwMTYzOCw0Mjk1MjAzNywtMjgwNT
 cxNzMwLDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQy
 LDMwNTg5MDUzXX0=
 -->
