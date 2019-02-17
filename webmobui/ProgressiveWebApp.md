@@ -58,10 +58,10 @@ screen and (max-width: 30rem)
 Puis réalisez la *css* nécessaire pour un affichage du menu en vertical plutôt qu'en horizontal. Cachez ensuite tout le menu dans votre *css* et ajoutez le caractère de menu d'icomoon (grâce au pseudo élément ::before). Finalement, réalisez le JavaScript nécessaire pour le changement d'état du menu (aussi réalisable en pure *css* si vous aimez  les défis).
 
 ## Application à page unique (*Single Page App*)
-
+Notre PWA sera une application à page unique. L'utilisateur reste ainsi sur la même page 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjU2ODczNTgsMjYzMTg4OTcxLC0xMD
-c1MjQ5NTQ4LC03MDYzNTkxOTIsMjcxMzU2ODEyLDE2MTM5NDIy
-NDMsNDI5NTIwMzcsLTI4MDU3MTczMCwxMDk1NTI1OTY0LC0xNz
-M0MjU2ODMxLDYwMTc2ODE0MiwzMDU4OTA1M119
+eyJoaXN0b3J5IjpbMTU4NDc1NDk1NywyNjMxODg5NzEsLTEwNz
+UyNDk1NDgsLTcwNjM1OTE5MiwyNzEzNTY4MTIsMTYxMzk0MjI0
+Myw0Mjk1MjAzNywtMjgwNTcxNzMwLDEwOTU1MjU5NjQsLTE3Mz
+QyNTY4MzEsNjAxNzY4MTQyLDMwNTg5MDUzXX0=
 -->
