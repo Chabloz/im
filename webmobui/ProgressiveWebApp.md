@@ -55,12 +55,12 @@ Une fois la police téléchargée dans votre projet, il reste à rendre la navig
 ```css
 screen and (max-width: 30rem)
 ```
-Puis réalisez la *css* nécessaire pour un affichage du menu en vertical plutôt qu'en horizontal. Cachez ensuite tout le menu dans votre *css* et ajoutez le caractère de menu  (grâce au pseudo élément ::before). Finalement, réalisez le JavaScript nécessaire pour le changement d'état du menu (aussi réalisable en pure *css* si vous aimez  les défis).
+Puis réalisez la *css* nécessaire pour un affichage du menu en vertical plutôt qu'en horizontal. Cachez ensuite tout le menu dans votre *css* et ajoutez le caractère de menu d'icomoon (grâce au pseudo élément ::before). Finalement, réalisez le JavaScript nécessaire pour le changement d'état du menu (aussi réalisable en pure *css* si vous aimez  les défis).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDc3OTgyMiwtMTA3NTI0OTU0OCwtNz
-A2MzU5MTkyLDI3MTM1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3
-LC0yODA1NzE3MzAsMTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MD
-E3NjgxNDIsMzA1ODkwNTNdfQ==
+eyJoaXN0b3J5IjpbMjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MD
+YzNTkxOTIsMjcxMzU2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcs
+LTI4MDU3MTczMCwxMDk1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMT
+c2ODE0MiwzMDU4OTA1M119
 -->
