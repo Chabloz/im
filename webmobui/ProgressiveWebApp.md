@@ -49,9 +49,11 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  Pour le faire, vous pouvez utiliser [CSS Grid Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base)  et/ou [CSS Flexible Box Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox).
 
 ### Media-queries et police d'icônes
-La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès  plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par défaut et d'ajouter un bouton d'accès pour l'afficher. L'utilisation  du caractère '☰' comme icone d'accès à la navigation s'est progressivement imposée. Utilisez des polices d’icônes plutôt que des images apportent certains avantages (la colorisation via css par exemple). De plus, si l'on utilise une police vectorielle, les icônes ne seront pas pixelisées sur  les écrans à forte densité de pixels (comme ceux des smartphones). Utilisez [l'app Icomoon](https://icomoon.io/app) et générez un police contenant au moins le caractère de menu et une icone permettant d'indiquer un statut *en ligne / hors ligne* qui nous sera utile plus tard (comme par exemple l'icone de wifi, un nuage, un avion, ... ) .
+La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès  plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par défaut et d'ajouter un bouton d'accès pour l'afficher. L'utilisation  du caractère '☰' comme icone d'accès à la navigation s'est progressivement imposée. Utilisez des polices d’icônes plutôt que des images apportent certains avantages (la colorisation via css par exemple). De plus, si l'on utilise une police vectorielle, les icônes ne seront pas pixelisées sur  les écrans à forte densité de pixels (comme ceux des smartphones). Utilisez [l'app Icomoon](https://icomoon.io/app) et générez un police contenant au moins le caractère de menu et un caractère permettant d'indiquer un statut *en ligne / hors ligne* qui nous sera utile plus tard (comme par exemple l'icone de wifi, un nuage, un avion, ... ) .
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQyNjEyNTA2LDI3MTM1NjgxMiwxNjEzOT
-QyMjQzLDQyOTUyMDM3LC0yODA1NzE3MzAsMTA5NTUyNTk2NCwt
-MTczNDI1NjgzMSw2MDE3NjgxNDIsMzA1ODkwNTNdfQ==
+eyJoaXN0b3J5IjpbLTcwNjM1OTE5MiwyNzEzNTY4MTIsMTYxMz
+k0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMwLDEwOTU1MjU5NjQs
+LTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNTg5MDUzXX0=
 -->
