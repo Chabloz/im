@@ -49,9 +49,9 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  Pour le faire, vous pouvez utiliser [CSS Grid Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base)  et/ou [CSS Flexible Box Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox).
 
 ### Media-queries
-La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès à la navigation plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par 
+La navigation pourrait prendre trop de place sur smartphone. Il faut donc proposer une autre méthode d'accès à la navigation plus adaptée aux petits écrans des smartphones. Une solution courante et de rendre la navigation invisible par défaut et d'ajouter un bouton d'accès pour l'afficher. Une méthode qui s'est progressivement imposée est l'utilisation  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMDIwMDYyOSwtMjgwNTcxNzMwLDEwOT
-U1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNTg5MDUz
-XX0=
+eyJoaXN0b3J5IjpbLTE1MTk4OTIwNTAsLTI4MDU3MTczMCwxMD
+k1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0MiwzMDU4OTA1
+M119
 -->
