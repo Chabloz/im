@@ -59,10 +59,17 @@ Puis réalisez la *css* nécessaire pour un affichage du menu en vertical plutô
 
 ## Application à page unique (*Single Page App*)
 Notre PWA sera une application à page unique. Le contenu de chaque page est soit dynamiquement chargé (via AJAX, LocalStorage, ou autre), soit déjà présent dans le DOM  et change simplement entre les états visible et invisible. Une combinaison de ces deux techniques est bien sûr possible. Nous allons pour le moment utilisé la variante "déjà présent dans le DOM". 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0OTcwOTMxLDE4NTQ3NzQ4MywyNjMxOD
-g5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNzEzNTY4MTIs
-MTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMwLDEwOTU1Mj
-U5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNTg5MDUzXX0=
 
+mais cette navigation simulée rend inutilisable les boutons  _back_  et  _forward_  du browser, ainsi que l’utilisation des favoris (ou d’un lien direct) vers une des sections. En effet, pour le browser, il s’agit bien d’une unique page et la navigation interne n’est pas inscrite dans l’historique de navigation du browser.  _HTML5_  propose une solution pour la manipulation de l’historique de navigation grâce à l’API  _history_. Utilisez donc cette API pour rendre à nouveau fonctionnel les boutons  _back_  et  _forward_. Voilà une proposition de solution:
+
+-   Supprimez le click par défaut pour la première section (si vous l’aviez fait)
+-   Lors d’un click sur un lien du menu, utilisez l’api  _history_  pour manipuler l’url du browser afin qu’elle corresponde à la section affichée avec  _history.pushState_. (Amélioration possible: ne pas faire ceci si l’utilisateur click sur le lien de la section qui est actuellement affichée).
+-   Gérez l’événement  _popstate_  pour capturer les clicks sur les boutons  _back_  et  _forward_. Puis en fonction de l’url (accessible en JS avec  _location.pathname_), récupérez la dernière partie (qui devrait correspondre au nom de la section) et affichez la section appropriée. Si aucune section n’est disponible dans l’url (page d’accueil ?), utilisez la section  _todo_  par défaut.
+-   Finalement, au chargement de la page (du DOM), afficher la bonne section correspondante à l’url du browser (via un  _trigger_  de l’événement  _popstate_  par exemple)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzIwODg3Nzg1LDM5NDk3MDkzMSwxODU0Nz
+c0ODMsMjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MDYzNTkxOTIs
+MjcxMzU2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcsLTI4MDU3MT
+czMCwxMDk1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0Miwz
+MDU4OTA1M119
 -->
