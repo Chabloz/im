@@ -55,12 +55,12 @@ Une fois la police téléchargée dans votre projet, il reste à rendre la navig
 ```css
 screen and (max-width: 30rem)
 ```
-Puis réalisez la *css* nécessaire pour un affichage du menu en vertical plutôt qu'en horizontal. Finalement, cachez tous le menu dans votre *css* et ajouter (grâce au pseudo élément :before 
+Puis réalisez la *css* nécessaire pour un affichage du menu en vertical plutôt qu'en horizontal. Cachez ensuite tout le menu dans votre *css* et ajoutez le caractère de menu  (grâce au pseudo élément ::before). Finalement réalisez le JavaScript nécessaire 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MDI0NDc0NCwtNzA2MzU5MTkyLDI3MT
-M1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1NzE3MzAs
-MTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MDE3NjgxNDIsMzA1OD
-kwNTNdfQ==
+eyJoaXN0b3J5IjpbLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNz
+EzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMw
+LDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNT
+g5MDUzXX0=
 -->
