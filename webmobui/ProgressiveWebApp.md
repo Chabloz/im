@@ -49,9 +49,9 @@ Afin de rendre l'application disponible sur le maximum de périphérique, réali
  Pour le faire, vous pouvez utiliser [CSS Grid Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base)  et/ou [CSS Flexible Box Layout](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox).
 
 ### Media-queries
-
+La navigation pourrait prendre trop de place sur smartphone. Il est courant
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NTk4MTIxMiwtMjgwNTcxNzMwLDEwOT
-U1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNTg5MDUz
-XX0=
+eyJoaXN0b3J5IjpbNzAzOTczMzQsLTI4MDU3MTczMCwxMDk1NT
+I1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0MiwzMDU4OTA1M119
+
 -->
