@@ -5,7 +5,7 @@
 L'objectif principal de ce TP est la réalisation d'une "Progressive Web App" ([PWA](https://fr.wikipedia.org/wiki/Progressive_web_app)) à partir de zéro (*from scratch*).
 
 Nous allons utiliser les mêmes outils de développement que ceux du cours [
-ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, référez-vous au document sur la [programmation modulaire en JS](../progweb/module_base.md).
+ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, référez-vous au document sur la [programmation modulaire en JS](../progweb/module_base.md). Nous allons  
 
 ## HTML5
 
@@ -65,9 +65,9 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDQ2NjEyODgsMTEwMTE2NjQzNywzOT
-Q5NzA5MzEsMTg1NDc3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0
-OCwtNzA2MzU5MTkyLDI3MTM1NjgxMiwxNjEzOTQyMjQzLDQyOT
-UyMDM3LC0yODA1NzE3MzAsMTA5NTUyNTk2NCwtMTczNDI1Njgz
-MSw2MDE3NjgxNDIsMzA1ODkwNTNdfQ==
+eyJoaXN0b3J5IjpbLTIwODUzODA5MjQsLTEyMDQ2NjEyODgsMT
+EwMTE2NjQzNywzOTQ5NzA5MzEsMTg1NDc3NDgzLDI2MzE4ODk3
+MSwtMTA3NTI0OTU0OCwtNzA2MzU5MTkyLDI3MTM1NjgxMiwxNj
+EzOTQyMjQzLDQyOTUyMDM3LC0yODA1NzE3MzAsMTA5NTUyNTk2
+NCwtMTczNDI1NjgzMSw2MDE3NjgxNDIsMzA1ODkwNTNdfQ==
 -->
