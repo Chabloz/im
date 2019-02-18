@@ -5,11 +5,11 @@
 L'objectif principal de ce TP est la réalisation d'une "Progressive Web App" ([PWA](https://fr.wikipedia.org/wiki/Progressive_web_app)) à partir de zéro (*from scratch*).
 
 Nous allons utiliser les mêmes outils de développement que ceux du cours [
-ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, référez-vous au document sur la [programmation modulaire en JS](../progweb/module_base.md). Rajoutez un loader de *css* pour webpack grâce à la ligne suivante :
+ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, référez-vous au document sur la [programmation modulaire en JS](../progweb/module_base.md). Rajoutez un *loader* de *css* pour webpack grâce à la ligne suivante :
 ```bash
  npm install style-loader css-loader --save-dev
 ```
-Rajouter ce loader à votre config webpack en  ajoutant  aux *rules*  du fichier *webpack.config.js* la règle suivante:
+Rajoutez ce *loader* à votre config webpack en  ajoutant  aux *rules*  du fichier *webpack.config.js* la règle suivante:
 
 ```js
 {
@@ -17,6 +17,7 @@ Rajouter ce loader à votre config webpack en  ajoutant  aux *rules*  du fichier
   use: [ 'style-loader', 'css-loader' ]
 }
 ```
+Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichiers *css* depuis vos fichiers JS grâce 
 
 ## HTML5
 
@@ -76,10 +77,10 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5ODA2NzQ0LDc5MzQ1MjIxMywtMTIwND
-Y2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkzMSwxODU0Nzc0ODMs
-MjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MDYzNTkxOTIsMjcxMz
-U2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcsLTI4MDU3MTczMCwx
-MDk1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0MiwzMDU4OT
-A1M119
+eyJoaXN0b3J5IjpbLTE1NzY4NTE5OTIsNzkzNDUyMjEzLC0xMj
+A0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4
+MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNz
+EzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMw
+LDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNT
+g5MDUzXX0=
 -->
