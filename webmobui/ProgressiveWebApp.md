@@ -17,7 +17,12 @@ Rajoutez ce *loader* à votre config webpack en  ajoutant  aux *rules*  du fichi
   use: [ 'style-loader', 'css-loader' ]
 }
 ```
-Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichiers *css* depuis vos fichiers JS grâce 
+
+Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichiers *css* depuis vos fichiers JS grâce à un simple *import* comme dans l'exemple suivant:
+
+```js
+import  css  from  'css/main.css';
+```
 
 ## HTML5
 
@@ -77,7 +82,7 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzY4NTE5OTIsNzkzNDUyMjEzLC0xMj
+eyJoaXN0b3J5IjpbLTEwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMj
 A0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4
 MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNz
 EzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMw
