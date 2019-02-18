@@ -26,7 +26,7 @@ import  css  from  'css/main.css';
 
 ## HTML5
 
-Créez le code HTML5 d’une futur  PWA  en utilisant des balises sémantiquement proches des besoins suivants:
+Créez le code HTML5 (dans votre dossier *dist*) d’une futur  PWA  en utilisant des balises sémantiquement proches des besoins suivants:
 
 -   L’application possède un haut de page contenant son titre.
 -   Un menu offre à l’utilisateur le choix parmi 3 fonctionnalités , les horaires des cours IM (*schedule*), une gestion de liste des choses à faire (*todo*) et une gestion de favoris Web (*bookmarks*) 
@@ -82,10 +82,10 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk1OTczNTIxLC0xMDkzOTU0NTg4LDc5Mz
-Q1MjIxMywtMTIwNDY2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkz
-MSwxODU0Nzc0ODMsMjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MD
-YzNTkxOTIsMjcxMzU2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcs
-LTI4MDU3MTczMCwxMDk1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMT
-c2ODE0MiwzMDU4OTA1M119
+eyJoaXN0b3J5IjpbMTUyODc1MjMsNjk1OTczNTIxLC0xMDkzOT
+U0NTg4LDc5MzQ1MjIxMywtMTIwNDY2MTI4OCwxMTAxMTY2NDM3
+LDM5NDk3MDkzMSwxODU0Nzc0ODMsMjYzMTg4OTcxLC0xMDc1Mj
+Q5NTQ4LC03MDYzNTkxOTIsMjcxMzU2ODEyLDE2MTM5NDIyNDMs
+NDI5NTIwMzcsLTI4MDU3MTczMCwxMDk1NTI1OTY0LC0xNzM0Mj
+U2ODMxLDYwMTc2ODE0MiwzMDU4OTA1M119
 -->
