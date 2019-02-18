@@ -5,7 +5,10 @@
 L'objectif principal de ce TP est la réalisation d'une "Progressive Web App" ([PWA](https://fr.wikipedia.org/wiki/Progressive_web_app)) à partir de zéro (*from scratch*).
 
 Nous allons utiliser les mêmes outils de développement que ceux du cours [
-ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, référez-vous au document sur la [programmation modulaire en JS](../progweb/module_base.md). Rajoutez un loader de CSS pour webpack grâce à la ligne suivante  
+ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, référez-vous au document sur la [programmation modulaire en JS](../progweb/module_base.md). Rajoutez un loader de *css* pour webpack grâce à la ligne suivante :
+```bash
+ npm install style-loader css-loader --save-dev
+```
 
 ## HTML5
 
@@ -65,9 +68,10 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkzNDUyMjEzLC0xMjA0NjYxMjg4LDExMD
-ExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4MywyNjMxODg5NzEs
-LTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNzEzNTY4MTIsMTYxMz
-k0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMwLDEwOTU1MjU5NjQs
-LTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNTg5MDUzXX0=
+eyJoaXN0b3J5IjpbLTIwODU1MjM4MzAsNzkzNDUyMjEzLC0xMj
+A0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4
+MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNz
+EzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMw
+LDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNT
+g5MDUzXX0=
 -->
