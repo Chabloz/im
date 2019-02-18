@@ -11,7 +11,12 @@ ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, r
 ```
 Rajouter ce loader à votre config webpack en  ajoutant  aux *rules*  du fichier *webpack.config.js* la règle suivante:
 
-```ja
+```js
+{
+  test:/\.css$/,
+  use: [ 'style-loader', 'css-loader' ]
+}
+```
 
 ## HTML5
 
@@ -71,10 +76,10 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjUxMTc3NjAsNzkzNDUyMjEzLC0xMj
-A0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4
-MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNz
-EzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMw
-LDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQyLDMwNT
-g5MDUzXX0=
+eyJoaXN0b3J5IjpbNzY5ODA2NzQ0LDc5MzQ1MjIxMywtMTIwND
+Y2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkzMSwxODU0Nzc0ODMs
+MjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MDYzNTkxOTIsMjcxMz
+U2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcsLTI4MDU3MTczMCwx
+MDk1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0MiwzMDU4OT
+A1M119
 -->
