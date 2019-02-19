@@ -73,7 +73,7 @@ La navigation pourrait prendre trop de place sur smartphone. Il faut donc propos
 
 Une fois la police téléchargée dans votre projet, il reste à rendre la navigation *responsive*. Ajoutez la média queries suivante à votre *css* pour cibler les écrans trop petits pour l'affichage de la navigation actuelle:
 ```css
-screen and (max-width: 30rem)
+screen and (max-width: 30rem), screen and (max-device-width: 30rem)
 ```
 Puis réalisez la *css* nécessaire pour un affichage du menu en vertical plutôt qu'en horizontal. Cachez ensuite tout le menu dans votre *css* et ajoutez le caractère de menu d'icomoon (grâce au pseudo élément ::before). Finalement, réalisez le JavaScript nécessaire pour le changement d'état du menu (aussi réalisable en pure *css* si vous aimez  les défis).
 
