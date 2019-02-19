@@ -21,7 +21,7 @@ Rajoutez ce *loader* à votre config webpack en  ajoutant  aux *rules*  du fichi
 Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichiers *css* depuis vos fichiers JS grâce à un simple *import* comme dans l'exemple suivant:
 
 ```js
-import  css  from  'css/main.css';
+import 'css/main.css';
 ```
 
 ## HTML5
