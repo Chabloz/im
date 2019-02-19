@@ -12,10 +12,13 @@ ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, r
 Rajoutez ce *loader* à votre config webpack en  ajoutant  aux *rules*  du fichier *webpack.config.js* la règle suivante:
 
 ```js
-{
+{ 
   test:/\.css$/,
-  use: [ 'style-loader', 'css-loader' ]
-}
+  use: [ 'style-loader', {
+    loader: 'css-loader',
+    options: {url: false} 
+  }],        
+}      
 ```
 
 Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichiers *css* depuis vos fichiers JS grâce à un simple *import* comme dans l'exemple suivant:
