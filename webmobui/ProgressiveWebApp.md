@@ -85,15 +85,17 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 ## LocalStorage
-L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est quasi indispensable de stocker des données de l'application du coté du *browser*. L'[api Web Storage](https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API)   et en particulier [LocalStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage) va nous permettre de répondre à ce besoin. Elle nous offre un espace de stockage persistant propre au browser et propre au nom de domaine. Malheureusement, elle ne permet de base que de sauvez des chaînes de caractères. Ce problème est aisément résolu avec l'utilisation conjointe de JSON. Il suffit ainsi de sérialisé en JSON la donnée à stocker  et de sauver la chaîne de caractère dans le *LocalStorage*.
+L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est quasi indispensable de stocker des données de l'application du coté du *browser*. L'[api Web Storage](https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API)   et en particulier [LocalStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage) va nous permettre de répondre à ce besoin. Elle nous offre un espace de stockage persistant propre au browser et propre au nom de domaine. Malheureusement, elle ne permet que de sauvez des chaînes de caractères. Ce problème est aisément résolu avec l'utilisation conjointe de JSON. Il suffit ainsi de sérialiser en JSON la donnée à stocker et de sauver la chaîne de caractère dans le *LocalStorage*. 
+
+Un autre besoin fréquent est d'organiser les do
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY0MDc0NjU3LC0xMDg2MDI0NjgxLDE1Mj
-g3NTIzLDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMs
-LTEyMDQ2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMTg1ND
-c3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5MTky
-LDI3MTM1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1Nz
-E3MzAsMTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MDE3NjgxNDJd
-fQ==
+eyJoaXN0b3J5IjpbMTg1NTg4Mjg4MywtMTA4NjAyNDY4MSwxNT
+I4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEz
+LC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NT
+Q3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5
+MiwyNzEzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNT
+cxNzMwLDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQy
+XX0=
 -->
