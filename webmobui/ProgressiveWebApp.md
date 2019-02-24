@@ -87,15 +87,15 @@ Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre
 ## LocalStorage
 L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est quasi indispensable de stocker des données de l'application du coté du *browser*. L'[api Web Storage](https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API)   et en particulier [LocalStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage) va nous permettre de répondre à ce besoin. Elle nous offre un espace de stockage persistant propre au browser et propre au nom de domaine (chaque sous-domaine aura toutefois un espace de stockage différent). Malheureusement, elle ne permet que de sauvez des chaînes de caractères. Ce problème est aisément résolu avec l'utilisation conjointe de JSON. Il suffit ainsi de sérialiser en JSON la donnée à stocker et de sauver la chaîne de caractère dans le *LocalStorage*. 
 
-Un autre besoin fréquent est d'organiser les données dans des collections de données. Le LocalStorage étant partagé entre tous les page du même sous-domaine, 
+Un autre besoin fréquent est d'organiser les données dans des collections de données. De plus le LocalStorage est partagé entre tous les pages du même sous-domaine. Ceci  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDc3MjMzLC0xMDg2MDI0NjgxLDE1Mj
-g3NTIzLDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMs
-LTEyMDQ2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMTg1ND
-c3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5MTky
-LDI3MTM1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1Nz
-E3MzAsMTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MDE3NjgxNDJd
-fQ==
+eyJoaXN0b3J5IjpbMTQzOTU0MTMyMSwtMTA4NjAyNDY4MSwxNT
+I4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEz
+LC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NT
+Q3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5
+MiwyNzEzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNT
+cxNzMwLDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQy
+XX0=
 -->
