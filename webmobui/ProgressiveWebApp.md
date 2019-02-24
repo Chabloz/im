@@ -89,15 +89,15 @@ L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. 
 
 Un besoin fréquent est d'organiser les données dans des collections de données (c.à.d des espace de noms différents) . Ceci et le fait que le LocalStorage est partagé entre toutes les pages d'un même sous-domaine, font qu'il serait pratique de pouvoir créer des "sous espace" de stockage dans un LocalStorage. 
 
-Vous trouverez ici une classe  un module permettant 
+Vous trouverez ici une classe JS permettant  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzgwOTg1ODksLTEwODYwMjQ2ODEsMT
-UyODc1MjMsNjk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIx
-MywtMTIwNDY2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkzMSwxOD
-U0Nzc0ODMsMjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MDYzNTkx
-OTIsMjcxMzU2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcsLTI4MD
-U3MTczMCwxMDk1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0
-Ml19
+eyJoaXN0b3J5IjpbNzI3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mj
+g3NTIzLDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMs
+LTEyMDQ2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMTg1ND
+c3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5MTky
+LDI3MTM1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1Nz
+E3MzAsMTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MDE3NjgxNDJd
+fQ==
 -->
