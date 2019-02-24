@@ -85,13 +85,13 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 ## LocalStorage
-L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend*   
+L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est donc presque indispensable de stocker des données de l'application du coté du *browser*. L'api WeStorage du   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDM5MDY2MCwtMTA4NjAyNDY4MSwxNT
-I4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEz
-LC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NT
-Q3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5
-MiwyNzEzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNT
-cxNzMwLDEwOTU1MjU5NjQsLTE3MzQyNTY4MzEsNjAxNzY4MTQy
-XX0=
+eyJoaXN0b3J5IjpbLTIwNDg3MTY2NjEsLTEwODYwMjQ2ODEsMT
+UyODc1MjMsNjk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIx
+MywtMTIwNDY2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkzMSwxOD
+U0Nzc0ODMsMjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MDYzNTkx
+OTIsMjcxMzU2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcsLTI4MD
+U3MTczMCwxMDk1NTI1OTY0LC0xNzM0MjU2ODMxLDYwMTc2ODE0
+Ml19
 -->
