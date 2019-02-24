@@ -85,9 +85,9 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 ## LocalStorage
-L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est quasi indispensable de stocker des données de l'application du coté du *browser*. L'[api Web Storage](https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API)   et en particulier [LocalStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage) va nous permettre de répondre à ce besoin. Elle nous offre un espace de stockage persistant propre au browser (
+L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est quasi indispensable de stocker des données de l'application du coté du *browser*. L'[api Web Storage](https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API)   et en particulier [LocalStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage) va nous permettre de répondre à ce besoin. Elle nous offre un espace de stockage persistant propre au browser et propre au nom de domaine. Malheureusement, elle ne permet de base que de sauvez des chaînes de cara
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTc5ODMwOTYsLTEwODYwMjQ2ODEsMT
+eyJoaXN0b3J5IjpbLTEyNTkxMzc0MTksLTEwODYwMjQ2ODEsMT
 UyODc1MjMsNjk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIx
 MywtMTIwNDY2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkzMSwxOD
 U0Nzc0ODMsMjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MDYzNTkx
