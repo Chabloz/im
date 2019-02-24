@@ -87,17 +87,17 @@ Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre
 ## LocalStorage
 L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est quasi indispensable de stocker des données de l'application du coté du *browser*. L'[api Web Storage](https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API)   et en particulier [LocalStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage) va nous permettre de répondre à ce besoin. Elle nous offre un espace de stockage persistant propre au browser et propre au nom de domaine (chaque sous-domaine aura toutefois un espace de stockage différent). Malheureusement, elle ne permet que de sauvez des chaînes de caractères. Ce problème est aisément résolu avec l'utilisation conjointe de JSON. Il suffit ainsi de sérialiser en JSON la donnée à stocker et de sauver la chaîne de caractère dans le *LocalStorage*. 
 
-Un besoin fréquent est d'organiser les données dans des collections de données (c.à.d des espace de noms différents) . Ceci et le fait que le LocalStorage est partagé entre toutes les pages d'un même sous-domaine, font qu'il serait pratique de pouvoir créer des "sous espace" de stockage dans un LocalStorage. 
+Un besoin fréquent est d'organiser les données dans des collections de données (c.à.d des espace de noms différents) . Ceci et le fait que le LocalStorage est partagé entre toutes les pages d'un même sous-domaine, font qu'il serait pratique de pouvoir créer des "sous espace" de stockage dans un LocalStorage.  
 
-Vous trouverez ici une classe JS permettant  
+Vous trouverez ici une classe JS permettant  entre autre de gérer les deux besoins précités : [JsonStorage.js](resources/JsonStorage.js).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mj
-g3NTIzLDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMs
-LTEyMDQ2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMTg1ND
-c3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5MTky
-LDI3MTM1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1Nz
-E3MzAsMTA5NTUyNTk2NCwtMTczNDI1NjgzMSw2MDE3NjgxNDJd
+eyJoaXN0b3J5IjpbMjQzMjcwMjk3LDcyNzk3Mjk5MSwtMTA4Nj
+AyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgs
+NzkzNDUyMjEzLC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OT
+cwOTMxLDE4NTQ3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1NDgs
+LTcwNjM1OTE5MiwyNzEzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1Mj
+AzNywtMjgwNTcxNzMwLDEwOTU1MjU5NjQsLTE3MzQyNTY4MzFd
 fQ==
 -->
