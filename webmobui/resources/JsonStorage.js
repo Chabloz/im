@@ -1,4 +1,10 @@
-/** Class representing a LocalStorage handler, with JSON and storage's name management */
+/** 
+ * Class representing a LocalStorage handler, with JSON and storage's name management 
+ *
+ * Licence: GNU General Public License v3.0  
+ * Release date: 24 february 2019
+ * Author: Nicolas Chabloz  
+ */
 export default class {
 
   /**
