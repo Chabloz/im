@@ -89,11 +89,11 @@ L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. 
 
 Un besoin fréquent est d'organiser les données dans des collections de données (c.à.d des espace de noms différents) . Ceci et le fait que le LocalStorage est partagé entre toutes les pages d'un même sous-domaine, font qu'il serait pratique de pouvoir créer des "sous espace" de stockage dans un LocalStorage.  
 
-Vous trouverez ici une classe JS permettant  entre autre de gérer les deux besoins précités : [JsonStorage.js](resources/JsonStorage.js).
+Vous trouverez ici une classe JS permettant  entre autre de gérer les deux besoins précités : [JsonStorage.js](resources/JsonStorage.js). Utilisez là pour coder la partie *todo list* de votre pwa. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzMjcwMjk3LDcyNzk3Mjk5MSwtMTA4Nj
+eyJoaXN0b3J5IjpbMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4Nj
 AyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgs
 NzkzNDUyMjEzLC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OT
 cwOTMxLDE4NTQ3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1NDgs
