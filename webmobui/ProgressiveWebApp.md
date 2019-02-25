@@ -100,15 +100,17 @@ entry: ['babel-polyfill', './src/index.js'],
 ```
 
 
- Utilisez là pour coder la partie *todo list* de votre PWA. 
+Finalement, importez la classe dans votre code et utilisez là pour gérer la partie *todo list* de votre PWA.  Cette partie doit permettre à l'utilisateur de:
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDQwODU1MTgsLTEzMzA0MDM4MzgsMT
-c0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4MSwxNTI4NzUy
-Myw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMj
-A0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4
-MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNz
-EzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMw
-XX0=
+eyJoaXN0b3J5IjpbLTMxNjM2MDQzNCwtMTMzMDQwMzgzOCwxNz
+Q0OTUyMDIsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mjg3NTIz
+LDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMsLTEyMD
+Q2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMTg1NDc3NDgz
+LDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5MTkyLDI3MT
+M1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1NzE3MzBd
+fQ==
 -->
