@@ -89,14 +89,14 @@ L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. 
 
 Un besoin fréquent est d'organiser les données dans des collections de données (c.à.d des espace de noms différents) . Ceci et le fait que le LocalStorage est partagé entre toutes les pages d'un même sous-domaine, font qu'il serait pratique de pouvoir créer des "sous espace" de stockage dans un LocalStorage.  
 
-Vous trouverez ici une classe JS permettant  entre autre de gérer les deux besoins précités : [JsonStorage.js](resources/JsonStorage.js). Rajoutez le fichier dans un dossier *lib* de vos sources. Si vous utilisez *Babel*, vous devez aussi installer *babel-polyfil*:
+Vous trouverez ici une classe JS permettant  entre autre de gérer les deux besoins précités : [JsonStorage.js](resources/JsonStorage.js). Rajoutez le fichier de la classe dans un dossier *lib* de vos sources. Si vous utilisez *Babel*, vous devez aussi installer *babel-polyfil*:
 ```js
 npm install babel-polyfill --save-dev
 ```
-Puis modifiez l'en configuration dans le fichier *webpack.config.js*:
+Modifiez aussi l'option *entry* dans le fichier de configuration *webpack.config.js*:
 
 ```js
-npm install babel-polyfill --save-dev
+entry: ['babel-polyfill', './src/index.js'],
 ```
 
 
@@ -104,11 +104,11 @@ npm install babel-polyfill --save-dev
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxNTUwMDIwLC0xMzMwNDAzODM4LDE3ND
-Q5NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUyODc1MjMs
-Njk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIxMywtMTIwND
-Y2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkzMSwxODU0Nzc0ODMs
-MjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MDYzNTkxOTIsMjcxMz
-U2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcsLTI4MDU3MTczMF19
-
+eyJoaXN0b3J5IjpbLTE1MDQwODU1MTgsLTEzMzA0MDM4MzgsMT
+c0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4MSwxNTI4NzUy
+Myw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMj
+A0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4
+MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNz
+EzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzNywtMjgwNTcxNzMw
+XX0=
 -->
