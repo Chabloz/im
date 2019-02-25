@@ -102,15 +102,15 @@ entry: ['babel-polyfill', './src/index.js'],
 
 Finalement, importez la classe dans votre code et utilisez là pour gérer la partie *todo list* de votre PWA.  Cette partie doit permettre à l'utilisateur de:
 
-
+- Ajouter une tâche dans le LocalStorage via le formulaire de la section *todo*. Une tâche est un simple objet avec deux propriétés: la tâche et la date l
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjM2MDQzNCwtMTMzMDQwMzgzOCwxNz
-Q0OTUyMDIsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mjg3NTIz
-LDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMsLTEyMD
-Q2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMTg1NDc3NDgz
-LDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5MTkyLDI3MT
-M1NjgxMiwxNjEzOTQyMjQzLDQyOTUyMDM3LC0yODA1NzE3MzBd
-fQ==
+eyJoaXN0b3J5IjpbMjc1OTYwMzAyLC0xMzMwNDAzODM4LDE3ND
+Q5NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUyODc1MjMs
+Njk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIxMywtMTIwND
+Y2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkzMSwxODU0Nzc0ODMs
+MjYzMTg4OTcxLC0xMDc1MjQ5NTQ4LC03MDYzNTkxOTIsMjcxMz
+U2ODEyLDE2MTM5NDIyNDMsNDI5NTIwMzcsLTI4MDU3MTczMF19
+
 -->
