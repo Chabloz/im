@@ -28,6 +28,9 @@ export default class {
     if (this.options.listen) {
       window.addEventListener('storage', evt => {
         this._reloadKeys();
+        if (this.options.trigger) {
+          window.dispatchEvent(new Event(this.options.eventName));
+        }
       });
     }
   }
