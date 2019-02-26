@@ -13,13 +13,15 @@ export default class {
    * @param {Object} [options={}] - Options
    * @param {string} [options.name="default"] - The name of the storage.
    * @param {boolean} [options.listen=true] - Listen to storage events for data update
-   * @param {boolean} [options.trigger=true] - Trigger an "jsonstorage" event on "window" when data is set, changed or deleted in the storage
+   * @param {boolean} [options.trigger=true] - Trigger an event on "window" when data is set, changed or deleted in the storage
+   * @param {boolean} [options.eventName="jsonstorage"] - The event's name to trigger 
    */  
   constructor(options = {}) {
     this.options = {
       name: options.name || "default",
       listen: options.listen || true,
-      trigger: options.trigger || true
+      trigger: options.trigger || true,
+      eventName: options.eventName || "jsonstorage"
     };
     this._reloadKeys();
     // reload keys data when storage change from another tab
@@ -142,7 +144,7 @@ export default class {
     localStorage.setItem(`${this.options.name}_${key}`, JSON.stringify(val));
     this.storageKeys.set(key, 1);
     if (this.options.trigger) {
-      window.dispatchEvent(new Event("jsonstorage"));
+      window.dispatchEvent(new Event(this.options.eventName));
     }
   }
 
@@ -184,7 +186,7 @@ export default class {
     localStorage.removeItem(`${this.options.name}_${key}`);
     this.storageKeys.delete(key);
     if (this.options.trigger) {
-      window.dispatchEvent(new Event("jsonstorage"));
+      window.dispatchEvent(new Event(this.options.eventName));
     }
   }
 
@@ -197,7 +199,7 @@ export default class {
     }
     this.storageKeys.clear();
     if (this.options.trigger) {
-      window.dispatchEvent(new Event("jsonstorage"));
+      window.dispatchEvent(new Event(this.options.eventName));
     }
   }
 
