@@ -25,7 +25,7 @@ export default class {
     // reload keys data when storage change from another tab
     if (this.options.listen) {
       window.addEventListener('storage', evt => {
-        this.reloadKeys();
+        this._reloadKeys();
       });
     }
   }
