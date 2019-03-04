@@ -109,7 +109,7 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 
 ## En ligne  / Hors ligne (*online / offline*)
 
-Une de fonctionnalité offerte par les PWA sont leur utilisation en mode *offline*. C'est à dire que l’application doit être capable de continuer à fonctionner même si le *backend* n'est pas atteignable (ce qui sera le cas en mode *avion* ou lorsque la connectivité aux données sera perdues).
+Une de fonctionnalité offerte par les PWA sont leur utilisation en mode *offline*. C'est à dire que l’application doit être capable de continuer à fonctionner même si le *backend* n'est pas atteignable (ce qui sera le cas lorsque la connectivité aux données sera perdues).
 
 La première étape est donc d'identifier le fait que l'utilisateur possède une connectivité aux données ou non. La propriété [window.navigator.onLine](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine) ainsi que les événements [online](https://developer.mozilla.org/en-US/docs/Web/Events/online) et [offline](https://developer.mozilla.org/en-US/docs/Web/Events/offline) vont nous aider à effectuer cette détection.  Grâce à eux, mettez en place un système permettant de détecter la connectivité aux données de l'utilisateur. Indiquez le par une icone de statut *offline / online* en haut à droite de votre application en utilisant *icomoon*. Pour tester la chose, passez en mode *offline* et observez que l'icone réagit en adéquation. 
 
@@ -121,11 +121,11 @@ La deuxième étape consiste
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3ODA2NDc2OSwxODE0ODkxMTIwLDE2Mj
-Q5NTE5NzIsLTE3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3
-MTY2MSw4NzExMDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLD
-cyNzk3Mjk5MSwtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1
-MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMjA0NjYxMjg4LD
-ExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4MywyNjMxODg5
-NzFdfQ==
+eyJoaXN0b3J5IjpbMTk4MDkxNTU0LDE4MTQ4OTExMjAsMTYyND
+k1MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcx
+NjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0OTUyMDIsNz
+I3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mjg3NTIzLDY5NTk3MzUy
+MSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMsLTEyMDQ2NjEyODgsMT
+EwMTE2NjQzNywzOTQ5NzA5MzEsMTg1NDc3NDgzLDI2MzE4ODk3
+MV19
 -->
