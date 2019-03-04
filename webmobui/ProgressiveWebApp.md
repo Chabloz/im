@@ -109,12 +109,12 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 
 ## *Online / Offline*
 
-Une de fonctionnalité offerte par les PWA sont leur utilisattion
+Une de fonctionnalité offerte par les PWA sont leur utilisation en mode *offline*. C'est à dire que l’application doit être capable de continuer à fonctionner même si le *backend* n'est pas atteinga. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMjMyNjk2MywtMTc4OTUwNzEwNywtMj
+eyJoaXN0b3J5IjpbMTkzNTY0OTIwMCwtMTc4OTUwNzEwNywtMj
 A5MzkwMzE2NywxNjAzODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQw
 MzgzOCwxNzQ0OTUyMDIsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLD
 E1Mjg3NTIzLDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIy
