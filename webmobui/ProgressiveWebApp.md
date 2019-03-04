@@ -119,18 +119,19 @@ Cette détection vous permettra aussi de définir des comportement applicatifs d
 ### Mise en cache / Interception des requêtes 
 La deuxième étape consiste à rendre l'application disponible en mode hors ligne. Et ceci même lors de son démarrage. Il va donc falloir gérer deux choses: l'interception des requêtes aux *backend*  et la mise en cache de l'application. La première (l'interception des requêtes) va permettre d'éviter  le chargement standard de notre page Web. En effet, par défaut une requête est faites au *backend* (serveur Web)  pour obtenir les ressources de la page (HTML, JS, images, polices, ... ). Bien sûr cette requête ne pourra qu'échouer en mode *offline* ! Il va donc falloir résoudre ce problème.
 
-Pour le faire, pas mal d'élément du HTML5 seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) et [
-cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
+Pour le faire, pas mal d'élément du HTML5 seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) et [cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache).
+
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzYzNzUxMzcsNzUzODU1MTcwLDE4MT
-Q4OTExMjAsMTYyNDk1MTk3MiwtMTc4OTUwNzEwNywtMjA5Mzkw
-MzE2NywxNjAzODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOC
-wxNzQ0OTUyMDIsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mjg3
-NTIzLDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMsLT
-EyMDQ2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMTg1NDc3
-NDgzXX0=
+eyJoaXN0b3J5IjpbMTM1MTU1Nzk4NSw3NTM4NTUxNzAsMTgxND
+g5MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkzOTAz
+MTY3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzODM4LD
+E3NDQ5NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUyODc1
+MjMsNjk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIxMywtMT
+IwNDY2MTI4OCwxMTAxMTY2NDM3LDM5NDk3MDkzMSwxODU0Nzc0
+ODNdfQ==
 -->
