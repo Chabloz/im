@@ -119,13 +119,14 @@ Cette détection vous permettra aussi de définir des comportement applicatifs d
 ### Mise en cache / Interception des requêtes 
 La deuxième étape consiste à rendre l'application disponible en mode hors ligne. Et ceci même lors de son démarrage. Il va donc falloir gérer deux choses: l'interception des requêtes aux *backend*  et la mise en cache de l'application. La première (l'interception des requêtes) va permettre d'éviter  le chargement standard de notre page Web. En effet, par défaut une requête est faites au *backend* (serveur Web)  pour obtenir les ressources de la page (HTML, JS, images, polices, ... ). Bien sûr cette requête ne pourra qu'échouer en mode *offline* ! Il va donc falloir résoudre ce problème.
 
-Pour le faire, pas mal d'élément du HTML5 seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) e
+Pour le faire, pas mal d'élément du HTML5 seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) et [
+cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjU3MTM3NzcsNzUzODU1MTcwLDE4MT
+eyJoaXN0b3J5IjpbLTE3NzYzNzUxMzcsNzUzODU1MTcwLDE4MT
 Q4OTExMjAsMTYyNDk1MTk3MiwtMTc4OTUwNzEwNywtMjA5Mzkw
 MzE2NywxNjAzODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOC
 wxNzQ0OTUyMDIsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mjg3
