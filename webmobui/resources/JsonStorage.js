@@ -1,7 +1,8 @@
 /** 
  * Class representing a LocalStorage handler, with JSON and storage's name management 
  *
- * Licence: GNU General Public License v3.0   
+ * Licence: GNU General Public License v3.0  
+ * Release date: 24 february 2019
  * Author: Nicolas Chabloz  
  */
 export default class {
@@ -26,6 +27,7 @@ export default class {
     // reload keys data when storage change from another tab
     if (this.options.listen) {
       window.addEventListener('storage', evt => {
+        if (!evt.key.startsWith(`${this.options.name}_`)) return;
         this._reloadKeys();
         if (this.options.trigger) {
           window.dispatchEvent(new Event(this.options.eventName));
