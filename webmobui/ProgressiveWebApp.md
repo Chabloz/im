@@ -104,7 +104,7 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 
 - Ajouter une tâche dans le *LocalStorage* via le formulaire de la section *todo*. Une tâche est un simple objet avec deux propriétés: la tâche et la date limite.
 - Visualiser toutes les tâches **actives** par ordre chronologique. Les tâches actives sont celles dont la date limite est dans le futur.
-- Visualiser les tâches **archivées** par ordre chronologique inversé. Les tâches archivées sont celles dont la date limite est échue.
+- Visualiser les tâches **archivées** par ordre chronologique. Les tâches archivées sont celles dont la date limite est échue.
 - Supprimer une tâche (active ou archivée).
 
 
@@ -112,11 +112,11 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEzMz
-A0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4
-MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzND
-UyMjEzLC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMx
-LDE4NTQ3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNj
-M1OTE5MiwyNzEzNTY4MTIsMTYxMzk0MjI0Myw0Mjk1MjAzN119
-
+eyJoaXN0b3J5IjpbLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4Nz
+ExMDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5
+MSwtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOT
+M5NTQ1ODgsNzkzNDUyMjEzLC0xMjA0NjYxMjg4LDExMDExNjY0
+MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4MywyNjMxODg5NzEsLTEwNz
+UyNDk1NDgsLTcwNjM1OTE5MiwyNzEzNTY4MTIsMTYxMzk0MjI0
+M119
 -->
