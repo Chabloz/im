@@ -111,7 +111,7 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 
 Une de fonctionnalité offerte par les PWA sont leur utilisation en mode *offline*. C'est à dire que l’application doit être capable de continuer à fonctionner même si le *backend* n'est pas atteignable (ce qui sera le cas en mode *avion* ou lorsque la connectivité aux données sera perdues).
 
-La première étape est donc d'identifier le fait que l'utilisateur possède une connectivité aux données ou non. La propriété [window.navigator.onLine](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine) ainsi que les événements [online](https://developer.mozilla.org/en-US/docs/Web/Events/online) et [offline](https://developer.mozilla.org/en-US/docs/Web/Events/offline) vont nous aider à effectuer cette détection.  Grâce à eux, mettez en place un système permettant de détecter la connectivité aux données de l'utilisateur. Indiquez le par une icone de statut *offline / online* en haut a droite de votre application en utilisant *icomoon*. Pour tester la chose, passez en mode *offline* et observez que l'icone réagit en adéquation. 
+La première étape est donc d'identifier le fait que l'utilisateur possède une connectivité aux données ou non. La propriété [window.navigator.onLine](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine) ainsi que les événements [online](https://developer.mozilla.org/en-US/docs/Web/Events/online) et [offline](https://developer.mozilla.org/en-US/docs/Web/Events/offline) vont nous aider à effectuer cette détection.  Grâce à eux, mettez en place un système permettant de détecter la connectivité aux données de l'utilisateur. Indiquez le par une icone de statut *offline / online* en haut à droite de votre application en utilisant *icomoon*. Pour tester la chose, passez en mode *offline* et observez que l'icone réagit en adéquation. 
 
 
 
@@ -119,7 +119,7 @@ La première étape est donc d'identifier le fait que l'utilisateur possède une
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDYwMjc5NTYsMTgxNDg5MTEyMCwxNj
+eyJoaXN0b3J5IjpbLTE3MTcyMzE1MDcsMTgxNDg5MTEyMCwxNj
 I0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LDE2MDM4
 NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzODM4LDE3NDQ5NTIwMi
 w3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUyODc1MjMsNjk1OTcz
