@@ -107,17 +107,18 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 - Visualiser les tâches **archivées** par ordre chronologique. Les tâches archivées sont celles dont la date limite est échue.
 - Supprimer une tâche (active ou archivée).
 
-## *Online / Offline* détéction
+## *Online / Offline*
 
+Une de fonctionnalité offerte par les PWA sont leur utilisattion
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMT
-YwMzg3MTY2MSw4NzExMDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1
-MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OT
-U5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMjA0NjYx
-Mjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4MywyNj
-MxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1OTE5MiwyNzEzNTY4
-MTJdfQ==
+eyJoaXN0b3J5IjpbLTgyMjMyNjk2MywtMTc4OTUwNzEwNywtMj
+A5MzkwMzE2NywxNjAzODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQw
+MzgzOCwxNzQ0OTUyMDIsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLD
+E1Mjg3NTIzLDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIy
+MTMsLTEyMDQ2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMT
+g1NDc3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5
+MTkyXX0=
 -->
