@@ -111,16 +111,16 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 
 Une de fonctionnalité offerte par les PWA sont leur utilisation en mode *offline*. C'est à dire que l’application doit être capable de continuer à fonctionner même si le *backend* n'est pas atteignable (ce qui sera le cas en mode *avion* ou lorsque la connectivité aux données sera perdues).
 
-
+La première étape est donc d'identifier le fait que l'utilisateur possède une connectivité aux données ou non. L'api 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ3MTgyMzUsLTE3ODk1MDcxMDcsLT
-IwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEzMzA0
-MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4MS
-wxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUy
-MjEzLC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcwOTMxLD
-E4NTQ3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1NDgsLTcwNjM1
-OTE5Ml19
+eyJoaXN0b3J5IjpbMTYyNDk1MTk3MiwtMTc4OTUwNzEwNywtMj
+A5MzkwMzE2NywxNjAzODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQw
+MzgzOCwxNzQ0OTUyMDIsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLD
+E1Mjg3NTIzLDY5NTk3MzUyMSwtMTA5Mzk1NDU4OCw3OTM0NTIy
+MTMsLTEyMDQ2NjEyODgsMTEwMTE2NjQzNywzOTQ5NzA5MzEsMT
+g1NDc3NDgzLDI2MzE4ODk3MSwtMTA3NTI0OTU0OCwtNzA2MzU5
+MTkyXX0=
 -->
