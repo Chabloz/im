@@ -117,17 +117,17 @@ La première étape est donc d'identifier le fait que l'utilisateur possède une
 Cette détection vous permettra aussi de définir des comportement applicatifs différent selon que l'utilisateur et en ligne ou hors ligne. Pour le mettre en pratique : essayez de désactiver le menu *Favoris* en mode *offline* (et de l'activer en mode *online*).
 
 ### Mise en cache / Interception des requêtes 
-La deuxième étape consiste à rendre l'application disponible en mode hors ligne. Et ceci même lors de son démarrage.   
+La deuxième étape consiste à rendre l'application disponible en mode hors ligne. Et ceci même lors de son démarrage. Il va donc falloir gérer deux choses: l'interception des requêtes aux *backend*  et la mise en cache de l'application. La première (l'interception des requêtes 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcxNzE2NjI3LDE4MTQ4OTExMjAsMTYyND
-k1MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcx
-NjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0OTUyMDIsNz
-I3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mjg3NTIzLDY5NTk3MzUy
-MSwtMTA5Mzk1NDU4OCw3OTM0NTIyMTMsLTEyMDQ2NjEyODgsMT
-EwMTE2NjQzNywzOTQ5NzA5MzEsMTg1NDc3NDgzLDI2MzE4ODk3
-MV19
+eyJoaXN0b3J5IjpbMTk3MDkxMTg2NiwxODE0ODkxMTIwLDE2Mj
+Q5NTE5NzIsLTE3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3
+MTY2MSw4NzExMDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLD
+cyNzk3Mjk5MSwtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1
+MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMjA0NjYxMjg4LD
+ExMDExNjY0MzcsMzk0OTcwOTMxLDE4NTQ3NzQ4MywyNjMxODg5
+NzFdfQ==
 -->
