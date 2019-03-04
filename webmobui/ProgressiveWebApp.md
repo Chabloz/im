@@ -121,7 +121,7 @@ La deuxième étape consiste à rendre l'application disponible en mode hors lig
 
 Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) et [cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache). Le *Service Worker* agira comme un [daemon](https://fr.wikipedia.org/wiki/Daemon_%28informatique%29)  écoutant les requêtes  de la PWA. Et si ces  requêtes concernent des éléments disponibles dans le cache, il les fournira. 
 
-Essayez de mettre en oeuvre 
+Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*.
 
 
 
@@ -129,11 +129,11 @@ Essayez de mettre en oeuvre
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNDQyOTk4OCwtMTQ4ODc1NDA2Niw3NT
-M4NTUxNzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3
-MTA3LC0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC
-0xMzMwNDAzODM4LDE3NDQ5NTIwMiw3Mjc5NzI5OTEsLTEwODYw
-MjQ2ODEsMTUyODc1MjMsNjk1OTczNTIxLC0xMDkzOTU0NTg4LD
-c5MzQ1MjIxMywtMTIwNDY2MTI4OCwxMTAxMTY2NDM3LDM5NDk3
-MDkzMV19
+eyJoaXN0b3J5IjpbMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mz
+g1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcx
+MDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLT
+EzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAy
+NDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNz
+kzNDUyMjEzLC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcw
+OTMxXX0=
 -->
