@@ -111,17 +111,17 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 
 Une de fonctionnalité offerte par les PWA sont leur utilisation en mode *offline*. C'est à dire que l’application doit être capable de continuer à fonctionner même si le *backend* n'est pas atteignable (ce qui sera le cas en mode *avion* ou lorsque la connectivité aux données sera perdues).
 
-La première étape est donc d'identifier le fait que l'utilisateur possède une connectivité aux données ou non. La propriété [window.navigator.onLine](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine) ainsi que les événements vont nous aider à effectuer cette détection. 
+La première étape est donc d'identifier le fait que l'utilisateur possède une connectivité aux données ou non. La propriété [window.navigator.onLine](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine) ainsi que les événements [online](https://developer.mozilla.org/en-US/docs/Web/Events/online) et vont nous aider à effectuer cette détection. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNTgwNjYxMSwxNjI0OTUxOTcyLC0xNz
-g5NTA3MTA3LC0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcxMTAw
-Nzg1LC0xMzMwNDAzODM4LDE3NDQ5NTIwMiw3Mjc5NzI5OTEsLT
-EwODYwMjQ2ODEsMTUyODc1MjMsNjk1OTczNTIxLC0xMDkzOTU0
-NTg4LDc5MzQ1MjIxMywtMTIwNDY2MTI4OCwxMTAxMTY2NDM3LD
-M5NDk3MDkzMSwxODU0Nzc0ODMsMjYzMTg4OTcxLC0xMDc1MjQ5
-NTQ4XX0=
+eyJoaXN0b3J5IjpbNzc4ODk0NDc1LDE2MjQ5NTE5NzIsLTE3OD
+k1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3
+ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMT
+A4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1
+ODgsNzkzNDUyMjEzLC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMz
+k0OTcwOTMxLDE4NTQ3NzQ4MywyNjMxODg5NzEsLTEwNzUyNDk1
+NDhdfQ==
 -->
