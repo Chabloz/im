@@ -112,8 +112,6 @@ Une de fonctionnalité offerte par les PWA sont leur utilisation en mode *offlin
 ### Détection
 La première étape est donc d'identifier le fait que l'utilisateur possède une connectivité aux données ou non. La propriété [window.navigator.onLine](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine) ainsi que les événements [online](https://developer.mozilla.org/en-US/docs/Web/Events/online) et [offline](https://developer.mozilla.org/en-US/docs/Web/Events/offline) vont nous aider à effectuer cette détection.  Grâce à eux, mettez en place un système permettant de détecter la connectivité aux données de l'utilisateur. Indiquez le par une icone de statut *offline / online* en haut à droite de votre application en utilisant *icomoon*. Pour tester la chose, passez en mode *offline* et observez que l'icone réagit en adéquation. 
 
-Cette détection vous permettra aussi de définir des comportement applicatifs différent selon que l'utilisateur et en ligne ou hors ligne. Pour le mettre en pratique : essayez de désactiver le menu *Favoris* en mode *offline* (et de l'activer en mode *online*).
-
 ### Mise en cache / Interception des requêtes 
 La deuxième étape consiste à rendre l'application disponible en mode hors ligne. Et ceci même lors de son démarrage. Il va donc falloir gérer deux choses: l'interception des requêtes aux *backend*  et la mise en cache de l'application. La première (l'interception des requêtes) va permettre d'éviter  le chargement standard de notre page Web. En effet, par défaut une requête est faites au *backend* (serveur Web)  pour obtenir les ressources de la page (HTML, JS, images, polices, ... ). Bien sûr cette requête ne pourra qu'échouer en mode *offline* ! Il va donc falloir résoudre ce problème.
 
@@ -187,11 +185,11 @@ La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer
 Si vous voulez obtenir une *favicon* d'un site pour le design de votre PWA vous pouvez utiliser le services de Google disponible ici: https://www.google.com/s2/favicons?domain=https://example.com
 Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1ODI5NzM3LC03MjAwODIwNDcsNzk3OD
-YzNjc4LC0xOTc5MTE5NjAxLC0yMDUyMTU0OTE4LDgyNDc1NDEz
-NSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3NTQwNjYsNz
-UzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1MTk3MiwtMTc4OTUw
-NzEwNywtMjA5MzkwMzE2NywxNjAzODcxNjYxLDg3MTEwMDc4NS
-wtMTMzMDQwMzgzOCwxNzQ0OTUyMDIsNzI3OTcyOTkxLC0xMDg2
-MDI0NjgxXX0=
+eyJoaXN0b3J5IjpbMTIyNDY0MzcwNCwtNzIwMDgyMDQ3LDc5Nz
+g2MzY3OCwtMTk3OTExOTYwMSwtMjA1MjE1NDkxOCw4MjQ3NTQx
+MzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LD
+c1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1
+MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3OD
+UsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4
+NjAyNDY4MV19
 -->
