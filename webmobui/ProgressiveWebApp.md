@@ -179,14 +179,15 @@ Pour que l'application soit installable correctement il vous faudra respecter le
 
 Ces contraintes devraient être respectées si vous avez correctement fait ce TP jusque là. Vous pouvez aussi vérifier cette [checklist](https://developers.google.com/web/progressive-web-apps/checklist) afin d'avoir une PWA complète.
 
+## Récapitulation LocalStorage
 
-
+La partie de ce TP sur le LocalStorage est la plus importante. Afin de vous entraîner,  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwNzU3Njk3LC0yMDUyMTU0OTE4LDgyND
-c1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3NTQw
-NjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1MTk3MiwtMT
-c4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcxNjYxLDg3MTEw
-MDc4NSwtMTMzMDQwMzgzOCwxNzQ0OTUyMDIsNzI3OTcyOTkxLC
-0xMDg2MDI0NjgxLDE1Mjg3NTIzLDY5NTk3MzUyMSwtMTA5Mzk1
-NDU4OF19
+eyJoaXN0b3J5IjpbLTI2MzgxMDI1MiwtMjA1MjE1NDkxOCw4Mj
+Q3NTQxMzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0
+MDY2LDc1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLT
+E3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzEx
+MDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MS
+wtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5
+NTQ1ODhdfQ==
 -->
