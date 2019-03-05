@@ -172,7 +172,7 @@ Comme vous le voyez, l'icône de l’application doit être définie en plusieur
 
 Pour que l'application soit installable correctement il vous faudra respecter les contraintes suivantes: 
 
-- Fournir votre PWA via HTTPS
+- Fournir votre PWA via HTTPS (ou être en local)
 - Mettre en place un Service Worker pour la mise en cache
 - Posséder les icônes adéquates
 - Indiquer les méta-données nécessaires dans un *Web App Manifest*
@@ -189,11 +189,11 @@ La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer
 Si vous voulez obtenir une *favicon* d'un site pour le design de votre PWA vous pouvez utiliser le services de Google disponible ici: https://www.google.com/s2/favicons?domain=https://example.com
 Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDA4MjA0Nyw3OTc4NjM2NzgsLTE5Nz
-kxMTk2MDEsLTIwNTIxNTQ5MTgsODI0NzU0MTM1LC0xNjYwNDM0
-NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUxNzAsMT
-gxNDg5MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkz
-OTAzMTY3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzOD
-M4LDE3NDQ5NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUy
-ODc1MjNdfQ==
+eyJoaXN0b3J5IjpbLTI1OTg2Mzg0OSwtNzIwMDgyMDQ3LDc5Nz
+g2MzY3OCwtMTk3OTExOTYwMSwtMjA1MjE1NDkxOCw4MjQ3NTQx
+MzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LD
+c1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1
+MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3OD
+UsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4
+NjAyNDY4MV19
 -->
