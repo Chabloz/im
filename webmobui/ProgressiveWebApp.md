@@ -183,14 +183,14 @@ Ces contraintes devraient être respectées si vous avez correctement fait ce TP
 
 La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer cette technologie, réalisez la partie *favoris* de votre PWA. Voilà les spécificités à respecter:  
 
-- L'utilisateur pour créer et supprimer des groupes de favoris (thèmes) 
+- L'utilisateur pourra créer et supprimer des groupes de favoris (thèmes) 
 - L'utilisateur pourra ajouter et supprimer des favoris dans les groupes. Un favoris est simplement composé d'un libellé et d'une URL. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzkxMTk2MDEsLTIwNTIxNTQ5MTgsOD
-I0NzU0MTM1LC0xNjYwNDM0NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1
-NDA2Niw3NTM4NTUxNzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC
-0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcx
-MTAwNzg1LC0xMzMwNDAzODM4LDE3NDQ5NTIwMiw3Mjc5NzI5OT
-EsLTEwODYwMjQ2ODEsMTUyODc1MjMsNjk1OTczNTIxLC0xMDkz
-OTU0NTg4XX0=
+eyJoaXN0b3J5IjpbNzk3ODYzNjc4LC0xOTc5MTE5NjAxLC0yMD
+UyMTU0OTE4LDgyNDc1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2
+MjAsLTE0ODg3NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMT
+YyNDk1MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAz
+ODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0OTUyMD
+IsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mjg3NTIzLDY5NTk3
+MzUyMV19
 -->
