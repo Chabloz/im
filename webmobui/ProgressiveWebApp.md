@@ -133,14 +133,14 @@ Afin de rendre la PWA "installable" comme une application smartphone, il reste �
 Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver. Vous pouvez consulter la [documentation](https://developer.mozilla.org/en-US/docs/Web/Manifest)  pour acvoir plus de détail sur leur signification:
 ```json
 {
-  "name": "IM Horaires",
-  "short_name": "IM Horaires",
-  "description": "Horaires IM HEIG-VD",
+  "name": "IM PWA",
+  "short_name": "IM PWA",
+  "description": "PWA IM HEIG-VD",
   "lang": "fr",
-  "start_url" : "/horaires/index.html",
+  "start_url" : "/index.html",
   "display": "fullscreen",
   "background_color": "white",
-  "theme_color": "#db5945",
+  "theme_color": "tomato",
   "icons": [
     {
       "src": "favicon-32x32.png",
@@ -165,15 +165,14 @@ Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver
     }
   ]
 }
-
 ```
-a
+C
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjkyNzMxNSwtMTY2MDQzNDY0NCwyNz
+eyJoaXN0b3J5IjpbLTI3NjEyMzcyOCwtMTY2MDQzNDY0NCwyNz
 Q0NDI2MjAsLTE0ODg3NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTEx
 MjAsMTYyNDk1MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2Ny
 wxNjAzODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0
