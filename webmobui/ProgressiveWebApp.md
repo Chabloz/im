@@ -170,7 +170,7 @@ Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver
 ```
 Comme vous le voyez, l'icône de l’application doit être définie en plusieurs tailles afin d'être utilisée efficacement par les smartphones selon le besoin. Pour votre PWA, vous pouvez utiliser les icônes disponibles [ici](https://chabloz.eu/files/favicon.zip) si vous le souhaiter.
 
-Pour que l'application soit installable correctement il vous faudra respecter les contraintes suivantes: 
+Pour que l'application soit installable correctement il vous faudra respecter au minimum les contraintes suivantes: 
 
 - Fournir votre PWA via HTTPS (ou être en local)
 - Mettre en place un Service Worker pour la mise en cache
@@ -189,7 +189,7 @@ La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer
 Si vous voulez obtenir une *favicon* d'un site pour le design de votre PWA vous pouvez utiliser le services de Google disponible ici: https://www.google.com/s2/favicons?domain=https://example.com
 Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1OTg2Mzg0OSwtNzIwMDgyMDQ3LDc5Nz
+eyJoaXN0b3J5IjpbLTI4NDYyMTA0MywtNzIwMDgyMDQ3LDc5Nz
 g2MzY3OCwtMTk3OTExOTYwMSwtMjA1MjE1NDkxOCw4MjQ3NTQx
 MzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LD
 c1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1
