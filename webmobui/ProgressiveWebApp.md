@@ -130,12 +130,12 @@ Afin de rendre la PWA "installable" comme une application smartphone, il reste Ã
 ```html
 <link rel="manifest" href="manifest.webmanifest">
 ```
-
+Son contenu doit Ãªtre du JSON 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDQ0NTMyMywtMTY2MDQzNDY0NCwyNz
+eyJoaXN0b3J5IjpbMTE4OTYzOTU4MywtMTY2MDQzNDY0NCwyNz
 Q0NDI2MjAsLTE0ODg3NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTEx
 MjAsMTYyNDk1MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2Ny
 wxNjAzODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0
