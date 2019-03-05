@@ -124,16 +124,17 @@ Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [S
 Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*.
 
 ## PWA Manifest
-Afin de rendre la PWA "installable" comme une application smartphone, il reste à ajouter quelques méta-données et spécifier les icônes  de l'application. Les browsers vont 
+
+Afin de rendre la PWA "installable" comme une application smartphone, il reste à ajouter quelques méta-données et spécifier les icônes  de l'application.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xND
-g4NzU0MDY2LDc1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5
-NzIsLTE3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MS
-w4NzExMDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3
-Mjk5MSwtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLT
-EwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMjA0NjYxMjg4LDExMDEx
-NjY0MzddfQ==
+eyJoaXN0b3J5IjpbMjQ1NjM2NTA4LC0xNjYwNDM0NjQ0LDI3ND
+Q0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUxNzAsMTgxNDg5MTEy
+MCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LD
+E2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzODM4LDE3NDQ5
+NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUyODc1MjMsNj
+k1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIxMywtMTIwNDY2
+MTI4OF19
 -->
