@@ -130,12 +130,50 @@ Afin de rendre la PWA "installable" comme une application smartphone, il reste �
 ```html
 <link rel="manifest" href="manifest.webmanifest">
 ```
-Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver
+Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver. Vous pouvez consulter la [documentation](https://developer.mozilla.org/en-US/docs/Web/Manifest)  pour acvoir plus de détail sur leur signification:
+```json
+{
+  "name": "IM Horaires",
+  "short_name": "IM Horaires",
+  "description": "Horaires IM HEIG-VD",
+  "lang": "fr",
+  "start_url" : "/horaires/index.html",
+  "display": "fullscreen",
+  "background_color": "white",
+  "theme_color": "#db5945",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }, {
+      "src": "favicon-76x76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    }, {
+      "src": "favicon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }, {
+      "src": "favicon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }, {
+      "src": "favicon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+
+```
+a
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MTQwOTQ2MSwtMTY2MDQzNDY0NCwyNz
+eyJoaXN0b3J5IjpbLTE5MjkyNzMxNSwtMTY2MDQzNDY0NCwyNz
 Q0NDI2MjAsLTE0ODg3NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTEx
 MjAsMTYyNDk1MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2Ny
 wxNjAzODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0
