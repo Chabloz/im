@@ -125,16 +125,16 @@ Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) 
 
 ## PWA Manifest
 
-Afin de rendre la PWA "installable" comme une application smartphone, il reste à ajouter quelques méta-données et spécifier les icônes  de l'application.
+Afin de rendre la PWA "installable" comme une application smartphone, il reste à ajouter quelques méta-données et spécifier les icônes  de l'application. Un [fichier de manifeste](https://developer.mozilla.org/en-US/docs/Web/Manifest) est utilisé pour stocker ces informations. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ1NjM2NTA4LC0xNjYwNDM0NjQ0LDI3ND
-Q0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUxNzAsMTgxNDg5MTEy
-MCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LD
-E2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzODM4LDE3NDQ5
-NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUyODc1MjMsNj
-k1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIxMywtMTIwNDY2
-MTI4OF19
+eyJoaXN0b3J5IjpbLTEzNDE3NTA0MjgsLTE2NjA0MzQ2NDQsMj
+c0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mzg1NTE3MCwxODE0ODkx
+MTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcxMDcsLTIwOTM5MDMxNj
+csMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEzMzA0MDM4MzgsMTc0
+NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4MSwxNTI4NzUyMy
+w2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMjA0
+NjYxMjg4XX0=
 -->
