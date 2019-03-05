@@ -121,6 +121,8 @@ La deuxième étape consiste à rendre l'application disponible en mode hors lig
 
 Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) et [cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache). Le *Service Worker* agira comme un [daemon](https://fr.wikipedia.org/wiki/Daemon_%28informatique%29)  écoutant les requêtes  de la PWA. Et si ces  requêtes concernent des éléments disponibles dans le cache, il les fournira. 
 
+Les Service Workers ne sont disponible que si votre application est transmise via HTTPS ou que votre URL est l'url  
+
 Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*.
 
 ## PWA Manifest
@@ -168,15 +170,17 @@ Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver
 ```
 Comme vous le voyez, l'icône de l’application doit être définie en plusieurs tailles afin d'être utilisée efficacement par les smartphones selon le besoin. Pour votre PWA, vous pouvez utiliser les icônes disponibles [ici](https://chabloz.eu/files/favicon.zip) si vous le souhaiter.
 
+Pour que l'application
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzc5NTU4OTMsODI0NzU0MTM1LC0xNj
-YwNDM0NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUx
-NzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC
-0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMw
-NDAzODM4LDE3NDQ5NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2OD
-EsMTUyODc1MjMsNjk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1
-MjIxM119
+eyJoaXN0b3J5IjpbLTMxNTQ2MDc4MSw4MjQ3NTQxMzUsLTE2Nj
+A0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mzg1NTE3
+MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcxMDcsLT
+IwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEzMzA0
+MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4MS
+wxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUy
+MjEzXX0=
 -->
