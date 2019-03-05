@@ -174,16 +174,17 @@ Pour que l'application soit installable correctement il vous faudra respecter le
 - Mettre en place un Service Worker pour la mise en cache
 - Posséder les icônes adéquates
 - Indiquer les méta-données nécessaires dans un *Web App Manifest*
-- 
+
+Vous pouvez
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTIxNTQ5MTgsODI0NzU0MTM1LC0xNj
-YwNDM0NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUx
-NzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC
-0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMw
-NDAzODM4LDE3NDQ5NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2OD
-EsMTUyODc1MjMsNjk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1
-MjIxM119
+eyJoaXN0b3J5IjpbMTYxMjczNDU3NSwtMjA1MjE1NDkxOCw4Mj
+Q3NTQxMzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0
+MDY2LDc1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLT
+E3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzEx
+MDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MS
+wtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5
+NTQ1ODhdfQ==
 -->
