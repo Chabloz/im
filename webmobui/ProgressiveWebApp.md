@@ -98,8 +98,6 @@ Modifiez aussi l'option *entry* dans le fichier de configuration *webpack.config
 ```js
 entry: ['babel-polyfill', './src/index.js'],
 ```
-
-
 Finalement, importez la classe dans votre code et utilisez là pour gérer la partie *todo list* de votre PWA.  Cette partie doit permettre à l'utilisateur de:
 
 - Ajouter une tâche dans le *LocalStorage* via le formulaire de la section *todo*. Une tâche est un simple objet avec deux propriétés: la tâche et la date limite.
@@ -189,11 +187,11 @@ La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer
 Si vous voulez obtenir une *favicon* d'un site pour le design de votre PWA vous pouvez utiliser le services de Google disponible ici: https://www.google.com/s2/favicons?domain=https://example.com
 Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDYyMTA0MywtNzIwMDgyMDQ3LDc5Nz
-g2MzY3OCwtMTk3OTExOTYwMSwtMjA1MjE1NDkxOCw4MjQ3NTQx
-MzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LD
-c1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1
-MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3OD
-UsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4
-NjAyNDY4MV19
+eyJoaXN0b3J5IjpbNjE1ODI5NzM3LC03MjAwODIwNDcsNzk3OD
+YzNjc4LC0xOTc5MTE5NjAxLC0yMDUyMTU0OTE4LDgyNDc1NDEz
+NSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3NTQwNjYsNz
+UzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1MTk3MiwtMTc4OTUw
+NzEwNywtMjA5MzkwMzE2NywxNjAzODcxNjYxLDg3MTEwMDc4NS
+wtMTMzMDQwMzgzOCwxNzQ0OTUyMDIsNzI3OTcyOTkxLC0xMDg2
+MDI0NjgxXX0=
 -->
