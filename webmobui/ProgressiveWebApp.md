@@ -119,7 +119,7 @@ Cette détection vous permettra aussi de définir des comportement applicatifs d
 ### Mise en cache / Interception des requêtes 
 La deuxième étape consiste à rendre l'application disponible en mode hors ligne. Et ceci même lors de son démarrage. Il va donc falloir gérer deux choses: l'interception des requêtes aux *backend*  et la mise en cache de l'application. La première (l'interception des requêtes) va permettre d'éviter  le chargement standard de notre page Web. En effet, par défaut une requête est faites au *backend* (serveur Web)  pour obtenir les ressources de la page (HTML, JS, images, polices, ... ). Bien sûr cette requête ne pourra qu'échouer en mode *offline* ! Il va donc falloir résoudre ce problème.
 
-Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) et [cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache). Le *Service Worker* agira comme un [daemon](https://fr.wikipedia.org/wiki/Daemon_%28informatique%29)  écoutant les requêtes  de la PWA. Et si ces  requêtes concernent des éléments disponibles dans le cache, il les fournira. ( Remarque: Les Service Workers ne sont disponibles que si votre application est transmise via HTTPS ou que votre URL est l'url locale 127.0.0.1)
+Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) et [cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache). Le *Service Worker* agira comme un [daemon](https://fr.wikipedia.org/wiki/Daemon_%28informatique%29)  écoutant les requêtes  de la PWA. Et si ces  requêtes concernent des éléments disponibles dans le cache, il les fournira. ( Remarque: Les Service Workers ne sont disponibles que si votre application est transmise via HTTPS ou que votre URL est l'URL locale 127.0.0.1)
 
 Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*.
 
@@ -168,13 +168,13 @@ Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver
 ```
 Comme vous le voyez, l'icône de l’application doit être définie en plusieurs tailles afin d'être utilisée efficacement par les smartphones selon le besoin. Pour votre PWA, vous pouvez utiliser les icônes disponibles [ici](https://chabloz.eu/files/favicon.zip) si vous le souhaiter.
 
-Pour que l'application
+Pour que l'application soit installable correctement il vous faudra respecter les contraintes suivantes: 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NDMyNzgyMiw4MjQ3NTQxMzUsLTE2Nj
+eyJoaXN0b3J5IjpbLTM5NTM1MzQxOSw4MjQ3NTQxMzUsLTE2Nj
 A0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mzg1NTE3
 MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcxMDcsLT
 IwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEzMzA0
