@@ -185,12 +185,14 @@ La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer
 
 - L'utilisateur pourra créer et supprimer des groupes de favoris (thèmes) 
 - L'utilisateur pourra ajouter et supprimer des favoris dans les groupes. Un favoris est simplement composé d'un libellé et d'une URL. 
+
+Si vous voulez obtenir la *favicon* d'un site pour le design de votre PWA vous pouvez utiliser le services de Google disponible ici: https://www.google.com/s2/favicons?domain=https://
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3ODYzNjc4LC0xOTc5MTE5NjAxLC0yMD
-UyMTU0OTE4LDgyNDc1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2
-MjAsLTE0ODg3NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMT
-YyNDk1MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAz
-ODcxNjYxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0OTUyMD
-IsNzI3OTcyOTkxLC0xMDg2MDI0NjgxLDE1Mjg3NTIzLDY5NTk3
-MzUyMV19
+eyJoaXN0b3J5IjpbMTE5NzUwMDQxNCw3OTc4NjM2NzgsLTE5Nz
+kxMTk2MDEsLTIwNTIxNTQ5MTgsODI0NzU0MTM1LC0xNjYwNDM0
+NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUxNzAsMT
+gxNDg5MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkz
+OTAzMTY3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzOD
+M4LDE3NDQ5NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUy
+ODc1MjNdfQ==
 -->
