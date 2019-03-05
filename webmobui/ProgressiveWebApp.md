@@ -173,16 +173,17 @@ Pour que l'application soit installable correctement il vous faudra respecter le
 - Fournir votre PWA via HTTPS
 - Mettre en place un Service Worker pour la mise en cache
 - Posséder les icônes adéquates
+- Indiquer les méta-données nécessaires dans un *Web App Manifest*
 - 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTAyNjMzNiw4MjQ3NTQxMzUsLTE2Nj
-A0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mzg1NTE3
-MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcxMDcsLT
-IwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEzMzA0
-MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4MS
-wxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUy
-MjEzXX0=
+eyJoaXN0b3J5IjpbLTIwNTIxNTQ5MTgsODI0NzU0MTM1LC0xNj
+YwNDM0NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUx
+NzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC
+0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMw
+NDAzODM4LDE3NDQ5NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2OD
+EsMTUyODc1MjMsNjk1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1
+MjIxM119
 -->
