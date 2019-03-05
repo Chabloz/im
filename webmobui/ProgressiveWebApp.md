@@ -181,13 +181,15 @@ Ces contraintes devraient être respectées si vous avez correctement fait ce TP
 
 ## Récapitulation LocalStorage
 
-La partie de ce TP sur le LocalStorage est la plus importante. Afin de vous entraîner,  
+La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer cette technologie, réalisez la partie *favoris* de votre PWA. Voilà les spécificités à respecter:  
+- l'utilisateur pour creez des groupes de favoris 
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzgxMDI1MiwtMjA1MjE1NDkxOCw4Mj
-Q3NTQxMzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0
-MDY2LDc1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLT
-E3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzEx
-MDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MS
-wtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5
-NTQ1ODhdfQ==
+eyJoaXN0b3J5IjpbLTEzOTQ2Njc3MjgsLTIwNTIxNTQ5MTgsOD
+I0NzU0MTM1LC0xNjYwNDM0NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1
+NDA2Niw3NTM4NTUxNzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC
+0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcx
+MTAwNzg1LC0xMzMwNDAzODM4LDE3NDQ5NTIwMiw3Mjc5NzI5OT
+EsLTEwODYwMjQ2ODEsMTUyODc1MjMsNjk1OTczNTIxLC0xMDkz
+OTU0NTg4XX0=
 -->
