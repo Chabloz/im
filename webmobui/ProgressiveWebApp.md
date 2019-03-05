@@ -123,17 +123,17 @@ Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [S
 
 Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*.
 
-
+## PWA Manifest
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mz
-g1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcx
-MDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLT
-EzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAy
-NDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNz
-kzNDUyMjEzLC0xMjA0NjYxMjg4LDExMDExNjY0MzcsMzk0OTcw
-OTMxXX0=
+eyJoaXN0b3J5IjpbLTE5NzEzNDI4MjksMjc0NDQyNjIwLC0xND
+g4NzU0MDY2LDc1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5
+NzIsLTE3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MS
+w4NzExMDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3
+Mjk5MSwtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLT
+EwOTM5NTQ1ODgsNzkzNDUyMjEzLC0xMjA0NjYxMjg4LDExMDEx
+NjY0MzddfQ==
 -->
