@@ -170,11 +170,15 @@ Comme vous le voyez, l'icône de l’application doit être définie en plusieur
 
 Pour que l'application soit installable correctement il vous faudra respecter les contraintes suivantes: 
 
+- Fournir votre PWA via HTTPS
+- Mettre en place un Service Worker pour la mise en cache
+- Posséder les icônes adéquates
+- 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NTM1MzQxOSw4MjQ3NTQxMzUsLTE2Nj
+eyJoaXN0b3J5IjpbLTEwNTAyNjMzNiw4MjQ3NTQxMzUsLTE2Nj
 A0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mzg1NTE3
 MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcxMDcsLT
 IwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEzMzA0
