@@ -166,17 +166,17 @@ Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver
   ]
 }
 ```
-Comme vous le voyez, l'icône de l’application doit être définie en plusieurs tailles afin d'être utilisée efficacement par les smartphones selon le besoin. Pour votre PWA, vous pouvez utiliser les icônes suivantes  si vous le souhaiter: 
+Comme vous le voyez, l'icône de l’application doit être définie en plusieurs tailles afin d'être utilisée efficacement par les smartphones selon le besoin. Pour votre PWA, vous pouvez utiliser les icônes disponible [ici](https://chabloz.eu/files/favicon.zip) si vous le souhaiter.
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NzU0MTM1LC0xNjYwNDM0NjQ0LDI3ND
-Q0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUxNzAsMTgxNDg5MTEy
-MCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LD
-E2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzODM4LDE3NDQ5
-NTIwMiw3Mjc5NzI5OTEsLTEwODYwMjQ2ODEsMTUyODc1MjMsNj
-k1OTczNTIxLC0xMDkzOTU0NTg4LDc5MzQ1MjIxMywtMTIwNDY2
-MTI4OF19
+eyJoaXN0b3J5IjpbLTI2ODM2NTc3NCw4MjQ3NTQxMzUsLTE2Nj
+A0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mzg1NTE3
+MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcxMDcsLT
+IwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEzMzA0
+MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4NjAyNDY4MS
+wxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5NTQ1ODgsNzkzNDUy
+MjEzXX0=
 -->
