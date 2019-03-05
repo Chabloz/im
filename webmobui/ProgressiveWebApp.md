@@ -185,9 +185,9 @@ La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer
 Si vous voulez obtenir une *favicon* d'un site pour le design de votre PWA vous pouvez utiliser le services de Google disponible ici: https://www.google.com/s2/favicons?domain=https://example.com
 Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 
-Finalement, en mode *offline*, essayez de désactiver les click sur les *favoris* puisqu'ils ne mèneront nulle part.   
+Finalement, en mode *offline*, essayez de désactiver les clics sur les liens des *favoris* puisqu'ils ne mèneront nulle part.   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwODM2NzY2LC03MjAwODIwNDcsNzk3OD
+eyJoaXN0b3J5IjpbNjYxNTkwMjk1LC03MjAwODIwNDcsNzk3OD
 YzNjc4LC0xOTc5MTE5NjAxLC0yMDUyMTU0OTE4LDgyNDc1NDEz
 NSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3NTQwNjYsNz
 UzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1MTk3MiwtMTc4OTUw
