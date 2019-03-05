@@ -175,12 +175,12 @@ Pour que l'application soit installable correctement il vous faudra respecter le
 - Posséder les icônes adéquates
 - Indiquer les méta-données nécessaires dans un *Web App Manifest*
 
-Ces contraintes devraient être respectée si vous avez correctement fait ce TP jusque là. Vous pouvez aussi vérifier cette [checklist](https://developers.google.com/web/progressive-web-apps/checklist) afin d'avoir une PWA complète.
+Ces contraintes devraient être respectées si vous avez correctement fait ce TP jusque là. Vous pouvez aussi vérifier cette [checklist](https://developers.google.com/web/progressive-web-apps/checklist) afin d'avoir une PWA complète.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYyMTI5MzA3LC0yMDUyMTU0OTE4LDgyND
+eyJoaXN0b3J5IjpbODU0NTgzODU4LC0yMDUyMTU0OTE4LDgyND
 c1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3NTQw
 NjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1MTk3MiwtMT
 c4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcxNjYxLDg3MTEw
