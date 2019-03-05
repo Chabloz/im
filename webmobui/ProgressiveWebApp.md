@@ -185,13 +185,12 @@ La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer
 
 - L'utilisateur pour créer et supprimer des groupes de favoris (thèmes) 
 - L'utilisateur pourra ajouter et supprimer des favoris dans les groupes. Un favoris est simplement composé d'un libellé et d'une URL. 
-- U
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjIzMTU5NSwtMjA1MjE1NDkxOCw4Mj
-Q3NTQxMzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0
-MDY2LDc1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLT
-E3ODk1MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzEx
-MDA3ODUsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MS
-wtMTA4NjAyNDY4MSwxNTI4NzUyMyw2OTU5NzM1MjEsLTEwOTM5
-NTQ1ODhdfQ==
+eyJoaXN0b3J5IjpbLTE5NzkxMTk2MDEsLTIwNTIxNTQ5MTgsOD
+I0NzU0MTM1LC0xNjYwNDM0NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1
+NDA2Niw3NTM4NTUxNzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC
+0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcx
+MTAwNzg1LC0xMzMwNDAzODM4LDE3NDQ5NTIwMiw3Mjc5NzI5OT
+EsLTEwODYwMjQ2ODEsMTUyODc1MjMsNjk1OTczNTIxLC0xMDkz
+OTU0NTg4XX0=
 -->
