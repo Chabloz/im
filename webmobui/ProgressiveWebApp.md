@@ -123,6 +123,8 @@ Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [S
 
 Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*.
 
+Remarque: il est conseillé de désactiver le Service Worker de gestion du cache lors du développement de votre PWA.
+
 ## PWA Manifest
 
 Afin de rendre la PWA "installable" comme une application smartphone, il reste à ajouter quelques méta-données et spécifier les icônes  de l'application. Un [fichier de manifeste](https://developer.mozilla.org/en-US/docs/Web/Manifest) est utilisé pour stocker ces informations. Le nom de ce fichier est souvent *manifest.webmanifest*.  Il doit être lié à votre PWA grâce à un lien dans la balise *head* de votre page:
@@ -180,7 +182,7 @@ Ces contraintes devraient être respectées si vous avez correctement fait ce TP
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU0NTgzODU4LC0yMDUyMTU0OTE4LDgyND
+eyJoaXN0b3J5IjpbODcwNzU3Njk3LC0yMDUyMTU0OTE4LDgyND
 c1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3NTQw
 NjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1MTk3MiwtMT
 c4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcxNjYxLDg3MTEw
