@@ -73,7 +73,7 @@ export default class {
    * Returns a new Iterator object that contains the values for each element in the storage.
    */
   *values() {
-    for (let k of this.storageKeys.keys()) {
+    for (let k of this.keys()) {
       yield this.getItem(k);
     }
   }
@@ -82,7 +82,7 @@ export default class {
    * Returns a new Iterator object that contains an array of [key, value] for each element in the storage.
    */
   *entries() {
-    for (let k of this.storageKeys.keys()) {
+    for (let k of this.keys()) {
       yield [k, this.getItem(k)];
     }
   }
