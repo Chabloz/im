@@ -159,7 +159,8 @@ export default class {
   }
 
   /**
-   * Add the value with a random unique key to the storage
+   * Add the value with a random unique key to the storage.
+   * Return the key.
    * 
    * @param {*} val the value you want to give the key you are creating/updating.
    */
@@ -167,6 +168,7 @@ export default class {
     let key = this._genKey();
     while (this.storageKeys.has(key)) key = this._genKey();
     this.setItem(key, val);    
+    return key;
   }
 
   /**
