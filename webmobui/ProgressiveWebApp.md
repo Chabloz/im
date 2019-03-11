@@ -180,18 +180,18 @@ Ces contraintes devraient être respectées si vous avez correctement fait ce TP
 La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer cette technologie, réalisez la partie *favoris* de votre PWA. Voilà les spécificités à respecter:  
 
 - L'utilisateur pourra créer et supprimer des groupes de favoris (thèmes) 
-- L'utilisateur pourra ajouter et supprimer des favoris dans les groupes. Un favoris est simplement composé d'un libellé et d'une URL. 
+- L'utilisateur pourra ajouter et supprimer des favoris dans les groupes. Un favoris est simplement composé d'un libellé et d'une URL. --
 
 Si vous voulez obtenir une *favicon* d'un site pour le design de votre PWA vous pouvez utiliser le services de Google disponible ici: https://www.google.com/s2/favicons?domain=https://example.com
 Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 
 Finalement, en mode *offline*, essayez de désactiver les clics sur les liens des *favoris* puisqu'ils ne mèneront nulle part.   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NzYwNjU0OCwtNzIwMDgyMDQ3LDc5Nz
-g2MzY3OCwtMTk3OTExOTYwMSwtMjA1MjE1NDkxOCw4MjQ3NTQx
-MzUsLTE2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LD
-c1Mzg1NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1
-MDcxMDcsLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3OD
-UsLTEzMzA0MDM4MzgsMTc0NDk1MjAyLDcyNzk3Mjk5MSwtMTA4
-NjAyNDY4MV19
+eyJoaXN0b3J5IjpbLTkzNDA3NDgwNCwtNTQ3NjA2NTQ4LC03Mj
+AwODIwNDcsNzk3ODYzNjc4LC0xOTc5MTE5NjAxLC0yMDUyMTU0
+OTE4LDgyNDc1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLT
+E0ODg3NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1
+MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcxNj
+YxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0OTUyMDIsNzI3
+OTcyOTkxXX0=
 -->
