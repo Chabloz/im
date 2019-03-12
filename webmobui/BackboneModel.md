@@ -4,7 +4,7 @@
 
 Dans ce TP, le framework  [Backbone.js](http://backbonejs.org/)  sera utilisé pour une gestion efficace des événements (_events_) ainsi qu’une manipulation aisée des modèles (_models_). L’objectif du TP est d’effectuer une première “prise en main” du design pattern MVC.
 
-Commencez par installez backbone avec npm:
+Commencez par installer backbone avec npm:
 ```bash
  npm install backbone --save
 ```
