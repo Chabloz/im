@@ -14,7 +14,7 @@ console.log("Retourner un tableau ne contenant pas le premier élément");
 let notFirstOne = numbers.slice(1);
 console.log(notFirstOne);
 console.log("Retourner un tableau ne contenant pas le dernier élément");
-let notLastone = numbers.slice(0, numbers.length - 1); 
+let notLastone = numbers.slice(0, -1); 
 console.log(notLastone);
 console.log("Retourner la somme des nombres");
 let sum = numbers.reduce((acc, nb) => acc += nb);
