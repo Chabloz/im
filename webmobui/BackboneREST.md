@@ -19,7 +19,7 @@ DELETE  http://example.com/resources/id   Supprime la ressource
 
 Où l’élément  _id_  des URL est à remplacer par l’identifiant d’une des ressources de la collection. En plus de cette architecture de communication, un format pour l’échange des données doit être choisit (le plus souvent, XML ou JSON).
 
-Un exemple de WebService suivant cette proposition d’API (avec une transmission des données en JSON) se trouve ici:  [https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/). Afin de tester les fonctionnalités, vous pouvez utiliser l’application suivante pour Chrome:  [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=fr).
+Un exemple de WebService suivant cette proposition d’API (avec une transmission des données en JSON) se trouve ici:  [https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/). Afin de tester les fonctionnalités, vous pouvez utiliser l’application suivante:  [Postman](https://www.getpostman.com/downloads/).
 
 ## Synchronisation via  _Backbone.js_
 
