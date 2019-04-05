@@ -29,7 +29,7 @@ Backbone.js offre des méthodes pour réaliser la  [synchronisation](http://back
 
 En utilisant le WS d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/)), réalisez une application de gestions d’une  _todo list_  avec deux fonctionnalités simples: l’ajout et la suppression de tâches.
 
-Vous aurez sans doute trois _templates_,  une pour le formulaire d’ajout, une autre pour la liste des tâches, et finalement une pour les tâches.
+Vous aurez sans doute trois _views_,  une pour le formulaire d’ajout, une autre pour la liste des tâches, et finalement une pour les tâches.
 
 Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en microseconde. Voilà donc une aide pour la transformation d'un champ de type  *date*  en *timestamp* au format *Unix*.
 
