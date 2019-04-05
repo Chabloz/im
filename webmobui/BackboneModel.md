@@ -33,10 +33,9 @@ Les modèles du framework Backbone s’occupent de la gestion des données manip
 
 Pour attendre un changement d'une microseconde à l'autre, vous pouvez utilisez le code de test suivant:
 
-```
-let now = jQuery.now();
-while (now == jQuery.now());
-
+```js
+let now = $.now();
+while (now == $.now());
 ```
 
 Ce code n'a bien sûr de sens que pour aider à la compréhension du mécanisme des valeurs par défaut de Backbone et ne doit pas être utilisé dans des codes d'applications Web classiques.
