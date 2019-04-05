@@ -31,7 +31,7 @@ Créez ensuite une instance de  _ModelItem_  nommé  **item1**  et deux instance
 
 **1.b)**  Les  _views_  de backbone sont en tout temps rattachées à un élément DOM. Cet élément est accessible via l’attribut  [el](http://backbonejs.org/#View-el)  de la vue et son équivalent jQuery  [$el](http://backbonejs.org/#View-%24el). Il est possible de spécifier l’attribut  _el_  d’une vue comme étant un élément DOM existant lors de la création de la vue, mais cela ne sera pas le cas de cet exercice. Si on ne le spécifie pas à la création, l’attribut  _el_  est un simple _div_ sans attribut.
 
-Reprenez votre code de l’exercice  **1.a)**  et modifiez la fonction  _render_  afin qu’elle insert l’attribut  _title_  du modèle associé comme texte du noeud DOM  _$el_. Attendez que le DOM de votre page HTML soit prêt et ajoutez au  _body_  les éléments DOM  _view1Item1.$el_  et  _view2Item1.$el_  des vues. Modifiez l’attribut  _title_  de item1, et changez le  _title_  de item1 à nouveau deux secondes plus tard (grâce à la fonction *setTimeout* par exemple). Observez que les deux vues se mettent à jour automatiquement lors des changements de l’attribut  _title_.
+Reprenez votre code de l’exercice  **1.a)**  et modifiez la fonction  _render_  afin qu’elle insert l’attribut  _title_  du modèle associé comme texte du noeud DOM  _$el_. Ajoutez au  _body_  les éléments DOM  _view1Item1.$el_  et  _view2Item1.$el_  des vues. Modifiez l’attribut  _title_  de item1, et changez le  _title_  de item1 à nouveau deux secondes plus tard (grâce à la fonction *setTimeout* par exemple). Observez que les deux vues se mettent à jour automatiquement lors des changements de l’attribut  _title_.
 
 ## 2)  _Templating handlebars_
 
