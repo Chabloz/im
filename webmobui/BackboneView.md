@@ -37,7 +37,7 @@ Reprenez votre code de l’exercice  **1.a)**  et modifiez la fonction  _render_
 
 La mise à jour du DOM est grandement facilitée grâce aux vues, mais il reste le travail fastidieux de l’insertion des données du  _Model_  dans l’élément DOM concerné (le code de votre méthode  _render_). Pour faciliter ce travail, un système de template peut être utilisé.  _Backbone.js_  ne s’occupe pas du templating, il est donc possible de choisir n’importe quel moteur de template JavaScript.
 
-Comme  _Underscore.js_  est un pré requis de  _Backbone.js_, il est déjà possible d’utiliser le  [moteur de template](http://underscorejs.org/#template)  inclut dans ce framework, mais rien ne nous empêche d’en utiliser un autre. Pour avoir un peu plus de souplesse, nous allons prendre un moteur de template d'un plus "haut niveau" nommé  [Handlebars](http://handlebarsjs.com/). 
+Comme  _Underscore.js_  est un prérequis de  _Backbone.js_, il est déjà possible d’utiliser le  [moteur de template](http://underscorejs.org/#template)  inclut dans ce framework, mais rien ne nous empêche d’en utiliser un autre. Pour avoir un peu plus de souplesse, nous allons prendre un moteur de template d'un plus "haut niveau" nommé  [Handlebars](http://handlebarsjs.com/). 
 
 **2)**  Reprenez le code de l’exercice  **1.b**  et ajoutez un  [attribut  _template_](http://backbonejs.org/#View-template)  à ViewItem représentant la template  _Handelbars_  suivante:
 
