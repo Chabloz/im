@@ -35,7 +35,7 @@ Pour attendre un changement d'une microseconde à l'autre, vous pouvez utilisez 
 
 ```
 let now = jQuery.now();
-while (now === jQuery.now());
+while (now == jQuery.now());
 
 ```
 
