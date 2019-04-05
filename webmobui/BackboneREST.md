@@ -35,9 +35,9 @@ Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en
 
 ```js
 // Conversion d'un champ date en timestamp Unix (en seconde)
- var dateInput = this.$el.find("input[type='date']").val();
- var date = new Date(dateInput);
- var time = Math.round(date.getTime() / 1000);
+ let dateInput = this.$el.find("input[type='date']").val();
+ let date = new Date(dateInput);
+ let time = Math.round(date.getTime() / 1000);
 ```
 Remarque: comme tout le monde travail avec la même collection coté serveur, l’ajout et la suppression de tâche impactera les listes de tâche de tous les étudiants. Vous pouvez utiliser le code ci-dessous pour maintenir votre collection à jour avec le serveur. Cela vous permettra de voir apparaître les ajouts et suppressions de tâches des autres étudiants de manière dynamique.
 
