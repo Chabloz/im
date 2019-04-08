@@ -4,7 +4,7 @@
 
 Dans ce TP, le framework  [Backbone.js](http://backbonejs.org/)  sera utilisé pour une gestion efficace des événements (_events_) ainsi qu’une manipulation aisée des modèles (_models_). L’objectif du TP est d’effectuer une première “prise en main” du design pattern MVC.
 
-Commencez par installer backbone avec npm:
+Commencez par installe backbone avec npm:
 ```bash
  npm install backbone --save
 ```
@@ -34,7 +34,7 @@ Les modèles du framework Backbone s’occupent de la gestion des données manip
 Pour attendre un changement d'une microseconde à l'autre, vous pouvez utilisez le code de test suivant:
 
 ```js
-let now = $.now();
+let now = .now();
 while (now == $.now());
 ```
 
@@ -66,5 +66,5 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
