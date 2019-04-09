@@ -20,10 +20,10 @@ En plus de s'initier à un *framework* de design d'interface Web, ce TP à comme
 
 ## Cahier des charges
 
-L'application doit  afficher la liste des produits sur la page. Les produits seront définis par 4 champs: le nom, la marque
+L'application doit  afficher la liste des produits sur la page. Les produits seront définis par 4 champs: le modèle, la marque, le prix et le type (qui ne peut être que "mouse", "keyboard" et "headset"). 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MjkwMjAzNiw5MTQ4MDM5MDMsMTE4Mj
-g1NzU2OV19
+eyJoaXN0b3J5IjpbLTE5ODUwMTA3NjcsOTE0ODAzOTAzLDExOD
+I4NTc1NjldfQ==
 -->
