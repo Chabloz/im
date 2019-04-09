@@ -22,12 +22,12 @@ En plus de s'initier à un *framework* de design d'interface Web, ce TP à comme
 
 L'application doit  afficher la liste des produits sur la page. Les produits seront définis par 4 champs: le modèle, la marque, le prix et le type (qui ne peut être que "mouse", "keyboard" et "headset"). L'utilisateur pourra naviguer entre les 3 types de produits grâce à 3 boutons de filtre. Il pourra aussi trier la liste affichée par prix croissant ou décroissant. 
 
-L'utilisateur pourra ajouter un produit à son caddie d'achat. Pour des raisons de simplification, la quantité ne sera pas à gérer. Le produit sera alors simplement ajouté au caddie de l'utilisateur.   L'utilisateur pourra visualiser son caddie en cliquant sur l'icone associée. La page du caddie affichera la liste des produits
+L'utilisateur pourra ajouter un produit à son caddie d'achat. Pour des raisons de simplification, la quantité ne sera pas à gérer. Le produit sera alors simplement ajouté au caddie de l'utilisateur en un seul exemplaire.   L'utilisateur pourra visualiser son caddie en cliquant sur l'icone associée. La page du caddie affichera la liste des produits avec les prix ainsi que le prix total  actuel. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMDE3OTA1MSwtMTk4NTAxMDc2Nyw5MT
-Q4MDM5MDMsMTE4Mjg1NzU2OV19
+eyJoaXN0b3J5IjpbNzU3NTI0MDksLTE5ODUwMTA3NjcsOTE0OD
+AzOTAzLDExODI4NTc1NjldfQ==
 -->
