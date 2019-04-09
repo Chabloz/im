@@ -24,12 +24,12 @@ L'application doit  afficher la liste des produits sur la page. Les produits ser
 
 L'utilisateur pourra ajouter un produit à son caddie d'achat. Pour des raisons de simplification, la quantité ne sera pas à gérer. Le produit sera alors simplement ajouté au caddie de l'utilisateur en un seul exemplaire.   L'utilisateur pourra visualiser son caddie en cliquant sur l'icone associée. La page du caddie affichera la liste des produits avec les prix ainsi que le prix total  actuel. Enfin, L'utilisateur pourra supprimer un produit de son caddie.
 
-**Indications:** commencez par identifier les différents *Models* nécessaires. Modélise 
+**Indications:** commencez par identifier les différents *Models* nécessaires. Puis réfléchissez au nombre de vues adéquats et réaliser les templates associées. Utilisez Bootsrap   
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzcxNTk2MSwtMTk4NTAxMDc2Nyw5MT
-Q4MDM5MDMsMTE4Mjg1NzU2OV19
+eyJoaXN0b3J5IjpbLTIxMTgyNDk1NTksLTE5ODUwMTA3NjcsOT
+E0ODAzOTAzLDExODI4NTc1NjldfQ==
 -->
