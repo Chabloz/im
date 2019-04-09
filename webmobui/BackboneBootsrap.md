@@ -20,9 +20,10 @@ En plus de s'initier à un *framework* de design d'interface Web, ce TP à comme
 
 ## Cahier des charges
 
-L'application doit  afficher la liste des produits sur la page 
+L'application doit  afficher la liste des produits sur la page. Les produits seront définis par 4 champs: le nom, la marque
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE0ODAzOTAzLDExODI4NTc1NjldfQ==
+eyJoaXN0b3J5IjpbLTM3MjkwMjAzNiw5MTQ4MDM5MDMsMTE4Mj
+g1NzU2OV19
 -->
