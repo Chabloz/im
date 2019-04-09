@@ -16,9 +16,13 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {LocalStorage} from 'backbone.localstorage';
 ```
-En plus de s'initier à un *framework* de design d'interface Web, ce TP à comme objectif de faire réviser les différentes pièces du design pattern MVC. Vous devez réaliser un « embryon » d’application pour un shop en ligne proposant des périphériques informatiques de type souris, clavier et casques audio uniquement. 
+En plus de s'initier à un *framework* de design d'interface Web, ce TP à comme objectif de faire réviser les différentes pièces du design pattern MVC. Vous devez réaliser un « embryon » d’application pour un shop en ligne proposant des périphériques informatiques de type souris, claviers et casques audio uniquement. 
+
+## Cahier des charges
+
+L'application doit  afficher une liste de produit sur la page. Ceux-ci seront 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTcwNzA5MCwxMTgyODU3NTY5XX0=
+eyJoaXN0b3J5IjpbLTExODg3NzkzOSwxMTgyODU3NTY5XX0=
 -->
