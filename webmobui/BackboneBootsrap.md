@@ -16,9 +16,9 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {LocalStorage} from 'backbone.localstorage';
 ```
-En plus de s'initier à un *framework* de design d'interface Web, ce TP à comme objectif de faire réviser les différentes pièces du design pattern MVC.
+En plus de s'initier à un *framework* de design d'interface Web, ce TP à comme objectif de faire réviser les différentes pièces du design pattern MVC. Vous devez réaliser un « embryon » d’application pour un shop en ligne proposant des périphériques informatiques de type souris, clavier et casques audio uniquement. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4Mjg1NzU2OV19
+eyJoaXN0b3J5IjpbLTY2OTcwNzA5MCwxMTgyODU3NTY5XX0=
 -->
