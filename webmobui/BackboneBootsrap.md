@@ -24,13 +24,13 @@ L'application doit  afficher la liste des produits sur la page. Les produits ser
 
 L'utilisateur pourra ajouter un produit à son caddie d'achat. Pour des raisons de simplification, la quantité ne sera pas à gérer. Le produit sera alors simplement ajouté au caddie de l'utilisateur en un seul exemplaire.   L'utilisateur pourra visualiser son caddie en cliquant sur l'icone associée. La page du caddie affichera la liste des produits avec les prix ainsi que le prix total  actuel. Enfin, L'utilisateur pourra supprimer un produit de son caddie.
 
-**Indications:** Commencez par identifier les différents *Models* nécessaires. Puis réfléchissez au nombre de vues à faire et réaliser les *templates handlebars* associées. Utilisez Bootsrap pour le design Web en choisissant les bons composants graphiques. Pour les données, insérez simplement des données de tests *en dur*  dans votre collection de produits.
+**Indications:** Commencez par identifier les différents *Models* nécessaires. Puis réfléchissez au nombre de vues à faire et réaliser les *templates handlebars* associées. Utilisez Bootsrap pour le design Web en choisissant les bons composants graphiques. Pour les données, insérez simplement des données de tests *en dur*  dans votre collection de produits. Utilisez [Backbone.LocalStorage](https://github.com/jeromegn/Backbone.localStorage) pour rendre les données persistante dans le local storage.  
    
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyOTIxMzcxLC0xOTg1MDEwNzY3LDkxND
-gwMzkwMywxMTgyODU3NTY5XX0=
+eyJoaXN0b3J5IjpbOTYwNTczOTUyLDM4MjkyMTM3MSwtMTk4NT
+AxMDc2Nyw5MTQ4MDM5MDMsMTE4Mjg1NzU2OV19
 -->
