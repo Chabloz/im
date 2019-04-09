@@ -20,9 +20,9 @@ En plus de s'initier à un *framework* de design d'interface Web, ce TP à comme
 
 ## Cahier des charges
 
-L'application doit  afficher une liste de produit sur la page. Ceux-ci seront 
+L'application doit  afficher la liste des produits sur la page 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODg3NzkzOSwxMTgyODU3NTY5XX0=
+eyJoaXN0b3J5IjpbOTE0ODAzOTAzLDExODI4NTc1NjldfQ==
 -->
