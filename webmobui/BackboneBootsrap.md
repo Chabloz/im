@@ -9,6 +9,7 @@ Le *design pattern* mise en place dans les TP précédents nous aide à avoir un
 ```bash
 npm install bootstrap popper.js backbone.localstorage --save
 ```
+
 Il nous vous restera plus qu'à l'importer dans votre code pour en bénéficier:
 
 ```js
