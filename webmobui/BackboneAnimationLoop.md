@@ -74,11 +74,10 @@ Testez votre code en créant une instance de cette *View* et en y associant le m
 Essayez à partir des éléments existants de créer les pièces manquantes pour que l'utilisateur puisse déplacer plusieurs entités en même temps. Regroupez toutes vos entités dans une collection puis réalisez la *view* associée qui appellera les deux méthodes *update* et *render* des *sous views*.  
 
 #### Et au delà  ...
-vous pouvez essayer d'enrichir votre application pour obtenir un mini jeu. Voila un [exemple](https://chabloz.eu/files/game/)
- de ce que l'on pourrait obtenir assez rapidement. 
+vous pouvez essayer d'enrichir votre application pour obtenir un mini jeu. Voila un [exemple](https://chabloz.eu/files/game/) de ce que l'on pourrait obtenir assez rapidement. 
 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDE4MzA1OCwtMTcyMDM2ODcxOSwtMT
+eyJoaXN0b3J5IjpbMTU1MDM0MjQ5MiwtMTcyMDM2ODcxOSwtMT
 I5ODUzODMxNywtMTY5NzExNjgxOF19
 -->
