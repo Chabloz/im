@@ -71,11 +71,11 @@ Testez votre code en créant une instance de cette *View* et en y associant le m
 
 #### Collection et View associée 
 
-Essayez à partir des éléments existants de créer les pièce manquantes pour que l'utilisateur puisse déplacer plusieurs entités en même temps. Regroupez toute vos entités dans une collection puis réalisez la *view* associée qui appellera les deux méthodes *update* et *render* des *sous views*.  
+Essayez à partir des éléments existants de créer les pièces manquantes pour que l'utilisateur puisse déplacer plusieurs entités en même temps. Regroupez toute vos entités dans une collection puis réalisez la *view* associée qui appellera les deux méthodes *update* et *render* des *sous views*.  
 
 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTg1MzgzMTcsLTE2OTcxMTY4MThdfQ
-==
+eyJoaXN0b3J5IjpbLTk1NjA4NTQzMiwtMTI5ODUzODMxNywtMT
+Y5NzExNjgxOF19
 -->
