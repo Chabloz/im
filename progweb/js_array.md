@@ -1,5 +1,7 @@
 # Exercice JS - Tableaux
 
+Les exercices suivants non aucun sens algorithmique. Ils sont proposés afin de vous familiariser avec la syntaxe JavaScript et le paradigme de programmation fonctionnelle. 
+
 ## Tableaux de nombres
 A partir du tableau de nombres suivant:
 ```js
@@ -66,6 +68,6 @@ Réalisez les fonctionnalités ci-dessous. La structure de données initiale ne 
 [foreach](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1NzQ1MjUxLDE0NDU5OTMyMjcsMTcyND
-EyNjk4MywtMTI4NTk4MTIzM119
+eyJoaXN0b3J5IjpbLTUyNTA4MjYwOSw3MzU3NDUyNTEsMTQ0NT
+k5MzIyNywxNzI0MTI2OTgzLC0xMjg1OTgxMjMzXX0=
 -->
