@@ -7,7 +7,7 @@ A partir du tableau de nombres suivant:
 ```js
 const numbers = Object.freeze([3, 14, 15, 92 ,65, 35, 89, 79, 32, 38]);
 ```
-réalisez les fonctionnalités ci-dessous. La structure de données initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnelles même si le tableau initial était différent.*
+réalisez les fonctionnalités ci-dessous. La structure de données initiale ne doit pas être modifiée ( structure [immutable](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/freeze) ). *Vos solutions se doivent de rester fonctionnelles même si le tableau initial diffère.*
 
  1. Afficher tous les nombres dans la console
  2. Retourner un tableau avec les valeurs doublées
@@ -68,7 +68,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de données initiale ne 
 [foreach](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach)
 [destructuring](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Affecter_par_d%C3%A9composition)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUzMTg4MjgxLC01MjUwODI2MDksNzM1Nz
-Q1MjUxLDE0NDU5OTMyMjcsMTcyNDEyNjk4MywtMTI4NTk4MTIz
-M119
+eyJoaXN0b3J5IjpbLTEyODQ4MjgxOTEsLTUyNTA4MjYwOSw3Mz
+U3NDUyNTEsMTQ0NTk5MzIyNywxNzI0MTI2OTgzLC0xMjg1OTgx
+MjMzXX0=
 -->
