@@ -1,4 +1,4 @@
-# Exercice JS - Les fonctions
+# Exercice JS - Fonctions
 
 **Objectif**: Se familiariser avec la syntaxe JavaScript.
 
@@ -55,5 +55,5 @@ pow16(2); // Retourne 65'536
 times({times: 2, fct: square})(2) // Retourne 16
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0NjAwMTE4LC0xMTkzNzIzMDU4XX0=
+eyJoaXN0b3J5IjpbMTUyMTQyNDg4MCwtMTE5MzcyMzA1OF19
 -->
