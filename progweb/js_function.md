@@ -6,7 +6,7 @@ Implémentez les fonctionnalités  suivantes sous la forme de fonctions JavaScri
 
 **1** \* Retourne la plus grande valeur parmi les trois nombres fournis en paramètre.  
 
-**2** \*\* Retourne un nombre entier pseudo-aléatoire entre une borne inférieure et une borne supérieure (bornes entières et comprises dans l'intervalle).   
+**2** \* Retourne un nombre entier pseudo-aléatoire entre une borne inférieure et une borne supérieure (bornes entières et comprises dans l'intervalle).   
 
 **3** \*\* Indique si un nombre entier est un [nombre premier](https://fr.wikipedia.org/wiki/Nombre_premier) ou non. 
 
@@ -55,7 +55,7 @@ pow16(2); // Retourne 65'536
 times({times: 2, fct: square})(2) // Retourne 16
 ```
 
-
+**13** \*\*\* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NTIzMjQyXX0=
+eyJoaXN0b3J5IjpbLTExOTM3MjMwNThdfQ==
 -->
