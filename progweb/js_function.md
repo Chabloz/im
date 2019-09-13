@@ -54,8 +54,6 @@ const pow16 = times({times: 4, fct: square});
 pow16(2); // Retourne 65'536
 times({times: 2, fct: square})(2) // Retourne 16
 ```
-
-**13** \*\*\* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM3MjMwNThdfQ==
+eyJoaXN0b3J5IjpbNTk0NjAwMTE4LC0xMTkzNzIzMDU4XX0=
 -->
