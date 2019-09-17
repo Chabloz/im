@@ -30,7 +30,7 @@ add2(41); //retourne 43
 ```js
 twice(square, 2); // square(square(2)) => 16
 ```
-**9** \*\* Transformez votre fonction précédente en une  [fonction d'ordre supérieur](https://fr.wikipedia.org/wiki/Fonction_d%27ordre_sup%C3%A9rieur) retournant une fonction (un peu à la manière de la *curryfication*) afin de pouvoir faire des appels comme les suivants:
+**9** \*\*\* Transformez votre fonction précédente en une  [fonction d'ordre supérieur](https://fr.wikipedia.org/wiki/Fonction_d%27ordre_sup%C3%A9rieur) retournant une fonction (un peu à la manière de la *curryfication*) afin de pouvoir faire des appels comme les suivants:
 ```js
 const pow4 = twice(square);
 const pow16 = twice(pow4);
@@ -47,7 +47,7 @@ times({times: 4, fct: square, value: 2); // Retourne 65'536
 times({fct: square, value: 4, times: 2); // Retourne 256
 ```
 
-**11** \*\* Transformez votre fonction précédente en une  fonction d'ordre supérieur afin de pouvoir faire des appels comme les suivants:
+**11** \*\*\* Transformez votre fonction précédente en une  fonction d'ordre supérieur afin de pouvoir faire des appels comme les suivants:
 
 ```js
 const pow16 = times({times: 4, fct: square});
