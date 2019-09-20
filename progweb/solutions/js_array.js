@@ -1,6 +1,4 @@
-/*************************************************************
- * Tableaux de nombres
- *************************************************************/
+// Tableaux de nombres 
 const numbers = Object.freeze([3, 14, 15, 92 ,65, 35, 89, 79, 32, 38]);
 console.log("Afficher tous les nombres dans la console");
 console.log(numbers);
@@ -33,9 +31,8 @@ console.log(" et les nombres impairs dans les indices restants");
 let even = numbers.filter(nb => nb % 2 === 0); 
 let evenOdd = [...even, ...odd];
 console.log(evenOdd);
-/*************************************************************
- * Tableaux de chaînes de caractères
- *************************************************************/
+
+// Tableaux de chaînes de caractères
 const strings = Object.freeze(["Sator", "Arepo", "Tenet", "Opera", "Rotas"]);
 console.log(strings);
 console.log("Retourner tous les mots contenant au moins un r");
@@ -73,9 +70,8 @@ let isPalindrom = (str) => {
   return upperCase === reversed;
 }
 console.log(isPalindrom(concat));
-/*************************************************************
- * Tableaux d'objets
- *************************************************************/
+
+// Tableaux d'objets 
 const circles = Object.freeze([
   {x: 20, y: 10 , r: 10, color: "red"},
   {x: 10, y: 10 , r: 20, color: "green"},
