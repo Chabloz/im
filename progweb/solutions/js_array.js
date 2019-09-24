@@ -64,7 +64,7 @@ let nbOccLetter = (word, letter) => `${word}${letter}`.match(new RegExp(letter, 
 let moreThanOneE = strings.filter(word => nbOccLetter(word, "e") > 1);  
 console.log(moreThanOneE);
 console.log("Indiquer si les chaines du tableau forment un palindrome (si elles sont lues dans l'ordre des indices du tableau).");
-let isPalindrom = (str) => {
+let isPalindrom = str => {
   let upperCase = str.toUpperCase();  
   let reversed = upperCase.split("").reverse().join("");
   return upperCase === reversed;
