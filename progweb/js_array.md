@@ -32,10 +32,15 @@ Réalisez les fonctionnalités ci-dessous. La structure de données initiale ne 
  2. Indiquer si tous les mots font 5 lettres
  3. Retourner un tableau avec un mot de plus en début du tableau
  4. Retourner un tableau avec un mot de plus en fin de tableau
- 5\*\*. Retourner un tableau en remplaçant le mot du milieu par le mot **radar** (si le tableau à un nombre de mots pair, remplacer le mot qui se situe à l'indice juste avant le milieu) 
+ 
+ 5\*\*. Retourner un tableau en remplaçant le mot du milieu par le mot **radar** (si le tableau à un nombre de mots pair, remplacer le mot qui se situe à l'indice juste avant le milieu)
+ 
  6. Retourner la concaténation de tous les mots 
+ 
  7. Retourner le mot qui vient en premier selon l'ordre alphabétique
+ 
  8\*\*. Retourner tous les mots contenant au moins deux **e**
+ 
  9\*\*. Indiquer si les chaines du tableau forment un palindrome (si elle sont lues dans l'ordre des indices du tableau). 
 
 ## Tableaux d'objets
@@ -54,6 +59,7 @@ Réalisez les fonctionnalités ci-dessous. La structure de données initiale ne 
 1. Retourner toutes les aires des cercles
 2. Retourner tous les cercles de couleur rouge
 3. Retourner tous les centres des cercles
+
 4\*\*. Retourner tous les cercles en opérant une translation de 10 unités sur l'axe des abscisses 
 
 ## Ressources
