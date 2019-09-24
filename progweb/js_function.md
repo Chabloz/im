@@ -43,8 +43,8 @@ times(4, square, 2);
 ```
 Comme on peut le voir, l'appel de cette fonction peut porter à confusion. En effet l'ordre des arguments est important. On ne peut pas savoir, sans regarder la fonction **times**, si c'est la fonction  **square** qui sera appelée **4** fois avec comme valeur initiale **2** (ce qui nous donnerait  65'536), ou si c'est la fonction **square** qui sera appelée **2** fois avec comme valeur initiale **4** (ce qui nous donnerait  256). Modifiez alors votre fonction en utilisant la [décomposition](https://simonsmith.io/destructuring-objects-as-function-parameters-in-es6) pour les paramètres afin de pouvoir faire des appels comme les suivants:
 ```js
-times({times: 4, fct: square, value: 2); // Retourne 65'536
-times({fct: square, value: 4, times: 2); // Retourne 256
+times({times: 4, fct: square, value: 2}); // Retourne 65'536
+times({fct: square, value: 4, times: 2}); // Retourne 256
 ```
 
 **11** \*\*\* Transformez votre fonction précédente en une  fonction d'ordre supérieur afin de pouvoir faire des appels comme les suivants:
