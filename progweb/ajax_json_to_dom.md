@@ -20,7 +20,8 @@ Une fois la liste reçue, il faut peupler le champ « localité » du formulaire
  
 https://chabloz.eu/map/staticmap.php?zoom=14&size=512x512&maptype=mapnik&center=46.7833333,6.65
 
+**remarque**: Ce WebService ne fournit que des cartes pour quelques grandes localités de Suisse romande. S
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMDIxOTU3NSwtNjEyMTcxMzc0LDcwMz
-MzMzEwLDc4MzU5NzU5Nl19
+eyJoaXN0b3J5IjpbNjQxNzUxMjc4LDIxMDAyMTk1NzUsLTYxMj
+E3MTM3NCw3MDMzMzMxMCw3ODM1OTc1OTZdfQ==
 -->
