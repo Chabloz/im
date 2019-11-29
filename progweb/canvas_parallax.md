@@ -41,7 +41,7 @@ Dans votre programme principal, créez un tableau pour le stockage des cercles. 
 export function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min +1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 ```
 Pour les rayons, essayez de trouver une astuce pour que votre code génère plus de petits cercles que de grands cercles. Pour les vitesses, indiquez 0.1 [px/ms] pour le moment.
