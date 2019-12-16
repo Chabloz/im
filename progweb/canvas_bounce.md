@@ -26,7 +26,7 @@ Rajoutez une méthode *applyGravity* dans votre classe. Cette méthode recevra l
 Rajoutez une méthode *applyFriction* dans votre classe. Cette méthode recevra en paramètre le Δt ainsi qu'une valeur de simulation pour le frottement. Son code modifiera les vélocités X et Y en conséquence. Appelez cette nouvelle méthode dans votre boucle d'animation juste après le mouvement de votre cercle pour la tester. Comme vous le constaterez, votre balle roulera un peu trop longtemps sur le *sol*.  Ajoutez donc une nouvelle méthode *applyFloorFriction* dans votre classe, celle-ci recevra aussi le Δt ainsi qu'une valeur de simulation pour le frottement au sol. Elle appellera votre méthode *applyFriction* avec ces paramètres  uniquement si le cercle est en contacte avec le sol. Testez à nouveau votre animation et ajustez les paramètres de friction pour que le mouvement vous paraisse adéquat.
 
 ### Timer
-Dans votre bouble d'animation, essayez de rajouter un minuteur pour faire apparaître toutes les 200 [ms] un nouveau cercle à une position fixe mais avec une couleur, un rayon et un vecteur de vitesse aléatoire (mais restant toujours entre le nord-ouest et le nord-est). Essayez aussi de supprimer les "vieux" cercles pour qu'un maximum de 100 cercles soit visible à l'édran.
+Dans votre bouble d'animation, essayez de rajouter un minuteur pour faire apparaître toutes les 200 [ms] un nouveau cercle à une position fixe mais avec une couleur, un rayon et un vecteur de vitesse aléatoire (mais restant toujours entre le nord-ouest et le nord-est). Essayez aussi de supprimer les "vieux" cercles pour qu'un maximum de 100 cercles soient visibles à l'édran.
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE0NzgyNzQ0Nl19
