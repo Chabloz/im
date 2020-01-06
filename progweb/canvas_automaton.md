@@ -39,6 +39,13 @@ Afin d'implémenter cette syntaxe, nous pourrions représenter ces deux règles 
 [false, false, false, true, false, false, false, false, false] // Birth rule B3
 [false, false,  true, true, false, false, false, false, false] // Survival  rule S23
 ```
+Ou plus simplement avec des entiers:
+
+```js
+[0, 0, 0, 1, 0, 0, 0, 0, 0] // Birth rule B3
+[0, 0, 1, 1, 0, 0, 0, 0, 0] // Survival  rule S23
+```
+
 Il y a bien sûr d'autres solutions pour représenter les 2^18 automates possibles.  Mais celle là a l'avantage d'être suffisamment explicite. L'algorithme permettant de savoir si une cellule à la position (x,y) sera vivante ou morte à la prochaine itération  est donc:
 
  - Calculer le nombre de cellules vivantes dans le voisinage de Moore de la cellule.
