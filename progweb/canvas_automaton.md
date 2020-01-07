@@ -49,8 +49,8 @@ Ou plus simplement avec des entiers:
 Il y a bien sûr d'autres solutions pour représenter les 2^18 automates possibles.  Mais celle là a l'avantage d'être suffisamment explicite. L'algorithme permettant de savoir si une cellule à la position (x,y) sera vivante ou morte à la prochaine itération  est donc:
 
  - Calculer le nombre de cellules vivantes dans le voisinage de Moore de la cellule.
- - Si la cellule (x,y) est actuellement vivante, elle prend la valeur à l'indice équivalent aux nombres de voisins vivants dans la tableau de booléens de la règle de survie.
- - Si la cellule (x,y) est actuellement morte, elle prend la valeur à l'indice équivalent aux nombres de voisins vivants dans la tableau de booléens de la règle de naissance.
+ - Si la cellule (x,y) est actuellement vivante, elle prend la valeur à l'indice équivalent au nombre de voisins vivants dans la tableau de booléens de la règle de survie.
+ - Si la cellule (x,y) est actuellement morte, elle prend la valeur à l'indice équivalent au nombreb de voisins vivants dans la tableau de booléens de la règle de naissance.
  
 Rajoutez donc deux méthodes dans votre classe *LifeLikeAutomaton*:
 
