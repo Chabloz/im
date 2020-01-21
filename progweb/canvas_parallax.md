@@ -69,7 +69,7 @@ Modifiez votre programme principal pour créer des cercles dans un tore plat à 
 
 ## Détection des touches du clavier
 
-Afin de pouvoir laisser l'utilisateur contrôler la caméra, il nous faut savoir quelles touches de direction (WASD  par exemple) sont actuellement appuyées. Afin d'en faire un module réutilisable, nous allons encapsuler la gestion du clavier dans une classe. Commencez donc par créer un nouveau fichier *Keyboard.js* dans votre dossier *class*.  Le constructeur de cette classe n'aura qu'un seul paramètre nommé caseSensitive qui aura la valeur booléenne *false* par défaut et qui permettra d'indiquer si le gestionnaire sera sensible à la casse des lettres ou non. Le constructeur initialisera une structure de données qui permettra de stocker toutes les touches actuellement appuyées par l'utilisateur. Vous pouvez utiliser un tableau, mais une [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) ferait aussi bien (même mieux) le travail. Le constructeur écoutera aussi deux événements sur l'élément DOM *window*:  *keydown* pour la détection de l'appui sur les touches, et *keyup* pour la détection des relâchements. Voilà le code pour leur écoute:
+Afin de pouvoir laisser l'utilisateur contrôler la caméra, il nous faut savoir quelles touches de direction (WASD  par exemple) sont actuellement appuyées. Afin d'en faire un module réutilisable, nous allons encapsuler la gestion du clavier dans une classe. Commencez donc par créer un nouveau fichier *Keyboard.js* dans votre dossier *class*.  Le constructeur de cette classe n'aura qu'un seul paramètre nommé caseSensitive qui aura la valeur booléenne *false* par défaut et qui permettra d'indiquer s le gestionnaire sera sensible à la casse des lettres ou non. Le constructeur initialisera une structure de données qui permettra de stocker toutes les touches actuellement appuyées par l'utilisateur. Vous pouvez utiliser un tableau, mais une [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) ferait aussi bien (même mieux) le travail. Le constructeur écoutera aussi deux événements sur l'élément DOM *window*  *keydown* pour la détection de l'appui sur les touches, et *keyup* pour la détection des relâchements. Voilà le code pour leur écoute:
 
 ```js
 $(window).on("keydown", event => this.onKeyDown(event));
@@ -108,6 +108,7 @@ Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles,
 
 **Remarque**: comme vous l'avez peut-être remarqué, nos radians croissent dans la sens horaire plutôt que de le sens antihoraire.  En effet,  l'axe des *Y* croit vers le bas dans notre *canvas* et non vers le haut comme on le voit couramment en mathématique. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MDU2NDcwNywtMjA3MjkyNjE5MSwxMD
-UwNTIxMDUxLDE5MTczMDk4OTgsLTk5MzU0NzczNV19
+eyJoaXN0b3J5IjpbMTQ1NDE0MTMxNywxNjkwNTY0NzA3LC0yMD
+cyOTI2MTkxLDEwNTA1MjEwNTEsMTkxNzMwOTg5OCwtOTkzNTQ3
+NzM1XX0=
 -->
