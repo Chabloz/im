@@ -2,7 +2,7 @@
 
 ## Mise en place
 
-**Objectifs**: créer une application Web simple (Single Page App) avec gestion multi-utilisateurs sous la forme d'un système de *chat* simple.
+**Objectifs**: créer une application Web simple (SinglOne Page App) avec gestion multi-utilisateurs sous la forme d'un système de *chat* simple.
 
 Le backend est accessible via un Web Service (WS) en JSONP disponible en HTTPS. Ce WS comporte cinq *services*, un fournissant tous les messages du chat pour un utilisateur, un autre permettant l’ajout d’un message au chat, un permettant de se « connecter », un dernier permettant de se déconnecter et, finalement, un listant les utilisateurs connectés. Ces services sont respectivement disponibles via les url suivantes : 
 
@@ -97,5 +97,5 @@ Reflechissez au système de session utilisé et essayez de trouver ce que cela p
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5OTE0NjYyXX0=
+eyJoaXN0b3J5IjpbLTE1MTY1MjA2NSw3ODk5MTQ2NjJdfQ==
 -->
