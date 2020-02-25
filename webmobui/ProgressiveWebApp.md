@@ -85,6 +85,7 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
 ## LocalStorage
+
 L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est quasi indispensable de stocker des données de l'application du coté du *browser*. L'[api Web Storage](https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API)   et en particulier [LocalStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage) va nous permettre de répondre à ce besoin. Elle nous offre un espace de stockage persistant propre au browser et propre au nom de domaine (chaque sous-domaine aura toutefois un espace de stockage différent). Malheureusement, elle ne permet que de sauvez des chaînes de caractères. Ce problème est aisément résolu avec l'utilisation conjointe de JSON. Il suffit ainsi de sérialiser en JSON la donnée à stocker et de sauver la chaîne de caractère dans le *LocalStorage*. 
 
 Un besoin fréquent est d'organiser les données dans des collections de données (c.à.d des espace de noms différents) . Ceci et le fait que le LocalStorage est partagé entre toutes les pages d'un même sous-domaine, font qu'il serait pratique de pouvoir créer des "sous espace" de stockage dans un LocalStorage.  
@@ -187,11 +188,11 @@ Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 
 Finalement, en mode *offline*, essayez de désactiver les clics sur les liens des *favoris* puisqu'ils ne mèneront nulle part.   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDA3NDgwNCwtNTQ3NjA2NTQ4LC03Mj
-AwODIwNDcsNzk3ODYzNjc4LC0xOTc5MTE5NjAxLC0yMDUyMTU0
-OTE4LDgyNDc1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLT
-E0ODg3NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1
-MTk3MiwtMTc4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcxNj
-YxLDg3MTEwMDc4NSwtMTMzMDQwMzgzOCwxNzQ0OTUyMDIsNzI3
-OTcyOTkxXX0=
+eyJoaXN0b3J5IjpbLTc5MDgwMzgyNSwtOTM0MDc0ODA0LC01ND
+c2MDY1NDgsLTcyMDA4MjA0Nyw3OTc4NjM2NzgsLTE5NzkxMTk2
+MDEsLTIwNTIxNTQ5MTgsODI0NzU0MTM1LC0xNjYwNDM0NjQ0LD
+I3NDQ0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUxNzAsMTgxNDg5
+MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkzOTAzMT
+Y3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzODM4LDE3
+NDQ5NTIwMl19
 -->
