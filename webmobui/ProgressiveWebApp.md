@@ -1,3 +1,4 @@
+
 # Progressive Web App 
 
 ## Mise en place
@@ -106,6 +107,24 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 - Visualiser les tâches **archivées** par ordre chronologique. Les tâches archivées sont celles dont la date limite est échue.
 - Supprimer une tâche (active ou archivée).
 
+### Templating
+
+L'affichage des tâches à faire dans le DOM sera fait à l'aide d'un moteur de *templates*. Nous utiliserons [Handlebars](https://handlebarsjs.com/). Commencez donc par l'installer: 
+ ```bash
+ npm install handlebars --save
+ npm install handlebars-loader --save-dev
+```
+
+Puis modifiez la configuration webpack pour que tous les fichiers  avec l'extension *.handlebars* soient *packagés* correctement par *webpack*. Ajouter la règle suivante dans la partie *rules* du fichier *webpack.config.js* :
+
+```js
+{
+  test: /\.handlebars$/,
+  use: 'handlebars-loader'
+}
+```
+Essayez ensuite d'utiliser ce moteur de *templates* pour l'affichage des tâches.
+
 ## En ligne  / Hors ligne (*online / offline*)
 
 Une de fonctionnalité offerte par les PWA sont leur utilisation en mode *offline*. C'est à dire que l’application doit être capable de continuer à fonctionner même si le *backend* n'est pas atteignable (ce qui sera le cas lorsque la connectivité aux données sera perdues).
@@ -188,11 +207,11 @@ Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 
 Finalement, en mode *offline*, essayez de désactiver les clics sur les liens des *favoris* puisqu'ils ne mèneront nulle part.   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MDgwMzgyNSwtOTM0MDc0ODA0LC01ND
-c2MDY1NDgsLTcyMDA4MjA0Nyw3OTc4NjM2NzgsLTE5NzkxMTk2
-MDEsLTIwNTIxNTQ5MTgsODI0NzU0MTM1LC0xNjYwNDM0NjQ0LD
-I3NDQ0MjYyMCwtMTQ4ODc1NDA2Niw3NTM4NTUxNzAsMTgxNDg5
-MTEyMCwxNjI0OTUxOTcyLC0xNzg5NTA3MTA3LC0yMDkzOTAzMT
-Y3LDE2MDM4NzE2NjEsODcxMTAwNzg1LC0xMzMwNDAzODM4LDE3
-NDQ5NTIwMl19
+eyJoaXN0b3J5IjpbLTQ3NTY3NjI0NSwtNzkwODAzODI1LC05Mz
+QwNzQ4MDQsLTU0NzYwNjU0OCwtNzIwMDgyMDQ3LDc5Nzg2MzY3
+OCwtMTk3OTExOTYwMSwtMjA1MjE1NDkxOCw4MjQ3NTQxMzUsLT
+E2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mzg1
+NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcxMD
+csLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEz
+MzA0MDM4MzhdfQ==
 -->
