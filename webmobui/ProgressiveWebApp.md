@@ -200,7 +200,7 @@ Ces contraintes devraient être respectées si vous avez correctement fait ce TP
 La partie de ce TP sur le LocalStorage est la plus importante. Afin de pratiquer cette technologie, réalisez la partie *favoris* de votre PWA. Voilà les spécificités à respecter:  
 
 - L'utilisateur pourra créer et supprimer des groupes de favoris (thèmes) 
-- L'utilisateur pourra ajouter et supprimer des favoris dans les groupes. Un favoris est simplement composé d'un libellé et d'une URL. --
+- L'utilisateur pourra ajouter et supprimer des favoris dans les groupes. Un favoris est simplement composé d'un libellé et d'une URL.
 
 Si vous voulez obtenir une *favicon* d'un site pour le design de votre PWA vous pouvez utiliser le services de Google disponible ici: https://www.google.com/s2/favicons?domain=https://example.com
 Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
