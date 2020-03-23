@@ -39,9 +39,11 @@ _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la va
 
 Ajoutez aussi une méthode  _initialize_  faisant un simple  _console.log_  de ses deux paramètres (qui sont les attributs et les options spécifiés lors de la construction de l’instance).
 
-Testez votre “validateur” avec deux instances, l’une sans spécifier de titre mais avec  _onLoan_  valide, puis l’autre avec un titre mais  _onLoan_  valant 1. Vous devez passez l’option  _{validate: true}_  lors de la construction des instances pour que Backbone valide vos paramètres (en appelant votre méthode validate). Faites ensuite un console.log de vos deux instances en JSON ainsi que de leur attribut  _validationError_. Observez aussi le console.log de votre méthode  _initialize_.
+Testez votre “validateur” avec vos deux cours de test. Vous devez passez l’option  _{validate: true}_  lors de la construction des instances pour que Backbone valide vos paramètres en appelant votre méthode _validate_. Faites ensuite un console.log de vos deux instances en JSON ainsi que de leur attribut  _validationError_. Observez aussi le console.log de votre méthode  _initialize_.
 
 Indication: pour vérifier si un attribut existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is_  du framework underscore](http://underscorejs.org/#isEqual)
+
+#### Accesseurs et modificateurs
 
 **1.d)**  Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  _set_  et  _get_  pour modifier les attributs des instances (principe de l'encapsulation). Ainsi, Backbone.js peut gérer efficacement ces changements. Créer une troisième instance avec un titre ‘item 3’ et onLoan à  _true_, puis changer son attribut  _title_  pour ‘item 3 - changed’. Faites un console.log du JSON de cette nouvelle instance ainsi que du résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
 
@@ -61,5 +63,5 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MDMxNjEzMF19
+eyJoaXN0b3J5IjpbMTk1MzA3ODEyOF19
 -->
