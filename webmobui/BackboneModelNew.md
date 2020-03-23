@@ -45,7 +45,7 @@ Indication: pour vérifier si un attribut existe (ou tester son type), vous pouv
 
 #### Accesseurs et modificateurs
 
-**1.d)**  Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  _set_  et  _get_  pour modifier les attributs des instances (principe de l'encapsulation). Ainsi, Backbone.js peut gérer efficacement ces changements. Créer une troisième instance avec un titre ‘item 3’ et onLoan à  _true_, puis changer son attribut  _title_  pour ‘item 3 - changed’. Faites un console.log du JSON de cette nouvelle instance ainsi que du résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
+Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  _set_  et  _get_  pour modifier les attributs des instances (principe de l'encapsulation). Testez ceci en changeant un des attributs de vos deux cours. Faites un console.log du cours avant changearésultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
 
 Remarque: si vous voulez qu’un  _set_  d’un attribut passe par votre “validateur”, vous devez spécifier l’option  _{validate: true}_, comme lors de la construction de l’instance.
 
@@ -63,5 +63,5 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzA3ODEyOF19
+eyJoaXN0b3J5IjpbLTE1MjIzNTk1MTddfQ==
 -->
