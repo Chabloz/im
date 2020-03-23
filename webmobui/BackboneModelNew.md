@@ -25,11 +25,15 @@ Finalement. créez un dossier nommé *models* dans votre dossier *app* de votre 
 
 ## Models Backbone.js
 
+#### Création et valeurs par défaut
+
 Les modèles du framework Backbone s’occupent de la gestion des données manipulées par l’application.  [La documentation des  _models_](http://backbonejs.org/#Model)  du framework nous indique que pour créer un constructeur pour nos modèles il faut utiliser la méthode  [extend](http://backbonejs.org/#Model-extend).
 
 Créez un  _Model_  nommé  _Course_ qui permettra de représenter les cours pour l'affichage des horaires des cours COMEM+. Réfléchissez aux propriétés de ce   _Model_, puis créez deux cours avec des données de test, puis faites un console.log de vos instances encodées en JSON pour vérification ([JSON.stringify](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Objets_globaux/JSON/stringify)).
 
 Ajoutez à votre _Model_  une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Faites à nouveau un test en affichant vos deux cours dans votre console et remarqué le changement.
+
+#### Initialisation et validation
 
 _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes
 
@@ -57,5 +61,5 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDM0MDk5MjFdfQ==
+eyJoaXN0b3J5IjpbMTQ1NTgyNjMxOF19
 -->
