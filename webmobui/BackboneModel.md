@@ -27,7 +27,7 @@ Finalement. créez un dossier nommé *models* dans votre dossier *app* de votre 
 
 Les modèles du framework Backbone s’occupent de la gestion des données manipulées par l’application.  [La documentation des  _models_](http://backbonejs.org/#Model)  du framework nous indique que pour créer un constructeur pour nos modèles il faut utiliser la méthode  [extend](http://backbonejs.org/#Model-extend).
 
-Créez un  _Model_  nommé  _Cours_, puis créez deux instances (nommée *item1* et *item2* par exemple) de ce  _Model_. Ces deux instances doivent avoir un attribut  _title_  valant respectivement ‘Item 1’ et ‘Item 2’. Puis faites un  _console.log_  de la propriété  _title_  des deux instances.
+Créez un  _Model_  nommé  _Course_ qui permettra de représenter les cours pour l'affichage des horaires des cours COMEM+.
 
 **1.b)**  Identique au point a) mais votre  _Model_  doit spécifier une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Créez vos deux instances à environ une microseconde d’intervalle en ne spécifiant que leur titre, puis faites un console.log de vos instances encodées en JSON pour vérification ([JSON.stringify](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Objets_globaux/JSON/stringify)).
 
@@ -66,6 +66,6 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOT
-MzMjMyMjVdfQ==
+eyJoaXN0b3J5IjpbMTc0MDQzNzM5OCwtNTIxNTg2MDUsMjA5Mz
+MyMzIyNV19
 -->
