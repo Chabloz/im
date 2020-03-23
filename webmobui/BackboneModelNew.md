@@ -57,11 +57,7 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 Faite que les instances de votre  _Model_  écoutent automatiquement les changement de leur attribut grâce à la  [méthode  _on_  de Backbone.js](http://backbonejs.org/#Events-on)  (**remarque**: bien que proche elle n’est pas identique à la méthode  _on_  de jQuery). Lorsqu'un changement se produit, votre model doit effectuer un _console.log_ de ses attributs. Désormais, vous pouvez suivre tous les changements de vos instances directement dans votre console. 
 
-### Design Pattern PubSub
-
-Les événements ne sont pas “globaux”, le  _trigger_  doit se produire sur l’objet en question. Il peut être intéressant d’implémenter un mécanisme plus malléable en s’inspirant par exemple du  [design pattern Pub Sub](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). Essayez d’implémenter ce  _design pattern_  avec Backbone.js pour les  _models_  du point précédent. La méthode  [listenTo](http://backbonejs.org/#Events-listenTo)  vous sera peut être utile.
-
-**Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
+**Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTY0NDU5NF19
+eyJoaXN0b3J5IjpbLTY2MTkzMjI1XX0=
 -->
