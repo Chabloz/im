@@ -55,7 +55,7 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 [La documentation des  _events_](http://backbonejs.org/#Events)  du framework nous indique que pour pouvoir bénéficier du système de gestion des  _events_  il faut “étendre” ([extend](http://underscorejs.org/#extend)) ou “cloner” ([clone](http://underscorejs.org/#clone)) l’objet  _Backbone.Events_. Les  _Models_  de Backbone.js bénéficie déjà de ce traitement.
 
-Faite que les instances de votre  _Model_  écoutent automatiquement les changement de leur attribut grâce à la  [méthode  _on_  de Backbone.js](http://backbonejs.org/#Events-on)  (remarque: bien que proche elle n’est pas identique à la méthode  _on_  de jQuery) et exécute la méthode ‘log’ si l’événement se produit. Réfléchissez bien à où mettre ce code. Enfin, créez deux instances de  _Person_  avec un attribut  _name_  pour chacune, et lancez ([trigger](http://backbonejs.org/#Events-trigger)) l’_event_  ‘my:log’ sur les deux objets et observez le résultat dans la console.
+Faite que les instances de votre  _Model_  écoutent automatiquement les changement de leur attribut grâce à la  [méthode  _on_  de Backbone.js](http://backbonejs.org/#Events-on)  (**remarque**: bien que proche elle n’est pas identique à la méthode  _on_  de jQuery). Lorsqu'un changement se produit, votre model doit effectuer un _console.log_ de ses attributs. Désormais, vous pouvez suivre tous les changement de vos instanmce
 
 **2.b)**  Backbone.js génère  [quelques events](http://backbonejs.org/#Events-catalog)  de manière automatique. Reprenez le code du point 2.a et rajoutez la gestion de l’événement ‘change’ dans votre  _Model_. Faites que cet événement appel une méthode  _logChange_  dont le code sera un console.log affichant les valeurs des attributs de l’objet avant et après le changement. Pour tester votre code, il vous suffit de changer le nom d’une des deux instances créées au point précédant grâce à la méthode  _set_.
 
@@ -63,5 +63,5 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTU3NzkzOV19
+eyJoaXN0b3J5IjpbMTExNDU5NzgwXX0=
 -->
