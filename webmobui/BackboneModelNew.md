@@ -37,7 +37,7 @@ Ajoutez à votre _Model_  une valeur par  [défaut](http://backbonejs.org/#Model
 
 _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes
 
-Ajoutez aussi une méthode  _initialize_  faisant un simple  _console.log_  de ces deux paramètres (qui sont les attributs et les options spécifiés lors de la construction de l’instance).
+Ajoutez aussi une méthode  _initialize_  faisant un simple  _console.log_  de ses deux paramètres (qui sont les attributs et les options spécifiés lors de la construction de l’instance).
 
 Testez votre “validateur” avec deux instances, l’une sans spécifier de titre mais avec  _onLoan_  valide, puis l’autre avec un titre mais  _onLoan_  valant 1. Vous devez passez l’option  _{validate: true}_  lors de la construction des instances pour que Backbone valide vos paramètres (en appelant votre méthode validate). Faites ensuite un console.log de vos deux instances en JSON ainsi que de leur attribut  _validationError_. Observez aussi le console.log de votre méthode  _initialize_.
 
@@ -61,5 +61,5 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTgyNjMxOF19
+eyJoaXN0b3J5IjpbLTY3MDMxNjEzMF19
 -->
