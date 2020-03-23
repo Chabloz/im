@@ -31,7 +31,7 @@ Créez un  _Model_  nommé  _Course_ qui permettra de représenter les cours pou
 
 Ajoutez à votre _Model_  une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Faites à nouveau un test en affichant vos deux cours dans votre console et remarqué le changement.
 
-**1.c)**  Backbone.js offre la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre code du point précédent, ajoutez une méthode  _validate_  qui contrôle qu’un attribut  _onLoan_  est bien définit et est un booléen. Vérifiez aussi que le titre est définit et est bien une  _string_.
+_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes
 
 Ajoutez aussi une méthode  _initialize_  faisant un simple  _console.log_  de ces deux paramètres (qui sont les attributs et les options spécifiés lors de la construction de l’instance).
 
@@ -57,5 +57,5 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTMwNzgyMF19
+eyJoaXN0b3J5IjpbLTIwNDM0MDk5MjFdfQ==
 -->
