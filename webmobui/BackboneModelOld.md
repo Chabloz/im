@@ -25,11 +25,24 @@ Finalement. créez un dossier nommé *models* dans votre dossier *app* de votre 
 
 ## Models Backbone.js
 
+#### Création et valeurs par défaut
+
 Les modèles du framework Backbone s’occupent de la gestion des données manipulées par l’application.  [La documentation des  _models_](http://backbonejs.org/#Model)  du framework nous indique que pour créer un constructeur pour nos modèles il faut utiliser la méthode  [extend](http://backbonejs.org/#Model-extend).
 
-Créez un  _Model_  nommé  _Cours_, puis créez deux instances (nommée *item1* et *item2* par exemple) de ce  _Model_. Ces deux instances doivent avoir un attribut  _title_  valant respectivement ‘Item 1’ et ‘Item 2’. Puis faites un  _console.log_  de la propriété  _title_  des deux instances.
+Créez un  _Model_  nommé  _Course_ qui permettra de représenter les cours pour l'affichage des horaires des cours COMEM+. Réfléchissez aux propriétés de ce   _Model_, puis créez deux cours avec des données de test, puis faites un console.log de vos instances encodées en JSON pour vérification ([JSON.stringify](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Objets_globaux/JSON/stringify)).
 
-**1.b)**  Identique au point a) mais votre  _Model_  doit spécifier une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Créez vos deux instances à environ une microseconde d’intervalle en ne spécifiant que leur titre, puis faites un console.log de vos instances encodées en JSON pour vérification ([JSON.stringify](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Objets_globaux/JSON/stringify)).
+Ajoutez à votre _Model_  une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Faites à nouveau un test en affichant vos deux cours dans votre console et remarqué le changement.
+
+#### Initialisation et validation
+
+_code n'a bien sûr de sens que pour aider à la compréhension du mécanisme des valeurs par défaut de Bference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Créez vos deux instances à environ une microseconde d’intervalle en ne spécifiant que leur titre, puis faites un console.log de vos instances encodées en JSON pour vérification ([JSON.stringify](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Objets_globaux/JSON/stringify)).
+
+Pour attendre un changement d'une microseconde à l'autre, vous pouvez utilisez le code de testt suivant:
+
+```js
+let now = $.now();
+while (now == $.now());
+```Créez vos vos deux cours de tes à environ une microseconde d’intervalle en ne spécifiant que leur titre, puis Refaitconsol.log de vos instances encodées en JSON pour vérification ([JSON.stringify](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Objets_globaux/JSON/stringify)).
 
 Pour attendre un changement d'une microseconde à l'autre, vous pouvez utilisez le code de test suivant:
 
@@ -40,23 +53,28 @@ while (now == $.now());
 
 Ce code n'a bien sûr de sens que pour aider à la compréhension du mécanisme des valeurs par défaut de Backbone et ne doit pas être utilisé dans des codes d'applications Web classiques.
 
-**1.c)**  Backbone.js offre la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre code du point précédent, ajoutez une méthode  _validate_  qui contrôle qu’un attribut  _onLoan_  est bien définit et est un booléen. Vérifiez aussi que le titre est définit et est bien une  _string_.
+**1.c)**  Backbone.js offre la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes po leur  [initialisation et consoletle ruction](httpbjs.org/#Model-constructor). En reprenant votre ccode du point précédent, ajoutez une méthode  validate)  qui contrôle qu’un attribut  _onLoan_  est bien définit et est un booléen. Vérifiez aussi que le titre est définit et est bien une  _string_.
 
 Ajoutez aussi une méthode  _initialize_  faisant un simple  _console.log_  de ces deux paramètres (qui sont les attributs et les options spécifiés lors de la construction de l’instance).
 
-Testez votre “validateur” avec deux instances, l’une sans spécifier de titre mais avec  _onLoan_  valide, puis l’autre avec un titre mais  _onLoan_  valant 1. Vous devez passez l’option  _{validate: true}_  lors de la construction des instances pour que Backbone valide vos paramètres (en appelant votre méthode validate). Faites ensuite un console.log de vos deux instances en JSON ainsi que de leur attribut  _validationError_. Observez aussi le console.log de votre méthode  _initialize_.
+Testez votre “validateur” avec deux instances, l’une sans spécifier de titre mais avec  _onLoan_  valide, puis l’autre avec un titre mais  _onLoan_  valant 1. Vous devez passez l’option  _{validate: true}_  lors de la construction des instances pour que Backbone valide vos paramètrshanger son attribut  _title_  pour ‘item 3 - changed’. Faites ensuite un conle.log du JSON de cette nouvelle instance ainsi que du vos deux instances en JSON ainsi que de leur attribut  _validationError_. Observez aussi le console.log de votre méthode  _initialize_.
 
-Indication: pour vérifier si un attribut existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is_  du framework underscore](http://underscorejs.org/#isEqual)
+Indication: pour vérifier si un attribut t existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is_  du framework underscore](http://underscorejs.org/#isEqual)
 
-**1.d)**  Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  _set_  et  _get_  pour modifier les attributs des instances (principe de l'encapsulation). Ainsi, Backbone.js peut gérer efficacement ces changements. Créer une troisième instance avec un titre ‘item 3’ et onLoan à  _true_, puis changer son attribut  _title_  pour ‘item 3 - changed’. Faites un console.log du JSON de cette nouvelle instance ainsi que du résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
+**1.d)**  Une fois une instance dvotre  _Model_  créée, il est conseillé de passer par les méthodes  _set_  et  _get_  pour modifier les attributs. Désormais, vous pouvez suivre tous les changements de vos instances directement dans votre console. 
+### Design Pattern PubSub
+
+Les (principe de l'encapsulation). Ainsi, Backbone.js_ peut gérer efficacement ces changements. Créer une troisième instance avec un titre ‘item 3’ et onLoan à  _true_, puis changer son attribut  _title_  pour ‘item 3 - changed’. Faites un console.log du JSON de cette nouvelle instance ainsi que du résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
 
 Remarque: si vous voulez qu’un  _set_  d’un attribut passe par votre “validateur”, vous devez spécifier l’option  _{validate: true}_, comme lors de la construction de l’instance.
 
 ## 2)  _Events Backbone.js_
 
-Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion des  _events_. Le framework  _Backbone.js_  va nous aider à gérer les événements de manière simple, en produire automatiquement quelques-uns, et nous fournir des outils pour transmettre et recevoir des informations additionnelles.
+Nous avons déjà vu dans le cous de base l’utilité d’une bonne gestion des  _events_. Le framework  _Backbone.js_  va nous aider à gérer les événements de manière simple, en produire automaent quelques-uns, et nous fournir des outils pour transmettre et recevoir des informations additionnelles.
 
-[La documentation des  _events_](http://backbonejs.org/#Events)  du framework nous indique que pour pouvoir bénéficier du système de gestion des  _events_  il faut “étendre” ([extend](http://underscorejs.org/#extend)) ou “cloner” ([clone](http://underscorejs.org/#clone)) l’objet  _Backbone.Events_. Les  _Models_  de Backbone.js bénéficie déjà de ce traitement.
+[La documentation des  _events_](http://backbonejs.org/#Events)  du framework nous indique que pour pouvoir bénéficier du système de gestion des  _events_  il faut “étendre” ([extend](http://underscorejs.org/#extend)) ou “cloner” ([clone](http://underscorejs.org/#clone)) l’objet  _Backbone.Events_. Les  _Models_  de Backbone.js bénéficie déjà de ce traite
+
+**2.b)**  Backbone.js génère  [quelques events](http://backbonejs.org/#Events-catalog)  de manière automatique. Reprenez le code du point 2.a et rajoutez la gestion de l’événement ‘change’ dans votre  _Model_. Faites que cet événement appel une méthode  _logChange_  dont le code sera un console.log affichant les valeurs des attributs de l’objet avant et après le changement. Pour tester votre code, il vous suffit de changer le nom d’une des deux instances créées au point précédant grâce à la méthode  _set_.
 
 **2.a)**  Créez une nouveau  _Model_  nommé  _Person_  avec une méthode nommée ‘log’ dont le code est un simple console.log du  _model_  (c.à.d. du  _this_) en JSON. Faite que les instances de ce  _Model_  écoutent les événements  _my:log_ grâce à la  [méthode  _on_  de Backbone.js](http://backbonejs.org/#Events-on)  (remarque: bien que proche elle n’est pas identique à la méthode  _on_  de jQuery) et exécute la méthode ‘log’ si l’événement se produit. Réfléchissez bien à où mettre ce code. Enfin, créez deux instances de  _Person_  avec un attribut  _name_  pour chacune, et lancez ([trigger](http://backbonejs.org/#Events-trigger)) l’_event_  ‘my:log’ sur les deux objets et observez le résultat dans la console.
 
@@ -66,5 +84,5 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODcyNzYyNzldfQ==
+eyJoaXN0b3J5IjpbMTg3NTAyMDg5MSwtMTI4NzI3NjI3OV19
 -->
