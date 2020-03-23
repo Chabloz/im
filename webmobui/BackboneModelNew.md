@@ -29,16 +29,7 @@ Les modèles du framework Backbone s’occupent de la gestion des données manip
 
 Créez un  _Model_  nommé  _Course_ qui permettra de représenter les cours pour l'affichage des horaires des cours COMEM+. Réfléchissez aux propriétés de ce   _Model_, puis créez deux cours avec des données de test, puis faites un console.log de vos instances encodées en JSON pour vérification ([JSON.stringify](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Objets_globaux/JSON/stringify)).
 
-Ajoutez à votre _Model_  doit spécifier une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Créez vos deux instances à environ une microseconde d’intervalle en ne spécifiant que leur titre, puis faites un console.log de vos instances encodées en JSON pour vérification ([JSON.stringify](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Objets_globaux/JSON/stringify)).
-
-Pour attendre un changement d'une microseconde à l'autre, vous pouvez utilisez le code de test suivant:
-
-```js
-let now = $.now();
-while (now == $.now());
-```
-
-Ce code n'a bien sûr de sens que pour aider à la compréhension du mécanisme des valeurs par défaut de Backbone et ne doit pas être utilisé dans des codes d'applications Web classiques.
+Ajoutez à votre _Model_  une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Faites à nouveau un test en affichant vos deux cours dans vo
 
 **1.c)**  Backbone.js offre la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre code du point précédent, ajoutez une méthode  _validate_  qui contrôle qu’un attribut  _onLoan_  est bien définit et est un booléen. Vérifiez aussi que le titre est définit et est bien une  _string_.
 
@@ -66,5 +57,5 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 **Remarque finale:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyOTc5OTE1OV19
+eyJoaXN0b3J5IjpbNDcwNDY2NzE2XX0=
 -->
