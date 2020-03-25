@@ -71,7 +71,11 @@ _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la va
 
 Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  [_set_  et  _get_](https://backbonejs.org/#Model-get)  pour modifier leurs attributs (principe de l'encapsulation). Testez ceci en changeant un des attributs de vos deux cours. Faites un console.log du cours avant et après le changement, puis afficher aussi dans la console le résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
 
-#### Amélioration du framework
+#### events
+
+Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion des  _events_. Le framework  _Backbone.js_  va nous aider à gérer les événements de manière simple, en produire automatiquement quelques-uns, et nous fournir des outils pour transmettre et recevoir des informations additionnelles.
+
+[La documentation des  _events_](http://backbonejs.org/#Events)  du framework nous indique que pour pouvoir bénéficier du système de gestion des  _events_  il faut “étendre” ([extend](http://underscorejs.org/#extend)) ou “cloner” ([clone](http://underscorejs.org/#clone)) l’objet  _Backbone.Events_. Les  _Models_  de Backbone.js bénéficie déjà de ce traitement.
 
 Vous pouvez remarquer que la construction d'une instance ou les appels  à _set_   ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option _{validate: true}_ pour le faire.  Avoir un système de validation automatique des données semble intéressant. Comme _Backbone_ ne l'offre pas, mais que toutes les pièces sont présentes pour le faire,  nous allons étendre le _framework_ afin d'offrir cette nouvelle fonctionnalité.  Pour le faire, nous allons ajoutez une méthode d'initialisation dans le  _Model_. Comme vous pouvez le lire dans la documentation, l’échec de la validation des données lance l'événement _invalid_. Nous pouvons donc écouter cet événement : 
 
@@ -100,20 +104,10 @@ set(key, val, options) {
 ```
 
 Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus générique que nous spélcialiserons via un héritage. Essayez de mettre en place cette structure.
-
-## Events Backbone.js
-
-Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion des  _events_. Le framework  _Backbone.js_  va nous aider à gérer les événements de manière simple, en produire automatiquement quelques-uns, et nous fournir des outils pour transmettre et recevoir des informations additionnelles.
-
-[La documentation des  _events_](http://backbonejs.org/#Events)  du framework nous indique que pour pouvoir bénéficier du système de gestion des  _events_  il faut “étendre” ([extend](http://underscorejs.org/#extend)) ou “cloner” ([clone](http://underscorejs.org/#clone)) l’objet  _Backbone.Events_. Les  _Models_  de Backbone.js bénéficie déjà de ce traitement comme nous l'avons vu au point précédent avec l'exemple de l'event _invalid_.
-
-Pour s'entraîner, essayez de mettre un place une écoute automatique des changements des attributs des cours grâce à la  [méthode  _on_  de Backbone.js](http://backbonejs.org/#Events-on)  (**remarque**: bien que proche elle n’est pas identique à la méthode  _on_  de jQuery). Lorsqu'un changement se produit, effectuez un _console.log_ de ses attributs.
-
-Bien que cet exercice met en oeuvre une gestion d'événements dans un  _Model_,  nous verrons que les  _events_  seront surtout utilisés dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMT
-g2ODc5MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2
-NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1Mz
-gxMTU5LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUs
-MjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbMTgyMDc0OTY2MiwxNDEwNjMxNjA2LC0xNz
+UyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcs
+MjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNTQyLC0xMjIzNj
+YwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5
+LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
 -->
