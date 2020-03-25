@@ -1,6 +1,7 @@
 # *Frontend MVC*  _Collections_  (backbone.js)
 
 ## Introduction
+
 Dans la plupart des applications, un traitement est souvent effectué sur un regroupement de données de même type. Il devient alors logique d’utiliser une structure de données complexe afin d’encapsuler la totalité des données du même type. Appliqué au  _design pattern_ MVC, les modèles représentant des entités de même type sont donc logiquement regroupés dans une collection de modèles.
 
 ## 1)  _Collections Backbone.js_
@@ -23,5 +24,5 @@ Une solution serait d’encapsuler la collection dans un attribut (nommée par e
 
 La gestion d’une collection interne à un modèle demande un travail additionnel au programmeur. Pour pallier à ce problème,  [la documentation](http://backbonejs.org/#FAQ-nested)  nous indique qu’une pléthore de  _plugins_  existent. Avant d'utiliser ceux-ci, essayez de mettre un place un modèle  _ModelItemsList_  ayant comme collection interne une collection d'_items_  (modèle  _ModelItems_). Pour vos tests, créez une instance de ce modèle afin de représenter une collection de livre. Enfin, réaliser la vue adéquate et effectuez un affichage de la collection sur votre page.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MzkzOTY3M119
+eyJoaXN0b3J5IjpbLTEwMDE1MTE3OTIsLTU4MzkzOTY3M119
 -->
