@@ -44,7 +44,7 @@ Créez un  _Model_  nommé  _Course_ qui permettra de représenter les cours pou
 console.log(course1.toJSON());
 ```
 
-Ajoutez à votre _Model_  une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Pour le faire avec une syntaxe récente , vous pouvez adapter l'exemple suivant:
+Ajoutez à votre _Model_  une valeur par  [défaut](http://backbonejs.org/#Model-defaults)  pour un nouvel attribut nommé  _createdAt_. La valeur par défaut devra être le timestamp unix en microseconde (indication: utilisé l’objet  [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)  en JS pour obtenir le timestamp actuel ou  [$.now()](http://api.jquery.com/jquery.now/)  en jquery). Pour le faire avec une syntaxe récente, vous pouvez adapter l'exemple suivant:
 
 ```js
 import Backbone from 'Backbone';
@@ -88,6 +88,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTM4MTE1OSw3ODc1NzE5NDEsLTEyOD
-cyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
+eyJoaXN0b3J5IjpbLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3OD
+c1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMy
+MjVdfQ==
 -->
