@@ -79,7 +79,7 @@ Ainsi vos instances seront automatiquement validées à leur création et une er
 
 Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  [_set_  et  _get_](https://backbonejs.org/#Model-get)  pour modifier leurs attributs (principe de l'encapsulation). Testez ceci en changeant un des attributs de vos deux cours. Faites un console.log du cours avant et après le changement, puis afficher aussi dans la console le résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
 
-Vous pouvez remarquer que le  _set_  d’un attribut ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option  _{validate: true}_ lors du set pour le faire.  Comme lors de la construction de l’instance, essayez donc d'améliorer votre _Model_ pour que cette validation se fasse automatiquement. Indication: vous devrez sans doute utiliser le mot clef **super**  pour le faire corr
+Vous pouvez remarquer que le  _set_  d’un attribut ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option  _{validate: true}_ lors du set pour le faire.  Comme lors de la construction de l’instance, essayez donc d'améliorer votre _Model_ pour que cette validation se fasse automatiquement. Indication: vous devrez sans doute utiliser le mot clef **super** pour le faire correctement.
 
 ## Events Backbone.js
 
@@ -91,7 +91,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MjY1NDk5OSwtMTIyMzY2MDc0MywtMT
+eyJoaXN0b3J5IjpbMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMT
 Q1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2
 MDUsMjA5MzMyMzIyNV19
 -->
