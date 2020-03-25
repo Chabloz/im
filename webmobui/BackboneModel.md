@@ -3,7 +3,7 @@
 
 ## Mise en place
 
-Dans ce TP, le framework  [Backbone.js](http://backbonejs.org/)  sera utilisé pour une gestion efficace des événements (_events_) ainsi qu’une manipulation aisée des modèles (_models_). L’objectif du TP est d’effectuer une première “prise en main” du design pattern MVC.
+Dans cette introduction, le framework  [Backbone.js](http://backbonejs.org/)  sera utilisé pour une gestion efficace des événements (_events_) ainsi qu’une manipulation aisée des modèles (_models_). L’objectif est d’effectuer une première “prise en main” du design pattern MVC.
 
 Commencez par installer backbone avec npm:
 ```bash
@@ -22,7 +22,7 @@ plugins: [
   })
 ]
 ```
-Finalement. créez un dossier nommé *models* dans votre dossier *app* de votre *PWA*. Les *models* des points suivants seront à créer dans le dossier *models*.
+Finalement, créez un dossier nommé *models* dans votre dossier *app* de votre *PWA*. Les *models* des points suivants seront à créer dans le dossier *models*.
 
 ## Models Backbone.js
 
@@ -111,9 +111,9 @@ Pour s'entraîner, essayez de mettre un place une écoute automatique des change
 
 Bien que cet exercice met en oeuvre une gestion d'événements dans un  _Model_,  nous verrons que les  _events_  seront surtout utilisés dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMzU1OTMwMCwtMTg2ODc5MDA0NiwtMj
-kxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkx
-MjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MT
-k0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
-
+eyJoaXN0b3J5IjpbLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
+I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
+MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1Nz
+E5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVd
+fQ==
 -->
