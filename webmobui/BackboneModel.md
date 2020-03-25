@@ -31,9 +31,9 @@ Finalement. créez un dossier nommé *models* dans votre dossier *app* de votre 
 Les modèles du framework Backbone s’occupent de la gestion des données manipulées par l’application.  [La documentation des  _models_](http://backbonejs.org/#Model)  du framework nous indique que pour créer un constructeur pour nos modèles il faut utiliser la méthode  [extend](http://backbonejs.org/#Model-extend). Mais nous pouvons aussi utiliser une syntaxe plus récente en utilisant l'héritage. Voilà un exemple de fichier JavaScript permettant de créer un nouveau _Model_:
 
 ```js
-import  Backbone  from  'Backbone';  
+import Backbone from 'Backbone';
 
-export  default  class  extends  Backbone.Model {
+export default class extends Backbone.Model {
 
 }
 ```
@@ -72,6 +72,6 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNjIwNDA0Miw3ODc1NzE5NDEsLTEyOD
+eyJoaXN0b3J5IjpbMTUwOTg3NTI0OCw3ODc1NzE5NDEsLTEyOD
 cyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
