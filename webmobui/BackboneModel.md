@@ -99,7 +99,7 @@ set(key, val, options) {
 }
 ```
 
-Maintenant, au lieu de faire toutes nos modifications 
+Maintenant, au lieu de faire toutes nos modifications da
 
 ## Events Backbone.js
 
@@ -111,8 +111,8 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5OD
-csNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0
-NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4Nj
-A1LDIwOTMzMjMyMjVdfQ==
+eyJoaXN0b3J5IjpbLTE3Nzg5MzQ1MiwtMjkxOTEzLDY4OTQ4OT
+E3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIy
+MzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3Nj
+I3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
 -->
