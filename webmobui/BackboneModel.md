@@ -53,7 +53,7 @@ export default class extends Backbone.Model {
 
   defaults() {
     return {
-	  // vos attributs par défauts ici
+	  // Vos attributs par défaut
     }
   }
   
@@ -88,6 +88,6 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODgzNzY2Myw3ODc1NzE5NDEsLTEyOD
+eyJoaXN0b3J5IjpbLTE0NTM4MTE1OSw3ODc1NzE5NDEsLTEyOD
 cyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
