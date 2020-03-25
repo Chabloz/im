@@ -109,11 +109,11 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 Pour s'entraîner, essayez de mettre un place une écoute automatique des changements des attributs de vos cours de test grâce à la  [méthode  _on_  de Backbone.js](http://backbonejs.org/#Events-on)  (**remarque**: bien que proche elle n’est pas identique à la méthode  _on_  de jQuery). Lorsqu'un changement se produit, effectuez un _console.log_ de ses attributs.
 
-Bien que cet exercice mets en oeuvre la gestion des événements dans les  _Models_,  nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
+Bien que cet exercice met en oeuvre une gestion d'événements dans un  _Model_,  nous verrons que les  _events_  seront surtout utilisés dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMTI3NDM3LC0xODY4NzkwMDQ2LC0yOT
-E5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEy
-NTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOT
-QxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbLTMwMzU1OTMwMCwtMTg2ODc5MDA0NiwtMj
+kxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkx
+MjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MT
+k0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
 
 -->
