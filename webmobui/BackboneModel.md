@@ -64,7 +64,7 @@ Faites à nouveau un test en affichant vos deux cours dans votre console.
 
 #### Initialisation et validation
 
-_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour vérifier si un attribut existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is](http://underscorejs.org/#isEqual)  du framework underscore
+_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour vérifier si un attribut existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is](http://underscorejs.org/#isEqual)  du framework underscore.
 
 Testez votre “validateur” avec vos deux cours de test. Vous devez passez l’option  _{validate: true}_  lors de la construction des instances pour que Backbone valide vos paramètres en appelant votre méthode _validate_. Faites ensuite un console.log de vos deux instances en JSON ainsi que de leur attribut  _validationError_. Observez aussi le console.log de votre méthode  _initialize_.
 
@@ -86,7 +86,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2ODAzMjQ0NiwtMTIyMzY2MDc0MywtMT
-Q1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2
-MDUsMjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbMTc0MjAyNjAyLC0xMjIzNjYwNzQzLC0xND
+UzODExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYw
+NSwyMDkzMzIzMjI1XX0=
 -->
