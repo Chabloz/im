@@ -71,7 +71,7 @@ Pour tester votre _validateur_ avec vos deux cours. Vous pourriez utiliser la m�
 ```js
 this.on('invalid', (model, error) =>  console.error(error));
 ```
-Ainsi vos instances seront automatiquement validées à leur création et une erreur s'affichera dans votre console lors de données invalide. 
+Ainsi vos instances seront automatiquement validées à leur création et une erreur s'affichera dans votre console lors de données invalide. Pour en apprendre 
 
 
 #### Accesseurs et modificateurs
@@ -90,7 +90,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjM2MDgyMzUsLTEyMjM2NjA3NDMsLT
+eyJoaXN0b3J5IjpbLTEzNzI4MTM3NDksLTEyMjM2NjA3NDMsLT
 E0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4
 NjA1LDIwOTMzMjMyMjVdfQ==
 -->
