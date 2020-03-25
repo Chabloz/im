@@ -66,8 +66,12 @@ Faites à nouveau un test en affichant vos deux cours dans votre console.
 
 _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour vérifier si un attribut existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is](http://underscorejs.org/#isEqual)  du framework underscore.
 
-Pour tester votre _validateur_ avec vos deux cours. Vous pourriez utiliser la méthode [isValid](https://backbonejs.org/#Model-isValid). Toutefois, automatiser cet appel semble meilleur. Pour le faire, ajoutez une une méthode d'initialisation dans votre _Model_ qui effectuera automatiquement l'appel à _isValid_. Comme vous pouvez le lire dans la documentation, cette méthode lance l'événement _invalid_ si une erreur de validation se produit. Ecoutez donc cet événement dans votre méthode d'initialisation grâce 
+Pour tester votre _validateur_ avec vos deux cours. Vous pourriez utiliser la méthode [isValid](https://backbonejs.org/#Model-isValid). Toutefois, automatiser cet appel semble meilleur. Pour le faire, ajoutez une une méthode d'initialisation dans votre _Model_ qui effectuera automatiquement l'appel à _isValid_. Comme vous pouvez le lire dans la documentation, cette méthode lance l'événement _invalid_ si une erreur de validation se produit. Ecoutez donc cet événement dans votre méthode d'initialisation comme ceci : 
 
+```js
+this.on('invalid', (model, error) =>  console.error(error));
+```
+Ainsi vos instances seront automatiquement validées à leur création et une erreur s'affichera dans votre console lors de données invalide. 
 
 
 #### Accesseurs et modificateurs
@@ -86,7 +90,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMzc3NDk1OCwtMTIyMzY2MDc0MywtMT
-Q1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2
-MDUsMjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbLTEzMjM2MDgyMzUsLTEyMjM2NjA3NDMsLT
+E0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4
+NjA1LDIwOTMzMjMyMjVdfQ==
 -->
