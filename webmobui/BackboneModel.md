@@ -103,11 +103,11 @@ set(key, val, options) {
 }
 ```
 
-Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus générique que nous spélcialiserons via un héritage. Essayez de mettre en place cette structure.
+Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus générique que nous spécialiserons via un héritage. Essayez de mettre en place cette structure.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA0MzAwOTAwLDI5MDQxMjk0MCwxNDEwNj
-MxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMs
-Njg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNT
-QyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0x
-Mjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbMTk3MTE4MjUwNCwyOTA0MTI5NDAsMTQxMD
+YzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMjkxOTEz
+LDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkxMjUxMD
+U0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0MSwt
+MTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
 -->
