@@ -71,7 +71,13 @@ Pour tester votre _validateur_ avec vos deux cours. Vous pourriez utiliser la m�
 ```js
 this.on('invalid', (model, error) => console.error(error));
 ```
-Toutefois, la méthode d'initialisation est appelée après la construction de l'instance, et donc votre code intervient trop tard. Vous devez donc aussi détecter une erreur de validation qui aurait été provoquer par le constructeur.  _Backbone_ stocke les erreurs dans la propriétés [validationError](https://backbonejs.org/#Model-validationError), il vous suffit donc de la tester dans votre méthode 
+
+Toutefois, la méthode d'initialisation est appelée après la construction de l'instance, et donc votre code intervient trop tard. Vous devez donc aussi détecter une erreur de validation qui aurait été provoquer par le constructeur.  _Backbone_ stocke les erreurs dans la propriétés [validationError](https://backbonejs.org/#Model-validationError), il vous suffit donc de la tester dans votre méthode d'initialisation. Voilà donc le code finale de cette méthode:
+
+```js
+this.on('invalid', (model, error) => console.error(error));
+if (this.validationError != '') console.error(this.validationError);
+```
 
 #### Accesseurs et modificateurs
 
@@ -98,7 +104,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjIyMjIwOSw2NjAwMzMyNzEsMTkxMj
-UxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0
-MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbMTUzMzU5MTg1LDY2MDAzMzI3MSwxOTEyNT
+EwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQx
+LC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
 -->
