@@ -7,7 +7,7 @@ Dans ce TP, le framework  [Backbone.js](http://backbonejs.org/)  sera utilisé p
 
 Commencez par installer backbone avec npm:
 ```bash
- npm install backbone --save
+ npm install backbone
 ```
 Comme le framework backbone à une dépendence avec la librairie [underscore.js](https://underscorejs.org/), il vous faut aussi modifier votre fichier de configuration *webpack.config.js* pour ajouter *underscore.js* comme plugin. Modifiez donc la partie *plugins* comme ceci :
 
