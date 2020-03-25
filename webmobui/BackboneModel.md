@@ -107,13 +107,13 @@ Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion de
 
 [La documentation des  _events_](http://backbonejs.org/#Events)  du framework nous indique que pour pouvoir bénéficier du système de gestion des  _events_  il faut “étendre” ([extend](http://underscorejs.org/#extend)) ou “cloner” ([clone](http://underscorejs.org/#clone)) l’objet  _Backbone.Events_. Les  _Models_  de Backbone.js bénéficie déjà de ce traitement comme nous l'avons vu au point précédent avec l'exemple de l'event _invalid_.
 
-Pour s'entraîner, essayez de mettre un place une écoute automatique des changements des attributs de vos cours de test grâce à la  [méthode  _on_  de Backbone.js](http://backbonejs.org/#Events-on)  (**remarque**: bien que proche elle n’est pas identique à la méthode  _on_  de jQuery). Lorsqu'un changement se produit, effectuez un _console.log_ de ses attributs.
+Pour s'entraîner, essayez de mettre un place une écoute automatique des changements des attributs des cours grâce à la  [méthode  _on_  de Backbone.js](http://backbonejs.org/#Events-on)  (**remarque**: bien que proche elle n’est pas identique à la méthode  _on_  de jQuery). Lorsqu'un changement se produit, effectuez un _console.log_ de ses attributs.
 
 Bien que cet exercice met en oeuvre une gestion d'événements dans un  _Model_,  nous verrons que les  _events_  seront surtout utilisés dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
-I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
-MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1Nz
-E5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVd
-fQ==
+eyJoaXN0b3J5IjpbMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMT
+g2ODc5MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2
+NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1Mz
+gxMTU5LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUs
+MjA5MzMyMzIyNV19
 -->
