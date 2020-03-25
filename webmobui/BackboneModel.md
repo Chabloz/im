@@ -73,7 +73,18 @@ Une fois une instance d’un  _Model_  créée, il est conseillé de passer par 
 
 #### Amélioration du framework
 
-Vous pouvez remarquer que la construction d'une instance ou les appels  à _set_   ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option _{validate: true}_ pour le faire.  Avoir un système de validation automatique des données semble intéressant. Comme _Backbone_ ne l'offre pas, mais que toutes les pièces sont présentes pour le faire,  nous allons étendre le _framework_ améliorer notre _Model_ pour que cette validation se fasse automatiquement en faisant une réécriture de la méthode _set_. Le code est un peu _technique_ car la méthode _set_ de _Backbone_ accepte un nombre de paramètre variable. Je vous le fournis donc ici :
+Vous pouvez remarquer que la construction d'une instance ou les appels  à _set_   ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option _{validate: true}_ pour le faire.  Avoir un système de validation automatique des données semble intéressant. Comme _Backbone_ ne l'offre pas, mais que toutes les pièces sont présentes pour le faire,  nous allons étendre le _framework_ afin d'offrir cette nouvelle fonctionnalité.  Pour le faire, nous allons ajoutez une méthode d'initialisation dans le  _Model_. Comme vous pouvez le lire dans la documentation, l’échec de la validation des données lance l'événement _invalid_. Nous pouvons donc écouter cet événement : 
+
+```js
+this.on('invalid', (model, error) => console.error(error));
+```
+
+Toutefois, la méthode d'initialisation est appelée après la construction de l'instance, et donc votre code intervient trop tard. Vous devez donc aussi détecter une erreur de validation qui aurait été provoquer par le constructeur.  _Backbone_ stocke les erreurs dans la propriétés [validationError](https://backbonejs.org/#Model-validationError), il vous suffit donc de la tester dans votre méthode d'initialisation. Voilà donc le code finale de cette méthode:
+
+```js
+this.on('invalid', (model, error) => console.error(error));
+if (this.validationError != '') console.error(this.validationError);
+``` pour que cette validation se fasse automatiquement en faisant une réécriture de la méthode _set_. Le code est un peu _technique_ car la méthode _set_ de _Backbone_ accepte un nombre de paramètre variable. Je vous le fournis donc ici :
 
 ```js
 set(key, val, options) {
@@ -94,7 +105,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMDU2ODI5MCw2NjAwMzMyNzEsMTkxMj
+eyJoaXN0b3J5IjpbMTkyNzk0NDIzNCw2NjAwMzMyNzEsMTkxMj
 UxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0
 MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
 -->
