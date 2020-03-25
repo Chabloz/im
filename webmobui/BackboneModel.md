@@ -22,7 +22,7 @@ plugins: [
   })
 ]
 ```
-Finalement. créez un dossier nommé *models* dans votre dossier *app* de votre *PWA*, ainsi qu'un fichier *test1.js*. Les *models* des points suivants seront à créer dans le dossier *models*, tandis que *test1.js* contiendra votre code de test.
+Finalement. créez un dossier nommé *models* dans votre dossier *app* de votre *PWA*. Les *models* des points suivants seront à créer dans le dossier *models*.
 
 ## Models Backbone.js
 
