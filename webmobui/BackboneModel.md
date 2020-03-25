@@ -32,6 +32,7 @@ Les modèles du framework Backbone s’occupent de la gestion des données manip
 
 ```js
 import  Backbone  from  'Backbone';  
+
 export  default  class  extends  Backbone.Model {
 
 }
@@ -71,6 +72,6 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgwMDU3NjkyLDc4NzU3MTk0MSwtMTI4Nz
-I3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbMTEyNjIwNDA0Miw3ODc1NzE5NDEsLTEyOD
+cyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
