@@ -40,7 +40,7 @@ Ajoutez à votre _Model_  une valeur par  [défaut](http://backbonejs.org/#Model
 
 #### Initialisation et validation
 
-_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes
+_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes.
 
 Ajoutez aussi une méthode  _initialize_  faisant un simple  _console.log_  de ses deux paramètres (qui sont les attributs et les options spécifiés lors de la construction de l’instance).
 
