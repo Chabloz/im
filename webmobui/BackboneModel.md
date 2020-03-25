@@ -66,7 +66,7 @@ Faites à nouveau un test en affichant vos deux cours dans votre console.
 
 _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour vérifier si un attribut existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is](http://underscorejs.org/#isEqual)  du framework underscore.
 
-Pour tester votre _validateur_ avec vos deux cours. Vous pourriez utiliser la méthode [isValid](https://backbonejs.org/#Model-isValid). Une amélioration possible est d'auto 
+Pour tester votre _validateur_ avec vos deux cours. Vous pourriez utiliser la méthode [isValid](https://backbonejs.org/#Model-isValid). Toutefois, automatiser cet appel semble meilleur. Pour le faire, ajoutez une une méthode d'initialisation dans votre _Model_ qui effectuera automatiquement l'appel à _isValid_. 
 
 
 
@@ -86,7 +86,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2OTk2ODg3LC0xMjIzNjYwNzQzLC0xND
-UzODExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYw
-NSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbLTg4Mjc0MjgwMywtMTIyMzY2MDc0MywtMT
+Q1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2
+MDUsMjA5MzMyMzIyNV19
 -->
