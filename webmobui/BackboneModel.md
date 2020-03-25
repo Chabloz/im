@@ -71,7 +71,7 @@ _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la va
 
 Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  [_set_  et  _get_](https://backbonejs.org/#Model-get)  pour modifier leurs attributs (principe de l'encapsulation). Testez ceci en changeant un des attributs de vos deux cours. Faites un console.log du cours avant et après le changement, puis afficher aussi dans la console le résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
 
-#### events
+#### _events_ et amélioration du framework
 
 Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion des  _events_. Le framework  _Backbone.js_  va nous aider à gérer les événements de manière simple, en produire automatiquement quelques-uns, et nous fournir des outils pour transmettre et recevoir des informations additionnelles.
 
@@ -105,9 +105,9 @@ set(key, val, options) {
 
 Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus générique que nous spélcialiserons via un héritage. Essayez de mettre en place cette structure.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMDc0OTY2MiwxNDEwNjMxNjA2LC0xNz
-UyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcs
-MjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNTQyLC0xMjIzNj
-YwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5
-LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbMjkwNDEyOTQwLDE0MTA2MzE2MDYsLTE3NT
+IxMzM4OTgsLTE4Njg3OTAwNDYsLTI5MTkxMyw2ODk0ODkxNywy
+MzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEyMjM2Nj
+A3NDMsLTE0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYyNzks
+LTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
