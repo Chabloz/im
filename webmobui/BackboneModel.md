@@ -22,7 +22,7 @@ plugins: [
   })
 ]
 ```
-Finalement, créez un dossier nommé *models* dans votre dossier *app* de votre *PWA*. Les *models* des points suivants seront à créer dans le dossier *models*.
+Finalement, créez un dossier nommé *entities* dans votre dossier *src* de votre *PWA*.
 
 ## Models Backbone.js
 
@@ -38,7 +38,7 @@ export default class extends Backbone.Model {
 }
 ```
 
-Créez un  _Model_  nommé  _Course_ qui permettra de représenter les cours pour l'affichage des horaires des cours COMEM+. Réfléchissez aux propriétés de ce   _Model_, puis créez deux cours avec des données de test, puis faites un console.log de vos instances. Pour ne voir que vos attributs et non tous les attributs internes à Backbone, utilisé la méthode [toJSON](https://backbonejs.org/#Model-toJSON) de backbone sur vos instances :
+Créez un  nouveau sous-dossier nommé  _course_ dans le dossier _entities_. qui permettra de représenter les cours pour l'affichage des horaires des cours COMEM+. Réfléchissez aux propriétés de ce   _Model_, puis créez deux cours avec des données de test, puis faites un console.log de vos instances. Pour ne voir que vos attributs et non tous les attributs internes à Backbone, utilisé la méthode [toJSON](https://backbonejs.org/#Model-toJSON) de backbone sur vos instances :
 
 ```js
 console.log(course1.toJSON());
@@ -105,9 +105,9 @@ set(key, val, options) {
 
 Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus générique que nous spélcialiserons via un héritage. Essayez de mettre en place cette structure.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwNDEyOTQwLDE0MTA2MzE2MDYsLTE3NT
-IxMzM4OTgsLTE4Njg3OTAwNDYsLTI5MTkxMyw2ODk0ODkxNywy
-MzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEyMjM2Nj
-A3NDMsLTE0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYyNzks
-LTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
+eyJoaXN0b3J5IjpbMjQyMjY5NzM3LDI5MDQxMjk0MCwxNDEwNj
+MxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMs
+Njg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNT
+QyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0x
+Mjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
 -->
