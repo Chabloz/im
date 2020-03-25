@@ -99,7 +99,7 @@ set(key, val, options) {
 }
 ```
 
-Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model_ Course, nous pourrions le faire dans une classe plus génerique que nous spélcialiserons via un héritage. Ainsi, nous ajoutons 
+Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus génerique que nous spélcialiserons via un héritage. Essayez de mettre en place cette structure.
 
 ## Events Backbone.js
 
@@ -111,8 +111,8 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMTA0MDQ1OCwtMjkxOTEzLDY4OTQ4OT
-E3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIy
-MzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3Nj
-I3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbLTE4Njg3OTAwNDYsLTI5MTkxMyw2ODk0OD
+kxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEy
+MjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNz
+YyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
