@@ -38,7 +38,7 @@ export default class extends Backbone.Model {
 }
 ```
 
-Créez un  nouveau sous-dossier nommé  _course_ dans le dossier _entities_. Puis un nouveau fichier nommé _model.js_ qui permettra de représenter les cours pour l'affichage des horaires des cours COMEM+. Réfléchissez aux propriétés de ce   _Model_, puis créez deux cours avec des données de test, puis faites un console.log de vos instances. Pour ne voir que vos attributs et non tous les attributs internes à Backbone, utilisé la méthode [toJSON](https://backbonejs.org/#Model-toJSON) de backbone sur vos instances :
+Créez un  nouveau sous-dossier nommé  _course_ dans le dossier _entities_. Puis un nouveau fichier nommé _model.js_ qui permettra de représenter les cours pour l'affichage des horaires.  Réfléchissez aux propriétés de ce   _Model_, puis créez deux cours avec des données de test, puis faites un console.log de vos instances. Pour ne voir que vos attributs et non tous les attributs internes à Backbone, utilisez la méthode [toJSON](https://backbonejs.org/#Model-toJSON) de backbone sur vos instances :
 
 ```js
 console.log(course1.toJSON());
@@ -105,9 +105,9 @@ set(key, val, options) {
 
 Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus générique que nous spélcialiserons via un héritage. Essayez de mettre en place cette structure.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDI5NTM1NjAsMjkwNDEyOTQwLDE0MT
-A2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLTI5MTkx
-Myw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MT
-A1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1NzE5NDEs
-LTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
+eyJoaXN0b3J5IjpbMTYzNzc4NDQ1MiwyOTA0MTI5NDAsMTQxMD
+YzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMjkxOTEz
+LDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkxMjUxMD
+U0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0MSwt
+MTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
 -->
