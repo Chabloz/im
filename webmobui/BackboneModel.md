@@ -79,7 +79,7 @@ Ainsi vos instances seront automatiquement validées à leur création et une er
 
 Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  [_set_  et  _get_](https://backbonejs.org/#Model-get)  pour modifier leurs attributs (principe de l'encapsulation). Testez ceci en changeant un des attributs de vos deux cours. Faites un console.log du cours avant et après le changement, puis afficher aussi dans la console le résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
 
-Vous pouvez remarquer que le  _set_  d’un attribut ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option  _{validate: true}_ lors du set pour le faire.  Comme lors de la construction de l’instance, nous pouvons améliorer notre _Model_ pour que cette validation se fasse automatiquement en faisant une réécriture de la méthode _set_. Le code étant un peu _technique_ du fait que la méthode _set_ de _Backbone_ accepte un nombre de paramètre variable, le voilà ici:
+Vous pouvez remarquer que le  _set_  d’un attribut ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option  _{validate: true}_ lors du set pour le faire.  Comme lors de la construction de l’instance, nous pouvons améliorer notre _Model_ pour que cette validation se fasse automatiquement en faisant une réécriture de la méthode _set_. Le code est un peu _technique_ car la méthode _set_ de _Backbone_ accepte un nombre de paramètre variable. Je vous le fournis donc ici :
 
 ```js
 set(key, val, options) {
@@ -100,7 +100,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NjM1ODU3MSwxOTEyNTEwNTQyLC0xMj
-IzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0xMjg3Mjc2
-Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEyMj
+M2NjA3NDMsLTE0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYy
+NzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
