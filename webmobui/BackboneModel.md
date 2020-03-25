@@ -28,7 +28,14 @@ Finalement. créez un dossier nommé *models* dans votre dossier *app* de votre 
 
 #### Création et valeurs par défaut
 
-Les modèles du framework Backbone s’occupent de la gestion des données manipulées par l’application.  [La documentation des  _models_](http://backbonejs.org/#Model)  du framework nous indique que pour créer un constructeur pour nos modèles il faut utiliser la méthode  [extend](http://backbonejs.org/#Model-extend).
+Les modèles du framework Backbone s’occupent de la gestion des données manipulées par l’application.  [La documentation des  _models_](http://backbonejs.org/#Model)  du framework nous indique que pour créer un constructeur pour nos modèles il faut utiliser la méthode  [extend](http://backbonejs.org/#Model-extend). Mais nous pouvons aussi utiliser une syntaxe plus récente en utilisant l'héritage. Voilà un exemple de fichier JavaScript permettant de créer un nouveau _Model_:
+
+```js
+import  Backbone  from  'Backbone';  
+export  default  class  extends  Backbone.Model {
+
+}
+```
 
 Créez un  _Model_  nommé  _Course_ qui permettra de représenter les cours pour l'affichage des horaires des cours COMEM+. Réfléchissez aux propriétés de ce   _Model_, puis créez deux cours avec des données de test, puis faites un console.log de vos instances. Pour ne voir que vos attributs et non tous les attributs internes à Backbone, utilisé la méthode [toJSON](https://backbonejs.org/#Model-toJSON) de backbone sur vos instances :
 
@@ -64,6 +71,6 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01Mj
-E1ODYwNSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbNDgwMDU3NjkyLDc4NzU3MTk0MSwtMTI4Nz
+I3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
 -->
