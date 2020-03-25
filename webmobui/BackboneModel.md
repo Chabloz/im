@@ -69,16 +69,17 @@ _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la va
 Pour tester votre _validateur_ avec vos deux cours. Vous pourriez utiliser la méthode [isValid](https://backbonejs.org/#Model-isValid). Toutefois, automatiser cet appel semble meilleur. Pour le faire, ajoutez une une méthode d'initialisation dans votre _Model_ qui effectuera automatiquement l'appel à _isValid_. Comme vous pouvez le lire dans la documentation, cette méthode lance l'événement _invalid_ si une erreur de validation se produit. Ecoutez donc cet événement dans votre méthode d'initialisation comme ceci : 
 
 ```js
-this.on('invalid', (model, error) =>  console.error(error));
+this.on('invalid', (model, error) => console.error(error));
 ```
+
 Ainsi vos instances seront automatiquement validées à leur création et une erreur s'affichera dans votre console lors de données invalide. Pour en apprendre 
 
 
 #### Accesseurs et modificateurs
 
-Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  [_set_  et  _get_](https://backbonejs.org/#Model-get)  pour modifier les attributs des instances (principe de l'encapsulation). Testez ceci en changeant un des attributs de vos deux cours. Faites un console.log du cours avant et après le changement, puis afficher aussi dans la console le résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
+Une fois une instance d’un  _Model_  créée, il est conseillé de passer par les méthodes  [_set_  et  _get_](https://backbonejs.org/#Model-get)  pour modifier leurs attributs (principe de l'encapsulation). Testez ceci en changeant un des attributs de vos deux cours. Faites un console.log du cours avant et après le changement, puis afficher aussi dans la console le résultat de la méthode  [previousAttributes](http://backbonejs.org/#Model-previousAttributes).
 
-**Remarque**: si vous voulez qu’un  _set_  d’un attribut passe par votre “validateur”, vous devez spécifier l’option  _{validate: true}_, comme lors de la construction de l’instance.
+Vous pouvez remarquer que le  _set_  d’un attribut ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option  _{validate: true}_, comme lors de la construction de l’instance.
 
 ## Events Backbone.js
 
@@ -90,7 +91,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzI4MTM3NDksLTEyMjM2NjA3NDMsLT
-E0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4
-NjA1LDIwOTMzMjMyMjVdfQ==
+eyJoaXN0b3J5IjpbLTYzMDc3ODAzOCwtMTIyMzY2MDc0MywtMT
+Q1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2
+MDUsMjA5MzMyMzIyNV19
 -->
