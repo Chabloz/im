@@ -84,11 +84,12 @@ Toutefois, la méthode d'initialisation est appelée après la construction de l
 Enfin, nous devons aussi faire une réécriture de la méthode _set_. Le code est un peu _technique_ car la méthode _set_ de _Backbone_ accepte un nombre de paramètre variable. Je vous le fournis donc la solution finale ici :
 
 ```js
-this.on('invalid', (model, error) => console.error(error));
-if (this.validationError != '') console.error(this.validationError);
-``` :
+initialize(attrs, options) {
+  this.on('invalid', (model, error) => console.error(error));
+  if (this.validationError != '') 
+console.error(this.validationError);
+}
 
-```js
 set(key, val, options) {
   if (typeof  key === 'object') {
     super.set(key, _.extend({validate:  true}, val));
@@ -97,6 +98,7 @@ set(key, val, options) {
   }
 }
 ```
+
 ## Events Backbone.js
 
 Nous avons déjà vu dans le cours de base l’utilité d’une bonne gestion des  _events_. Le framework  _Backbone.js_  va nous aider à gérer les événements de manière simple, en produire automatiquement quelques-uns, et nous fournir des outils pour transmettre et recevoir des informations additionnelles.
@@ -107,7 +109,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODg0MDc3Myw2NjAwMzMyNzEsMTkxMj
-UxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0
-MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNT
+EwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQx
+LC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
 -->
