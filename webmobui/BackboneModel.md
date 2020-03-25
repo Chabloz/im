@@ -73,7 +73,7 @@ Une fois une instance d’un  _Model_  créée, il est conseillé de passer par 
 
 #### Amélioration du framework
 
-Vous pouvez remarquer que la construction d'une instance ou les appels  à _set_   ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option _{validate: true}_ pour le faire.  Comme lors de la construction de l’instance, nous pouvons améliorer notre _Model_ pour que cette validation se fasse automatiquement en faisant une réécriture de la méthode _set_. Le code est un peu _technique_ car la méthode _set_ de _Backbone_ accepte un nombre de paramètre variable. Je vous le fournis donc ici :
+Vous pouvez remarquer que la construction d'une instance ou les appels  à _set_   ne passe pas automatiquement par votre “validateur”, vous devez spécifier l’option _{validate: true}_ pour le faire.  Avoir un système de validation automatique des données semble intéressant. Comme _Backbone_ ne l'offre pas, mais que toutes les pièces sont présentes pour le faire,  nous allons étendre le _framework_ améliorer notre _Model_ pour que cette validation se fasse automatiquement en faisant une réécriture de la méthode _set_. Le code est un peu _technique_ car la méthode _set_ de _Backbone_ accepte un nombre de paramètre variable. Je vous le fournis donc ici :
 
 ```js
 set(key, val, options) {
@@ -94,8 +94,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDIzNDU1NTYsNjYwMDMzMjcxLDE5MT
-I1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1NzE5
-NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ
-==
+eyJoaXN0b3J5IjpbMTMyMDU2ODI5MCw2NjAwMzMyNzEsMTkxMj
+UxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0
+MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
 -->
