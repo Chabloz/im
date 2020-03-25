@@ -66,7 +66,7 @@ Faites à nouveau un test en affichant vos deux cours dans votre console.
 
 _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour vérifier si un attribut existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is](http://underscorejs.org/#isEqual)  du framework underscore.
 
-Pour tester votre _validateur_ avec vos deux cours. Vous pourriez utiliser la méthode [isValid](https://backbonejs.org/#Model-isValid). Toutefois, automatiser cet validation semble meilleur. Pour le faire, ajoutez une une méthode d'initialisation dans votre _Model_. Comme vous pouvez le lire dans la documentation, l’échec de la validation des données lance l'événement _invalid_. Ecoutez donc cet événement dans votre méthode d'initialisation comme ceci : 
+Pour tester votre _validateur_ avec vos deux cours. Vous pouvez utiliser la méthode [isValid](https://backbonejs.org/#Model-isValid). Toutefois, automatiser cet validation semble meilleur. Pour le faire, ajoutez une une méthode d'initialisation dans votre _Model_. Comme vous pouvez le lire dans la documentation, l’échec de la validation des données lance l'événement _invalid_. Ecoutez donc cet événement dans votre méthode d'initialisation comme ceci : 
 
 ```js
 this.on('invalid', (model, error) => console.error(error));
@@ -104,7 +104,7 @@ Faite que les instances de votre  _Model_  écoutent automatiquement les changem
 
 **Remarque:** Bien que ces exercices mettent en oeuvre la gestion des événements dans les  _Models_, c’est uniquement pour ne pas complexifier ce TP. Nous verrons que les  _events_  seront plutôt à gérer dans les  _Views_  de *Backbone.js*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzU5MTg1LDY2MDAzMzI3MSwxOTEyNT
+eyJoaXN0b3J5IjpbMTA2Njg1NjA0LDY2MDAzMzI3MSwxOTEyNT
 EwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQx
 LC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
 -->
