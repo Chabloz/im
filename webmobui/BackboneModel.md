@@ -90,8 +90,7 @@ Enfin, nous devons aussi faire une réécriture de la méthode _set_. Le code es
 ```js
 initialize(attrs, options) {
   this.on('invalid', (model, error) => console.error(error));
-  if (this.validationError != '') 
-console.error(this.validationError);
+  if (this.validationError != '') console.error(this.validationError);
 }
 
 set(key, val, options) {
