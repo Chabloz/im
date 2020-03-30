@@ -229,6 +229,7 @@ view.render().$el.appendTo("selecteur CSS ici");
 ```
 Tous les futurs changements des attributs du  _model _ provoqueront alors une mise à jour automatique du DOM. 
 
+#### _View_ adaptée pour une _Collection_
 
 
 
@@ -240,11 +241,11 @@ Tous les futurs changements des attributs du  _model _ provoqueront alors une mi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNjQzNjk4LDExNzI2NjYzODMsLTE0Nj
-MxNTAyMDEsODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0
-LDI5MDQxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xOD
-Y4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2
-MDAzMzI3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzOD
-ExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNV19
+eyJoaXN0b3J5IjpbMzU5NzA2MzYxLDEzMTY0MzY5OCwxMTcyNj
+Y2MzgzLC0xNDYzMTUwMjAxLDgzMzQyODM5Niw2NTU0OTYzMDMs
+MTk3MTE4MjUwNCwyOTA0MTI5NDAsMTQxMDYzMTYwNiwtMTc1Mj
+EzMzg5OCwtMTg2ODc5MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIz
+NDQwMzk4Nyw2NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MD
+c0MywtMTQ1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3NjI3OV19
 
 -->
