@@ -188,15 +188,22 @@ export default class extends Backbone.View {
 }
 ```
 
-A l'instar des modèles et collections, les vues  _Backbone_ peuvent avoir une méthode d'initialisation. C'est dans cette méthode que nous allons faire le lien avec le modèle. En effet, si on applique le _design pattern MVC_, les changements des attributs d'un modèle doit provoquer la mise à jour du DOM associé. Les _events_
+A l'instar des modèles et collections, les vues  _Backbone_ peuvent avoir une méthode d'initialisation. C'est dans cette méthode que nous allons faire le lien avec le modèle. En effet, si on applique le _design pattern MVC_, les changements des attributs d'un modèle doivent provoquer la mise à jour du DOM associé. Les _events_ de _Backbone_ vont donc venir nous aider pour réaliser cette prouesse:
+```js
+initialize() {
+  this.listenTo(this.model, 'change', this.render);
+}
+```
+Si vous analyser cette simple et puissante ligne de
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1NDgzMzYzLDgzMzQyODM5Niw2NTU0OT
-YzMDMsMTk3MTE4MjUwNCwyOTA0MTI5NDAsMTQxMDYzMTYwNiwt
-MTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMjkxOTEzLDY4OTQ4OT
-E3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIy
-MzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3Nj
-I3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
+eyJoaXN0b3J5IjpbLTE0OTI0MjAzMjQsODMzNDI4Mzk2LDY1NT
+Q5NjMwMywxOTcxMTgyNTA0LDI5MDQxMjk0MCwxNDEwNjMxNjA2
+LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMsNjg5ND
+g5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNTQyLC0x
+MjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0xMjg3Mj
+c2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
 -->
