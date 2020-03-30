@@ -225,9 +225,9 @@ import  Course  from  'entities/course/model';
 import  CourseView  from  'entities/course/viewModel';
 let  model = new  Course({}); // Les attributs sont à mettre dans les {}
 let  view = new  CourseView({model});
-view.render().$el.appendTo("body");
+view.render().$el.appendTo("selecteur CSS ici"); 
 ```
-
+Tous les futurs changements du _model _ provoqueront alors une mise à jour automatique du DOM. 
 
 
 
@@ -239,11 +239,11 @@ view.render().$el.appendTo("body");
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjk5NjAwNjIsMTE3MjY2NjM4MywtMT
-Q2MzE1MDIwMSw4MzM0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1
-MDQsMjkwNDEyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLT
-E4Njg3OTAwNDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcs
-NjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NT
-M4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1
-XX0=
+eyJoaXN0b3J5IjpbMTA3NDI4MzUyLDExNzI2NjYzODMsLTE0Nj
+MxNTAyMDEsODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0
+LDI5MDQxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xOD
+Y4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2
+MDAzMzI3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzOD
+ExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNV19
+
 -->
