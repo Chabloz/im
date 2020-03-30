@@ -194,16 +194,16 @@ initialize() {
   this.listenTo(this.model, 'change', this.render);
 }
 ```
-Si vous analyser cette simple et puissante ligne de
+Si vous analysez cette simple et puissante ligne de code, vous verrez qu'elle fait exactement ce que l'on désire. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTI0MjAzMjQsODMzNDI4Mzk2LDY1NT
-Q5NjMwMywxOTcxMTgyNTA0LDI5MDQxMjk0MCwxNDEwNjMxNjA2
-LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMsNjg5ND
-g5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNTQyLC0x
-MjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0xMjg3Mj
-c2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbMTk0Mjc4Mjk0OCw4MzM0MjgzOTYsNjU1ND
+k2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQwLDE0MTA2MzE2MDYs
+LTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLTI5MTkxMyw2ODk0OD
+kxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEy
+MjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNz
+YyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
