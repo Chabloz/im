@@ -163,16 +163,15 @@ Dans cette introduction, nous utiliseront la première variante (comparaison à 
 
 #### _Collections_: les _events_ et un exemple avec le tri de la collection
 
-Par soucis de performance, _Backbone_ ne retrie pas la collection automatiquement lorsqu'un attribut d'un modèle change (car il ne peut pas savoir lequel provoque un changement d'ordre). Toutefois, _Backbone_ propage les événements de changement des attributs d'un modèle sur la collection elle-même. Ainsi, il est possible d'écouter très simplement le changement de l'attribut de la date de début d'un cours et forcer le tri de la collection lorsque le changement se produit en appelant directement la méthode [sort](https://backbonejs.org/#Collection-sort). A l'instar des modèles, les collections _Backbone_ peuvent avoir une méthode d'initialisation, nous pouvons donc y mettre le code nécessaire à cette écoute. Essayez d'implémenter la chose.
-
+Par soucis de performance, _Backbone_ ne retrie pas la collection automatiquement lorsqu'un attribut d'un modèle change (car il ne peut pas savoir lequel provoque un changement d'ordre). Toutefois, _Backbone_ propage les événements de changement des attributs d'un modèle sur la collection elle-même. Ainsi, il est possible d'écouter très simplement le changement de l'attribut de la date de début d'un cours et forcer le tri de la collection lorsque le changement se produit en appelant directement la méthode [sort](https://backbonejs.org/#Collection-sort). A l'instar des modèles, les collections _Backbone_ peuvent avoir une méthode d'initialisation, nous pouvons donc y mettre le code nécessaire à cette écoute. Essayez d'y implémenter la chose, puis faites un test en modifiant la date de début d'un cours entre deux console.log.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODcyNzU3MzksMTk3MTE4MjUwNCwyOT
-A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
-MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
-MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
-LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5Mz
-MyMzIyNV19
+eyJoaXN0b3J5IjpbLTYyMzg5ODYyMSwxOTcxMTgyNTA0LDI5MD
+QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
+MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
+I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
+Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
+IzMjI1XX0=
 -->
