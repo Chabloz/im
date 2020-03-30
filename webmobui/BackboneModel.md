@@ -235,28 +235,19 @@ Maintenant que la vue pour un cours est en place, nous pouvons réaliser celle d
 
 ```js
 import Backbone  from 'Backbone';
+
 export default class extends Backbone.View {
-initialize() {
 
-if (!this.collection.comparator) {
-
-this.listenTo(this.collection, 'add remove', this.render);
-
-}
-
-this.listenTo(this.collection, 'reset sort', this.render);
-
-this.listenTo(this.collection.data, 'change:filter change:history', this.render);
-
-}
-
+  initialize() {
+    if (!this.collection.comparator) {
+      this.listenTo(this.collection, 'add remove', this.render);
+    }
+    this.listenTo(this.collection, 'reset sort', this.render);
+  }
   
-
-render() {
-
-this.$el.empty();
-
-let  models = this.collection.getFiltered();
+  render() {
+    this.$el.empty();
+    let  models = this.collection.models;
     for (let  model  of  models) {
       let  view = new  View({model});
       view.render().$el.appendTo(this.$el);
@@ -272,11 +263,11 @@ let  models = this.collection.getFiltered();
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMzg2OTg2Miw0Mjk3Mjg1NjMsMzU5Nz
-A2MzYxLDEzMTY0MzY5OCwxMTcyNjY2MzgzLC0xNDYzMTUwMjAx
-LDgzMzQyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MT
-I5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0
-NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNz
-EsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5XX0=
+eyJoaXN0b3J5IjpbOTQzODAyMTI2LDQyOTcyODU2MywzNTk3MD
+YzNjEsMTMxNjQzNjk4LDExNzI2NjYzODMsLTE0NjMxNTAyMDEs
+ODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0LDI5MDQxMj
+k0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2
+LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MS
+wxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTldfQ==
 
 -->
