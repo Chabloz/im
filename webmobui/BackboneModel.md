@@ -268,18 +268,17 @@ let  view = new  CoursesView({collection, el:  'selecteur CSS ici'});
 view.render();
 ```
 
-Cette fois, le code ne sera pas expliqué dans cette exercice. C'est à vous d'essayer de le faire en vous aidant de ce qui a été présenté en cours. La bonne compréhension de ce code devrait vous fournir les bonnes bases pour les exercices suivants.
+Cette fois, le code ne sera pas expliqué dans cette exercice. C'est à vous d'essayer de le faire en vous aidant de ce qui a été présenté en cours. La bonne compréhension de ce code devrait vous fournir les bonnes bases pour les exercices suivants. Il est donc important de comprendre chaque ligne.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NDA1NzUxNSw0Mjk3Mjg1NjMsMzU5Nz
-A2MzYxLDEzMTY0MzY5OCwxMTcyNjY2MzgzLC0xNDYzMTUwMjAx
-LDgzMzQyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MT
-I5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0
-NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNz
-EsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5XX0=
-
+eyJoaXN0b3J5IjpbNjI3MTE5MTQsNDI5NzI4NTYzLDM1OTcwNj
+M2MSwxMzE2NDM2OTgsMTE3MjY2NjM4MywtMTQ2MzE1MDIwMSw4
+MzM0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOT
+QwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYs
+LTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLD
+E5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OV19
 -->
