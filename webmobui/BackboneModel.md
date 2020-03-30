@@ -218,7 +218,15 @@ import  tmpl  from  "entities/course/tmpl.handlebars";
     return  this;
   }
 ```
-La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ crée automatiquement un élément DOM représantant un **&lt;div&gt;** via l'attribut _this.el_ (ou  _this.$el_ pour sa version _jquerisée_). Comme ce comportement par défaut ne nous convient pas, nous allons le remplacer par le DOM généré par notre _template_. Ceci se fait en deux lignes car nous devons non seulement remplacé le  **&lt;div&gt;** par notre template, mais aussi modifier l'élément _el_ lui même (grâce à la méthode [setElement](https://backbonejs.org/#View-setElement)). Finalement, la dernière ligne permet simplement de retourner la vue ell-même 
+La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ crée automatiquement un élément DOM représantant un **&lt;div&gt;** via l'attribut _this.el_ (ou  _this.$el_ pour sa version _jquerisée_). Comme ce comportement par défaut ne nous convient pas, nous allons le remplacer par le DOM généré par notre _template_. Ceci se fait en deux lignes car nous devons non seulement remplacé le  **&lt;div&gt;** par notre template, mais aussi modifier l'élément _el_ lui même (grâce à la méthode [setElement](https://backbonejs.org/#View-setElement)). Finalement, la dernière ligne permet simplement de retourner la vue elle-même pour faire de l'enchaînement. Ainsi, nous pouvons rajouter ceci à notre code de test afin de faire un premier rendu du DOM de notre cours de test:
+
+```js
+import  Course  from  'entities/course/model';
+import  CourseView  from  'entities/course/viewModel';
+let  model = new  Course({}); // Les attributs sont à mettre dans les {}
+let  view = new  CourseView({model});
+view.render().$el.appendTo("body");
+```
 
 
 
@@ -231,11 +239,11 @@ La première ligne de _render_ et la génération du DOM. En effet, elle utilise
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5MzI0MTUxLDExNzI2NjYzODMsLTE0Nj
-MxNTAyMDEsODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0
-LDI5MDQxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xOD
-Y4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2
-MDAzMzI3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzOD
-ExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNV19
-
+eyJoaXN0b3J5IjpbLTExMjk5NjAwNjIsMTE3MjY2NjM4MywtMT
+Q2MzE1MDIwMSw4MzM0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1
+MDQsMjkwNDEyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLT
+E4Njg3OTAwNDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcs
+NjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NT
+M4MTE1OSw3ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1
+XX0=
 -->
