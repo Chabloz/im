@@ -163,14 +163,14 @@ Dans cette introduction, nous utiliseront la première variante (comparaison à 
 
 #### _Collections_: les _events_ et un exemple avec le tri de la collection
 
-Pour des soucis de performance, _Backbone_ ne retrie pas la collection automatiquement lorsqu'un attribut d'un modèle change (car il ne peut savoir lequel provoque un changement d'ordre). Toutefois, _Backbone_ propagent les 
+Par soucis de performance, _Backbone_ ne retrie pas la collection automatiquement lorsqu'un attribut d'un modèle change (car il ne peut pas savoir lequel provoque un changement d'ordre). Toutefois, _Backbone_ propage les événements de changement des attributs d'un modèle sur la collection elle-même. Ainsi, il est possible d'écouter très simplement le changement de l'attribut 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQ1NzkwLDE5NzExODI1MDQsMjkwND
-EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
-NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
-cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
-ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMj
-MyMjVdfQ==
+eyJoaXN0b3J5IjpbLTEwMDAzMTcyNTMsMTk3MTE4MjUwNCwyOT
+A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
+MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
+MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
+LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5Mz
+MyMzIyNV19
 -->
