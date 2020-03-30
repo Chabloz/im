@@ -218,7 +218,7 @@ import  tmpl  from  "entities/course/tmpl.handlebars";
     return  this;
   }
 ```
-La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ crée automatiquement un élément DOM représantant un **&lt;div&gt;** via l'attribut _this.el_ (ou  _this.$el_ pour sa version _jquerisée_). Comme ce comportement par défaut ne nous convient pas, nous allons le remplacer par le DOM généré par notre _template_. Ceçi es
+La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ crée automatiquement un élément DOM représantant un **&lt;div&gt;** via l'attribut _this.el_ (ou  _this.$el_ pour sa version _jquerisée_). Comme ce comportement par défaut ne nous convient pas, nous allons le remplacer par le DOM généré par notre _template_. Ceci se fait en deux lignes car nous devons non seulement remplacé le <div> par notre template, mais aussi modifier l'élément _el_ lui même. Ce qui se fait grâce à la méthode [setElement](https://backbonejs.org/#View-setElement).
 
 
 
@@ -231,11 +231,11 @@ La première ligne de _render_ et la génération du DOM. En effet, elle utilise
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2NTEwMjEwLC0xNDYzMTUwMjAxLDgzMz
-QyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MTI5NDAs
-MTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMj
-kxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkx
-MjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MT
-k0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
-
+eyJoaXN0b3J5IjpbLTQwNTE1NTY4OCwtMTQ2MzE1MDIwMSw4Mz
+M0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQw
+LDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
+I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
+MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1Nz
+E5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVd
+fQ==
 -->
