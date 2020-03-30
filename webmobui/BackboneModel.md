@@ -154,15 +154,16 @@ Pour des critères de tri plus complexe (par exemple si vous voulez que deux cou
 
 ```js
 comparator(course1, course2) {
-  // doit retourner un nb négatif si course1<course2
-  // un nombre 
+  // doit retourner un nb négatif si course1 < course2
+  // un nombre null (0) si course1 == course2
+  // et un nombre positif si course1 > course2
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Mjc3NDE0MiwxOTcxMTgyNTA0LDI5MD
-QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
-MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
-I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
-Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
-IzMjI1XX0=
+eyJoaXN0b3J5IjpbLTExODI5NDU4NDEsMTk3MTE4MjUwNCwyOT
+A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
+MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
+MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
+LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5Mz
+MyMzIyNV19
 -->
