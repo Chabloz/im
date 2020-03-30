@@ -101,10 +101,10 @@ initialize(attrs, options) {
 }
 
 set(key, val, options) {
-  if (typeof  key === 'object') {
-    super.set(key, _.extend({validate:  true}, val));
+  if (typeof key === 'object') {
+    super.set(key, _.extend({validate: true}, val));
   } else {
-    super.set(key, val, _.extend({validate:  true}, options));
+    super.set(key, val, _.extend({validate: true}, options));
   }
 }
 ```
@@ -138,7 +138,7 @@ model(attrs, options) {
 
 Il est possible de définir une méthode  _initialize_  ainsi que deux attributs spécifiques optionnels:  _model_  et  _comparator_. Le premier permet de spécifier la  _class_  des  _models_  que la collection contiendra ( ou autrement dit, le type des models de la collection). Le deuxième permet de spécifier une méthode de comparaison des éléments de la collection afin que celle-ci soit ordonnée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MjEyNTkxNSwxOTcxMTgyNTA0LDI5MD
+eyJoaXN0b3J5IjpbMTQ4MjUyNDkwMSwxOTcxMTgyNTA0LDI5MD
 QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
 MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
 I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
