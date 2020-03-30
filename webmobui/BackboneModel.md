@@ -150,7 +150,7 @@ comparator(course) {
   return course.get('xxxxx'); // où xxxxx est à remplacer par l'attribut contenant la date du début du cours
 }
 ```
-Pour des critères de tri plus complexe (par exemple si vous voulez que deux cours qui possèdent la même date de début soit trié par ordre alphabétique), vous pouvez utiliser une méthode avec deux paramètres et retourner (comme pour la méthode [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/sort) de JS):
+Pour des critères de tri plus complexe (par exemple si vous voulez que deux cours qui possèdent la même date de début soit trié par ordre alphabétique), vous pouvez utiliser une méthode avec deux paramètres (comme pour la méthode [sort](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/sort) de JS):
 
 ```js
 comparator(course1, course2) {
@@ -159,11 +159,14 @@ comparator(course1, course2) {
   // et un nombre positif si course1 > course2
 }
 ```
+Dans cette introduction, nous utiliseront la première variante (comparaison à l'aide d'un seul paramètre). Mettez en place cette mé
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODI5NDU4NDEsMTk3MTE4MjUwNCwyOT
-A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
-MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
-MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
-LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5Mz
-MyMzIyNV19
+eyJoaXN0b3J5IjpbLTQ1OTE2NzY0MywxOTcxMTgyNTA0LDI5MD
+QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
+MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
+I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
+Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
+IzMjI1XX0=
 -->
