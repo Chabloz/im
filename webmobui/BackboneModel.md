@@ -159,14 +159,14 @@ comparator(course1, course2) {
   // et un nombre positif si course1 > course2
 }
 ```
-Dans cette introduction, nous utiliseront la première variante (comparaison à l'aide d'un seul paramètre). Mettez en place cette mé
+Dans cette introduction, nous utiliseront la première variante (comparaison à l'aide d'un seul paramètre). Mettez en place cette méthode de comparaison dans votre collection et refaites un test en vérifiant votre console pour voir si vous cours sont correctement triés.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTE2NzY0MywxOTcxMTgyNTA0LDI5MD
-QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
-MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
-I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
-Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
-IzMjI1XX0=
+eyJoaXN0b3J5IjpbLTE2NTI5OTMyNjYsMTk3MTE4MjUwNCwyOT
+A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
+MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
+MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
+LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5Mz
+MyMzIyNV19
 -->
