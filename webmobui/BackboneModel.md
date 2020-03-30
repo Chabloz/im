@@ -194,7 +194,7 @@ initialize() {
   this.listenTo(this.model, 'change', this.render);
 }
 ```
-Si vous analysez cette simple et puissante ligne de code, vous verrez qu'elle fait exactement ce que l'on désire. La seul partie difficile est le  **this.model**. Pour la comprendre, il faut savoir qu'à la construction d'une _view_, nous allons fournir une référence au modèle associé. _Backbone_ va alors automatiquement sauvegardé cette référence dans **this.model**. Pour bien comprendre, voilà le code de création de la vue:
+Si vous analysez cette simple et puissante ligne de code, vous verrez qu'elle fait exactement ce que l'on désire. La seul partie difficile est le  **this.model**. Pour la comprendre, il faut savoir qu'à la construction d'une _view_, nous allons fournir une référence au modèle associé. _Backbone_ va alors automatiquement sauvegardé cette référence dans **this.model**. Pour bien comprendre, voilà un exemple de code avec la création d'un _Model_ et de la vue correspondante:
 
 
 
@@ -218,7 +218,7 @@ render() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODIxMjQ5NSwtMTQ2MzE1MDIwMSw4Mz
+eyJoaXN0b3J5IjpbLTQzMjMxOTc4MCwtMTQ2MzE1MDIwMSw4Mz
 M0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQw
 LDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
 I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
