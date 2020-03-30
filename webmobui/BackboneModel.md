@@ -218,7 +218,7 @@ import  tmpl  from  "entities/course/tmpl.handlebars";
     return  this;
   }
 ```
-La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ crée automatiquement un élément DOM représantant un **&lt;div&gt;** via l'attribut _this.el_ (ou  _this.$el_ pour sa version _jquerisée_). Comme ce comportement par défaut ne nous convient pas, nous allons le remplacer par le DOM généré par notre _template_. Ceci se fait en deux lignes car nous devons non seulement remplacé le  **&lt;div&gt;** par notre template, mais aussi modifier l'élément _el_ lui même (grâce à la méthode [setElement](https://backbonejs.org/#View-setElement)).
+La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ crée automatiquement un élément DOM représantant un **&lt;div&gt;** via l'attribut _this.el_ (ou  _this.$el_ pour sa version _jquerisée_). Comme ce comportement par défaut ne nous convient pas, nous allons le remplacer par le DOM généré par notre _template_. Ceci se fait en deux lignes car nous devons non seulement remplacé le  **&lt;div&gt;** par notre template, mais aussi modifier l'élément _el_ lui même (grâce à la méthode [setElement](https://backbonejs.org/#View-setElement)). Finalement, la dernière ligne permet simplement de retourner la vue ell-même 
 
 
 
@@ -231,11 +231,11 @@ La première ligne de _render_ et la génération du DOM. En effet, elle utilise
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MjY2NjM4MywtMTQ2MzE1MDIwMSw4Mz
-M0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQw
-LDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
-I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
-MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1Nz
-E5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVd
-fQ==
+eyJoaXN0b3J5IjpbOTU5MzI0MTUxLDExNzI2NjYzODMsLTE0Nj
+MxNTAyMDEsODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0
+LDI5MDQxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xOD
+Y4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2
+MDAzMzI3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzOD
+ExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNV19
+
 -->
