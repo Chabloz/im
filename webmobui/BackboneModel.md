@@ -132,17 +132,21 @@ model(attrs, options) {
   return new Course(attrs, options);
 }
 ```
-_Backbone.js_ utilisera alors automatiquement cette méthode pour créer les entités de la collection avec le bon _Model_.  Utilisons tous cela  pour notre collection de cours en créant un nouveau fichier nommé _collection.js_ dans le dossier _course/entities_.
+_Backbone.js_ utilisera alors automatiquement cette méthode pour créer les entités de la collection avec le bon _Model_.  Utilisons tous cela  pour notre collection de cours en créant un nouveau fichier nommé _collection.js_ dans le dossier _course/entities_. Mettez-y ensuite le code nécessaire pour une _Collection_ de cours. Enfin faites un test en créant une collection de cours avec quelques cours. Voilà un exemple de code de test:
+```js
+import  Courses  from  'entities/course/collection';
+let  collection = new  Courses([{}, {}]);
+```
 
 #### _Collections_: tri
 
 Il est rare que les collections ne soient pas triée par un critère quelconque. _Backbone.js_ offre alors un manière simplifiée pour maintenir une collection triée grâce à [comparator](http://backbonejs.org/#Collection-comparator). Nous pouvons
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MDg4NDEzOSwxOTcxMTgyNTA0LDI5MD
-QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
-MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
-I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
-Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
-IzMjI1XX0=
+eyJoaXN0b3J5IjpbNzE2MjMyOTI5LDE5NzExODI1MDQsMjkwND
+EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
+NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
+cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
+ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMj
+MyMjVdfQ==
 -->
