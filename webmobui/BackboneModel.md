@@ -64,7 +64,7 @@ Faites à nouveau un test en affichant vos deux cours dans votre console.
 
 #### Initialisation et validation
 
-_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour utiliser un syntaxe JS moderne,  ajoutez la méthode _validate_ comme ceci dans votre _Model_: 
+_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour utiliser un syntaxe moderne,  ajoutez la méthode _validate_ comme ceci dans votre _Model_: 
 
 ```js
 validate() {
@@ -129,7 +129,7 @@ export  default  class  extends  Backbone.Collection {
 
 Il est possible de définir une méthode  _initialize_  ainsi que deux attributs spécifiques optionnels:  _model_  et  _comparator_. Le premier permet de spécifier la  _class_  des  _models_  que la collection contiendra ( ou autrement dit, le type des models de la collection). Le deuxième permet de spécifier une méthode de comparaison des éléments de la collection afin que celle-ci soit ordonnée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczODkzOTI5MCwxOTcxMTgyNTA0LDI5MD
+eyJoaXN0b3J5IjpbLTgzMjc0NTAwNSwxOTcxMTgyNTA0LDI5MD
 QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
 MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
 I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
