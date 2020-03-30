@@ -261,31 +261,25 @@ Et finalement le code de test:
 
 ```js
 import  Courses  from  'entities/course/collection';
-
 import  CoursesView  from  'entities/course/viewCollection';
-
-import  FiltersView  from  'entities/filter/viewCollection';
-
-  
-  
-
-let  collection = new  Courses();
-let  view = new  CoursesView({collection, el:  '.schedule-courses'});
-viewCollection.render();
-}});
+    
+let collection = new Courses([{}, {}]); // Mettez vos cours de test dans les {}
+let  view = new  CoursesView({collection, el:  'selecteur CSS ici'});
+view.render();
 ```
 
+Cette fois, le code ne sera pas expliqué dans cette exercice. C'est à vous de le fair
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg0ODQwNDY2LDQyOTcyODU2MywzNTk3MD
-YzNjEsMTMxNjQzNjk4LDExNzI2NjYzODMsLTE0NjMxNTAyMDEs
-ODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0LDI5MDQxMj
-k0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2
-LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MS
-wxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTldfQ==
+eyJoaXN0b3J5IjpbLTE5MjI1NzA3MSw0Mjk3Mjg1NjMsMzU5Nz
+A2MzYxLDEzMTY0MzY5OCwxMTcyNjY2MzgzLC0xNDYzMTUwMjAx
+LDgzMzQyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MT
+I5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0
+NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNz
+EsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5XX0=
 
 -->
