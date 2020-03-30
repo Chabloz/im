@@ -270,15 +270,15 @@ view.render();
 
 Cette fois, le code ne sera pas expliqué dans cet exercice. C'est à vous d'essayer de le faire en vous aidant de ce qui a été présenté en cours. La bonne compréhension de ce code devrait vous fournir les bonnes bases pour les exercices suivants. Il est donc important de comprendre chaque ligne.
 
-
+Si vous voulez tester avec des données réelles, vous pouvez utiliser les horaires des cours Comem+ au format JSON disponible ici: [https://chabloz.eu/files/horaires/all.json](https://chabloz.eu/files/horaires/all.json)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjU3NDQ2OSw2MjcxMTkxNCw0Mjk3Mj
-g1NjMsMzU5NzA2MzYxLDEzMTY0MzY5OCwxMTcyNjY2MzgzLC0x
-NDYzMTUwMjAxLDgzMzQyODM5Niw2NTU0OTYzMDMsMTk3MTE4Mj
-UwNCwyOTA0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwt
-MTg2ODc5MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Ny
-w2NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0M119
+eyJoaXN0b3J5IjpbNTQ4OTEyMTIxLDYyNzExOTE0LDQyOTcyOD
+U2MywzNTk3MDYzNjEsMTMxNjQzNjk4LDExNzI2NjYzODMsLTE0
+NjMxNTAyMDEsODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNT
+A0LDI5MDQxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0x
+ODY4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LD
+Y2MDAzMzI3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzXX0=
 -->
