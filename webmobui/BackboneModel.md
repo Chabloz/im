@@ -233,7 +233,38 @@ Tous les futurs changements des attributs du  _model _ provoqueront alors une mi
 
 Maintenant que la vue pour un cours est en place, nous pouvons réaliser celle de la collection de cours. Commencez par créer un nouveau fichier nommé _viewCollection.js_ dans le dossier _course/entities_. 
 
+```js
+import Backbone  from 'Backbone';
+export default class extends Backbone.View {
+initialize() {
 
+if (!this.collection.comparator) {
+
+this.listenTo(this.collection, 'add remove', this.render);
+
+}
+
+this.listenTo(this.collection, 'reset sort', this.render);
+
+this.listenTo(this.collection.data, 'change:filter change:history', this.render);
+
+}
+
+  
+
+render() {
+
+this.$el.empty();
+
+let  models = this.collection.getFiltered();
+    for (let  model  of  models) {
+      let  view = new  View({model});
+      view.render().$el.appendTo(this.$el);
+    }
+    return  this;
+  }
+}
+```
 
 
 
@@ -241,11 +272,11 @@ Maintenant que la vue pour un cours est en place, nous pouvons réaliser celle d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5NzI4NTYzLDM1OTcwNjM2MSwxMzE2ND
-M2OTgsMTE3MjY2NjM4MywtMTQ2MzE1MDIwMSw4MzM0MjgzOTYs
-NjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQwLDE0MTA2Mz
-E2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLTI5MTkxMyw2
-ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MTA1ND
-IsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1NzE5NDFdfQ==
+eyJoaXN0b3J5IjpbMjAyMzg2OTg2Miw0Mjk3Mjg1NjMsMzU5Nz
+A2MzYxLDEzMTY0MzY5OCwxMTcyNjY2MzgzLC0xNDYzMTUwMjAx
+LDgzMzQyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MT
+I5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0
+NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNz
+EsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5XX0=
 
 -->
