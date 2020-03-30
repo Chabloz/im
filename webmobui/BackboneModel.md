@@ -206,12 +206,15 @@ let  view = new  CourseView({model});
 Il nous faut maintenant nous intéresser à la méthode _render_ un peu plus complexe : 
 
 ```js
-render() {
-  let  dom = $(tmpl(this.model.toJSON()));
-  this.$el.replaceWith(dom);
-  this.setElement(dom);
-  return  this;
-}
+// importation de la template handlebars
+import  tmpl  from  "entities/course/tmpl.handlebars";
+// ... plus loin dans le code ...
+  render() {
+    let  dom = $(tmpl(this.model.toJSON()));
+    this.$el.replaceWith(dom);
+    this.setElement(dom);
+    return  this;
+  }
 ```
 
 
@@ -226,11 +229,11 @@ render() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzE2ODU3MiwtMTQ2MzE1MDIwMSw4Mz
-M0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQw
-LDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
-I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
-MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1Nz
-E5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVd
-fQ==
+eyJoaXN0b3J5IjpbMTU4OTg4MDI0LC0xNDYzMTUwMjAxLDgzMz
+QyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MTI5NDAs
+MTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMj
+kxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkx
+MjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MT
+k0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
+
 -->
