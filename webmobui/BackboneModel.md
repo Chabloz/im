@@ -218,7 +218,7 @@ import  tmpl  from  "entities/course/tmpl.handlebars";
     return  this;
   }
 ```
-La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attribut du model. 
+La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ lie 
 
 
 
@@ -231,7 +231,7 @@ La première ligne de _render_ et la génération du DOM. En effet, elle utilise
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMTc2MjU3NiwtMTQ2MzE1MDIwMSw4Mz
+eyJoaXN0b3J5IjpbMTExMjI5MjI3MCwtMTQ2MzE1MDIwMSw4Mz
 M0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQw
 LDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
 I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
