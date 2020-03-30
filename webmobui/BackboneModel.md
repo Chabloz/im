@@ -176,12 +176,14 @@ Les vues de  _Backbone.js_  ne sont pas de vraies  _views_  au sens du  _design 
 
 [La documentation des  _Views_](http://backbonejs.org/#View)  indique que les vues sont plus des conventions que du code. Effectivement, le système des vues de  _Backbone_  est souple et laisse ouvert la manière dont une  _View_  génère le HTML ainsi que la gestion de sa synchronisation avec le modèle associé. La gestion des  _events_ combinée aux  _Views_  et  _Models_  va permettre d’avoir une architecture logicielle bien structurée dans le respect des bonnes pratiques.
 
-#### _View_ adapté pour un _Model_
+#### _View_ adaptée pour un _Model_
+
+Avant de voir comment géré les vues d'une collection, mettons en place une _View_ pour nos 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODUyNzYzNTgsODMzNDI4Mzk2LDY1NT
-Q5NjMwMywxOTcxMTgyNTA0LDI5MDQxMjk0MCwxNDEwNjMxNjA2
-LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMsNjg5ND
-g5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNTQyLC0x
-MjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0xMjg3Mj
-c2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbNTUzOTM1NzY3LDgzMzQyODM5Niw2NTU0OT
+YzMDMsMTk3MTE4MjUwNCwyOTA0MTI5NDAsMTQxMDYzMTYwNiwt
+MTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMjkxOTEzLDY4OTQ4OT
+E3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIy
+MzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MTk0MSwtMTI4NzI3Nj
+I3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
 -->
