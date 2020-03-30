@@ -231,7 +231,7 @@ Tous les futurs changements des attributs du  _model _ provoqueront alors une mi
 
 #### _View_ adaptée pour une _Collection_
 
-Maintenant que la vue pour un cours est en place, nous pouvons réaliser celle de la collection de cours. Commencez par créer un nouveau fichier nommé _viewCollection.js_ dans le dossier _course/entities_. 
+Maintenant que la vue pour un cours est en place, nous pouvons réaliser celle de la collection de cours. Commencez par créer un nouveau fichier nommé _viewCollection.js_ dans le dossier _course/entities_.  Vous trouverez ci dessous le code de départ de cette classe.
 
 ```js
 import Backbone  from 'Backbone';
@@ -263,11 +263,11 @@ export default class extends Backbone.View {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQzODAyMTI2LDQyOTcyODU2MywzNTk3MD
-YzNjEsMTMxNjQzNjk4LDExNzI2NjYzODMsLTE0NjMxNTAyMDEs
-ODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0LDI5MDQxMj
-k0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2
-LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MS
-wxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTldfQ==
+eyJoaXN0b3J5IjpbLTE4Mzc0NTU3ODksNDI5NzI4NTYzLDM1OT
+cwNjM2MSwxMzE2NDM2OTgsMTE3MjY2NjM4MywtMTQ2MzE1MDIw
+MSw4MzM0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwND
+EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
+NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
+cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OV19
 
 -->
