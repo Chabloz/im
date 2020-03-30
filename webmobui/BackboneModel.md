@@ -1,5 +1,5 @@
 
-# *Frontend MVC* - Une introduction avec  le frameworkbackbone.js
+# *Frontend MVC* - Une introduction à l'aide de Backbone.js
 
 ## Mise en place
 
@@ -113,12 +113,20 @@ Maintenant, au lieu de faire toutes ces modifications directement dans notre _Mo
 
 ## _Collections_ Backbone.js
 
+#### Introduction
 
+Dans la plupart des applications, un traitement est souvent effectué sur un regroupement de données de même type. Il devient alors logique d’utiliser une structure de données complexe afin d’encapsuler la totalité des données du même type. Appliqué au  _design pattern_ MVC, les modèles représentant des entités de même type sont donc logiquement regroupés dans une collection de modèles.
+
+#### _Collections_
+
+[La documentation des  _collections_](http://backbonejs.org/#Collection)  indique que la création d’une collection est très proche de celle d’un modèle. En effet, il suffit de faire un  _extend_  de  _Backbone.Collection_. Voilà comment le faire avec un syntax
+
+Il est possible de définir une méthode  _initialize_  ainsi que deux attributs spécifiques optionnels:  _model_  et  _comparator_. Le premier permet de spécifier la  _class_  des  _models_  que la collection contiendra ( ou autrement dit, le type des models de la collection). Le deuxième permet de spécifier une méthode de comparaison des éléments de la collection afin que celle-ci soit ordonnée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0Mzg1MzE5MCwxOTcxMTgyNTA0LDI5MD
-QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
-MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
-I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
-Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
-IzMjI1XX0=
+eyJoaXN0b3J5IjpbLTExMzcwMDg3NTgsMTk3MTE4MjUwNCwyOT
+A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
+MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
+MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
+LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5Mz
+MyMzIyNV19
 -->
