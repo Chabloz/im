@@ -268,14 +268,14 @@ let  view = new  CoursesView({collection, el:  'selecteur CSS ici'});
 view.render();
 ```
 
-Cette fois, le code ne sera pas expliqué dans cette exercice. C'est à vous de le fair
+Cette fois, le code ne sera pas expliqué dans cette exercice. C'est à vous d'essayer de le faire en vous aidant de ce qui a été présenté en cours.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjI1NzA3MSw0Mjk3Mjg1NjMsMzU5Nz
+eyJoaXN0b3J5IjpbMTc4NTI2NzE2OCw0Mjk3Mjg1NjMsMzU5Nz
 A2MzYxLDEzMTY0MzY5OCwxMTcyNjY2MzgzLC0xNDYzMTUwMjAx
 LDgzMzQyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MT
 I5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0
