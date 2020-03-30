@@ -257,13 +257,31 @@ export default class extends Backbone.View {
 }
 ```
 
+Et finalement le code de test:
+
+```js
+import  Courses  from  'entities/course/collection';
+
+import  CoursesView  from  'entities/course/viewCollection';
+
+import  FiltersView  from  'entities/filter/viewCollection';
+
+  
+  
+
+let  collection = new  Courses();
+let  view = new  CoursesView({collection, el:  '.schedule-courses'});
+viewCollection.render();
+}});
+```
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY0MDI4NDA4LDQyOTcyODU2MywzNTk3MD
+eyJoaXN0b3J5IjpbNTg0ODQwNDY2LDQyOTcyODU2MywzNTk3MD
 YzNjEsMTMxNjQzNjk4LDExNzI2NjYzODMsLTE0NjMxNTAyMDEs
 ODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0LDI5MDQxMj
 k0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2
