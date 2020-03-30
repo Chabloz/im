@@ -174,9 +174,11 @@ Les vues de  _Backbone.js_  ne sont pas de vraies  _views_  au sens du  _design 
  
  Les “vraies”  _view_  (au sens MVC) seront les éléments DOM représentant les données d’un  _Model_  à l’utilisateur.  Ce sont donc les éléments DOM générés par notre moteur de template _handlebar_.
 
-[La documentation des  _Views_](http://backbonejs.org/#View)  indique que les vues sont plus des conventions que du code. Effectivement, le système des vues de  _Backbone_  est souple et laisse ouvert la manière dont une  _View_  génère le HTML ainsi que la gestion de sa synchronisation avec le modèle associé. La gestion des  _events_  (voir TP1) combinée aux  _views_  et  _models_  va permettre d’avoir une architecture logicielle bien structurée et respectant les bonnes pratiques.
+[La documentation des  _Views_](http://backbonejs.org/#View)  indique que les vues sont plus des conventions que du code. Effectivement, le système des vues de  _Backbone_  est souple et laisse ouvert la manière dont une  _View_  génère le HTML ainsi que la gestion de sa synchronisation avec le modèle associé. La gestion des  _events_ combinée aux  _Views_  et  _Models_  va permettre d’avoir une architecture logicielle bien structurée dans le respect des bonnes pratiques.
+
+#### _View_ adapté pour un _Model_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTM1NTE0OTksODMzNDI4Mzk2LDY1NT
+eyJoaXN0b3J5IjpbLTE0ODUyNzYzNTgsODMzNDI4Mzk2LDY1NT
 Q5NjMwMywxOTcxMTgyNTA0LDI5MDQxMjk0MCwxNDEwNjMxNjA2
 LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMsNjg5ND
 g5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNTQyLC0x
