@@ -67,9 +67,9 @@ Faites à nouveau un test en affichant vos deux cours dans votre console.
 _Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour utiliser un syntaxe JS moderne,  ajoutez la méthode _validate_ comme ceci dans votre _Model_: 
 
 ```js
-  validate() {
-	// Cette méthode doit retourner les erreurs avec un "return" 
-  }
+validate() {
+  // Cette méthode doit retourner les erreurs avec un "return" 
+}
 ```
 
 Pour vérifier si un attribut existe (ou tester son type), vous pouvez utiliser  [les méthodes  _is](http://underscorejs.org/#isEqual)  du framework underscore. Pour tester votre _validateur_ avec vos deux cours, vous pouvez utiliser la méthode [isValid](https://backbonejs.org/#Model-isValid). 
@@ -113,10 +113,10 @@ Maintenant, au lieu de faire toutes ces modifications directement dans notre _Mo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYxMDgzOTgsMTk3MTE4MjUwNCwyOTA0MT
-I5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0
-NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNz
-EsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4
-NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMz
-IyNV19
+eyJoaXN0b3J5IjpbMTU2NjI0MTk5MCwxOTcxMTgyNTA0LDI5MD
+QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
+MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
+I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
+Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
+IzMjI1XX0=
 -->
