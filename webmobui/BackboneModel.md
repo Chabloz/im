@@ -121,15 +121,15 @@ Dans la plupart des applications, un traitement est souvent effectué sur un reg
 
 [La documentation des  _collections_](http://backbonejs.org/#Collection)  indique que la création d’une collection est très proche de celle d’un modèle. En effet, il suffit de faire un  _extend_  de  _Backbone.Collection_. Voilà comment le faire avec une syntaxe moderne:
 ```js
-import  Backbone  from  'Backbone';
-export  default  class  extends  Backbone.Collection {
+import Backbone  from 'Backbone';
+export default class extends Backbone.Collection {
 
 }
 ```
 Comme l'indique l'introduction de cette partie, les _Collections_ sont intimement liés aux _Models_ qui les composent. Ainsi, il nous faut indiquer à _Backbone.js_, quel _Model_ utilisé pour cette _Collection_. Nous pouvons le faire comme dans l'exemple suivant, en rajoutant simplement une méthode à notre _Collection_:
 ```js
 model(attrs, options) {
-  return  new  Course(attrs, options);
+  return new Course(attrs, options);
 }
 ```
 
@@ -138,7 +138,7 @@ model(attrs, options) {
 
 Il est possible de définir une méthode  _initialize_  ainsi que deux attributs spécifiques optionnels:  _model_  et  _comparator_. Le premier permet de spécifier la  _class_  des  _models_  que la collection contiendra ( ou autrement dit, le type des models de la collection). Le deuxième permet de spécifier une méthode de comparaison des éléments de la collection afin que celle-ci soit ordonnée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTQ2MTkyMywxOTcxMTgyNTA0LDI5MD
+eyJoaXN0b3J5IjpbLTU3MjEyNTkxNSwxOTcxMTgyNTA0LDI5MD
 QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
 MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
 I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
