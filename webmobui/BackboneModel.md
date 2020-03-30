@@ -188,12 +188,12 @@ export default class extends Backbone.View {
 }
 ```
 
-A l'instar des modèles et collections, les vues  _Backbone_ peuvent avoir une méthode d'initialisation.
+A l'instar des modèles et collections, les vues  _Backbone_ peuvent avoir une méthode d'initialisation. C'est dans cette méthode que nous allons faire le lien entre les 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyOTc1Nzk1LDgzMzQyODM5Niw2NTU0OT
+eyJoaXN0b3J5IjpbNjk4NjcxNjAxLDgzMzQyODM5Niw2NTU0OT
 YzMDMsMTk3MTE4MjUwNCwyOTA0MTI5NDAsMTQxMDYzMTYwNiwt
 MTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMjkxOTEzLDY4OTQ4OT
 E3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkxMjUxMDU0MiwtMTIy
