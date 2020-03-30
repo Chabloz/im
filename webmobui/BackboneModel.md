@@ -194,7 +194,9 @@ initialize() {
   this.listenTo(this.model, 'change', this.render);
 }
 ```
-Si vous analysez cette simple et puissante ligne de code, vous verrez qu'elle fait exactement ce que l'on désire. La seul partie difficile est le  **this.model**. Pour la comprendre, il faut savoir qu'à la construction d'une _view_
+Si vous analysez cette simple et puissante ligne de code, vous verrez qu'elle fait exactement ce que l'on désire. La seul partie difficile est le  **this.model**. Pour la comprendre, il faut savoir qu'à la construction d'une _view_, nous allons fournir une référence au modèle associé. _Backbone_ va alors automatiquement sauvegardé cette référence dans **this.model**. Pour bien comprendre, voilà le code de création de la vue:
+
+
 
 Il nous faut maintenant nous intéresser à la méthode _render_ un peu plus complexe : 
 ```js
@@ -216,11 +218,11 @@ render() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwMzY2OTEwLC0xNDYzMTUwMjAxLDgzMz
-QyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MTI5NDAs
-MTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMj
-kxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkx
-MjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MT
-k0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
-
+eyJoaXN0b3J5IjpbMTIyODIxMjQ5NSwtMTQ2MzE1MDIwMSw4Mz
+M0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQw
+LDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
+I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
+MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1Nz
+E5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVd
+fQ==
 -->
