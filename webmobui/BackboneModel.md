@@ -195,7 +195,12 @@ initialize() {
 }
 ```
 Si vous analysez cette simple et puissante ligne de code, vous verrez qu'elle fait exactement ce que l'on désire. La seul partie difficile est le  **this.model**. Pour la comprendre, il faut savoir qu'à la construction d'une _view_, nous allons fournir une référence au modèle associé. _Backbone_ va alors automatiquement sauvegardé cette référence dans **this.model**. Pour bien comprendre, voilà un exemple de code avec la création d'un _Model_ et sa vue correspondante:
-
+```js
+import  Course  from  'entities/course/model';
+import  CourseView  from  'entities/course/viewModel';
+let  model = new  Course({}); // Les attributs sont à mettre dans les {}
+let  view = new  CourseView({model});
+```
 
 
 Il nous faut maintenant nous intéresser à la méthode _render_ un peu plus complexe : 
@@ -218,11 +223,11 @@ render() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjI3ODczMjQsLTE0NjMxNTAyMDEsOD
-MzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0LDI5MDQxMjk0
-MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC
-0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwx
-OTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NT
-cxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1
-XX0=
+eyJoaXN0b3J5IjpbMTA3NTE4NjU3NCwtMTQ2MzE1MDIwMSw4Mz
+M0MjgzOTYsNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQw
+LDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLT
+I5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5
+MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1Nz
+E5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVd
+fQ==
 -->
