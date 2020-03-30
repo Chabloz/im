@@ -132,14 +132,14 @@ model(attrs, options) {
   return new Course(attrs, options);
 }
 ```
-_Backbone.js_ utilisera alors automatiquement cette méthode pour créer les entités de la collection avec le bon _Model_.  Utilisons tous cela  pour notre collection de cours en créant un nouveau fichier nommé _collection.js_
+_Backbone.js_ utilisera alors automatiquement cette méthode pour créer les entités de la collection avec le bon _Model_.  Utilisons tous cela  pour notre collection de cours en créant un nouveau fichier nommé _collection.js_ dans le dossier _course/entities_.
 
 #### _Collections_: tri
 
 Il est rare que les collections ne soient pas triée par un critère quelconque. _Backbone.js_ offre alors un manière simplifiée pour maintenir une collection triée grâce à [comparator](http://backbonejs.org/#Collection-comparator). Nous pouvons
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMjY2MTA4NiwxOTcxMTgyNTA0LDI5MD
+eyJoaXN0b3J5IjpbLTc3MDg4NDEzOSwxOTcxMTgyNTA0LDI5MD
 QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
 MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
 I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
