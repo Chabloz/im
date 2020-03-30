@@ -64,11 +64,11 @@ Faites à nouveau un test en affichant vos deux cours dans votre console.
 
 #### Initialisation et validation
 
-_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour utiliser un syntaxe JS moderne,  ajoutez la méthode _validate_ comme ceci: 
+_Backbone.js_ offre aussi la possibilité d’utiliser  [une méthode pour la validation](http://backbonejs.org/#Model-validate)  des données des  _Models_, ainsi que des méthodes pour leur  [initialisation et construction](http://backbonejs.org/#Model-constructor). En reprenant votre _Model_, ajoutez une méthode  _validate_  qui contrôle que les attributs sont correctes. Pour utiliser un syntaxe JS moderne,  ajoutez la méthode _validate_ comme ceci dans votre _Model_: 
 
 ```js
   validate() {
-	// cette méthode dois retourner un chaine vide
+	// Cette méthode doit retourner les erreurs avec un "return" 
   }
 ```
 
@@ -112,10 +112,10 @@ set(key, val, options) {
 
 Maintenant, au lieu de faire toutes ses modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus générique que nous spécialiserons via un héritage. Essayez de mettre en place cette structure.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDExMDY3NiwxOTcxMTgyNTA0LDI5MD
-QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
-MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
-I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
-Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
-IzMjI1XX0=
+eyJoaXN0b3J5IjpbNDM1MjQ3NDEzLDE5NzExODI1MDQsMjkwND
+EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
+NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
+cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
+ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMj
+MyMjVdfQ==
 -->
