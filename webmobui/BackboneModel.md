@@ -169,11 +169,12 @@ Par soucis de performance, _Backbone_ ne retrie pas la collection automatiquemen
 ## _View_ Backbone.js
 
 #### Introduction
-Les vues de  _Backbone.js_  ne sont pas de vraies  _views_  au sens du  _design pattern MVC_. Une “_view_” de  _Backbone.js_  va s’occuper de la génération de la vue, de sa synchronisation avec le modèle associé et de la gestion des événements. Ces  _views_  remplissent donc plutôt un rôle de contrôleur  de vues (et font donc office de *controller* du MVC).  
+
+Les vues de  _Backbone.js_  ne sont pas de vraies  _views_  au sens du  _design pattern MVC_. Une _View Backbone_  va s’occuper de la génération de la vue, de sa synchronisation avec le modèle associé et de la gestion des événements. Ces  _views_  remplissent donc plutôt un rôle de contrôleur UI.  
  
  Les “vraies”  _view_  seront les éléments du DOM représentant les données d’un  _Model_  à l’utilisateur. Celles-ci seront générées grâce à un moteur de *templates*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNTE1MjgwOCw4MzM0MjgzOTYsNjU1ND
+eyJoaXN0b3J5IjpbMTQyMjY5ODQyOCw4MzM0MjgzOTYsNjU1ND
 k2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQwLDE0MTA2MzE2MDYs
 LTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLTI5MTkxMyw2ODk0OD
 kxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEy
