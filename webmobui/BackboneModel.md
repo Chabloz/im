@@ -132,13 +132,9 @@ model(attrs, options) {
   return new Course(attrs, options);
 }
 ```
-
-
-
-
-Il est possible de définir une méthode  _initialize_  ainsi que deux attributs spécifiques optionnels:  _model_  et  _comparator_. Le premier permet de spécifier la  _class_  des  _models_  que la collection contiendra ( ou autrement dit, le type des models de la collection). Le deuxième permet de spécifier une méthode de comparaison des éléments de la collection afin que celle-ci soit ordonnée.
+_Backbone.js_ utilisera alors automatiquement cette méthode pour créer les entités de la collection a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MjUyNDkwMSwxOTcxMTgyNTA0LDI5MD
+eyJoaXN0b3J5IjpbMjA4MDQ5ODI4OCwxOTcxMTgyNTA0LDI5MD
 QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
 MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
 I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
