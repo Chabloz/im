@@ -145,13 +145,16 @@ console.log(collection.toJSON());
 #### _Collections_: tri
 
 Il est rare que les collections ne soient pas triée par un critère quelconque. _Backbone.js_ offre alors un manière simplifiée pour maintenir une collection triée grâce à [comparator](http://backbonejs.org/#Collection-comparator). Pour l'utiliser, il suffit d'ajouter une méthode _comparator_ à notre collection comme ceci:
-
-
+```js
+comparator(course) {
+  return course.get('xxxxx'); // où xxxxx est à remplacer par le nom de l'attribut contenant la date du début du cours
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNzU1NDAyLDE5NzExODI1MDQsMjkwND
-EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
-NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
-cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
-ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMj
-MyMjVdfQ==
+eyJoaXN0b3J5IjpbMTU4NTYyODAxMSwxOTcxMTgyNTA0LDI5MD
+QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
+MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
+I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
+Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
+IzMjI1XX0=
 -->
