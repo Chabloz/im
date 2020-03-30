@@ -227,7 +227,8 @@ let  model = new  Course({}); // Les attributs sont à mettre dans les {}
 let  view = new  CourseView({model});
 view.render().$el.appendTo("selecteur CSS ici"); 
 ```
-Tous les futurs changements du _model _ provoqueront alors une mise à jour automatique du DOM. 
+Tous les futurs changements des attributs du  _model _ provoqueront alors une mise à jour automatique du DOM. 
+
 
 
 
@@ -239,7 +240,7 @@ Tous les futurs changements du _model _ provoqueront alors une mise à jour auto
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NDI4MzUyLDExNzI2NjYzODMsLTE0Nj
+eyJoaXN0b3J5IjpbMTMxNjQzNjk4LDExNzI2NjYzODMsLTE0Nj
 MxNTAyMDEsODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0
 LDI5MDQxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xOD
 Y4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2
