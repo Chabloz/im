@@ -136,13 +136,13 @@ _Backbone.js_ utilisera alors automatiquement cette méthode pour créer les ent
 
 #### _Collections_: tri
 
-Il est rare que les collections ne soient pas triée par un critère quelconque. _Backbone.js_ offre alors un mani
+Il est rare que les collections ne soient pas triée par un critère quelconque. _Backbone.js_ offre alors un manière simplifiée pour maintenir une collection triée grâce à [comparator](http://backbonejs.org/#Collection-comparator). Nous pouvons
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUxNjY0NDgsMTk3MTE4MjUwNCwyOTA0MT
-I5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0
-NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNz
-EsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4
-NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMz
-IyNV19
+eyJoaXN0b3J5IjpbLTEyNjgxNjMzNTQsMTk3MTE4MjUwNCwyOT
+A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
+MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
+MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
+LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5Mz
+MyMzIyNV19
 -->
