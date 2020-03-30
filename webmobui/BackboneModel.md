@@ -126,16 +126,24 @@ export  default  class  extends  Backbone.Collection {
 
 }
 ```
-Comme l'indique l'introduction de cette partie, les _Collections_ sont intimement liés aux _Models_ qui les composent. Ainsi, bakcbone
+Comme l'indique l'introduction de cette partie, les _Collections_ sont intimement liés aux _Models_ qui les composent. Ainsi, il nous faut indiquer à _Backbone.js_, quel _Model_ utilisé pour cette _Collection_. Nous pouvons le faire comme dans l'exemple suivant, en rajoutant simplement une méthode à notre _Collection_:
+
+model(attrs, options) {
+
+return  new  Course(attrs, options);
+
+}
+
+
 
 
 
 Il est possible de définir une méthode  _initialize_  ainsi que deux attributs spécifiques optionnels:  _model_  et  _comparator_. Le premier permet de spécifier la  _class_  des  _models_  que la collection contiendra ( ou autrement dit, le type des models de la collection). Le deuxième permet de spécifier une méthode de comparaison des éléments de la collection afin que celle-ci soit ordonnée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3NDM1MjY1LDE5NzExODI1MDQsMjkwND
-EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
-NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
-cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
-ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMj
-MyMjVdfQ==
+eyJoaXN0b3J5IjpbMTE2NTg5NzU0OCwxOTcxMTgyNTA0LDI5MD
+QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
+MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
+I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
+Nzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMz
+IzMjI1XX0=
 -->
