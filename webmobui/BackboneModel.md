@@ -1,5 +1,5 @@
 
-# *Frontend MVC* - Introduction aux  *Events*  et  *Models*  de backbone.js
+# *Frontend MVC* - Une introduction avec  le frameworkbackbone.js
 
 ## Mise en place
 
@@ -111,9 +111,11 @@ set(key, val, options) {
 
 Maintenant, au lieu de faire toutes ces modifications directement dans notre _Model Course_, nous pourrions le faire dans une classe plus générique que nous spécialiserons via un héritage. Essayez de mettre en place cette structure.
 
+## _Collections_ Backbone.js
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjI0MTk5MCwxOTcxMTgyNTA0LDI5MD
+eyJoaXN0b3J5IjpbMjA0Mzg1MzE5MCwxOTcxMTgyNTA0LDI5MD
 QxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4Nzkw
 MDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMz
 I3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTks
