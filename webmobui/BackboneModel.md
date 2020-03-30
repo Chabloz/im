@@ -120,6 +120,7 @@ Dans la plupart des applications, un traitement est souvent effectué sur un reg
 #### _Collections_: lien avec les models
 
 [La documentation des  _collections_](http://backbonejs.org/#Collection)  indique que la création d’une collection est très proche de celle d’un modèle. En effet, il suffit de faire un  _extend_  de  _Backbone.Collection_. Voilà comment le faire avec une syntaxe moderne:
+
 ```js
 import Backbone  from 'Backbone';
 export default class extends Backbone.Collection {
@@ -179,8 +180,17 @@ Les vues de  _Backbone.js_  ne sont pas de vraies  _views_  au sens du  _design 
 #### _View_ adaptée pour un _Model_
 
 Avant de voir comment géré les vues d'une collection, mettons en place une _View_ pour l'affichage d'un cours. Commencez donc par créer un nouveau fichier nommé _viewModel.js_ dans le dossier _course/entities_. 
+
+```js
+import Backbone  from 'Backbone';
+export default class extends Backbone.View {
+
+}
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzM4OTY5MSw4MzM0MjgzOTYsNjU1ND
+eyJoaXN0b3J5IjpbLTU1MjU1MjkzNCw4MzM0MjgzOTYsNjU1ND
 k2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQwLDE0MTA2MzE2MDYs
 LTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLTI5MTkxMyw2ODk0OD
 kxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEy
