@@ -218,7 +218,7 @@ import  tmpl  from  "entities/course/tmpl.handlebars";
     return  this;
   }
 ```
-La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ crée automatiquement un élément DOM représantant un &lt;div&gt; via l'attribut_this.el_ (ou  _this.$el_ pour sa version _jquerisée_)
+La première ligne de _render_ et la génération du DOM. En effet, elle utilise la _template handlerbars_ en y injectant les attributs du model. Ensuite, ce morceau de DOM doit être sauvegardé quelque-part. Pour le faire, _Backbone_ crée automatiquement un élément DOM représantant un **&lt;div&gt;** via l'attribut _this.el_ (ou  _this.$el_ pour sa version _jquerisée_). Comme ce comportement par défaut ne nous convient pas, nous allons le remplacer par le DOM généré par notre _template_. Ceçi es
 
 
 
@@ -231,11 +231,11 @@ La première ligne de _render_ et la génération du DOM. En effet, elle utilise
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI4MDk2MDUsLTE0NjMxNTAyMDEsOD
-MzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0LDI5MDQxMjk0
-MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC
-0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwx
-OTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NT
-cxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1
-XX0=
+eyJoaXN0b3J5IjpbNzU2NTEwMjEwLC0xNDYzMTUwMjAxLDgzMz
+QyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MTI5NDAs
+MTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMj
+kxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkx
+MjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MT
+k0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
+
 -->
