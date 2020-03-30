@@ -166,11 +166,14 @@ Dans cette introduction, nous utiliseront la première variante (comparaison à 
 Par soucis de performance, _Backbone_ ne retrie pas la collection automatiquement lorsqu'un attribut d'un modèle change (car il ne peut pas savoir lequel provoque un changement d'ordre). Toutefois, _Backbone_ propage les événements de changement des attributs d'un modèle sur la collection elle-même. Ainsi, il est possible d'écouter très simplement le changement de l'attribut de la date de début d'un cours et forcer le tri de la collection lorsque le changement se produit en appelant directement la méthode [sort](https://backbonejs.org/#Collection-sort). A l'instar des modèles, les collections _Backbone_ peuvent avoir une méthode d'initialisation, nous pouvons donc y mettre le code nécessaire à cette écoute. Essayez d'y implémenter la chose, puis faites un test en modifiant la date de début d'un cours entre deux _console.log_ afin d'y observer si l'ordre est respecté. 
 
 
+## _View_ Backbone.js
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU1NDk2MzAzLDE5NzExODI1MDQsMjkwND
-EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
-NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
-cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
-ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMj
-MyMjVdfQ==
+eyJoaXN0b3J5IjpbODMzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMT
+gyNTA0LDI5MDQxMjk0MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4
+LC0xODY4NzkwMDQ2LC0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOT
+g3LDY2MDAzMzI3MSwxOTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0x
+NDUzODExNTksNzg3NTcxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1OD
+YwNSwyMDkzMzIzMjI1XX0=
 -->
