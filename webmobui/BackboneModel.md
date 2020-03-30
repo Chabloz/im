@@ -136,19 +136,18 @@ _Backbone.js_ utilisera alors automatiquement cette méthode pour créer les ent
 ```js
 import Courses from 'entities/course/collection';
 let collection = new Courses([
-  {}, // <=== mettre les donnée
-  {}
+  {}, // <=== mettre les attributs  d'un cours de test entre les  {}
+  {}  // <=== mettre les données d'un autre cours de test
 ]);
 console.log(collection.toJSON());
 ```
-
 
 #### _Collections_: tri
 
 Il est rare que les collections ne soient pas triée par un critère quelconque. _Backbone.js_ offre alors un manière simplifiée pour maintenir une collection triée grâce à [comparator](http://backbonejs.org/#Collection-comparator). Nous pouvons
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDU4NjUzODEsMTk3MTE4MjUwNCwyOT
+eyJoaXN0b3J5IjpbLTE1MzE0NDMwMTEsMTk3MTE4MjUwNCwyOT
 A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
 MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
 MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
