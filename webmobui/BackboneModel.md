@@ -178,12 +178,12 @@ Les vues de  _Backbone.js_  ne sont pas de vraies  _views_  au sens du  _design 
 
 #### _View_ adaptée pour un _Model_
 
-Avant de voir comment géré les vues d'une collection, mettons en place une _View_ pour l'affichage d'un cours. Commencez donc par créer un nouveau fichier nommé _viewModel.js_ dans le dossier _course/entities_
+Avant de voir comment géré les vues d'une collection, mettons en place une _View_ pour l'affichage d'un cours. Commencez donc par créer un nouveau fichier nommé _viewModel.js_ dans le dossier _course/entities_. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjY1MjIxOTUsODMzNDI4Mzk2LDY1NT
-Q5NjMwMywxOTcxMTgyNTA0LDI5MDQxMjk0MCwxNDEwNjMxNjA2
-LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC0yOTE5MTMsNjg5ND
-g5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwxOTEyNTEwNTQyLC0x
-MjIzNjYwNzQzLC0xNDUzODExNTksNzg3NTcxOTQxLC0xMjg3Mj
-c2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1XX0=
+eyJoaXN0b3J5IjpbMjAxNzM4OTY5MSw4MzM0MjgzOTYsNjU1ND
+k2MzAzLDE5NzExODI1MDQsMjkwNDEyOTQwLDE0MTA2MzE2MDYs
+LTE3NTIxMzM4OTgsLTE4Njg3OTAwNDYsLTI5MTkxMyw2ODk0OD
+kxNywyMzQ0MDM5ODcsNjYwMDMzMjcxLDE5MTI1MTA1NDIsLTEy
+MjM2NjA3NDMsLTE0NTM4MTE1OSw3ODc1NzE5NDEsLTEyODcyNz
+YyNzksLTUyMTU4NjA1LDIwOTMzMjMyMjVdfQ==
 -->
