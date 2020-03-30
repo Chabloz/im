@@ -167,10 +167,8 @@ Par soucis de performance, _Backbone_ ne retrie pas la collection automatiquemen
 
 
 
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI1MTg1NTkzLDE5NzExODI1MDQsMjkwND
+eyJoaXN0b3J5IjpbNjA1MzQwMzgxLDE5NzExODI1MDQsMjkwND
 EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
 NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
 cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
