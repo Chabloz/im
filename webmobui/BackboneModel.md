@@ -161,16 +161,16 @@ comparator(course1, course2) {
 ```
 Dans cette introduction, nous utiliseront la première variante (comparaison à l'aide d'un seul paramètre). Mettez en place cette méthode de comparaison dans votre collection et refaites un test en vérifiant votre console pour voir si vous cours sont correctement triés.
 
-#### _Collections_: les _event_ et un exemple avec le tri de la collection
+#### _Collections_: les _events_ et un exemple avec le tri de la collection
 
-Pour des soucis de performance, _Backbone_ ne retrie pas la collection automatiquement lorsqu'un attribut d'un modèle change. 
+Pour des soucis de performance, _Backbone_ ne retrie pas la collection automatiquement lorsqu'un attribut d'un modèle change (car il ne peut savoir lequel provoque un changement d'ordre). Toutefois, _Backbone_ propagent les 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzA2MjQxODIsMTk3MTE4MjUwNCwyOT
-A0MTI5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5
-MDA0NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMz
-MyNzEsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5
-LDc4NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5Mz
-MyMzIyNV19
+eyJoaXN0b3J5IjpbLTE0ODQ1NzkwLDE5NzExODI1MDQsMjkwND
+EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
+NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
+cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
+ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMj
+MyMjVdfQ==
 -->
