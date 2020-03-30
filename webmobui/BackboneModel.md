@@ -194,7 +194,9 @@ initialize() {
   this.listenTo(this.model, 'change', this.render);
 }
 ```
-Si vous analysez cette simple et puissante ligne de code, vous verrez qu'elle fait exactement ce que l'on désire. Il nous faut maintenant nous intéresser à la méthode _render_ un peu plus complexe : 
+Si vous analysez cette simple et puissante ligne de code, vous verrez qu'elle fait exactement ce que l'on désire. La seul partie difficile est le  **this.model**. Pour la comprendre, il faut savoir qu'à la construction d'une _view_
+
+Il nous faut maintenant nous intéresser à la méthode _render_ un peu plus complexe : 
 ```js
 render() {
   let  dom = $(tmpl(this.model.toJSON()));
@@ -214,11 +216,11 @@ render() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDg4MTUwNDIsLTE0NjMxNTAyMDEsOD
-MzNDI4Mzk2LDY1NTQ5NjMwMywxOTcxMTgyNTA0LDI5MDQxMjk0
-MCwxNDEwNjMxNjA2LC0xNzUyMTMzODk4LC0xODY4NzkwMDQ2LC
-0yOTE5MTMsNjg5NDg5MTcsMjM0NDAzOTg3LDY2MDAzMzI3MSwx
-OTEyNTEwNTQyLC0xMjIzNjYwNzQzLC0xNDUzODExNTksNzg3NT
-cxOTQxLC0xMjg3Mjc2Mjc5LC01MjE1ODYwNSwyMDkzMzIzMjI1
-XX0=
+eyJoaXN0b3J5IjpbOTgwMzY2OTEwLC0xNDYzMTUwMjAxLDgzMz
+QyODM5Niw2NTU0OTYzMDMsMTk3MTE4MjUwNCwyOTA0MTI5NDAs
+MTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0NiwtMj
+kxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNzEsMTkx
+MjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4NzU3MT
+k0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMzIyNV19
+
 -->
