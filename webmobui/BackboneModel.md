@@ -132,13 +132,17 @@ model(attrs, options) {
   return new Course(attrs, options);
 }
 ```
-_Backbone.js_ utilisera alors automatiquement cette méthode pour créer les entités de la collection avec le bon _Model_.
+_Backbone.js_ utilisera alors automatiquement cette méthode pour créer les entités de la collection avec le bon _Model_. 
+
+#### _Collections_: tri
+
+Il est rare que les collections ne soient pas triée par un critère quelconque. _Backbone.js_ offre alors un mani
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwMjQzNTE5LDE5NzExODI1MDQsMjkwND
-EyOTQwLDE0MTA2MzE2MDYsLTE3NTIxMzM4OTgsLTE4Njg3OTAw
-NDYsLTI5MTkxMyw2ODk0ODkxNywyMzQ0MDM5ODcsNjYwMDMzMj
-cxLDE5MTI1MTA1NDIsLTEyMjM2NjA3NDMsLTE0NTM4MTE1OSw3
-ODc1NzE5NDEsLTEyODcyNzYyNzksLTUyMTU4NjA1LDIwOTMzMj
-MyMjVdfQ==
+eyJoaXN0b3J5IjpbODUxNjY0NDgsMTk3MTE4MjUwNCwyOTA0MT
+I5NDAsMTQxMDYzMTYwNiwtMTc1MjEzMzg5OCwtMTg2ODc5MDA0
+NiwtMjkxOTEzLDY4OTQ4OTE3LDIzNDQwMzk4Nyw2NjAwMzMyNz
+EsMTkxMjUxMDU0MiwtMTIyMzY2MDc0MywtMTQ1MzgxMTU5LDc4
+NzU3MTk0MSwtMTI4NzI3NjI3OSwtNTIxNTg2MDUsMjA5MzMyMz
+IyNV19
 -->
