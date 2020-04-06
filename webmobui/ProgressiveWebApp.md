@@ -164,27 +164,11 @@ Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver
       "src": "favicon-32x32.png",
       "type": "image/png",
       "sizes": "32x32"
-    }, {
-      "src": "favicon-76x76.png",
-      "type": "image/png",
-      "sizes": "76x76"
-    }, {
-      "src": "favicon-144x144.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    }, {
-      "src": "favicon-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    }, {
-      "src": "favicon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ]
 }
 ```
-Comme vous le voyez, l'icône de l’application doit être définie en plusieurs tailles afin d'être utilisée efficacement par les smartphones selon le besoin. Pour votre PWA, vous pouvez utiliser les icônes disponibles [ici](https://chabloz.eu/files/favicon.zip) si vous le souhaiter.
+Comme vous le voyez, l'icône de l’application doit être définie dans le manifest. Pour votre PWA, vous pouvez utiliser l'icône disponibles [ici](https://chabloz.eu/horaires/favicon-32x32.png) si vous le souhaiter.
 
 Pour que l'application soit installable correctement il vous faudra respecter au minimum les contraintes suivantes: 
 
@@ -207,11 +191,11 @@ Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 
 Finalement, en mode *offline*, essayez de désactiver les clics sur les liens des *favoris* puisqu'ils ne mèneront nulle part.   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTY3NjI0NSwtNzkwODAzODI1LC05Mz
-QwNzQ4MDQsLTU0NzYwNjU0OCwtNzIwMDgyMDQ3LDc5Nzg2MzY3
-OCwtMTk3OTExOTYwMSwtMjA1MjE1NDkxOCw4MjQ3NTQxMzUsLT
-E2NjA0MzQ2NDQsMjc0NDQyNjIwLC0xNDg4NzU0MDY2LDc1Mzg1
-NTE3MCwxODE0ODkxMTIwLDE2MjQ5NTE5NzIsLTE3ODk1MDcxMD
-csLTIwOTM5MDMxNjcsMTYwMzg3MTY2MSw4NzExMDA3ODUsLTEz
-MzA0MDM4MzhdfQ==
+eyJoaXN0b3J5IjpbLTkzNTk5MDM2NCwtNDc1Njc2MjQ1LC03OT
+A4MDM4MjUsLTkzNDA3NDgwNCwtNTQ3NjA2NTQ4LC03MjAwODIw
+NDcsNzk3ODYzNjc4LC0xOTc5MTE5NjAxLC0yMDUyMTU0OTE4LD
+gyNDc1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3
+NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1MTk3Mi
+wtMTc4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcxNjYxLDg3
+MTEwMDc4NV19
 -->
