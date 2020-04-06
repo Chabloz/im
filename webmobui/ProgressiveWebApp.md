@@ -168,7 +168,7 @@ Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver
   ]
 }
 ```
-Comme vous le voyez, l'icône de l’application doit être définie dans le manifest. Pour votre PWA, vous pouvez utiliser l'icône disponibles [ici](https://chabloz.eu/horaires/favicon-32x32.png) si vous le souhaiter. Idéalement, il faudrait fournir l'icône en plusieurs tailles (pa 
+Comme vous le voyez, l'icône de l’application doit être définie dans le manifest. Pour votre PWA, vous pouvez utiliser l'icône disponibles [ici](https://chabloz.eu/horaires/favicon-32x32.png) si vous le souhaiter. Idéalement, il faudrait fournir l'icône en plusieurs tailles (en 32x32, 76x76, 144x144, 192x192 et 512x512) afin d'obtenir une icône  avec la bonne résolution si la PWA est installée.
 
 Pour que l'application soit installable correctement il vous faudra respecter au minimum les contraintes suivantes: 
 
@@ -191,11 +191,11 @@ Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 
 Finalement, en mode *offline*, essayez de désactiver les clics sur les liens des *favoris* puisqu'ils ne mèneront nulle part.   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODc4OTQ3OCwtNDc1Njc2MjQ1LC03OT
-A4MDM4MjUsLTkzNDA3NDgwNCwtNTQ3NjA2NTQ4LC03MjAwODIw
-NDcsNzk3ODYzNjc4LC0xOTc5MTE5NjAxLC0yMDUyMTU0OTE4LD
-gyNDc1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3
-NTQwNjYsNzUzODU1MTcwLDE4MTQ4OTExMjAsMTYyNDk1MTk3Mi
-wtMTc4OTUwNzEwNywtMjA5MzkwMzE2NywxNjAzODcxNjYxLDg3
-MTEwMDc4NV19
+eyJoaXN0b3J5IjpbMzE4MjIwMDE1LC00NzU2NzYyNDUsLTc5MD
+gwMzgyNSwtOTM0MDc0ODA0LC01NDc2MDY1NDgsLTcyMDA4MjA0
+Nyw3OTc4NjM2NzgsLTE5NzkxMTk2MDEsLTIwNTIxNTQ5MTgsOD
+I0NzU0MTM1LC0xNjYwNDM0NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1
+NDA2Niw3NTM4NTUxNzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC
+0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcx
+MTAwNzg1XX0=
 -->
