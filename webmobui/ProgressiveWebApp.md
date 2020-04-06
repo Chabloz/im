@@ -149,7 +149,7 @@ Afin de rendre la PWA "installable" comme une application smartphone, il reste �
 <link rel="manifest" href="manifest.webmanifest">
 ```
 Son contenu doit être du JSON. Voilà un exemple de données devant s'y trouver. Vous pouvez consulter la [documentation](https://developer.mozilla.org/en-US/docs/Web/Manifest)  pour acvoir plus de détail sur leur signification:
-```js
+```json
 {
   "name": "IM PWA",
   "short_name": "IM PWA",
@@ -191,7 +191,7 @@ Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 
 Finalement, en mode *offline*, essayez de désactiver les clics sur les liens des *favoris* puisqu'ils ne mèneront nulle part.   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjAzMzI3NSwtNDc1Njc2MjQ1LC03OT
+eyJoaXN0b3J5IjpbLTkzNTk5MDM2NCwtNDc1Njc2MjQ1LC03OT
 A4MDM4MjUsLTkzNDA3NDgwNCwtNTQ3NjA2NTQ4LC03MjAwODIw
 NDcsNzk3ODYzNjc4LC0xOTc5MTE5NjAxLC0yMDUyMTU0OTE4LD
 gyNDc1NDEzNSwtMTY2MDQzNDY0NCwyNzQ0NDI2MjAsLTE0ODg3
