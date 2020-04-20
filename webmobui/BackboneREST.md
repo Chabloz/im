@@ -51,7 +51,7 @@ setInterval(() => {
 ```
 ### Quelques questions 
 
-- Comment implémenter un système de poubelle pour la récupération (ou l'archivage) des tâches supprimées ? 
+- Comment implémenter un système de *poubelle* pour la récupération (ou l'archivage) des tâches supprimées ? 
 - Pourquoi le mode de synchronisation n'est-il pas adéquat ? 
 - Que faudrait-il améliorer pour gérer correctement l'édition d'une même tâche par plusieurs utilisateurs simultanément ?
 - Si l'on voudrait une liste de tâches différentes pour chaque projet, que pourrions-nous mettre en place ? 
@@ -60,7 +60,7 @@ setInterval(() => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTI2OTY1MCwtNjg5OTU2MzQsLTE2Mz
-c1NTU4ODcsMTUyODQ5NTEwNCwxMTk2MjU5NjA3LC03MTMxOTI4
-NzBdfQ==
+eyJoaXN0b3J5IjpbLTEyMzQ4NzY0NTgsLTY4OTk1NjM0LC0xNj
+M3NTU1ODg3LDE1Mjg0OTUxMDQsMTE5NjI1OTYwNywtNzEzMTky
+ODcwXX0=
 -->
