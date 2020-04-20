@@ -33,7 +33,7 @@ En utilisant l'API d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://ch
 
 Vous aurez sans doute besoins d'au moins trois _Views_,  une pour le formulaire d’ajout, une autre pour la liste des tâches, et une pour les tâches.
 
-Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en microseconde. Voilà donc une aide pour la transformation d'un champ de type  *date*  en *timestamp* au format *Unix*.
+Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en microseconde. Voilà donc une aide pour la transformation d'un champ de type  *date*  en *Unix timestamp Unix*.
 
 ```js
 // Conversion d'un champ date en timestamp Unix (en seconde)
@@ -51,6 +51,6 @@ setInterval(() => {
 }, 10000);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MTMxODc4NiwxNTI4NDk1MTA0LDExOT
-YyNTk2MDcsLTcxMzE5Mjg3MF19
+eyJoaXN0b3J5IjpbLTEwNTc3MTgxMDksMTUyODQ5NTEwNCwxMT
+k2MjU5NjA3LC03MTMxOTI4NzBdfQ==
 -->
