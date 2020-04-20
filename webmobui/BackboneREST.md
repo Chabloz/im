@@ -49,7 +49,7 @@ setInterval(() => {
   tasks.fetch();
 }, 10000);
 ```
-### Réflexions
+### Quelques questions 
 
 - Comment implémenter un système de poubelle pour la récupération (ou l'archivage) des tâches supprimées ? 
 - Pourquoi le mode de synchronisation n'est-il pas adéquat ? 
@@ -60,7 +60,7 @@ setInterval(() => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDE2MzI4OSwtNjg5OTU2MzQsLTE2Mz
+eyJoaXN0b3J5IjpbLTkyNTI2OTY1MCwtNjg5OTU2MzQsLTE2Mz
 c1NTU4ODcsMTUyODQ5NTEwNCwxMTk2MjU5NjA3LC03MTMxOTI4
 NzBdfQ==
 -->
