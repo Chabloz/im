@@ -25,9 +25,9 @@ Un exemple de WebService suivant cette proposition d’API (avec une transmissio
 
 Backbone.js offre des méthodes pour réaliser la  [synchronisation](http://backbonejs.org/#Sync)  des  _Models_  avec le serveur. Et ceci aussi bien pour les modèles que pour les collections. La synchronisation offerte par défaut par le framework suit l’architecture REST avec une représentation en JSON des données. Si l’API du serveur respecte la même architecture, la seul chose à ajouter est l’url de base pour les accès REST grâce aux paramètres  [urlRoot](http://backbonejs.org/#Model-urlRoot)  pour les modèles, et  [url](http://backbonejs.org/#Collection-url)  pour les collections. (Si les modèles font partis d’une collection le paramètre urlRoot est optionnel).
 
-## Expertise en *todo list* !
+## Outils collaboratif de gestion de tâches
 
-En utilisant le WS d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/)), réalisez une application de gestions d’une  _todo list_  avec deux fonctionnalités simples: l’ajout et la suppression de tâches.
+En utilisant l'API d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/)), réalisez un embryon d'application de gestions de tâches. LE
 
 Vous aurez sans doute trois _views_,  une pour le formulaire d’ajout, une autre pour la liste des tâches, et finalement une pour les tâches.
 
@@ -49,5 +49,6 @@ setInterval(() => {
 }, 10000);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NjI1OTYwNywtNzEzMTkyODcwXX0=
+eyJoaXN0b3J5IjpbODg5NDExOTg1LDExOTYyNTk2MDcsLTcxMz
+E5Mjg3MF19
 -->
