@@ -27,7 +27,7 @@ Backbone.js offre des méthodes pour réaliser la  [synchronisation](http://back
 
 ## Outils collaboratif de gestion de tâches
 
-En utilisant l'API d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/)), réalisez un embryon d'application de gestions de tâches. Le système devra permettre le travail collaboratif (c.à.d. multi-utilisateurs) sur une liste de points à faire
+En utilisant l'API d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/)), réalisez un embryon d'application de gestions de tâches. Le système devra permettre le travail collaboratif (c.à.d. multi-utilisateurs) sur une liste de points à faire simplifiée. Chaque tâche possède un attribut obligatoire **task** indiquant la chose à faire et un attribut optionnel **time** indiquant 
 
 Vous aurez sans doute trois _views_,  une pour le formulaire d’ajout, une autre pour la liste des tâches, et finalement une pour les tâches.
 
@@ -49,6 +49,6 @@ setInterval(() => {
 }, 10000);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODQ5NTEwNCwxMTk2MjU5NjA3LC03MT
-MxOTI4NzBdfQ==
+eyJoaXN0b3J5IjpbLTQ1OTc1OTUxMCwxNTI4NDk1MTA0LDExOT
+YyNTk2MDcsLTcxMzE5Mjg3MF19
 -->
