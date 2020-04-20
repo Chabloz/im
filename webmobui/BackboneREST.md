@@ -19,7 +19,7 @@ DELETE  http://example.com/resources/id   Supprime la ressource
 
 Où l’élément  _id_  des URL est à remplacer par l’identifiant d’une des ressources de la collection. En plus de cette architecture de communication, un format pour l’échange des données doit être choisit (le plus souvent, XML ou JSON).
 
-Un exemple de WebService suivant cette proposition d’API (avec une transmission des données en JSON) se trouve ici:  [https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/). Il s'agit d'une api simple permettant l'accès à une collection de tâches dont les propriétés sont: **id** (l'identifiant technique), **task** (l’intitulé)  et **time** (un marqueur temporel au format [Unix timestamp](https://fr.wikipedia.org/wiki/Heure_Unix)). Afin de tester les fonctionnalités, vous pouvez utiliser l’application Web suivante: [Postwoman](https://postwoman.io/).
+Un exemple de WebService suivant cette proposition d’API (avec une transmission des données en JSON) se trouve ici:  [https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/). Il s'agit d'une api simple permettant l'accès à une collection de tâches dont les propriétés sont: **id** (l'identifiant technique), **task** (l’intitulé)  et **time** (un marqueur temporel au format [Unix timestamp](https://fr.wikipedia.org/wiki/Heure_Unix)). Afin de tester les fonctionnalités de l'api, vous pouvez utiliser l’application Web suivante: [Postwoman](https://postwoman.io/).
 
 ## Synchronisation via  _Backbone.js_
 
@@ -49,5 +49,5 @@ setInterval(() => {
 }, 10000);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0OTY5MjYxNywtNzEzMTkyODcwXX0=
+eyJoaXN0b3J5IjpbMTE5NjI1OTYwNywtNzEzMTkyODcwXX0=
 -->
