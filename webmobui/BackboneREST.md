@@ -42,7 +42,7 @@ Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en
  let time = Math.round(date.getTime() / 1000);
 ```
 
-
+Pour que les changements d'un utilisateur soient visibles chez les autres utilisateurs, il va vous falloir synchroniser le front-end avbec le back 
 Synchronisation de la collection avec le serveur toutes les 10 secondes:
 
 ```js
@@ -51,6 +51,6 @@ setInterval(() => {
 }, 10000);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjUyNTE4MCwxNTI4NDk1MTA0LDExOT
-YyNTk2MDcsLTcxMzE5Mjg3MF19
+eyJoaXN0b3J5IjpbMjEyMTc1OTYwLDE1Mjg0OTUxMDQsMTE5Nj
+I1OTYwNywtNzEzMTkyODcwXX0=
 -->
