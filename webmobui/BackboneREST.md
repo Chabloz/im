@@ -42,14 +42,18 @@ Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en
  let time = Math.round(date.getTime() / 1000);
 ```
 
-Pour que les changements d'un utilisateur soient visibles chez les autres utilisateurs, il va vous falloir synchroniser le **frontend** avec le **backend**. Pour une question de simplification, nous utiliserons un mode de synchronisation archaïque de la collection avec le serveur en effectuant toutes les 10 secondes un *fetch* de l’entièreté de la collection sur le **backend** :
+Pour que les changements d'un utilisateur soient visibles chez les autres utilisateurs, il va vous falloir synchroniser le **frontend** avec le **backend**. Pour une question de simplification, nous utiliserons un mode de synchronisation archaïque de la collection avec le serveur en effectuant un *fetch* de l’entièreté de la collection sur le **backend** toutes les ~10 secondes :
 
 ```js
 setInterval(() => {    
-    todoList.fetch(); // Changez todoList par le nom de votre collection
+  tasks.fetch();
 }, 10000);
 ```
+### Reflexion
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTI3MDk3NjIsMTUyODQ5NTEwNCwxMT
-k2MjU5NjA3LC03MTMxOTI4NzBdfQ==
+eyJoaXN0b3J5IjpbLTg5OTc3OTQ3NCwxNTI4NDk1MTA0LDExOT
+YyNTk2MDcsLTcxMzE5Mjg3MF19
 -->
