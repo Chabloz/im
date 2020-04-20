@@ -52,10 +52,11 @@ setInterval(() => {
 ### Reflexion
 
 - Pourquoi le mode de synchronisation n'est-il pas adéquat ? 
-- Que faudrait-il améliorer pour gérer correctement l'édition d'une même tâche par plusieurs utilisateur en simultané ?
-- 
+- Que faudrait-il améliorer pour gérer correctement l'édition d'une même tâche par plusieurs utilisateurs en simultané ?
+- Si l'ont voudrait une liste de tâches différentes pour chaque projet, que pourrions-nous mettre en place ?
+- Comment pourrio
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjIzNjA0MTIsMTUyODQ5NTEwNCwxMT
+eyJoaXN0b3J5IjpbLTEwOTk2NTM1NDYsMTUyODQ5NTEwNCwxMT
 k2MjU5NjA3LC03MTMxOTI4NzBdfQ==
 -->
