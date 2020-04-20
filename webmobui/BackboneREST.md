@@ -33,7 +33,7 @@ En utilisant l'API d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://ch
 
 Vous aurez sans doute besoins d'au moins trois _Views_,  une pour le formulaire d’ajout, une autre pour la liste des tâches, et une pour les tâches.
 
-Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en microseconde. Voilà donc une aide pour la transformation d'un champ de type  *date*  en *Unix timestamp Unix*.
+Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en microseconde. Voilà donc une aide pour la transformation d'un champ de type  *date*  en *Unix time*:
 
 ```js
 // Conversion d'un champ date en timestamp Unix (en seconde)
@@ -41,7 +41,7 @@ Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en
  let date = new Date(dateInput);
  let time = Math.round(date.getTime() / 1000);
 ```
-Remarque: comme tout le monde travail avec la même collection coté serveur, l’ajout et la suppression de tâche impactera les listes de tâche de tous les étudiants. Vous pouvez utiliser le code ci-dessous pour maintenir votre collection à jour avec le serveur. Cela vous permettra de voir apparaître les ajouts et suppressions de tâches des autres étudiants de manière dynamique.
+
 
 Synchronisation de la collection avec le serveur toutes les 10 secondes:
 
@@ -51,6 +51,6 @@ setInterval(() => {
 }, 10000);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTc3MTgxMDksMTUyODQ5NTEwNCwxMT
-k2MjU5NjA3LC03MTMxOTI4NzBdfQ==
+eyJoaXN0b3J5IjpbMTgxNjUyNTE4MCwxNTI4NDk1MTA0LDExOT
+YyNTk2MDcsLTcxMzE5Mjg3MF19
 -->
