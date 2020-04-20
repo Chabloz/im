@@ -23,7 +23,7 @@ Un exemple de WebService suivant cette proposition d’API (avec une transmissio
 
 ## Synchronisation via  _Backbone.js_
 
-Backbone.js offre des méthodes pour réaliser la  [synchronisation](http://backbonejs.org/#Sync)  des  _Models_  avec le serveur. Et ceci aussi bien pour les modèles que pour les collections. La synchronisation offerte par défaut par le framework suit l’architecture REST avec une représentation en JSON des données. Si l’API du serveur respecte la même architecture, la seul chose à ajouter est l’url de base pour les accès REST grâce aux paramètres  [urlRoot](http://backbonejs.org/#Model-urlRoot)  pour les modèles, et  [url](http://backbonejs.org/#Collection-url)  pour les collections. (Si les modèles font partis d’une collection le paramètre urlRoot est optionnel).
+Backbone.js offre des méthodes pour réaliser la  [synchronisation](http://backbonejs.org/#Sync)  des  _Models_  avec le serveur. Et ceci aussi bien pour les modèles que pour les collections. La synchronisation offerte par défaut par le framework suit l’architecture REST avec une représentation en JSON des données. Si l’API du serveur respecte la même architecture, la seul chose à ajouter est l’url de base pour les accès REST grâce aux paramètres  [urlRoot](http://backbonejs.org/#Model-urlRoot)  pour les modèles, et  [url](http://backbonejs.org/#Collection-url)  pour les collections. Si les modèles font partis d’une collection le paramètre urlRoot est optionnel.
 
 ## Outils collaboratif de gestion de tâches
 
@@ -59,6 +59,6 @@ setInterval(() => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNDY3NDk3NywtMTYzNzU1NTg4NywxNT
-I4NDk1MTA0LDExOTYyNTk2MDcsLTcxMzE5Mjg3MF19
+eyJoaXN0b3J5IjpbLTY4OTk1NjM0LC0xNjM3NTU1ODg3LDE1Mj
+g0OTUxMDQsMTE5NjI1OTYwNywtNzEzMTkyODcwXX0=
 -->
