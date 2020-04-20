@@ -27,9 +27,11 @@ Backbone.js offre des méthodes pour réaliser la  [synchronisation](http://back
 
 ## Outils collaboratif de gestion de tâches
 
-En utilisant l'API d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/)), réalisez un embryon d'application de gestions de tâches. Le système devra permettre le travail collaboratif (c.à.d. multi-utilisateurs) sur une liste de points à faire simplifiée. Chaque tâche possède un attribut obligatoire **task** indiquant la chose à faire et un attribut optionnel **time** indiquant la date butoir. L'API attribuera automatiquement un identifiant technique via un troisième attribut nommé **id**. Vous devez offrir aux utilisateurs les fonct
+En utilisant l'API d’exemple ([https://chabloz.eu/ws/api/v1/tasks/](https://chabloz.eu/ws/api/v1/tasks/)), réalisez un embryon d'application de gestions de tâches. Le système devra permettre le travail collaboratif (c.à.d. multi-utilisateurs) sur une liste de points à faire simplifiée. Chaque tâche possède un attribut obligatoire **task** indiquant la chose à faire et un attribut optionnel **time** indiquant la date butoir. L'API attribuera automatiquement un identifiant technique via un troisième attribut nommé **id**. Vous devez offrir aux utilisateurs les fonctionnalités de création, de modification et de suppression de tâches.
 
-Vous aurez sans doute trois _views_,  une pour le formulaire d’ajout, une autre pour la liste des tâches, et finalement une pour les tâches.
+### Indications
+
+Vous aurez sans doute besoins d'au moins trois _Views_,  une pour le formulaire d’ajout, une autre pour la liste des tâches, et une pour les tâches.
 
 Pour l’ajout d’une tâche, votre *timestamp* doit être en seconde et non en microseconde. Voilà donc une aide pour la transformation d'un champ de type  *date*  en *timestamp* au format *Unix*.
 
@@ -49,6 +51,6 @@ setInterval(() => {
 }, 10000);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Nzc5MDEsMTUyODQ5NTEwNCwxMTk2Mj
-U5NjA3LC03MTMxOTI4NzBdfQ==
+eyJoaXN0b3J5IjpbLTc5MTMxODc4NiwxNTI4NDk1MTA0LDExOT
+YyNTk2MDcsLTcxMzE5Mjg3MF19
 -->
