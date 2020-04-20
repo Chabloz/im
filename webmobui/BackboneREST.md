@@ -51,9 +51,11 @@ setInterval(() => {
 ```
 ### Reflexion
 
-- Pourquoi le mode de synchronisation n'est pas adéquat ? Que faudrait-il faire pour que le travai
+- Pourquoi le mode de synchronisation n'est-il pas adéquat ? 
+- Que faudrait-il améliorer pour gérer correctement l'édition d'une même tâche par plusieurs utilisateur en simultané ?
+- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ4NTc2NjMzLDE1Mjg0OTUxMDQsMTE5Nj
-I1OTYwNywtNzEzMTkyODcwXX0=
+eyJoaXN0b3J5IjpbLTE4NjIzNjA0MTIsMTUyODQ5NTEwNCwxMT
+k2MjU5NjA3LC03MTMxOTI4NzBdfQ==
 -->
