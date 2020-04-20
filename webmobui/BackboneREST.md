@@ -53,12 +53,12 @@ setInterval(() => {
 
 - Pourquoi le mode de synchronisation n'est-il pas adéquat ? 
 - Que faudrait-il améliorer pour gérer correctement l'édition d'une même tâche par plusieurs utilisateurs simultanément ?
-- Si l'on voudrait une liste de tâches différentes pour chaque projet, que pourrions-nous mettre en place ? Et quel serait l'api né
+- Si l'on voudrait une liste de tâches différentes pour chaque projet, que pourrions-nous mettre en place ? 
 - Comment pourrions-nous rendre l'API accessible uniquement à des utilisateurs authentifiés ?
 - ...
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNzM5ODEzLC0xNjM3NTU1ODg3LDE1Mj
-g0OTUxMDQsMTE5NjI1OTYwNywtNzEzMTkyODcwXX0=
+eyJoaXN0b3J5IjpbMjExNDY3NDk3NywtMTYzNzU1NTg4NywxNT
+I4NDk1MTA0LDExOTYyNTk2MDcsLTcxMzE5Mjg3MF19
 -->
