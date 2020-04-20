@@ -51,9 +51,9 @@ setInterval(() => {
 ```
 ### Reflexion
 
-
+- Pourquoi le mode de synchronisation n'est pas adéquat ? Que faudrait-il faire pour que le travai
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTc3OTQ3NCwxNTI4NDk1MTA0LDExOT
-YyNTk2MDcsLTcxMzE5Mjg3MF19
+eyJoaXN0b3J5IjpbNTQ4NTc2NjMzLDE1Mjg0OTUxMDQsMTE5Nj
+I1OTYwNywtNzEzMTkyODcwXX0=
 -->
