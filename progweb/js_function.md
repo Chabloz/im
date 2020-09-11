@@ -8,7 +8,7 @@ Implémentez les fonctionnalités  suivantes sous la forme de fonctions JavaScri
 
 **2** \* Retourne un nombre entier pseudo-aléatoire entre une borne inférieure et une borne supérieure (bornes entières et comprises dans l'intervalle).   
 
-**3** \*\* Indique si un nombre entier est un [nombre premier](https://fr.wikipedia.org/wiki/Nombre_premier) ou non. 
+**3** \*\* Indique si un nombre entier est un [nombre premier](https://fr.wikipedia.org/wiki/Nombre_premier) ou non. Testez votre fonction avec (au moins) les valeurs suivantes: 0, 1, 2, 11, 26, 87178291197, 87178291199.
 
 **4** \*\*  Ecrit dans la console, ligne après ligne, toutes les données fournies en paramètre. Exemple d'appel si votre fonction se nomme **cl**:
   ```js
