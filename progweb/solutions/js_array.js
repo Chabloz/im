@@ -95,4 +95,6 @@ let clones = circles.map(c => {
   clone.x += 10;
   return clone;
 });
+// version sur une ligne:
+//let clones = circles.map(c => ({x: c.x + 10, y: c.y, r: c.r, color: c.color}));
 console.log(clones);
