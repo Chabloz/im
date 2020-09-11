@@ -47,7 +47,7 @@ const times = ({times = 2, fct, value = times}) => {
     return value;
 }
 
-// 11*** Transformez votre fonction précédente en une fonction d'ordre supérieur afin de pouvoir faire des appels comme les suivants:
+// 11*** Transformez votre fonction précédente en une fonction d'ordre supérieur
 const ho_times = ({times = 2, fct}) => value => {
     for (let i = 0; i < times; i++) {
         value = fct(value);
