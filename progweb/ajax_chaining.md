@@ -16,9 +16,7 @@ A partir du [code HTML donné](resources/jqueryAjaxChaining.html) , ajoutez les 
  */
 const loadUrls = urls => {  
   let results = [];
-  urls.forEach(url => {
-    results.push($.ajax({url}));        
-  })    
+  urls.forEach(url => results.push($.ajax({url}));
   return Promise.all(results);  
 }
 ```
