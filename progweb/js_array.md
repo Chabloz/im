@@ -1,6 +1,6 @@
 # Exercice JS - Tableaux
 
-Les exercices suivants non aucun sens algorithmique. Ils sont proposés afin de vous familiariser avec la syntaxe JavaScript et le paradigme de [programmation fonctionnelle](https://fr.wikipedia.org/wiki/Programmation_fonctionnelle). 
+Les exercices suivants sont proposés afin de vous familiariser avec la syntaxe JavaScript et le paradigme de [programmation fonctionnelle](https://fr.wikipedia.org/wiki/Programmation_fonctionnelle). (Aidez vous des ressources en bas de page !)
 
 ## Tableaux de nombres
 A partir du tableau de nombres suivant:
