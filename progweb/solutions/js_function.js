@@ -1,20 +1,29 @@
 // 1* Retourne la plus grande valeur parmi les trois nombres fournis en paramètre
 const max = (a, b, c) => a > b && b > c ? a : (b > a && b > c) ? b : c;
+// Mais il vaut mieux utiliser Math.max !
 
 // 2* Retourne un nombre entier pseudo-aléatoire entre une borne inférieure et une borne supérieure (bornes entières et comprises dans l'intervalle).
 const alea = (min, max) => Math.floor(Math.random() * (max - min) + 1) + min;
 
-// 3** Indique si un nombre entier est un nombre premier ou non.
-const isPrime = n => {
+// 3** Indique si un nombre entier est un nombre premier ou non. Testez votre fonction avec au moins les valeurs suivantes: 0, 1, 2, 11, 26, 87178291197, 87178291199.
+const isPrime = n => {    
     if (isNaN(n) || !Number.isInteger(n)) throw 'Not an integer';
     if (n > Number.MAX_SAFE_INTEGER) throw 'Number too big';
     if (n <= 1) return false;
     if (n == 2) return true;
     if (n % 2 == 0) return false;
-    for (let div = 3; div * div <= n; div += 2) {
-        if (n % div == 0) return false;        
+    if (n == 3) return true;
+    if (n % 3 == 0) return false;    
+    // On pourrait continuer avec le crible d'Ératosthène pour les multiple de 5, 7, 11, ...
+    // mais cela rendrait la programmation de la boucle suivante impossible
+    // et il faudrait donc repenser la totalité de l'algorithme !
+    let step = 2;
+    let div = 5;
+    while (div * div <= n && n % div != 0) {
+        div += step;
+        step = (step + 1) % 4 + 1;        
     }
-    return true;
+    return div * div > n;
 }
 
 // 4** Ecrit dans la console, ligne après ligne, toutes les données fournies en paramètre.
