@@ -59,10 +59,6 @@ console.log(concat);
 console.log("Retourner le mot qui vient en premier selon l'ordre alphabétique");
 let firstByAlpha = [...strings].sort((w1, w2) => w1.localeCompare(w2)).shift();
 console.log(firstByAlpha);
-console.log("Retourner tous les mots contenant au moins deux e");
-let nbOccLetter = (word, letter) => `${word}${letter}`.match(new RegExp(letter, "gi")).length - 1;
-let moreThanOneE = strings.filter(word => nbOccLetter(word, "e") > 1);  
-console.log(moreThanOneE);
 console.log("Indiquer si les chaines du tableau forment un palindrome (si elles sont lues dans l'ordre des indices du tableau).");
 let isPalindrom = str => {
   let upperCase = str.toUpperCase();  
