@@ -22,7 +22,7 @@ const loadUrls = urls => {
 ```
 ## SW movies
 
-Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swapi.co/)  (api Star Wars). Vous devez y récupérer la liste des films au format JSON via l'url suivante: https://swapi.co/api/films/. Si l'api n'est pas disponible (ou trop lente), vous pouvez utiliser le *miroir* disponible à l'url suivante: https://chabloz.eu/sw/films . Puis, en utilisant à chaque fois une promesse différente, réalisez les traitements dans l'ordre suivant:
+Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swapi.dev/)  (api Star Wars). Vous devez y récupérer la liste des films au format JSON via l'url suivante: https://swapi.dev/api/films/. Si l'api n'est pas disponible (ou trop lente), vous pouvez utiliser le *miroir* disponible à l'url suivante: https://chabloz.eu/sw/films . Puis, en utilisant à chaque fois une promesse différente, réalisez les traitements dans l'ordre suivant:
 
 1. Ne prendre que la partie *results* des données (pour que les promesses suivantes travaillent sur un tableau ne contenant que les données sur les films).
  2. Triez le tableau des films pour qu'il soit dans l'ordre des épisodes (l'épisode 1 en premier, ...)
