@@ -4,7 +4,7 @@
 
 **Objectifs**:  Récupérer des données d'un service REST. Charger plusieurs ressources en parallèles (grâce aux *promises*). 
 
-A partir du [code HTML donné](resources/jqueryAjaxChaining.html) , ajoutez les balises "script" pour jQuery et [bootstrap](https://getbootstrap.com/), la css pour *bootstrap* et finalement un fichier javascript pour votre code.  Ajoutez la fonction suivante dans votre fichier de code:
+A partir du [code HTML donné](resources/jqueryAjaxChaining.html) , ajoutez jQuery, la css de [bootstrap](https://getbootstrap.com/), et finalement un fichier javascript pour votre code.  Ajoutez ensuite la fonction suivante dans votre fichier de code:
 ```js
 /** 
  * Effectue plusieurs requêtes HTTP GET afin d'aller charger les URLs fournies
