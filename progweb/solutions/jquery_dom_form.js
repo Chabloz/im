@@ -1,4 +1,4 @@
-// pour que cei fonctionne, il vous faut rajouter la classe .tmpl-author dans le HTML du TP au bon endroit !
+// pour que ceci fonctionne, il vous faut rajouter la classe .tmpl-author dans le HTML du TP au bon endroit !
 const TMPL_AUTHOR = $(".tmpl-author").clone();
 
 $("#addAuthor").on("click", event => {  
