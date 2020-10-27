@@ -1,4 +1,4 @@
-const API = "https://swapi.co/api/";
+const API = "https://swapi.dev/api/";
 const TMPL_MOVIE = $(".tmpl-movie").clone().removeClass("tmpl");
 const TMPL_PLANET = $(".tmpl-planet").clone().removeClass("tmpl");
 
