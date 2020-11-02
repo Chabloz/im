@@ -140,7 +140,7 @@ $.ajaxSetup({
 /******************************************************************************
  * Templating d'un message
  ******************************************************************************/
-let tmpl_message = message => {
+const tmpl_message = message => {
   let tmpl = TMPL_MSG.clone();
   $(".username", tmpl).text(message.user.username);
   $(".message", tmpl).text(message.message);
@@ -149,7 +149,7 @@ let tmpl_message = message => {
 /*******************************************************************************
  * Templating d'un utilisateur "online"
  ******************************************************************************/
-let tmpl_userOnline = user => {
+const tmpl_userOnline = user => {
   let tmpl = TMPL_USER.clone();
   $(".usernameOnline", tmpl).text(user.username);
   return tmpl;
@@ -157,7 +157,7 @@ let tmpl_userOnline = user => {
 /******************************************************************************
  * Récupération des messages
  ******************************************************************************/
-let getMsg = async () => {
+const getMsg = async () => {
   let messages = await $.ajax({url: `${WS}msg/get`});
   let templates = messages.map(tmpl_message);
   $("#messages").append(templates);
@@ -166,7 +166,7 @@ let getMsg = async () => {
 /*******************************************************************************
  * Récupération des utilisateurs "online"
  ******************************************************************************/
-let getOnline = async () => {
+const getOnline = async () => {
   let users = await $.ajax({url: `${WS}user/online`});
   let templates = users.map(tmpl_userOnline);
   $("#usersList").empty().append(templates);
@@ -176,13 +176,13 @@ let getOnline = async () => {
  ******************************************************************************/
 $("#form_login").on("submit", async event => {
   event.preventDefault();
-  let user = $("#nickname").val();
+  const user = $("#nickname").val();
   $(".warning").hide();
   if (!user.match(/^[a-z]+$/i)) {
     $("#warnFormat").show();
     return;
   }
-  let data = await $.ajax({url: `${WS}user/login`, data: {user}});
+  const data = await $.ajax({url: `${WS}user/login`, data: {user}});
   if (data.status !== "success") {
     $("#warnInUse").show();
     return;
