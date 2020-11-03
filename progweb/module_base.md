@@ -2,7 +2,7 @@
 
 ## Mise en place
 
-Pour architecturer une application, il est possible d'utiliser de multiples paradigmes ainsi que divers outils de conception. Un de ces outils est la programmation modulaire. Depuis ECMAScript 2015, JavaScript possède quelques outils syntaxiques pour la conception et l'utilisation de modules. Malheureusement, ces outils ne sont pas supporté par les browsers actuels. Comme certaines autres fonctionnalités des dernières versions d'ECMAScript ne le sont pas non-plus, nous allons mettre en place des outils permettant de pallier à cette problèmatique.
+Pour architecturer une application, il est possible d'utiliser de multiples paradigmes ainsi que divers outils de conception. Un de ces outils est la programmation modulaire. Depuis ECMAScript 2015, JavaScript possède quelques outils syntaxiques pour la conception et l'utilisation de modules. Nous allons mettre en place des outils permettant pour une arichtecture modulaire de notre code.
 
 **NPM**
 
