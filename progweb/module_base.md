@@ -47,6 +47,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   watch: false,
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {
