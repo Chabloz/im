@@ -6,7 +6,7 @@ Pour architecturer une application, il est possible d'utiliser de multiples para
 
 **NPM**
 
-Npm (node module manager), est un des gestionnaires de module le plus utilisé pour JS. Il va entre autre nous servir à installer des modules, les mettre à jour et gérer leurs dépendances. Nous l'avons déjà installé en début de cours. 
+Npm (node packets manager), est un des gestionnaires de module le plus utilisé pour JS. Il va entre autre nous servir à installer des modules, les mettre à jour et gérer leurs dépendances. Nous l'avons déjà installé en début de cours. 
 
 **Webpack**
 
