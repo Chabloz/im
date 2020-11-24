@@ -150,10 +150,3 @@ De la même manière, vous pouvez donner le contrôle à l'utilisateur sur diff�
 ## Optimisation du dessin de l'automate
 
 La simplicité de l'automate cellulaire va nous permettre d'optimiser l'étape de sa mise à jour sur le *canvas*. En effet, la seule étape qui provoque un changement de l'automate est l'application des règles **B/S**. Ainsi, il est possible de ne dessiner que les cellules où un changement s'est produit. Modifiez donc votre méthode d'application des règles pour qu'elle accepte un troisième paramètre *ctx* pour le contexte graphique. Mettez sa valeur par défaut à *null*, cela permettra de continuer à utiliser cette méthode sans forcément provoquer un effet sur le dessin. Par contre, si *ctx* est fournit et que la cellule a changé d'état, faites que ce changement soit répercuté sur le *canvas* en utilisant la méthode [fillRect](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/fillRect) . Modifiez votre boucle d'animation en conséquence et observer l'effet sur les *fps* ! 
- 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODE5ODk0MSw3MTM1NTYxMTcsLTE5Mz
-Q2MTg3NTcsLTU3MTczMjUyMywtMTQxMTI0Nzc4OSw3NzUxOTAx
-NF19
--->
