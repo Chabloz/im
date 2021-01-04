@@ -85,7 +85,7 @@ Ainsi, votre flèche aura une taille équivalente à la moitié  de la taille d'
 Pour ce qui est de l'angle de rotation, la méthode **Math.atan2** permet de facilement connaitre l'angle entre deux points grâce à la formule suivante :
 
 ```js
-let angle = Math.atan2(destCol - col, destRow - row);
+let angle = Math.atan2(destRow - row, destCol - col);
 ```
 Pour appliquer facilement cette rotation, effectuez une translation du *canvas* sur le centre de la case avec la méthode  [translate](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/translate), puis appliquez la rotation avec la méthode [rotate](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/rotate).  Affichez votre caractère grâce à la méthode [fillText](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/fillText). Enfin réinitialisez les modifications de translation et rotation grâce à la méthode [setTransform](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/setTransform). Pour plus de détail sur ces techniques, n’hésitez pas à consulter ce [tutoriel](https://developer.mozilla.org/fr/docs/Tutoriel_canvas/Transformations).
 
