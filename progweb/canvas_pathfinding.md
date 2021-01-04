@@ -66,7 +66,7 @@ flowFieldTo({row, col, allowDiag = true}) {
       }
     });
   }
-  this.flowMap[row][col] = false; // le point d'arrivée n'a pas de destination suivante
+  this.flowMap[row][col] = false; // the destination is the final step
 }
 ```
 
