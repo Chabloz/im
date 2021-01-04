@@ -76,7 +76,7 @@ Comme vous pouvez le remarquer, une seule méthode n'est pas fournie : *getWalka
 
 Afin de visualiser plus clairement le résultat de l'algorithme précédent, nous allons ajouter une méthode de dessin du flot. Une flèche de direction dans chaque case, pointant dans la direction de la case suivante (désignée par *flowMap*) devrait être suffisante pour une bonne représentation. Nous pourrions bien sûr dessiner cette flèche, mais pour apprendre de nouvelles fonctionnalités de dessin sur le *canvas*, nous allons le faire avec l'affichage d'un caractère.  Notre page étant en UTF-8,  il suffit donc de choisir l'un des nombreux caractères de flèche disponible dans ce jeu de caractère. Le caractère '→' devrait faire l'affaire. L'astuce est de faire pivoter la flèche d'un certain angle pour le faire pointer dans la bonne direction. Il faut aussi penser à la taille du caractère et à son centrage dans la cellule.  Pour ce qui est de la taille et du centrage, utilisez les méthodes suivante sur votre contexte de *canvas*:
 ```js
-ctx.font = `${tileSize / 2}px serif`; // Où tileSize est la largeur (et aussi hauteur) en [px] des cases
+ctx.font = `${cellsize / 2}px serif`; // Où cellsize est la largeur (et aussi hauteur) en [px] des cases
 ctx.textAlign = "center";
 ctx.textBaseline = "middle";
 ```
@@ -133,10 +133,3 @@ new TWEEN.Tween(mob) // où mob est votre cercle
 ### Boucle d'animation
 
 Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *TWEEN.update()*. Créez donc une boucle d'animation avec *requestAnimationFrame* et appelez là. Votre méthode appelée à chaque *frame* devra aussi se charger de dessiner le cercle et la grille.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NzgxNjgyOSwtMTcyOTc5NDc4OSwyMD
-A2OTQ4NTE5LDMyNjM0NjQxMSwtMTk4Mjg0MDIxOSwyMDkwMDA4
-MDQ1LDUxMTI4NTM0MCwtODQ1NDg4ODc5LDgxOTEzMDUzNSw5MT
-I0Mjk0NzEsLTEyOTQ0MjYyMTMsLTE3NDk2ODI5NTldfQ==
--->
