@@ -1,5 +1,5 @@
 
-# Canvas, animation, recherche de chemins
+# Canvas, animation, recherche de chemin
   
 
 ## Mise en place  
