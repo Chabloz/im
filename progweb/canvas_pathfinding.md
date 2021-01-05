@@ -43,7 +43,7 @@ initFlowMap() {
   // Matrix population
   for (let row = 0; row < this.height; row++) {
     for (let col = 0; col < this.width; col++) {
-      this.grid[row][col] = false;
+      this.flowMap[row][col] = false;
     }
   }
 }
