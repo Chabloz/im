@@ -37,7 +37,7 @@ Créez le code HTML5 (dans votre dossier *dist*) d’une futur  PWA  en utilisan
 -   La fonctionnalité *todo* sera composée d’un unique formulaire comprenant deux champs de saisie, un champ pour la  *chose à faire*  et un champ (facultatif) pour la date limite.
 -   Les autres fonctionnalités auront pour le moment un contenu vide.
 -   L’application possédera un bas de page reprenant le nom de la  PWA  ainsi que les informations sur votre personne (au minimum votre nom et email) en respectant les formats de micro-data proposés par [schema.org](http://schema.org/) pour une sémantique compréhensible par les principaux moteurs de recherche du Web.
--   La partie *Todo* devra déjà contenir la tâche à faire suivante: “Finir les parties HTML5 et Responsive du TP du cours WebMobUi. A faire pour le mardi 25.02.2020”
+-   La partie *Todo* devra déjà contenir la tâche à faire suivante: “Finir les parties HTML5 et Responsive du TP du cours WebMobUi. A faire pour le mardi 22.02.2021”
 
 ## *Responsive*
 
