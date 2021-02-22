@@ -28,9 +28,9 @@ Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichie
 import 'css/main.css';
 ```
 
-## HTML5
+## HTML
 
-Créez le code HTML5 (dans votre dossier *dist*) d’une futur  PWA  en utilisant des balises sémantiquement proches des besoins suivants:
+Créez le code HTML (dans votre dossier *dist*) d’une futur  PWA  en utilisant des balises sémantiquement proches des besoins suivants:
 
 -   L’application possède un haut de page contenant son titre.
 -   Un menu offre à l’utilisateur le choix parmi 3 fonctionnalités , les horaires des cours IM (*schedule*), une gestion de liste des choses à faire (*todo*) et une gestion de favoris Web (*bookmarks*) 
