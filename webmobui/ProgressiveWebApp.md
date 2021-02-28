@@ -10,7 +10,7 @@ ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, r
 ```bash
  npm install mini-css-extract-plugin css-loader --save-dev
 ```
-Rajoutez ce *loader* à votre config webpack en ajoutant la constante suivante en haut du fichier webpack.config.js* :
+Rajoutez ce *loader* à votre config webpack en ajoutant la constante suivante en haut du fichier *webpack.config.js* :
 
 ```js
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
