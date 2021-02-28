@@ -85,7 +85,7 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
-### Templating
+## Templating
 
 L'affichage des tâches à faire dans le DOM sera fait à l'aide d'un moteur de *templates*. Nous utiliserons [Handlebars](https://handlebarsjs.com/). Commencez donc par l'installer: 
  ```bash
