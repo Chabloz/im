@@ -118,8 +118,13 @@ Puis modifiez la configuration webpack pour que tous les fichiers  avec l'extens
 
 ```js
 {
-  test: /\.handlebars$/,
-  use: 'handlebars-loader'
+  test: /\.(handlebars|hbs)$/,
+  use: [{
+      loader: 'handlebars-loader',
+      options: {
+          helperDirs: path.resolve('./src/templates/helpers')
+      }
+  }]
 }
 ```
 Essayez ensuite d'utiliser ce moteur de *templates* pour l'affichage des tâches lors du point suivant.
