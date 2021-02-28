@@ -16,7 +16,13 @@ Rajoutez ce *loader* à votre config webpack en ajoutant la constante suivante e
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 ```
 
-Ainsi que la règle suivante aux *rules* du fichier *webpack.config.js* :
+Puis le plugins lui-même avec la ligne suivante :
+
+```js
+plugins: [new MiniCssExtractPlugin()]
+```
+
+Et enfin que la règle suivante aux *rules* du fichier *webpack.config.js* :
 
 ```js
 {
@@ -37,7 +43,7 @@ Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichie
 import 'css/main.css';
 ```
 
-Enfin, n'oubliez pas de rajouter le fichier CSS génér par WebPack dans votre HTML. Par exemple, en ajoutant dans la balise *head* le code HTML suivant:
+Toutefois, n'oubliez pas de rajouter le fichier CSS génér par WebPack dans votre HTML. Par exemple, en ajoutant dans la balise *head* le code HTML suivant:
 
 ```html
 <link rel="stylesheet" href="main.css">
