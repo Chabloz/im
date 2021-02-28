@@ -37,6 +37,12 @@ Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichie
 import 'css/main.css';
 ```
 
+Enfin, n'oubliez aps de rajouter le fichier CSS génér par WebPack dans votre HTML. Par exemple, en ajoutant dans la balise *head* le code HTML suivant:
+
+```html
+<link rel="stylesheet" href="main.css">
+```
+
 ## HTML
 
 Créez le code HTML (dans votre dossier *dist*) d’une futur  PWA  en utilisant des balises sémantiquement proches des besoins suivants:
