@@ -104,7 +104,7 @@ Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre
 
 L'affichage des tâches à faire dans le DOM sera fait à l'aide d'un moteur de *templates*. Nous utiliserons [Handlebars](https://handlebarsjs.com/). Commencez donc par l'installer: 
  ```bash
- npm install handlebars --save
+ npm install handlebars
  npm install handlebars-loader --save-dev
 ```
 
