@@ -85,6 +85,24 @@ Le défaut de  cette navigation simulée est qu'elle rend inutilisable les bouto
 
 Ecoutez l’événement  *popstate*  pour capturer les changements dans la barre d'adresse qui seront provoqué par  les clicks sur les liens du menu. Puis, en fonction de l'ancre présente dans l’url (accessible en JS avec  *window.location.hash*), affichez la section appropriée. Si aucune ancre n’est disponible dans l’url, utilisez la section *todo*  par défaut. Finalement, au chargement de la page, affichez la bonne section correspondante à l’url du browser (via un  *trigger*  de l’événement  *popstate*).
 
+### Templating
+
+L'affichage des tâches à faire dans le DOM sera fait à l'aide d'un moteur de *templates*. Nous utiliserons [Handlebars](https://handlebarsjs.com/). Commencez donc par l'installer: 
+ ```bash
+ npm install handlebars --save
+ npm install handlebars-loader --save-dev
+```
+
+Puis modifiez la configuration webpack pour que tous les fichiers  avec l'extension *.handlebars* soient *packagés* correctement par *webpack*. Ajouter la règle suivante dans la partie *rules* du fichier *webpack.config.js* :
+
+```js
+{
+  test: /\.handlebars$/,
+  use: 'handlebars-loader'
+}
+```
+Essayez ensuite d'utiliser ce moteur de *templates* pour l'affichage des tâches lors du point suivant.
+
 ## LocalStorage
 
 L'une des contraintes des *PWA* est de rendre disponible l'app en mode offline. C'est à dire que l’application doit rester fonctionnel même si le *backend* n'est pas accessible. Dans cette situation, il est quasi indispensable de stocker des données de l'application du coté du *browser*. L'[api Web Storage](https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API)   et en particulier [LocalStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage) va nous permettre de répondre à ce besoin. Elle nous offre un espace de stockage persistant propre au browser et propre au nom de domaine (chaque sous-domaine aura toutefois un espace de stockage différent). Malheureusement, elle ne permet que de sauvez des chaînes de caractères. Ce problème est aisément résolu avec l'utilisation conjointe de JSON. Il suffit ainsi de sérialiser en JSON la donnée à stocker et de sauver la chaîne de caractère dans le *LocalStorage*. 
@@ -106,24 +124,6 @@ Finalement, importez la classe dans votre code et utilisez là pour gérer la pa
 - Visualiser toutes les tâches **actives** par ordre chronologique. Les tâches actives sont celles dont la date limite est dans le futur.
 - Visualiser les tâches **archivées** par ordre chronologique. Les tâches archivées sont celles dont la date limite est échue.
 - Supprimer une tâche (active ou archivée).
-
-### Templating
-
-L'affichage des tâches à faire dans le DOM sera fait à l'aide d'un moteur de *templates*. Nous utiliserons [Handlebars](https://handlebarsjs.com/). Commencez donc par l'installer: 
- ```bash
- npm install handlebars --save
- npm install handlebars-loader --save-dev
-```
-
-Puis modifiez la configuration webpack pour que tous les fichiers  avec l'extension *.handlebars* soient *packagés* correctement par *webpack*. Ajouter la règle suivante dans la partie *rules* du fichier *webpack.config.js* :
-
-```js
-{
-  test: /\.handlebars$/,
-  use: 'handlebars-loader'
-}
-```
-Essayez ensuite d'utiliser ce moteur de *templates* pour l'affichage des tâches.
 
 ## En ligne  / Hors ligne (*online / offline*)
 
@@ -190,12 +190,3 @@ Si vous voulez obtenir une *favicon* d'un site pour le design de votre PWA vous 
 Il suffit de remplacer l'URL d'exemple par celle  de votre choix.
 
 Finalement, en mode *offline*, essayez de désactiver les clics sur les liens des *favoris* puisqu'ils ne mèneront nulle part.   
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE4MjIwMDE1LC00NzU2NzYyNDUsLTc5MD
-gwMzgyNSwtOTM0MDc0ODA0LC01NDc2MDY1NDgsLTcyMDA4MjA0
-Nyw3OTc4NjM2NzgsLTE5NzkxMTk2MDEsLTIwNTIxNTQ5MTgsOD
-I0NzU0MTM1LC0xNjYwNDM0NjQ0LDI3NDQ0MjYyMCwtMTQ4ODc1
-NDA2Niw3NTM4NTUxNzAsMTgxNDg5MTEyMCwxNjI0OTUxOTcyLC
-0xNzg5NTA3MTA3LC0yMDkzOTAzMTY3LDE2MDM4NzE2NjEsODcx
-MTAwNzg1XX0=
--->
