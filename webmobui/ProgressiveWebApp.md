@@ -8,18 +8,27 @@ L'objectif principal de ce TP est la réalisation d'une "Progressive Web App" ([
 Nous allons utiliser les mêmes outils de développement que ceux du cours [
 ProgWeb](https://chabloz.eu/progweb). Si vous devez refaire les installations, référez-vous au document sur la [programmation modulaire en JS](../progweb/module_base.md). Rajoutez un *loader* de *css* pour webpack grâce à la ligne suivante :
 ```bash
- npm install style-loader css-loader --save-dev
+ npm install mini-css-extract-plugin css-loader --save-dev
 ```
-Rajoutez ce *loader* à votre config webpack en  ajoutant  aux *rules*  du fichier *webpack.config.js* la règle suivante:
+Rajoutez ce *loader* à votre config webpack en ajoutant la constante suivante en haut du fichier webpack.config.js* :
 
 ```js
-{ 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+```
+
+Ainsi que la règle suivante aux *rules* du fichier *webpack.config.js* :
+
+```js
+{
   test:/\.css$/,
-  use: [ 'style-loader', {
-    loader: 'css-loader',
-    options: {url: false} 
-  }],        
-}      
+  use: [
+    MiniCssExtractPlugin.loader,
+    {
+      loader: 'css-loader',
+      options: {url: false}
+    }
+  ]
+} 
 ```
 
 Grâce à ce nouveau *loader* vous pourrez ainsi directement importer des fichiers *css* depuis vos fichiers JS grâce à un simple *import* comme dans l'exemple suivant:
