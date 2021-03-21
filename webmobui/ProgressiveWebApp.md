@@ -180,7 +180,7 @@ const install = async (path) => {
   })
 }
 
-install('worker.js').then(() => location.reload());
+install('worker.js').then(() => location.reload()); //TODO: replace the "reload page" by something more in line with a good UX.
 ```
 
 Remarque: il est conseillé de désactiver le Service Worker de gestion du cache lors du développement de votre PWA.
