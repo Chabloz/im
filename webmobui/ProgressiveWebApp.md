@@ -174,7 +174,7 @@ const install = async (path) => {
     registration.addEventListener("updatefound", evt => {
       const installingWorker = registration.installing;
       installingWorker.addEventListener("statechange", evt => {
-        if (evt.target.state === "installed") resolve();
+        if (evt.target.state === "activating") resolve();
       });
     });
   })
