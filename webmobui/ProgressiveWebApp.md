@@ -165,6 +165,24 @@ Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [S
 
 Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*. Si vous êtes perdu (car le Service Worker de cache est assez complexe à mettre en place), vous pouvez regarder un exemple [ici](workerPreCache.js).
 
+Pour lier votre Service Worker de gestion du cache avec votre PWA, vous pouvez utilisez (ou vous inspirer) du code suivant:
+
+```js
+const install = async (path) => {
+  const registration = await navigator.serviceWorker.register(path);
+  return new Promise((resolve, reject) => {
+    registration.addEventListener("updatefound", evt => {
+      const installingWorker = registration.installing;
+      installingWorker.addEventListener("statechange", evt => {
+        if (evt.target.state === "installed") resolve();
+      });
+    });
+  })
+}
+
+install('worker.js').then(() => location.reload());
+```
+
 Remarque: il est conseillé de désactiver le Service Worker de gestion du cache lors du développement de votre PWA.
 
 ## PWA Manifest
