@@ -1,4 +1,4 @@
-const CACHE_VERSION = '11';
+const CACHE_VERSION = '1';
 const CACHE_FILES = [
 
 ];
