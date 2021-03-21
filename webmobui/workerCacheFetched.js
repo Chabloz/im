@@ -12,7 +12,6 @@ self.addEventListener('install', event => {
   event.waitUntil(preCache());
 });
 
-
 self.addEventListener('fetch', event => {
   const fetchCacheFirst = async () => {
     const cache = await caches.open(CACHE_VERSION);
