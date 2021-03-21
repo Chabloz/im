@@ -163,7 +163,7 @@ La deuxième étape consiste à rendre l'application disponible en mode hors lig
 
 Pour le faire, pas mal d'éléments du HTML seront nécessaires . En effet un [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) utilisera les *api* [fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) et [cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache). Le *Service Worker* agira comme un [daemon](https://fr.wikipedia.org/wiki/Daemon_%28informatique%29)  écoutant les requêtes  de la PWA. Et si ces  requêtes concernent des éléments disponibles dans le cache, il les fournira. ( Remarque: Les Service Workers ne sont disponibles que si votre application est transmise via HTTPS ou que votre URL est l'URL locale 127.0.0.1)
 
-Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*.
+Essayez de mettre en oeuvre le tout (en lisant les différentes documentations) pour obtenir une application capable de fonctionner efficacement en mode *offline*. Si vous êtes perdu (car le Service Worker de cache est assez complexe à mettre en place), vous pouvez regarder un exemple [ici](workerPreCache.js).
 
 Remarque: il est conseillé de désactiver le Service Worker de gestion du cache lors du développement de votre PWA.
 
