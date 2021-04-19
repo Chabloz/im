@@ -99,11 +99,12 @@ Finalement, créez les dossiers *src* et *dist*, un fichier *index.js* dans *./s
 ```
 Testez le tout avec en lancant *live-server* et *webpack* en mode *dev* avec *watch*:
 ```bash
- npm run preview
-```
-```bash
  npm run watch
 ```
+```bash
+ npm run preview
+```
+
 
 ## Prise en main du comportement réactif du framework
 
