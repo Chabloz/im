@@ -121,3 +121,7 @@ Nous allons choisir le Kelvin comme unité de base (puisque c'est l'unité SI), 
 Une fois cette première prise en main du comportement réactive du framework, réalisez votre premier composant Web "monofichier" [Single File Component](https://v3.vuejs.org/guide/single-file-component.html#introduction)  (abrégé en SFC par la suite). Pour cet exercice, nous allons tout coder dans un unique composant (sans utilisez de sous composant). Codez donc le nécessaire pour que votre application Web ressemble à cette [démo](https://chabloz.eu/files/temperatures/).
 
 Remarque: il peut être complexe d'effectuer la gestion des arrondis. Vous pourriez peut être faire une première version sans cette gestion puis les rajouter par la suite. Faites de même pour la gestion des champs vides et les valeurs de bornes des températures possibles.  
+
+### Autres convertisseurs
+
+Essayez de mettre en place quelques autres convertisseurs. Quelques idées: Bytes / bits,  timestamp / date, ...). Le but est double: pratiquer et réfléchir à la réutilisation de vos composants.  Essayez donc de mettre en place un composant qui s'occuperait de la gestion et de la mise en forme (design) des saisies utilisateurs. Réfléchissez à sa souplesse de configuration, part exemple grâce à l'utilisation des propriétés du composant.
