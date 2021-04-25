@@ -124,4 +124,4 @@ Remarque: il peut être complexe d'effectuer la gestion des arrondis. Vous pourr
 
 ### Autres convertisseurs
 
-Essayez de mettre en place quelques autres convertisseurs. Quelques idées: Bytes / bits,  timestamp / date, ...). Le but est double: pratiquer et réfléchir à la réutilisation de vos composants.  Essayez donc de mettre en place un composant qui s'occuperait de la gestion et de la mise en forme (design) des saisies de l'utilisateur. Réfléchissez à sa souplesse de configuration, part exemple grâce à l'utilisation des propriétés du composant.
+Essayez de mettre en place quelques autres convertisseurs. Quelques idées: Bytes / bits,  timestamp / date, ...). Le but est double: pratiquer et réfléchir à la réutilisation de vos composants.  Essayez donc de mettre en place un composant qui s'occuperait de la gestion et de la mise en forme (design) des saisies de l'utilisateur. Réfléchissez à sa souplesse de configuration, par exemple grâce à l'utilisation des propriétés du composant.
