@@ -125,3 +125,7 @@ Remarque: il peut être complexe d'effectuer la gestion des arrondis. Vous pourr
 ### Autres convertisseurs
 
 Essayez de mettre en place quelques autres convertisseurs. Quelques idées: Bytes / bits,  timestamp / date, ...). Le but est double: pratiquer et réfléchir à la réutilisation de vos composants.  Essayez donc de mettre en place un composant qui s'occuperait de la gestion et de la mise en forme (design) des saisies de l'utilisateur. Réfléchissez à sa souplesse de configuration, par exemple grâce à l'utilisation des propriétés du composant.
+
+### Version finale
+
+Ajouter un nouveau composant pour l'entièreté de votre application de convertisseurs. Ce composant ce chargera de la navigation (via un routage avec l'API history par exemple), et de l'affichage du bon composant  en fonction de celle-ci. Essayez d'aller vers l'essentiel et de ne pas trop le complexifier car il existe bien sûr un router pour Vue3 déjà existant comme on peut le lire ici : https://v3.vuejs.org/guide/routing.html#official-router . L'idée de cette partie est de pratiquer *Vue 3* plutôt que de mettre en place un vrai système de routage efficace.
