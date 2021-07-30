@@ -92,7 +92,7 @@ Finalement, créez les dossiers *src* et *dist*, un fichier *index.js* dans *./s
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <script src="bundle.js"></script>
+    <script defer src="bundle.js"></script>
   </head>
   <body>
     <div id="app"></div>    
