@@ -46,7 +46,7 @@ add2(41); //retourne 43
 
 **7**)  Ecrire une fonction **square** qui retourne le carré (la puissance de 2) du nombre passé en paramètre.
 
-**8**)  Appelle la fonction passée en tant que premier paramètre sur le résultat de cette même fonction appelée avec le second paramètre comme argument. En plus simple: applique deux fois la même fonction sur le deuxième paramètre. Exemple d’appel si votre fonction se nomme **twice**:
+**8**)  Ecrire une fonction **twice** qui appelle la fonction passée en tant que premier paramètre sur le résultat de cette même fonction appelée avec le second paramètre comme argument. En plus simple: qui applique deux fois la même fonction sur le deuxième paramètre. Exemple d’appel :
 ```js
 twice(square, 2); // square(square(2)) => 16
 ```
