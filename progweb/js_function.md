@@ -35,7 +35,7 @@ compareB(8, 'huit'); // false
 cl(1, 2 ,"a", [3.1, 4, 159]);
 ```
   
-**5**)  Ecrire une fonction qui etourne la somme de deux nombres.
+**5**)  Ecrire une fonction qui retourne la somme de deux nombres.
 
 **6**)  Ecrire une fonction qui retourne une fonction qui somme son unique paramètre au paramètre fournis en entrée. Il s'agit donc de faire une [curryfication](https://fr.wikipedia.org/wiki/Curryfication) de la fonction précédente. Exemples d'appels si votre fonction se nomme **curryAdd**:
 ```js
