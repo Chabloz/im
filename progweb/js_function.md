@@ -29,24 +29,26 @@ compareB(8, 'huit'); // false
 
 **6**)  Ecrire une fonction qui indique si un nombre entier est un [nombre premier](https://fr.wikipedia.org/wiki/Nombre_premier) ou non. Tester la fonction avec les valeurs suivantes: 0, 1, 2, 3, 4, 9, 11, 26, 87178291197, 87178291199.
 
-**4**)  Ecrire une fonction nommée **cl** qui affiche dans la console, ligne après ligne, toutes les données fournies en paramètre. Exemple d'appel:
+**7**)  Ecrire une fonction nommée **cl** qui affiche dans la console, ligne après ligne, toutes les données fournies en paramètre. Exemple d'appel:
 
 ```js
 cl(1, 2 ,"a", [3.1, 4, 159]);
 ```
   
-**5**)  Ecrire une fonction qui retourne la somme de deux nombres.
+**8**)  Ecrire une fonction qui retourne la somme de deux nombres.
 
-**6**)  Ecrire une fonction qui retourne une fonction qui somme son unique paramètre au paramètre fournis en entrée. Il s'agit donc de faire une [curryfication](https://fr.wikipedia.org/wiki/Curryfication) de la fonction précédente. Exemples d'appels si votre fonction se nomme **curryAdd**:
+**9**)  Ecrire une fonction qui retourne une fonction qui somme son unique paramètre au paramètre fournis en entrée. Il s'agit donc de faire une [curryfication](https://fr.wikipedia.org/wiki/Curryfication) de la fonction précédente. Exemples d'appels si votre fonction se nomme **curryAdd**:
 ```js
 curryAdd(2)(40); // Retourne 42
 const add2 = curryAdd(2);
 add2(41); //retourne 43
 ```
 
-**7**)  Ecrire une fonction **square** qui retourne le carré (la puissance de 2) du nombre passé en paramètre.
+**10**)  Ecrire une fonction **square** qui retourne le carré (la puissance de 2) du nombre passé en paramètre.
 
-**8**)  Ecrire une fonction **twice** qui appelle la fonction passée en tant que premier paramètre sur le résultat de cette même fonction appelée avec le second paramètre comme argument. En plus simple: qui applique deux fois la même fonction sur le deuxième paramètre. Exemple d’appel :
+**11**)  Ecrire une fonction **twice** qui appelle la fonction passée en tant que premier paramètre sur le résultat de cette même fonction appelée avec le second paramètre comme argument. En plus simple: qui applique deux fois la même fonction sur le deuxième paramètre. Exemple d’appel :
 ```js
 twice(square, 2); // square(square(2)) => 16
 ```
+**12**) Question optionelle, mais d'y répondre vous sera utile pour le TP 2:
+Refaire les exercices 8) à 11) mais en utilisant strictement des fonctions fléchées (arrow function en anglais)
