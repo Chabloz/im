@@ -3,7 +3,7 @@ const max = (a, b, c) => a >= b && a >= c ? a : (b >= a && b >= c) ? b : c;
 // Mais il vaut mieux utiliser Math.max !
 
 // 2) Retourne un nombre entier pseudo-aléatoire entre une borne inférieure et une borne supérieure (bornes entières et comprises dans l'intervalle).
-const alea = (min, max) => Math.floor(Math.random() * (max - min) + 1) + min;
+const alea = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 // 3) Indique si un nombre entier est un nombre premier ou non. Testez votre fonction avec au moins les valeurs suivantes: 0, 1, 2, 11, 26, 87178291197, 87178291199.
 const isPrime = n => {    
