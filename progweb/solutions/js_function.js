@@ -15,7 +15,7 @@ const isPrime = n => {
     if (n == 3) return true;
     if (n % 3 == 0) return false;    
     // On pourrait continuer avec le crible d'Ératosthène pour les multiples de 5, 7, 11, ...
-    // mais cela rendrait la programmation de la boucle suivante impossible
+    // mais cela rendrait la programmation de la boucle suivante très complexe
     // et il faudrait donc repenser la totalité de l'algorithme !
     let step = 2;
     let div = 5;
