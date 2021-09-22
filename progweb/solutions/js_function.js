@@ -1,5 +1,5 @@
 // 1) Retourne la plus grande valeur parmi les trois nombres fournis en paramètre
-const max = (a, b, c) => a > b && b > c ? a : (b > a && b > c) ? b : c;
+const max = (a, b, c) => a >= b && a >= c ? a : (b >= a && b >= c) ? b : c;
 // Mais il vaut mieux utiliser Math.max !
 
 // 2) Retourne un nombre entier pseudo-aléatoire entre une borne inférieure et une borne supérieure (bornes entières et comprises dans l'intervalle).
