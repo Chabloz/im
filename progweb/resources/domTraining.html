@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS et DOM</title>
+    <style>
+      body {
+        color: #000;
+        background-color: #fff;
+      }
+      .hidden {
+        display: none
+      }
+      .questionnaire dt {
+        cursor: pointer;
+      }
+      dt {
+        padding: 5px 0;
+        font-weight: bold;
+      }
+      dd {
+        padding: 3px 3px 10px 3px;
+        background-color: #eee;
+      }
+      .highlight {
+        color: red;
+      }
+      .warning {
+        background-color: red;
+        color: white;
+      }
+      .externalLink {
+        color: orange;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+      }
+      textarea {
+        width: 100%;
+        border: solid black 1px;
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JS et DOM</h1>
+    <div id="container">
+      <h2>Questionnaire</h2>
+      <dl class="questionnaire">
+        <dt>Comment afficher ou cacher un noeud du DOM ?</dt>
+        <dd>
+          <p>
+            Une possibilité est de créer un classe CSS "hidden" ayant la propriété "display: none" et de faire:
+          </p>
+          <code>document.querySelector(cssSelectorHere).classList.toggle('hidden')</code>
+        </dd>
+        <dt>Comment lier une fonction à l'événement d'un click de souris sur un élément DOM ?</dt>
+        <dd>
+          <p>
+            Pour gerer de multiple écouteurs, il est conseillé d'utilisé "addEventListener":
+          </p>
+          <code>
+            document.querySelector(cssSelectorHere).addEventListener('click', () => {
+              /* code here */
+            });
+          </code>
+
+        </dd>
+        <dt>Comment faire un "Hello World" dans la console après un click sur le body du document ?</dt>
+        <dd>
+          <code>
+            document.body.addEventListener('click', () => console.log('Hello world'));
+          </code>
+        </dd>
+      </dl>
+      <h2>Quelques selecteurs CSS</h2>
+      <ul>
+        <li>Par identifiant: '#id'</li>
+        <li>Par classe CSS: '.nomDeLaClasse'</li>
+        <li>Par nom de balise: 'h2'</li>
+        <li>Par hiérarchie: '.nomDeLaClasse p'</li>
+        <li>Par attribut: '[data-action]'</li>
+        <li>
+          Et <a href="https://drafts.csswg.org/selectors/#overview">bien d'autres</a>
+        </li>
+      </ul>
+      <h2>Quelques outils de manipulation du DOM</h2>
+      <dl>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent">element.textContent</a></dt>
+        <dd>récupère ou fixe le contenu texte d'un noeud du DOM et de ses descendants</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement">inputElement.value</a></dt>
+        <dd>Récupère ou fixe la valeur d'un champ de formulaire</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">element.classList et ses méthodes</a></dt>
+        <dd><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add">add</a>: ajoute une classe CSS à l'élément</dd>
+        <dd><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove">remove</a>: enlève une classe CSS à l'élément</dd>
+        <dd><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle">toggle</a>: supprime (si présente) ou ajoute (si absente) une classe CSS</dd>
+        <dt>
+          document.querySelectorAll(selector).forEach(callback);
+        </dt>
+        <dd>
+          <p>
+          Execute la fonction "callback" sur tous les éléments DOM selectionnés par le sélecteur CSS.
+          La fonction de "callback" recevra en paramètre l'élément DOM en première position
+          et l'indice de l'élément dans la liste en deuxième position (ainsi que la liste elle même en troisième position).
+          Voici un exemple qui affiche tous les liens et leur destination dans la console:
+          </p>
+          <pre><code>
+            document.querySelectorAll('a').forEach((ele, ind) => {
+              const href = ele.getAttribute('href');
+              console.log(`${ele.textContent}: ${href}`);
+            })
+          </code></pre>
+        </dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">parent.appendChild(newNode)</a></dt>
+        <dd>Ajoute un nœud à la fin de la liste des enfants.</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore">parent.insertBefore(newNode, referenceNode)</a></dt>
+        <dd>Insère un nœud avant un nœud de référence en tant qu'enfant d'un nœud parent spécifié.</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/closest">element.closest(selector)</a></dt>
+        <dd>Renvoie l'ancêtre le plus proche de l'élément courant qui correspond au sélecteur CSS</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/children">element.children</a></dt>
+        <dd>Renvoie tous les enfants de l'éléments</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode">element.cloneNode(true)</a></dt>
+        <dd>Renvoie une copie du nœud (et de ses enfants) sur lequel elle a été appelée</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML">element.insertAdjacentHTML(position, text)</a></dt>
+        <dd>Analyse le texte spécifié en tant que HTML (ou XML) et insère les noeuds résultants dans le DOM à la position spécifiée. On l'utilise le plus courament avec la position "beforeend" pour que les éléments soient ajoutés juste à l'intérieur de l'element courant, après son dernier enfant.</dd>
+      </dl>
+      <h2>Quelques événements</h2>
+      <dl>
+        <dd>change : modification d'un élément (ex: la valeur dans un champ de formulaire)</dd>
+        <dd>click : click de souris</dd>
+        <dd>dblclick : double click</dd>
+        <dd>keydown : une touche du clavier est enfoncée</dd>
+        <dd>keyup : une touche du clavier est relachée</dd>
+        <dd>mousemove : le curseur de la souris bouge</dd>
+        <dd>mouseout : la souris passe en dehors de l'élément</dd>
+        <dd>mouseover : la souris passe sur l'élément</dd>
+        <dd>
+          <a href="https://developer.mozilla.org/fr/docs/Web/Events">Et bien d'autres ...</a>
+        </dd>
+      </dl>
+      <h2>Notes</h2>
+      <div id="notes">
+        <p>
+          Attention: lorsque l'on crée des éléments DOM,
+          ceux-ci sont ajoutés sans les éventuels événements liés précedement
+          aux éléments du même type via JavaScript. Une solution au problème
+          est la délégation des événements à un élément parent du DOM :
+          <a href="https://javascript.info/event-delegation">https://javascript.info/event-delegation</a>
+        </p>
+      </div>
+      <form>
+        <label for="newNote">Nouvelle note</label>
+        <textarea id="newNote"></textarea>
+        <input type="submit" value="Ajouter" id="ajouter"/>
+      </form>
+    </div>
+  </body>
+</html>
