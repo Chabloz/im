@@ -39,7 +39,7 @@ domOn('form', 'submit', evt => {
   evt.preventDefault();
   // Récupère le contenu du textarea
   const noteTxt = document.getElementById('newNote').value;
-  // Crée un nouveau <p> avec la texte de la nouvelle "note"
+  // Crée un nouveau <p> avec le texte de la nouvelle "note"
   const p = document.createElement('p'); // Ici, il vaudrait mieux utiliser le concept de "template" HTML
   p.textContent = noteTxt;
   // Ajoute le <p> comme dernier enfant dans la liste des notes
