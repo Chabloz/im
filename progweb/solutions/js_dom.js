@@ -20,7 +20,7 @@ domForEach('.questionnaire dt', (ele, index) => {
   ele.textContent = `Q${index + 1}: ${ele.textContent}`;
 });
 
-// 4. Les définitions du "dd" qui ne sont pas dans le questionnaire doivent s’afficher en rouge lorsque la souris passe sur eux et redevenir comme avant lorsque la souris quitte la définition
+// 4. Les définitions "dd" qui ne sont pas dans le questionnaire doivent s’afficher en rouge lorsque la souris passe sur eux et redevenir comme avant lorsque la souris quitte la définition
 domOn('dl:not(.questionnaire) dd', 'mouseover', evt => {
   evt.currentTarget.classList.add('highlight');
 });
