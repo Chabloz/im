@@ -49,7 +49,7 @@ domOn('form', 'submit', evt => {
 });
 
 // 7. Lorsque la souris passe sur une des notes, son fond devient rouge, il redevient de la couleur par défaut lorsque la souris quitte la note
-// Ici la délégation de l'évenement au parent est souhaitable car les éléments ne sont pas encore tous présent dans le DOM
+// Ici la délégation de l'évenement au parent est souhaitable car les éléments ne sont pas encore tous présents dans le DOM
 const notes = document.getElementById('notes');
 const mouseHandler = evt => {
   let p = evt.target.closest('p'); //Ici on a une dépendance à la structure du DOM choisie, ce qui n'est pas idéal.
