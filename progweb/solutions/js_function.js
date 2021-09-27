@@ -17,7 +17,7 @@ function compareA(a, b) {
     return a == b;
 }
 
-function randomInt(a, b) {
+function compareB(a, b) {
     return a === b;
 }
 
