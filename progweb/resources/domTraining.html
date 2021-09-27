@@ -65,6 +65,9 @@
               /* code here */
             });
           </code>
+          <p>
+            <a href="#notes">Voir la note en bas de page pour plus une information importante sur la gestion des événements</a>
+          </p>
         </dd>
         <dt>Comment faire un "Hello World" dans la console après un click sur le body du document ?</dt>
         <dd>
@@ -74,16 +77,16 @@
         </dd>
       </dl>
       <h2>Quelques selecteurs CSS</h2>
-      <ul>
-        <li>Par identifiant: '#id'</li>
-        <li>Par classe CSS: '.nomDeLaClasse'</li>
-        <li>Par nom de balise: 'h2'</li>
-        <li>Par hiérarchie: '.nomDeLaClasse p'</li>
-        <li>Par attribut: '[data-action]'</li>
-        <li>
+      <dl>
+        <dd>Par identifiant: '#id'</dd>
+        <dd>Par classe CSS: '.nomDeLaClasse'</dd>
+        <dd>Par nom de balise: 'h2'</dd>
+        <dd>Par hiérarchie: '.nomDeLaClasse p'</dd>
+        <dd>Par attribut: '[data-action]'</dd>
+        <dd>
           Et <a href="https://drafts.csswg.org/selectors/#overview">bien d'autres</a>
-        </li>
-      </ul>
+        </dd>
+      </dl>
       <h2>Quelques outils de manipulation du DOM</h2>
       <dl>
         <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent">element.textContent</a></dt>
@@ -119,6 +122,10 @@
         <dd>Renvoie l'ancêtre le plus proche de l'élément courant qui correspond au sélecteur CSS</dd>
         <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/children">element.children</a></dt>
         <dd>Renvoie tous les enfants de l'éléments</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling">element.nextElementSibling</a></dt>
+        <dd>Renvoie l'élément suivant directement l'élément actuel dans la liste des enfants de l'élément parent (en simplifiant : renvoit le prochain noeud voisin)</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling">element.previousElementSibling</a></dt>
+        <dd>Renvoie l'élément précédent directement l'élément actuel dans la liste des enfants de l'élément parent (en simplifiant : renvoit le précédent noeud voisin)</dd>
         <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode">element.cloneNode(true)</a></dt>
         <dd>Renvoie une copie du nœud (et de ses enfants) sur lequel elle a été appelée</dd>
         <dt><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML">element.insertAdjacentHTML(position, text)</a></dt>
@@ -126,6 +133,7 @@
       </dl>
       <h2>Quelques événements</h2>
       <dl>
+        <dd>submit : se produit lorsqu'un formulaire est soumis</dd>
         <dd>change : modification d'un élément (ex: la valeur dans un champ de formulaire)</dd>
         <dd>click : click de souris</dd>
         <dd>dblclick : double click</dd>
@@ -151,7 +159,7 @@
       <form>
         <label for="newNote">Nouvelle note</label>
         <textarea id="newNote"></textarea>
-        <input type="submit" value="Ajouter" id="ajouter"/>
+        <input type="submit" value="Ajouter" id="add"/>
       </form>
     </div>
   </body>
