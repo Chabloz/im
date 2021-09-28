@@ -29,6 +29,13 @@ function showEvenNumbers(limit) {
         if (nb % 2 == 0) console.log(nb);
     }
 }
+// Version plus performante mais moins évolutive
+function showEvenNumbers_v2(limit) {
+    for (let nb = 0; nb <= limit; nb+=2) {
+        console.log(nb);
+    }
+}
+
 // Les nombres entiers pairs et multiples de 7 compris entre 0 et n.
 function showEvenAndMultipleOfSeven(limit) {
     for (let nb = 0; nb <= limit; nb++) {
