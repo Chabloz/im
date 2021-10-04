@@ -1,4 +1,4 @@
-# Exercice jQuery - Ajax avec Xml
+# Exercice Fetch Xml et DOM
 
 ## Mise en place
 
