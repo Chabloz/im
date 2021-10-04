@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IM - Horaires</title>
+    <style>
+      body {
+        font-family: monospace;
+        font-size: 1.1em;
+      }
+      #container {
+        text-align: center;
+      }
+      h1 {
+        padding: 0;
+        margin: 0;
+      }
+      div.action {
+        padding: 1rem;
+      }
+      button {
+        letter-spacing: 0.3rem;
+        cursor: pointer;
+      }
+      button.selected {
+        color: tomato;
+      }
+      table {
+        max-width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      th {
+        text-align: center;
+        background-color: #eee;
+        border: solid black 1px;
+        letter-spacing: 0.3rem;
+      }
+      td {
+        padding: 0.1rem 0.5rem;
+        border: solid black 1px;
+        text-align: left;
+      }
+      tr:nth-child(even) {
+        background: #eee;
+      }
+      .template {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>IM - Horaires</h1>
+      <div class="action">
+        <button data-class-id="M48" class="btn-schedule">IM 48</button>
+        <button data-class-id="M49-1" class="btn-schedule selected">IM 49-1</button>
+        <button data-class-id="M49-2" class="btn-schedule">IM 49-2</button>
+        <button data-class-id="M50-1" class="btn-schedule">IM 50-1</button>
+        <button data-class-id="M50-2" class="btn-schedule">IM 50-2</button>
+        <button data-class-id="M50-3" class="btn-schedule">IM 50-3</button>
+      </div>
+      <table id="schedule">
+        <tbody>
+          <tr class="template template-course">
+            <td class="date"></td>
+            <td class="hours"></td>
+            <td class="course"></td>
+            <td class="room"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
