@@ -60,7 +60,7 @@ Gérez les clicks sur les boutons possédant la classe css *btn-schedule*.  Lors
 
 ## Fetch API
 
-Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de l'horaire associé. Le XML est  à récupérer via l'API [Fetch](https://javascript.info/fetch. L'URL des XML des différents horaires respecte l'exemple suivant:  https://chabloz.eu/files/horaires/XXX.xml . Il vous suffit de remplacer XXX par l'identifiant de la classe. Essayez d'améliorer votre requête *Fetch* pour que l'utilisateur ne puisse pas charger plusieurs horaires en même temps. Pour ce faire, vous pouvez désactiver les boutons dés que l'un d'eux est cliqué, et les réactiver dés que la requête est finie.
+Une fois l'identifiant de la classe récupéré, vous devez retrouver le XML de l'horaire associé. Le XML est  à récupérer via l'API [Fetch](https://javascript.info/fetch). L'URL des XML des différents horaires respecte l'exemple suivant:  https://chabloz.eu/files/horaires/XXX.xml . Il vous suffit de remplacer XXX par l'identifiant de la classe. Essayez d'améliorer votre requête *Fetch* pour que l'utilisateur ne puisse pas charger plusieurs horaires en même temps. Pour ce faire, vous pouvez désactiver les boutons dés que l'un d'eux est cliqué, et les réactiver dés que la requête est finie.
 
 ## Traitement des données des horaires
 
