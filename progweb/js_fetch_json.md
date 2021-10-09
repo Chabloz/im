@@ -8,7 +8,7 @@ A partir du [code HTML donné](resources/jsFetchJson.html) , ajoutez la balise "
 
 ## WebService pour les localités
 
-Afin de faciliter la saisie de la localité (en Suisse uniquement) du formulaire, vous devez récupérer une liste des localités correspondantes au code postal entré par l'utilisateur. Pour ce faire, écoutez les frappes au clavier de l'utilisateur lors de la saisie du code postal (événement *keyup*).  Si le code postal est bien **composé de 4 chiffres**, effectuez une requête au WebService de *geonames.org* afin que celui-ci vous fournisse la liste des localités. Voici un exemple d'URL du WebService (vous n'avez qu'à y remplacer 1401 par le code postal du formulaire):
+Afin de faciliter la saisie de la localité (en Suisse uniquement) du formulaire, vous devez récupérer une liste des localités correspondantes au code postal entré par l'utilisateur. Pour ce faire, écoutez les changements de la valeur du champ code postal (événement *input*).  Si le code postal est bien **un nombre dans l'intreval [1000,9999]**, effectuez une requête au WebService de *geonames.org* afin que celui-ci vous fournisse la liste des localités. Voici un exemple d'URL du WebService (vous n'avez qu'à y remplacer 1401 par le code postal du formulaire):
 
 http://api.geonames.org/postalCodeLookupJSON?username=comem&country=CH&postalcode=1401
 
@@ -16,8 +16,8 @@ Une fois la liste reçue, il faut peupler le champ « localité » du formulaire
 
 ## WebService pour la carte statique de la localité
 
- Afin de centrer la carte sur la localité choisie par l'utilisateur, vous devez écouter les changements dans la liste déroulante des localités (événement *change*). Dès qu'un changement a lieu, vous devez modifier la source de l'image afin d'y mettre les bonnes coordonnées. Aidez-vous des longitudes et latitudes fournies par le WebService précédent. Il vous faut donc les avoir sauvées précédemment (par exemple dans des attributs data-*). Le WebService pour les cartes est le suivant (il suffit d'y remplacer la latitude et la longitude en fin d'url par celle voulue):
+ Afin de centrer la carte sur la localité choisie par l'utilisateur, vous devez écouter les changements dans la liste déroulante des localités (événement *input* ou *change*). Dès qu'un changement a lieu, vous devez modifier la source de l'image afin d'y mettre les bonnes coordonnées. Aidez-vous des longitudes et latitudes fournies par le WebService précédent. Il vous faut donc les avoir sauvées précédemment (par exemple dans des attributs data-*). Le WebService pour les cartes est le suivant (il suffit d'y remplacer la latitude et la longitude en fin d'url par celle voulue):
 
 https://chabloz.eu/map/staticmap.php?zoom=14&size=512x512&maptype=mapnik&center=46.7833333,6.65
 
-**remarque**: Ce WebService ne fournit que des cartes pour quelques grandes localités. Si la localité n'est pas trouvée, il génère une image entièrement noire.
+**remarque**: Ce WebService ne fournit que des cartes pour 1000 et 1401 comme codes posataux. Si la localité n'est pas trouvée, il génère une image entièrement noire.
