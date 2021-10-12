@@ -8,17 +8,16 @@ A partir du [code HTML donné](resources/jsFetchChain.html), ajoutez un lien ver
 
 ```js
 /** 
- * Effectue plusieurs requêtes HTTP GET afin d'aller charger les URLs fournies
- * en paramètre. La fonction retourne une Promise qui se résolvera lorsque toutes
- * les requêtes AJAX seront finies. 
+ * Effectue plusieurs requêtes HTTP GET afin d'aller charger les URLs pointant
+ * sur des données au format JSON. La fonction retourne un tableau contenant tous
+ * les résultats (déjà désérialiser). 
  * 
- * @param {array} urls Les URLs à charger
- * @return {Promise} Une Promise qui se résoudra à la fin des requêtes AJAX
+ * @param {array} urls Les URLs à charger (dont le contenu est du JSON)
+ * @return {array} un tableau contenant les résultats de chaque requête 
  */
-function loadUrls(urls) {  
-  const results = [];
-  urls.forEach(url => results.push($.ajax({url})));
-  return Promise.all(results);  
+async function loadUrls(urls) {      
+  const res = await Promise.all(urls.map(url => fetch(url)));
+  return await Promise.all(res.map(r => r.json()));
 }
 ```
 ## SW movies
