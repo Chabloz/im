@@ -17,7 +17,7 @@ A partir du [code HTML donné](resources/jsFetchChain.html), ajoutez un lien ver
  */
 async function loadJsonUrls(urls) {      
   const res = await Promise.all(urls.map(url => fetch(url)));
-  return await Promise.all(res.map(r => r.json()));
+  return Promise.all(res.map(r => r.json()));
 }
 ```
 ## SW movies
