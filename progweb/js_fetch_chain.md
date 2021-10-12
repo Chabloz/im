@@ -27,7 +27,7 @@ Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swa
  1. Ne prendre que la partie *results* des données.
  2. Triez le tableau des films pour qu'il soit dans l'ordre des épisodes (l'épisode 1 en premier, ...)
  3. Générez le DOM de chaque film en utilisant un clone de la template de classe CSS *tmpl-movie*. Lors de la génération du DOM d'un film,  ajoutez l'identifiant du film (l’identifiant de l'épisode) comme attribut *data-movie-id* sur l'élément racine du DOM du film.  Sauvegardez aussi cet identifiant et les URLs des planètes du film a un endroit pratique pour la suite.
- 4. Injectez les DOM générés dans l'élément DOM de classe CSS *movies* de la page Web.
+ 4. Injectez les DOM générés dans l'élément DOM *#movies* de la page Web.
 
 ## SW planets
 
