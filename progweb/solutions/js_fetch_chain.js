@@ -10,7 +10,7 @@ window.addEventListener('fetch-stop', toggleFetchLoader);
 
 loadMovies();
 
-// delegated event for "show planets" button (the other solution is to use await above whe loading movies)
+// delegated event for "show planets" button (the other solution is to use await above when loading movies)
 domOn('#movies', 'click', async evt => {
   const btn = evt.target;
   if (!btn.dataset.planetsUrl) return;
