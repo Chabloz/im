@@ -15,9 +15,10 @@ A partir du [code HTML donné](resources/jsFetchChain.html), ajoutez un lien ver
  * @param {array} urls Les URLs à charger (dont le contenu est du JSON)
  * @return {array} un tableau contenant les résultats de chaque requête 
  */
-async function loadJsonUrls(urls) {      
-  const res = await Promise.all(urls.map(url => fetch(url)));
-  return Promise.all(res.map(r => r.json()));
+async function loadJsonUrls(urls) {
+  const results = await Promise.all(urls.map(url => fetch(url)));
+  const responses = await Promise.all(results.map(result => result.json()));
+  return responses;
 }
 ```
 ## SW movies
