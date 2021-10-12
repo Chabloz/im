@@ -45,6 +45,6 @@ Vous devez gérer les clics de l'utilisateur sur les boutons de classes *.btn-pl
 
 Il ne serait pas très performant de recharger à chaque click les mêmes planètes d'un film. Puisque celles-ci sont présentes dans le DOM à la suite du premier click sur le bouton, essayez d'optimiser votre code en le modifiant pour que les prochains clics ne fassent que disparaître et apparaître les planètes du film (*toggle*). 
 
-## Retour visuel des Fetch
+## Retour visuel (**feedback** utilisateur)
 
 Les requêtes via Fetch peuvent prendre  du temps. Il serait donc utile d'avoir un retour visuel pour l'utilisateur afin de l'informer qu'un chargement de données est en cours. Vous trouverez dans le HTML un *div.fetch-loader* stylisé en CSS pour afficher une icone de chargement au milieu de l'écran de l'utilisateur. Afin d'avoir une solution générique, il serait pratique de pouvoir afficher le retour visuel lors du début d'une requête Fetch et de le cacher lorsque plus aucune requête n'est en cours. Essayez donc de capturer le début d'un fetch et sa fin afin de faire apparaître et disparaître l'icone aux moments opportuns. Pour le faire correctement, étudiez les styles CSS de la page Web.  
