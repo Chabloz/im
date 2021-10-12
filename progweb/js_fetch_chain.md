@@ -4,7 +4,7 @@
 
 **Objectifs**:  Récupérer des données d'un service REST. Charger plusieurs ressources en parallèles (grâce aux *promises*). 
 
-A partir du [code HTML donné](resources/jsFetchChain.html), ajoutez un lien vers votre JS, la css de [bootstrap](https://getbootstrap.com/). Copiez la fonction suivante dans votre code:
+A partir du [code HTML donné](resources/jsFetchChain.html), ajoutez un lien vers votre JS et la css de [bootstrap](https://getbootstrap.com/). Puis copiez la fonction suivante dans votre code:
 
 ```js
 /** 
