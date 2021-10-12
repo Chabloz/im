@@ -15,7 +15,7 @@ A partir du [code HTML donné](resources/jsFetchChain.html), ajoutez un lien ver
  * @param {array} urls Les URLs à charger (dont le contenu est du JSON)
  * @return {array} un tableau contenant les résultats de chaque requête 
  */
-async function loadUrls(urls) {      
+async function loadJsonUrls(urls) {      
   const res = await Promise.all(urls.map(url => fetch(url)));
   return await Promise.all(res.map(r => r.json()));
 }
@@ -34,7 +34,7 @@ Afin de rendre l'exercice plus ludique, nous allons utiliser [SWAPI](https://swa
 Vous devez gérer les clics de l'utilisateur sur les boutons de classes *.btn-planets* . Lors d'un clic, réalisez les traitements dans l'ordre suivant: :
 
 1. Désactivez le bouton cliqué (pour éviter des chargements multiples des mêmes données)
-2. Chargez toutes les données des planètes du film dans un tableau (grâce à la fonction *loadUrls*).
+2. Chargez toutes les données des planètes du film dans un tableau (grâce à la fonction *loadJsonUrls*).
 3. Triez les planètes par ordre alphabétique des noms.
 4. Générez le DOM de chaque planète en utilisant un clone de la template de classe *tmpl-planet*.
 5. Injectez ce DOM au bon endroit dans la page Web (c.à.d. dans l'élément DOM de classe *planets* du film), Indication: utilisez l'identifiant du film pour retrouver le bon élément DOM.
