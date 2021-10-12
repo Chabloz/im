@@ -6,6 +6,7 @@
 
 A partir du [code HTML donné](resources/jsFetchChain.html), ajoutez un lien vers votre JS, la css de [bootstrap](https://getbootstrap.com/). Copiez la fonction suivante dans votre code:
 
+```js
 /** 
  * Effectue plusieurs requêtes HTTP GET afin d'aller charger les URLs fournies
  * en paramètre. La fonction retourne une Promise qui se résolvera lorsque toutes
