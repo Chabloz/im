@@ -10,7 +10,7 @@ A partir du [code HTML donné](resources/jsFetchChain.html), ajoutez un lien ver
 /** 
  * Effectue plusieurs requêtes HTTP GET afin d'aller charger les URLs pointant
  * sur des données au format JSON. La fonction retourne un tableau contenant tous
- * les résultats (déjà désérialiser). 
+ * les résultats ("désérialisés"). 
  * 
  * @param {array} urls Les URLs à charger (dont le contenu est du JSON)
  * @return {array} un tableau contenant les résultats de chaque requête 
