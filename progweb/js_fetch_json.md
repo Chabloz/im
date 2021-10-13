@@ -1,4 +1,4 @@
-# Exercice Ajax - Json
+# Exercice JS Fetch - Json
 
 ## Mise en place
 
@@ -20,4 +20,4 @@ Une fois la liste reçue, il faut peupler le champ « localité » du formulaire
 
 https://chabloz.eu/map/staticmap.php?zoom=14&size=512x512&maptype=mapnik&center=46.7833333,6.65
 
-**remarque**: Ce WebService ne fournit que des cartes pour 1000 et 1401 comme codes posataux. Si la localité n'est pas trouvée, il génère une image entièrement noire.
+**remarque**: ce WebService peut être très lent si les cartes n'ont pas déjà été générée. Utilisez donc des codes postaux de grand ville de Suisse romande pour qu'il vous fournisse une image plus rapidement. Si la localité n'est pas trouvée, il génère une image entièrement noire.
