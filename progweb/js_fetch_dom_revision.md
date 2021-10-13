@@ -25,6 +25,6 @@ Vous devez aussi ajoutez une classe CSS pour le *span.rating* de chaque film. Ce
  
 ## Gestion des notations de l’utilisateur  
  
-Un quatrième WS est disponible pour noter les films : https://chabloz.eu/movies/rating/post/?id=XXX&rating=Y où XXX est l'identifiant du film et Y la note de l’utilisateur (un entier entre 1 et 5 compris). Le WS fournit en réponse un XML avec les nouvelles valeurs de la note et du nombre de votes (prenant en compte ce nouveau vote). Vous devez gérer les *click* sur les *span.rateIt* de chaque film afin d’envoyer la notation correspondante au WS. 
+Un quatrième WS est disponible pour noter les films : https://chabloz.eu/movies/rating/post/?id=XXX&rating=Y où XXX est l'identifiant du film et Y la note de l’utilisateur (un entier entre 1 et 5 compris). Le WS fournit en réponse un XML avec les nouvelles valeurs de la note et du nombre de votes (prenant en compte ce nouveau vote). Vous devez gérer les *click* sur les *span.rate-it* de chaque film afin d’envoyer la notation correspondante au WS. 
 
 Lors d’un *click*, vous devez donc récupérer l’identifiant du film concerné et la note approprié (vous pouvez la récupérer dans l’attribut data-rating du *span* cliqué). Une fois ces données envoyées au serveur et le résultat reçu, vous devez mettre à jour l’affichage de la note et du nombre de vote du film afin que l’utilisateur s’aperçoive du changement sur la notation qu’il a provoqué.
