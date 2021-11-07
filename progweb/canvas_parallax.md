@@ -22,7 +22,7 @@ canvas {
 ```
 Ensuite, récupérez le **contexte** graphique dans votre programme principal (*index.js*) et donnez-lui la même taille que la *viewport* avec le code suivant:
 ```js
-let ctx = document.querySelector('canvas').getContext('2d');
+const ctx = document.querySelector('canvas').getContext('2d');
 ctx.canvas.width = ctx.canvas.clientWidth;
 ctx.canvas.height = ctx.canvas.clientHeight;
 ```
@@ -33,7 +33,7 @@ Créez une classe *Circle* dans un dossier */class* dans vos sources. Ajoutez un
 
 ## Génération de cercles aléatoires
 
-Dans votre programme principal, créez un tableau pour le stockage des cercles. Générez 200 cercles de positions pseudo-aléatoires (mais incluse dans la *viewport*), et de couleurs pseudo-aléatoires. Pour que vos couleurs ne soient pas trop ternes, vous pouvez utiliser [randomcolor](https://github.com/davidmerfield/randomColor). Pour vos nombres pseudo-aléatoires, vous pouvez utiliser la méthode suivante (à mettre dans un module *Math* dans un dossier *lib* de votre projet):
+Dans votre programme principal, créez un tableau pour le stockage des cercles. Générez 200 cercles de positions pseudo-aléatoires (mais incluse dans la *viewport*), et de couleurs pseudo-aléatoires. Pour que vos couleurs ne soient pas trop ternes, vous pouvez utiliser [randomcolor](https://raw.githubusercontent.com/davidmerfield/randomColor/master/randomColor.js). Pour vos nombres pseudo-aléatoires, vous pouvez utiliser la méthode suivante (à mettre dans un module *Math* dans un dossier *lib* de votre projet):
 
 ```js
 export function getRandomInt(min, max) {
