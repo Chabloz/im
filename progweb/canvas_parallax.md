@@ -2,7 +2,7 @@
 
 ## Mise en place
 
-La programmation orientée objet est une des manières de structurer un code. Une syntaxe proche de celle que vous avez utilisée en Java est disponible dans JavaScript. Consultez  la [documentation](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes) pour une première prise en main. La POO peut être un bon paradigme associé à l'animation, car les entités affichées sont souvent de même type, ainsi le principe d’encapsulation est structurant.  (Il est bien sûr possible d'utiliser d'autres paradigmes de programmation tout aussi efficacement.) 
+La programmation orientée objet est une des manières de structurer un code. Une syntaxe proche de celle que vous avez utilisée en Java est disponible dans JavaScript. Consultez  la [documentation](https://fr.javascript.info/classes) pour une première prise en main. La POO peut être un bon paradigme associé à l'animation, car les entités affichées sont souvent de même type, ainsi le principe d’encapsulation est structurant.  (Il est bien sûr possible d'utiliser d'autres paradigmes de programmation tout aussi efficacement.) 
 
 Pour une première prise en main, essayons d'effectuer une animation avec un effet de parallaxe qui serait généré par le mouvement d'une caméra *virtuelle* manipulée par l'utilisateur. Nous allons créer des cercles dans un plan cartésien (modifié par la suite en tore plat) et les faire *bouger* selon les touches du clavier pressées par l'utilisateur.
 
@@ -15,16 +15,14 @@ body {
 } 
 canvas { 
   background: black;
-  /* remove scrollbar */
   display: block;
-  /* 100% of viewport */
-  width: 100vw; /* vw = viewport width */
-  height: 100vh; /* vh = viewport height */
+  width: 100vw;
+  height: 100vh;
 }
 ```
 Ensuite, récupérez le **contexte** graphique dans votre programme principal (*index.js*) et donnez-lui la même taille que la *viewport* avec le code suivant:
 ```js
-let ctx = $("canvas").get(0).getContext("2d");
+let ctx = document.querySelector('canvas').getContext('2d');
 ctx.canvas.width = ctx.canvas.clientWidth;
 ctx.canvas.height = ctx.canvas.clientHeight;
 ```
@@ -69,20 +67,16 @@ Modifiez votre programme principal pour créer des cercles dans un tore plat à 
 
 ## Détection des touches du clavier
 
-Afin de pouvoir laisser l'utilisateur contrôler la caméra, il nous faut savoir quelles touches de direction (WASD  par exemple) sont actuellement appuyées. Afin d'en faire un module réutilisable, nous allons encapsuler la gestion du clavier dans une classe. Commencez donc par créer un nouveau fichier *Keyboard.js* dans votre dossier *class*.  Le constructeur de cette classe n'aura qu'un seul paramètre nommé caseSensitive qui aura la valeur booléenne *false* par défaut et qui permettra d'indiquer s le gestionnaire sera sensible à la casse des lettres ou non. Le constructeur initialisera une structure de données qui permettra de stocker toutes les touches actuellement appuyées par l'utilisateur. Vous pouvez utiliser un tableau, mais une [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) ferait aussi bien (même mieux) le travail. Le constructeur écoutera aussi deux événements sur l'élément DOM *window*  *keydown* pour la détection de l'appui sur les touches, et *keyup* pour la détection des relâchements. Voilà le code pour leur écoute:
+Afin de pouvoir laisser l'utilisateur contrôler la caméra, il nous faut savoir quelles touches de direction (WASD  par exemple) sont actuellement appuyées. Afin d'en faire un module réutilisable, nous allons encapsuler la gestion du clavier dans une classe. Commencez donc par créer un nouveau fichier *Keyboard.js* dans votre dossier *class*. Le constructeur initialisera une structure de données qui permettra de stocker toutes les touches actuellement appuyées par l'utilisateur. Vous pouvez utiliser un tableau, mais une [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) ferait aussi bien (même mieux) le travail. Le constructeur écoutera aussi deux événements sur l'élément DOM *window*  *keydown* pour la détection de l'appui sur les touches, et *keyup* pour la détection des relâchements. 
 
-```js
-$(window).on("keydown", event => this.onKeyDown(event));
-$(window).on("keyup", event => this.onKeyUp(event));
-``` 
 Il vous faut donc coder les méthodes *onKeyDown* et *onKeyUp*. Pour récupérer la touche actuellement appuyée par l'utilisateur, vous pouvez utiliser [
-event.key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) . Lors de l'appui d'une touche, stockez-la dans votre structure de données et supprimez-la lors de son relâchement. Si vous êtes en mode "insensible à la casse" (c'est le cas si le paramètre caseSensitive est à faux), vous pouvez transformer la lettre en majuscule avant de la stocker dans votre structure grâce à la méthode [toUpperCase](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/toUpperCase). 
+event.code](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code) . Lors de l'appui d'une touche, stockez-la dans votre structure de données et supprimez-la lors de son relâchement.
 
 Finalement, ajoutez une méthode *isKeyDown(key)* qui retournera *true* si la touche fournie en paramètre est présente dans votre structure des touches actuellement appuyées et *false* dans les autres cas.
 
 ## Mouvement de la "caméra" par l'utilisateur
 
-Maintenant que nous sommes capables de savoir la combinaison de touche actuellement appuyée, nous allons pouvoir simuler un déplacement de la caméra par l'utilisateur plutôt que le mouvement automatique actuellement programmé.  Comme nous n'avons pas réellement de caméra, nous allons simplement sélectionner  l'angle pour le mouvement des cercles. Ainsi, au lieu de faire bouger la caméra (ce qui ne provoquerait pas l'effet parallaxe que nous avons simulé), nous allons bouger tous les cercles (ce qui aura comme illusion de faire un travelling). Afin de simplifier les mouvements possibles, nous allons nous limiter aux 8 mouvements suivants, listés ici avec leurs touches et radians:
+Maintenant que nous sommes capables de savoir la combinaison de touche actuellement appuyée, nous allons pouvoir simuler un déplacement de la caméra par l'utilisateur plutôt que le mouvement automatique actuellement programmé.  Comme nous n'avons pas réellement de caméra, nous allons simplement sélectionner l'angle pour le mouvement des cercles. Ainsi, au lieu de faire bouger la caméra (ce qui ne provoquerait pas l'effet parallaxe que nous avons simulé), nous allons bouger tous les cercles (ce qui aura comme illusion de faire un travelling). Afin de simplifier les mouvements possibles, nous allons nous limiter aux 8 mouvements suivants, listés ici avec leurs touches et radians:
 
  - 'W' et 'D' simultanément appuyées: Nord-Est (1.75***π**)
  - 'W' et 'A' simultanément appuyées: Nord-Ouest (1.25***π**)
@@ -95,7 +89,7 @@ Maintenant que nous sommes capables de savoir la combinaison de touche actuellem
 
 Il ne reste plus qu'à modifier l'angle par défaut du mouvement de vos cercles avec ces valeurs selon les touches appuyées par l'utilisateur. Si l'utilisateur n'a appuyé sur aucune de ces touches, ne bougez simplement pas les cercles. (Vous n'avez d'ailleurs ni besoin d'effacer, ni de redessiner tous vos cercles puisque rien ne bouge.)
 
-Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles, vous pouvez inverser les angles proposés:
+Si vous voulez donner l'impression de bouger la "caméra" plutôt que les cercles, vous pouvez inverser les angles proposés:
 
  - 'S' et 'A' simultanément appuyées: Nord-Est (1.75***π**)
  - 'S' et 'D' simultanément appuyées: Nord-Ouest (1.25***π**)
@@ -107,8 +101,3 @@ Si vous voulez donner l'impression de bouger la caméra plutôt que les cercles,
  - 'D' appuyée: Ouest (**π**)
 
 **Remarque**: comme vous l'avez peut-être remarqué, nos radians croissent dans la sens horaire plutôt que de le sens antihoraire.  En effet,  l'axe des *Y* croit vers le bas dans notre *canvas* et non vers le haut comme on le voit couramment en mathématique. 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NDE0MTMxNywxNjkwNTY0NzA3LC0yMD
-cyOTI2MTkxLDEwNTA1MjEwNTEsMTkxNzMwOTg5OCwtOTkzNTQ3
-NzM1XX0=
--->
