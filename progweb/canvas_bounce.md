@@ -1,4 +1,4 @@
-# Animation - révision
+# Animation - Pratique
 
 ## Mise en place
 
