@@ -5,14 +5,13 @@
 Un des "hello world" de l'animation est celui de la balle qui rebondit sur les bords de l'écran. Nous allons réaliser la chose en ajoutant une simulation de la gravité et du frottement. Nous pourrions reprendre les équations physiques pour ce mouvement,  mais nous allons plutôt utiliser des simplifications permettant toutefois d'obtenir un bon résultat.
 
 ## Rebondir sur les bords du *canvas*
-Créez un nouveau fichier nommé *Bouncing.js* dans *class/Circle/* et codez une classe héritant de la classe *Circle*.  Dans cette nouvelle classe, nous allons étendre la classe de base en remplaçant la vitesse par deux *vélocités*, une pour les X et une pour les Y (ce qui formera notre vecteur de vitesse). Créez donc le constructeur adéquat pour prendre en compte ces modifications.
+Créez un nouveau fichier nommé *Bouncing.js* dans *class/Circle/* et codez une classe héritant de la classe *Circle*.  Dans cette nouvelle classe, nous allons étendre la classe de base en remplaçant la vitesse par deux *vélocités*, une pour les X et une pour les Y (ce qui formera notre vecteur de *vélocité*). Créez donc le constructeur adéquat pour prendre en compte ces modifications.
 
 ### Méthode *move*
-Contrairement à la méthode *move* de la classe parente, la nouvelle ne doit plus prendre d'angle en paramètre (puisque l'on a déjà un vecteur de vitesse). Surcharger donc la méthode *move* pour calculer les (x,y) du cercle en prenant en compte les deux vélocités X et Y. N'oubliez pas de multiplier par Δt. 
+Surcharger la méthode *move* de la classe parente pour calculer les (x,y) du cercle en prenant en compte les deux vélocités X et Y. N'oubliez pas de multiplier par Δt. 
 
 ### Boucle d'animation
-
-Dans votre programme principal, testez votre nouvelle classe en créant un cercle. Puis créez une *boucle* d'animation (grâce à *requestAnimationFrame*) , calculez le Δt, faites bouger votre cercle et redessinez le *canvas*. 
+Dans votre programme principal, testez votre nouvelle classe en créant un cercle. Puis créez une *boucle* d'animation (grâce à *requestAnimationFrame* ou en utilisant (MainLoop.js)[https://github.com/IceCreamYou/MainLoop.js]), et faites bouger votre cercle. 
 
 ### Méthode *bounceOffTheWalls*
 
@@ -26,8 +25,4 @@ Rajoutez une méthode *applyGravity* dans votre classe. Cette méthode recevra l
 Rajoutez une méthode *applyFriction* dans votre classe. Cette méthode recevra en paramètre le Δt ainsi qu'une valeur de simulation pour le frottement. Son code modifiera les vélocités X et Y en conséquence. Appelez cette nouvelle méthode dans votre boucle d'animation juste après le mouvement de votre cercle pour la tester. Comme vous le constaterez, votre balle roulera un peu trop longtemps sur le *sol*.  Ajoutez donc une nouvelle méthode *applyFloorFriction* dans votre classe, celle-ci recevra aussi le Δt ainsi qu'une valeur de simulation pour le frottement au sol. Elle appellera votre méthode *applyFriction* avec ces paramètres  uniquement si le cercle est en contacte avec le sol. Testez à nouveau votre animation et ajustez les paramètres de friction pour que le mouvement vous paraisse adéquat.
 
 ### Timer
-Dans votre bouble d'animation, essayez de rajouter un minuteur pour faire apparaître toutes les 200 [ms] un nouveau cercle à une position fixe mais avec une couleur, un rayon et un vecteur de vitesse aléatoire (mais restant toujours entre le nord-ouest et le nord-est). Essayez aussi de supprimer les "vieux" cercles pour qu'un maximum de 100 cercles soient visibles à l'édran.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzgyNzQ0Nl19
--->
+Dans votre bouble d'animation, essayez de rajouter un minuteur pour faire apparaître toutes les 200 [ms] un nouveau cercle à une position fixe mais avec une couleur, un rayon et une vélocité aléatoire (mais dont la direction sera toujours entre le nord-ouest et le nord-est). Essayez aussi de supprimer les "vieux" cercles pour qu'un maximum de 100 cercles soient visibles à l'écran.
