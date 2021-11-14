@@ -1,4 +1,4 @@
-# Animation - Pratique
+# Animation
 
 ## Mise en place
 
