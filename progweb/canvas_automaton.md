@@ -101,7 +101,9 @@ On pourrait le faire assez simplement avec une *Map* (ce n'est qu'une idée, il 
 this.doOnKeyDown = new Map();
 ```
 
-Les clefs de cette Map seraient les touches à écouter et les valeurs, les fonctions à exécuter. Avec ce concept, il suffirait donc de tester l'existence de la touche comme clef dans la méthode *#onKeyDown* et d'executer la fonction associée si présente. Cette méthode minimaliste fonctionne bien mais elle ne permet pas des écouteurs multiples sur la même touche (ce qui n'est pas si grâve pour ce TP).
+Les clefs de cette Map seraient les touches à écouter et les valeurs, les fonctions à exécuter. Avec ce concept, il suffirait donc de tester l'existence de la touche comme clef dans la méthode *#onKeyDown* et d'executer la fonction associée si présente. Cette méthode minimaliste fonctionne bien mais elle ne permet pas des écouteurs multiples sur la même touche, ni des écoutes de touche en simultané (ce qui n'est pas si grâve pour ce TP).
+
+Une autre amélioration souhaitable est la gestion des [*code* versus *key*](https://keycode.info/). Rajoutez donc un paramètre *useCode* à votre constructeur et gérer ces deux modes. En effet, pour les raccourcis clavier, mieux vaut utiliser *key* que *code*.
 
 ### Modification du *nombre de générations par seconde*
 
