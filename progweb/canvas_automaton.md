@@ -93,45 +93,26 @@ import Automaton from "class/LifeLikeAutomaton/InFlatTorus";
 
 ## Gestion des touches du clavier
 
-Nous avons vu dans le TP précédent comment détecter si des touches du clavier de l'utilisateur sont actuellement appuyées. Mais nous avons désormais un nouveau besoin, En effet, comme nous voulons pouvoir réduire ou augementer le *nombre de générations par seconde* de notre automate, il ne serait pas souhaitable d’effectuer la détection des touches lors de notre boucle d'animation, car le délai de réaction serait trop grand en cas de *timestep* lent. Nous allons donc légèrement améliorer la classe *Keyboard*. Premièrement, modifiez le constructeur en y ajoutant la ligne suivante:
+Nous avons vu dans le TP précédent comment détecter si des touches du clavier de l'utilisateur sont actuellement appuyées. Mais nous avons désormais un nouveau besoin. En effet, comme nous voulons pouvoir réduire ou augementer le *nombre de générations par seconde* de notre automate, il ne serait pas souhaitable d’effectuer la détection des touches lors de notre boucle d'animation, car le délai de réaction serait trop long dans les cas de grand *timestep*. Nous allons donc légèrement améliorer la classe *Keyboard* pour pouvoir exécuter un code lorsque une touche est appuyée.
+
+On pourrait le faire assez simplement avec une *Map* (ce n'est qu'une idée, il y a plein d'autres solutions). Cette *Map* serait initialisée dans le constructeur comme ceçi:
 
 ```js
-this.pubSub = $({});
+this.doOnKeyDown = new Map();
 ```
 
-Deuxièmement, modifiez la méthode *onKeyDown* pour y ajouter le code suivant en fin de méthode:
-```js
-this.pubSub.trigger(`keyboard:${key}`, this.keyPressed);
-```
-
-Troisièmement, ajoutez la nouvelle méthode *onKey* suivante:
-
-```js
-onKey(key, callback) {
-   if (!this.caseSensitive) {
-     key = key.toUpperCase();
-   }
-   this.pubSub.on(`keyboard:${key}`, callback);
- }
-``` 
-
-Ces ajouts vont nous permettre d'écouter la frappe d'une touche précise au clavier. Voilà un code d'exemple:
-
-```js
-const KEYBOARD = new Keyboard();
-KEYBOARD.onKey('t', (event, keysPressed) => console.log(keysPressed));
-```
+Les clefs de cette Map seraient les touches à écouter et les valeurs, les fonctions à exécuter. Avec ce concept, il suffirait donc de tester l'existence de la touche comme clef dans la méthode *#onKeyDown* et d'executer la fonction associée si présente. Cette méthode minimaliste fonctionne bien mais elle ne permet pas des écouteurs multiples sur la même touche (ce qui n'est pas si grâve pour ce TP).
 
 ### Modification du *nombre de générations par seconde*
 
-Grâce à ces nouveautés, donnez le contrôle du nombre de générations par seconde désiré à l'utilisateur en écoutant deux touches de son clavier ('w', 's' par exemple). Le code lié à ces touches devra donc modifier les *fps* désirés. Bornez les valeurs que peut prendre le nombre de générations par seconde entre 1 et un maximum de votre choix.
+Grâce à cette nouveautés, donnez le contrôle du nombre de générations par seconde à l'utilisateur en écoutant deux touches de son clavier ('w', 's' par exemple). Le code lié à ces touches devra donc modifier le *timestep*. Bornez les valeurs que peut prendre le nombre de générations par seconde entre 1 et un maximum de votre choix.
 
 ### Autres modifications possibles par l'utilisateur
 De la même manière, vous pouvez donner le contrôle à l'utilisateur sur différent paramètres de votre automate cellulaire. Implémentez au minimum les fonctionnalités suivantes: 
 
  - Pause de l'animation
- - Nouvelle génération aléatoire  pour l'automate cellulaire  (*reset* dans la demo)
- - Changement de la probabilité qu'une cellule soit à l'état vivant lors de la génération aléatoire.
+ - Nouvelle génération aléatoire  pour l'automate cellulaire  (*reset* dans la démo)
+ - Changement des probabilités des états vivant/mort d'une cellule lors de la génération aléatoire de l'automate.
  - Changement des règles **B/S** (la démo offre ce changement via la souris, mais d'autres solutions plus ergonomiques sont possibles)
  
  Vous pouvez bien sûr implémenter les autres fonctionnalités présentes dans la démo si vous le souhaitez. 
