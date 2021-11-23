@@ -3,25 +3,25 @@
 ## Mise en place
 Le premier objectif de ce TP est de continuer à travailler sur la balise *canvas* et les animations. Le deuxième objectif est de s'initier aux [automates cellulaires](https://fr.wikipedia.org/wiki/Automate_cellulaire) et  à leur utilisation comme outils de  [génération procédurale](https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9ration_proc%C3%A9durale) de terrain.
 
-Afin de vous simplifier le travail, vous pouvez utiliser  ce [code HTML](resources/canvas_automaton.html) afin d'avoir un design de base pour l'interaction avec l'automate cellulaire. Ensuite, récupérez le **contexte** graphique du *canvas* dans votre programme principal.  
+Afin de vous simplifier le travail, vous pouvez utiliser ce [code HTML](resources/canvas_automaton.html) afin d'avoir un design de base pour l'interaction avec l'automate cellulaire. Ensuite, récupérez le **contexte** graphique du *canvas* dans votre programme principal.  
 
 Voici une [démo](https://chabloz.eu/files/automaton/) du résultat final escompté.
 
 ## Automate cellulaire 2D
 
-L'automate cellulaire que nous allons utiliser est un automate de [type jeu de la vie](https://en.wikipedia.org/wiki/Life-like_cellular_automaton) . Nous allons le représenter grâce à un tableau à deux dimensions de booléens, permettant ainsi de stocker les états vivant (*true*) et mort (*false*) de chaque cellule. Commencez par créer une classe *LifeLikeAutomaton* dans votre dossier *class*. Le constructeur ne devrait recevoir en paramètre que les données de la largeur et de la hauteur du tableau, mais comme nous allons le dessiner sur le *canvas* nous pouvons ajouter un paramètre pour la taille (en px) des cases et trois autres pour les couleurs (des cellules vivantes, des cellules mortes et de la grille) . Vous pouvez y mettre des valeurs par défaut si vous le souhaitez. Vous pouvez aussi initialiser le tableau de booléens avec des cellules mortes ou vivantes, mais ce n'est pas obligatoire car nous allons plutôt utiliser une méthode aléatoire d'initialisation.
+L'automate cellulaire que nous allons utiliser est un automate de [type jeu de la vie](https://en.wikipedia.org/wiki/Life-like_cellular_automaton) . Nous allons le représenter grâce à un tableau à deux dimensions de booléens, permettant ainsi de stocker les états vivant (*true*) et mort (*false*) de chaque cellule. Commencez par créer une classe *LifeLikeAutomaton* dans votre dossier *class*. Le constructeur ne devrait recevoir en paramètre que les données de la largeur et de la hauteur du tableau, mais comme nous allons le dessiner sur le *canvas* nous pouvons ajouter un paramètre pour la taille (en px) des cases et trois autres pour les couleurs (des cellules vivantes, des cellules mortes et de la grille). Vous pouvez y mettre des valeurs par défaut si vous le souhaitez. Vous pouvez aussi initialiser le tableau de booléens avec des cellules mortes ou vivantes, mais ce n'est pas obligatoire car nous allons plutôt utiliser une méthode aléatoire d'initialisation.
 
 ### Méthode *randomize*
 
-Afin de créer une "population" initiale aléatoire de cellules, ajoutez une méthode *randomize* dans votre classe. Celle-ci va simplement remplir de cellules d'état aléatoire mort ou vivant notre tableau. Elle prendra en paramètre la probabilité entre [0,1] qu'une cellule soit initialisée à l'état vivant.   
+Afin de créer une "population" initiale aléatoire de cellules, ajoutez une méthode *randomize* dans votre classe. Celle-ci va simplement remplir de cellules d'état aléatoire (mort ou vivant) notre tableau. Elle prendra en paramètre la probabilité entre [0,1] qu'une cellule soit initialisée à l'état vivant.
 
 ### Méthode *draw*
 Ajoutez une méthode pour le dessin de l'automate sur le *canvas*. Cette méthode recevra le contexte graphique en paramètre. Pour le dessin, dessiner d'abord la grille puis ensuite chacune des cases. Pour que la position (x, y) des cases corresponde au bon (x, y) du *canvas* n'oubliez pas de les multiplier par la taille des cases. Pour leur couleur (*fillStyle*), choisissez la bonne en fonction de l'état de la cellule. Finalement, pour que vos cases ne recouvrent pas la grille, dessinez les cellules avec une marge externe de 1 [px]. Vous pouvez utiliser la méthode [
 fillRect](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/fillRect)  pour le dessin des cellules (et de la grille).  Testez votre classe avec les étapes suivantes: 
 
- - Créez un automate cellulaire de taille identique au *canvas* divisé par la taille des cellules (fixée à 14px par exemple).
+ - Créez un automate cellulaire de taille identique au *canvas* divisé (division entière) par la taille des cellules (fixée à 14px par exemple).
  - Initialisez l'automate aléatoirement en appelant sa méthode *randomize* avec une probabilité de 0.1  pour générer un bruit de test.
- - Dessinez l'automate sur le *canvas* grâce à sa méthode  *draw*.
+ - Dessinez l'automate sur le *canvas* grâce à sa méthode *draw*.
 
 ## B3/S23, ou les règles du Jeu de la Vie
 
@@ -33,29 +33,25 @@ Le **B** (*birth*) indique la règle provoquant la naissance d'une cellule par a
 
 Le **S** (*survival*) indique la règle provoquant la survie (et donc réciproquement la mort) d'une cellule en fonction de ses voisins. Dans cet exemple, une cellule vivante le reste uniquement si 2 **ou** 3 cellules adjacentes sont actuellement vivantes (et elle meurt donc dans tous les autres cas).
 
-Afin d'implémenter cette syntaxe, nous pourrions représenter ces deux règles par deux tableaux de neuf booléens chacun. Cela permettrait ainsi de représenter les 2^18 automates possibles.  La règle d'exemple pourrait-être représentée comme cela :
+Afin d'implémenter cette syntaxe, nous pourrions représenter ces deux règles par deux *Set* en JS. Cela permettrait ainsi de représenter les 2^18 automates possibles très facilement. La règle d'exemple pourrait-être représentée comme cela :
 
 ```js
-[false, false, false, true, false, false, false, false, false] // Birth rule B3
-[false, false,  true, true, false, false, false, false, false] // Survival  rule S23
-```
-Ou plus simplement avec des entiers:
-
-```js
-[0, 0, 0, 1, 0, 0, 0, 0, 0] // Birth rule B3
-[0, 0, 1, 1, 0, 0, 0, 0, 0] // Survival  rule S23
+const birth = new Set([3]); // Birth rule: B3
+const survival = new Set([2, 3]); // Survival rule: S23
 ```
 
-Il y a bien sûr d'autres solutions pour représenter les 2^18 automates possibles.  Mais celle là a l'avantage d'être suffisamment explicite. L'algorithme permettant de savoir si une cellule à la position (x,y) sera vivante ou morte à la prochaine itération  est donc:
+Il y a bien sûr d'autres solutions pour représenter les 2^18 automates possibles.  Mais celle là a l'avantage d'être suffisamment explicite. Modifiez votre constructeur pour que l'on puisse fournir ces deux *Set* des règles lors de la création de l'automate.
 
- - Calculer le nombre de cellules vivantes dans le voisinage de Moore de la cellule.
- - Si la cellule (x,y) est actuellement vivante, elle prend la valeur à l'indice équivalent au nombre de voisins vivants dans la tableau de booléens de la règle de survie.
- - Si la cellule (x,y) est actuellement morte, elle prend la valeur à l'indice équivalent au nombre de voisins vivants dans la tableau de booléens de la règle de naissance.
- 
+L'algorithme permettant de savoir si une cellule à la position (x,y) sera vivante ou morte à la prochaine itération pourrait donc être celui-ci (c'est un exemple, d'autre algorithme sont bien sûr possible):
+
+ - Calculer le nombre de cellules vivantes dans le voisinage de Moore de la cellule [x][y].
+ - Si la cellule [x][y] est actuellement vivante, on regarde si son nombre de voisin **n'est pas** dans le *Set* de la règle de survie. On la marque alors comme devant mourir (mais on ne change pas son état pour le moment).
+ - Si la cellule (x,y) est actuellement morte, on regarde si son nombre de voisin **est** dans le *Set* de la règle de naissane. On la marque alors comme devant naître (mais on ne change pas son état pour le moment).
+
 Rajoutez donc deux méthodes dans votre classe *LifeLikeAutomaton*:
 
 - Une méthode qui retournera le nombre de cellules vivantes dans le voisinage de Moore d'une cellule. La position (x, y) de la cellule sera reçue en paramètre. Attention, pour les cellules en bord de tableau, ne prenez en compte que les cellules adjacentes présentes dans le tableau. (Nous utiliserons un tore plat par la suite.)  
-- Une méthode qui applique les règles **B/S** à l’ensemble des cellules du tableau. Elle recevra en paramètre les deux tableaux de booléen représentant les règles **B** et **S** et appliquera l'algorithme décrit plus haut. Attention toutefois à ne pas modifier trop tôt le tableau des cellules de l'automate puisque cela provoquerait des erreurs dans le décompte des voisins vivants des cellules suivantes. Opérez donc les changements sur une copie.
+- Une méthode qui applique les règles **B/S** à l’ensemble des cellules du tableau. Elle appliquera l'algorithme décrit plus haut. Attention toutefois à ne pas modifier trop tôt le tableau des cellules de l'automate puisque cela provoquerait des erreurs dans le décompte des voisins vivants des cellules suivantes.
 
 
 ## Animation
@@ -65,26 +61,21 @@ Il serait agréable de pouvoir modifier la fréquence de mise à jour de l'autom
 La plupart du temps, une boucle d'animation pour un *canvas* se fait avec la méthode *requestAnimationFrame* (cf. TP [canvas parallaxe](canvas_parallax.md)). Cela permet de déléguer au browser la gestion des *frames*. Le browser va faire de son mieux pour être proche de la fréquence de rafraîchissement de l'écran (la plupart du temps 60 [Hz]) afin de rendre l'animation fluide. Ainsi une itération d'une boucle classique d'animation peut se décrire ainsi: 
 
 - Calculer le Δt avec la *frame* précédente
-- Mettre à jour le monde selon le Δt. 
+- Mettre à jour le monde selon le Δt
 - Redessiner l'état du monde dans le *canvas*
 
-L'étape "redessiner le monde" s'effectue souvent par un effacement total du *canvas* et le dessin de tous les éléments. On peut toutefois optimiser cette étape en ne redessinant que les parties du *canvas* où des changements ont eu lieu. C'est ce que nous allons faire dans ce TP.
+L'étape "redessiner le monde" s'effectue souvent par un effacement total du *canvas* et le dessin de tous les éléments. On peut toutefois optimiser cette étape en ne redessinant que les parties du *canvas* où des changements ont eu lieu. C'est ce que nous allons faire par la suite dans ce TP (au dernier point).
 
-Afin de diversifier les méthodes d'animation et de travailler sur les *timers*, nous n'allons pas utiliser *requestAnimationFrame*. Une des raisons est que nous n'avons pas besoin d'une grande précision dans la gestion du temps. Le *timer* nous permettra aussi de simplifier notre boucle d'animation. Voilà un exemple de code pour une animation basée sur un *timer*:
+Comme nous l'avons vu précédemment (dans les vidéos du cours sur les boucles d'animation), nous pouvons encore améliorer cette boucle en utilisant un temps constant pour les mise à jour. Pour rappel, nous avons utilisé une version légérement modifiée de MainLoop.js disponible [ici](resources/mainloop.js).
 
-```js 
- let timer = setInterval(() => {   
-	// Application des règles B/S et mise à jour du canvas
- }, 1000/fps);
-```
-Il est important de comprendre que le *fps* utilisé ici ne sera qu'un souhait et non le véritable *fps*.  Premièrement parce que les *timer* ne sont pas très précis, mais surtout parce que le traitement effectué à chaque *frame* peut-être suffisamment lent pour provoquer un délai pour l’exécution la prochaine *frame*.  
+Par défaut MainLoop.js fixe le fréquence de mise à jour du monde (le *timestep*) à 1000/60 [ms]. Mais il est possible de changer cette valeur avec la méthode *MainLoop.setSimulationTimestep*. 
 
-Testez cette méthode d'animation avec votre automate cellulaire. Choisissez  un *fps* de 2 afin de contrôler que les règles sont correctement appliquée à l'ensemble des cellules de votre automate. A chaque itération, effectuez les opérations suivantes:
+Testez cette méthode d'animation avec votre automate cellulaire. Choisissez  une 1000ms (une génération par seconde) afin de contrôler que les règles sont correctement appliquée à l'ensemble des cellules de votre automate. A chaque itération, effectuez les opérations suivantes:
 
  - Appliquez les régles **B/S** à votre automate.
  - Redessinez votre automate. Bien sûr, vous n'avez pas besoin de redessiner la grille.
 
-Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie grâce à votre boucle d'animation !
+Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie et évoluer toutes les secondes ! Vous pouvez maintenant jouer un peu avec le *timestep* pour accélérer ou ralentir la chose. 
 
 ## Univers en tore plat
 De la même manière que le TP sur l'effet parallaxe, ajoutez une nouvelle classe *InFlatTorus* dans le dossier *class/LifeLikeAutomaton* (à créer). Elle héritera (*extends*) de la classe *LifeLikeAutomaton* et surchargera la méthode qui retourne le nombre de cellules vivantes dans le voisinage de Moore. Afin de simuler un tore plat, il vous suffit en effet de modifier la manière de considérer les voisins d'une cellule. Une méthode souvent utilisée pour la gestion de cycle en informatique est l'utilisation du [modulo](https://en.wikipedia.org/wiki/Modulo_operation). Comme vous pouvez le lire sur la page Wikipédia, son implémentation dans les langages de programmation est très diversifiée. Dans notre cas, nous avons besoin du modulo euclidien couramment utilisé en mathématique. Voici une fonction  à rajouter dans votre bibliothèque mathématique *lib/Math* pour le calculer:
