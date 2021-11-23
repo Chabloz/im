@@ -70,7 +70,7 @@ Comme nous l'avons vu précédemment (dans les vidéos du cours sur les boucles 
 
 Par défaut MainLoop.js fixe le fréquence de mise à jour du monde (le *timestep*) à 1000/60 [ms]. Mais il est possible de changer cette valeur avec la méthode *MainLoop.setSimulationTimestep*. 
 
-Testez cette méthode d'animation avec votre automate cellulaire. Choisissez  une 1000ms (une génération par seconde) afin de contrôler que les règles sont correctement appliquée à l'ensemble des cellules de votre automate. A chaque itération, effectuez les opérations suivantes:
+Testez cette méthode d'animation avec votre automate cellulaire. Choisissez 1000ms (une génération par seconde) afin de contrôler que les règles sont correctement appliquée à l'ensemble des cellules de votre automate. A chaque itération, effectuez les opérations suivantes:
 
  - Appliquez les régles **B/S** à votre automate.
  - Redessinez votre automate. Bien sûr, vous n'avez pas besoin de redessiner la grille.
