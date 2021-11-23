@@ -122,7 +122,7 @@ const KEYBOARD = new Keyboard();
 KEYBOARD.onKey('t', (event, keysPressed) => console.log(keysPressed));
 ```
 
-### Modification du *frame rate*
+### Modification du *nombre de générations par seconde*
 
 Grâce à ces nouveautés, donnez le contrôle du nombre de générations par seconde désiré à l'utilisateur en écoutant deux touches de son clavier ('w', 's' par exemple). Le code lié à ces touches devra donc modifier les *fps* désirés. Bornez les valeurs que peut prendre le nombre de générations par seconde entre 1 et un maximum de votre choix.
 
