@@ -105,7 +105,7 @@ Les clefs de cette Map seraient les touches à écouter et les valeurs, les fonc
 
 ### Modification du *nombre de générations par seconde*
 
-Grâce à cette nouveautés, donnez le contrôle du nombre de générations par seconde à l'utilisateur en écoutant deux touches de son clavier ('w', 's' par exemple). Le code lié à ces touches devra donc modifier le *timestep*. Bornez les valeurs que peut prendre le nombre de générations par seconde entre 1 et un maximum de votre choix.
+Grâce à cette nouveauté, donnez le contrôle du nombre de générations par seconde à l'utilisateur en écoutant deux touches de son clavier ('w', 's' par exemple). Le code lié à ces touches devra donc modifier le *timestep*. Bornez les valeurs que peut prendre le nombre de générations par seconde entre 1 et un maximum de votre choix.
 
 ### Autres modifications possibles par l'utilisateur
 De la même manière, vous pouvez donner le contrôle à l'utilisateur sur différent paramètres de votre automate cellulaire. Implémentez au minimum les fonctionnalités suivantes: 
