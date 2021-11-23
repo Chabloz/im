@@ -5,7 +5,7 @@ Le premier objectif de ce TP est de continuer à travailler sur la balise *canva
 
 Afin de vous simplifier le travail, vous pouvez utiliser ce [code HTML](resources/canvas_automaton.html) afin d'avoir un design de base pour l'interaction avec l'automate cellulaire. Ensuite, récupérez le **contexte** graphique du *canvas* dans votre programme principal.  
 
-Voici une [démo](https://chabloz.eu/files/automaton/) du résultat final escompté.
+Voici une [démo](https://chabloz.eu/files/gol/automaton/) du résultat final escompté.
 
 ## Automate cellulaire 2D
 
