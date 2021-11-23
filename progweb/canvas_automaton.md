@@ -64,16 +64,13 @@ La plupart du temps, une boucle d'animation pour un *canvas* se fait avec la mé
 - Mettre à jour le monde selon le Δt
 - Redessiner l'état du monde dans le *canvas*
 
-L'étape "redessiner le monde" s'effectue souvent par un effacement total du *canvas* et le dessin de tous les éléments. On peut toutefois optimiser cette étape en ne redessinant que les parties du *canvas* où des changements ont eu lieu. C'est ce que nous allons faire par la suite dans ce TP (au dernier point).
+L'étape "redessiner le monde" s'effectue souvent par un effacement total du *canvas* et le dessin de tous les éléments. On peut toutefois ici optimiser cette étape en ne redessinant que les cellules de l'automate. (Mais cela serait encore plus optimisé de ne redessiner que les cellules où un changement d'état a eu lieu. Vous pouvez le faire comme une partie optionnelle de ce TP).
 
 Comme nous l'avons vu précédemment (dans les vidéos du cours sur la boucle d'animation), nous pouvons encore améliorer cette boucle en utilisant un temps constant pour les mise à jour. Pour rappel, nous avons utilisé une version légérement modifiée de MainLoop.js disponible [ici](resources/mainloop.js).
 
 Par défaut *MainLoop.js* fixe le fréquence de mise à jour du monde (le *timestep*) à 1000/60 [ms]. Mais il est possible de changer cette valeur avec la méthode *MainLoop.setSimulationTimestep*. 
 
-Testez cette méthode d'animation avec votre automate cellulaire. Choisissez 1000ms (une génération par seconde) afin de contrôler que les règles sont correctement appliquée à l'ensemble des cellules de votre automate. A chaque itération, effectuez les opérations suivantes:
-
- - Appliquez les régles **B/S** à votre automate.
- - Redessinez votre automate.
+Testez cette méthode d'animation avec votre automate cellulaire. Choisissez 1000ms (une génération par seconde) afin de contrôler que les règles sont correctement appliquée à l'ensemble des cellules de votre automate. 
 
 Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie et évoluer toutes les secondes ! Vous pouvez maintenant jouer un peu avec le *timestep* pour accélérer ou ralentir la chose. Ce *timestep* étant le nombre de générations par seconde de notre automate cellulaire.
 
