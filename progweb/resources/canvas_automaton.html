@@ -40,11 +40,8 @@
       }
       canvas {
         background: black;
-        /* enlève la scrollbar */
         display: block;
-        /* 100% du viewport */
         width: 100vw;
-        /* 100% du viewport - le header*/
         height: calc(100% - 3.2rem);
       }
     </style>
@@ -52,11 +49,11 @@
   <body>
     <header>
       <div>
-        Fps <span>w,s</span>
+        Timestep <span>w,s</span>
         Pause <span>p</span>
         Tile size <span>z,h</span>
         <br>
-        map type <span>m</span>
+        Map type <span>m</span>
         Reset <span>r</span>
         Reset alive % <span>a,d</span>
       </div>
@@ -86,16 +83,15 @@
         </div>
       </div>
       <div>
-        Tile size <span id="tileSize"></span>
-        frame <span id="nbIter"></span>
-        Target fps <span id="fps-traget"></span>
+        Tile size: <span id="tileSize"></span>
+        Frame: <span id="nbIter"></span>
+        Timestep: <span id="timestep"></span>
         <br>
         Map: <span id="map" data-flat-torus="Flat Torus" data-rectangle="Rectangle"></span>
-        reset alive %: <span id="aliveProb"></span>
-        fps <span id="fps"></span>
+        Starting alive %: <span id="aliveProb"></span>
+        Fps: <span id="fps"></span>
       </div>
     </header>
     <canvas></canvas>
-    <script src="bundle_automaton.js"></script>
   </body>
 </html>
