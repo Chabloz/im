@@ -9,14 +9,14 @@ Voici une [démo](https://chabloz.eu/files/automaton/) du résultat final escomp
 
 ## Automate cellulaire 2D
 
-L'automate cellulaire que nous allons utiliser est un automate de [type jeu de la vie](https://en.wikipedia.org/wiki/Life-like_cellular_automaton) . Nous allons le représenter grâce à un tableau à deux dimensions de booléens, permettant ainsi de stocker les états vivant (*true*) et mort (*false*) de chaque cellule. Commencez par créer une classe *LifeLikeAutomaton* dans votre dossier *class*. Le constructeur ne devrait recevoir en paramètre que les données de la largeur et de la hauteur du tableau, mais comme nous allons le dessiner sur le *canvas* nous pouvons ajouter un paramètre pour la taille (en px) des cases et trois autres pour les couleurs (des cellules vivantes, des cellules mortes et de la grille). Vous pouvez y mettre des valeurs par défaut si vous le souhaitez. Vous pouvez aussi initialiser le tableau de booléens avec des cellules mortes ou vivantes, mais ce n'est pas obligatoire car nous allons plutôt utiliser une méthode aléatoire d'initialisation.
+L'automate cellulaire que nous allons utiliser est un automate de [type jeu de la vie](https://en.wikipedia.org/wiki/Life-like_cellular_automaton) . Nous allons le représenter grâce à un tableau à deux dimensions d'entier (une matrice 2D), permettant ainsi de stocker les états vivant **1** et mort **0** de chaque cellule. Commencez par créer une classe *Automaton* dans votre dossier *class*. Le constructeur ne devrait recevoir en paramètre que les données de la largeur et de la hauteur du tableau, mais comme nous allons le dessiner sur le *canvas* nous pouvons ajouter un paramètre pour la taille (en px) des cases et deux autres pour les couleurs des cellules vivantes et des cellules mortes. Vous pouvez y mettre des valeurs par défaut si vous le souhaitez. Vous pouvez aussi initialiser la matrice d'entier avec des cellules mortes ou vivantes, mais ce n'est pas obligatoire car nous allons plutôt utiliser une méthode aléatoire d'initialisation.
 
 ### Méthode *randomize*
 
 Afin de créer une "population" initiale aléatoire de cellules, ajoutez une méthode *randomize* dans votre classe. Celle-ci va simplement remplir de cellules d'état aléatoire (mort ou vivant) notre tableau. Elle prendra en paramètre la probabilité entre [0,1] qu'une cellule soit initialisée à l'état vivant.
 
 ### Méthode *draw*
-Ajoutez une méthode pour le dessin de l'automate sur le *canvas*. Cette méthode recevra le contexte graphique en paramètre. Pour le dessin, dessiner d'abord la grille puis ensuite chacune des cases. Pour que la position (x, y) des cases corresponde au bon (x, y) du *canvas* n'oubliez pas de les multiplier par la taille des cases. Pour leur couleur (*fillStyle*), choisissez la bonne en fonction de l'état de la cellule. Finalement, pour que vos cases ne recouvrent pas la grille, dessinez les cellules avec une marge externe de 1 [px]. Vous pouvez utiliser la méthode [
+Ajoutez une méthode pour le dessin de l'automate sur le *canvas*. Cette méthode recevra le contexte graphique en paramètre. Pour le dessin, dessiner chacune des cellules de l'automate. Pour que la position (x, y) des cellules corresponde au bon (x, y) du *canvas* n'oubliez pas de les multiplier par la taille des cellules. Pour leur couleur (*fillStyle*), choisissez la bonne en fonction de l'état de la cellule. Finalement, pour simuler une *grille*, dessinez les cellules avec une marge externe de 1 [px]. Vous pouvez utiliser la méthode [
 fillRect](https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/fillRect)  pour le dessin des cellules (et de la grille).  Testez votre classe avec les étapes suivantes: 
 
  - Créez un automate cellulaire de taille identique au *canvas* divisé (division entière) par la taille des cellules (fixée à 14px par exemple).
@@ -66,16 +66,16 @@ La plupart du temps, une boucle d'animation pour un *canvas* se fait avec la mé
 
 L'étape "redessiner le monde" s'effectue souvent par un effacement total du *canvas* et le dessin de tous les éléments. On peut toutefois optimiser cette étape en ne redessinant que les parties du *canvas* où des changements ont eu lieu. C'est ce que nous allons faire par la suite dans ce TP (au dernier point).
 
-Comme nous l'avons vu précédemment (dans les vidéos du cours sur les boucles d'animation), nous pouvons encore améliorer cette boucle en utilisant un temps constant pour les mise à jour. Pour rappel, nous avons utilisé une version légérement modifiée de MainLoop.js disponible [ici](resources/mainloop.js).
+Comme nous l'avons vu précédemment (dans les vidéos du cours sur la boucle d'animation), nous pouvons encore améliorer cette boucle en utilisant un temps constant pour les mise à jour. Pour rappel, nous avons utilisé une version légérement modifiée de MainLoop.js disponible [ici](resources/mainloop.js).
 
-Par défaut MainLoop.js fixe le fréquence de mise à jour du monde (le *timestep*) à 1000/60 [ms]. Mais il est possible de changer cette valeur avec la méthode *MainLoop.setSimulationTimestep*. 
+Par défaut *MainLoop.js* fixe le fréquence de mise à jour du monde (le *timestep*) à 1000/60 [ms]. Mais il est possible de changer cette valeur avec la méthode *MainLoop.setSimulationTimestep*. 
 
 Testez cette méthode d'animation avec votre automate cellulaire. Choisissez 1000ms (une génération par seconde) afin de contrôler que les règles sont correctement appliquée à l'ensemble des cellules de votre automate. A chaque itération, effectuez les opérations suivantes:
 
  - Appliquez les régles **B/S** à votre automate.
- - Redessinez votre automate. Bien sûr, vous n'avez pas besoin de redessiner la grille.
+ - Redessinez votre automate.
 
-Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie et évoluer toutes les secondes ! Vous pouvez maintenant jouer un peu avec le *timestep* pour accélérer ou ralentir la chose. 
+Si vous utilisez les règles **B3/S23**, vous devriez normalement voir le Jeu de la Vie prendre vie et évoluer toutes les secondes ! Vous pouvez maintenant jouer un peu avec le *timestep* pour accélérer ou ralentir la chose. Ce *timestep* étant le nombre de générations par seconde de notre automate cellulaire.
 
 ## Univers en tore plat
 De la même manière que le TP sur l'effet parallaxe, ajoutez une nouvelle classe *InFlatTorus* dans le dossier *class/LifeLikeAutomaton* (à créer). Elle héritera (*extends*) de la classe *LifeLikeAutomaton* et surchargera la méthode qui retourne le nombre de cellules vivantes dans le voisinage de Moore. Afin de simuler un tore plat, il vous suffit en effet de modifier la manière de considérer les voisins d'une cellule. Une méthode souvent utilisée pour la gestion de cycle en informatique est l'utilisation du [modulo](https://en.wikipedia.org/wiki/Modulo_operation). Comme vous pouvez le lire sur la page Wikipédia, son implémentation dans les langages de programmation est très diversifiée. Dans notre cas, nous avons besoin du modulo euclidien couramment utilisé en mathématique. Voici une fonction  à rajouter dans votre bibliothèque mathématique *lib/math.js* pour le calculer:
@@ -96,7 +96,8 @@ import Automaton from "class/LifeLikeAutomaton/InFlatTorus";
 
 ## Gestion des touches du clavier
 
-Nous avons vu dans le TP précédent comment détecter si des touches du clavier de l'utilisateur sont actuellement appuyées. Mais nous avons désormais un nouveau besoin, En effet, comme nous voulons pouvoir réduire les *fps* de notre animation, il ne serait pas souhaitable d’effectuer la détection des touches lors de notre boucle d'animation, car le délai de réaction serait trop grand en cas de *fps* bas. Nous allons donc légèrement améliorer la classe *Keyboard*. Premièrement, modifiez le constructeur en y ajoutant la ligne suivante:
+Nous avons vu dans le TP précédent comment détecter si des touches du clavier de l'utilisateur sont actuellement appuyées. Mais nous avons désormais un nouveau besoin, En effet, comme nous voulons pouvoir réduire ou augementer le *nombre de générations par seconde* de notre automate, il ne serait pas souhaitable d’effectuer la détection des touches lors de notre boucle d'animation, car le délai de réaction serait trop grand en cas de *timestep* lent. Nous allons donc légèrement améliorer la classe *Keyboard*. Premièrement, modifiez le constructeur en y ajoutant la ligne suivante:
+
 ```js
 this.pubSub = $({});
 ```
@@ -126,7 +127,7 @@ KEYBOARD.onKey('t', (event, keysPressed) => console.log(keysPressed));
 
 ### Modification du *frame rate*
 
-Grâce à ces nouveautés, donnez le contrôle du *frame rate* désiré à l'utilisateur en écoutant deux touches de son clavier ('w', 's' par exemple). Le code lié à ces touches devra donc modifié les *fps* désirés, puis stopper et relancer votre boucle d'animation avec la valeur du *frame rate* modifié. Bornez les valeurs que peut prendre les *fps* désirés par 1 et 250.
+Grâce à ces nouveautés, donnez le contrôle du nombre de générations par seconde désiré à l'utilisateur en écoutant deux touches de son clavier ('w', 's' par exemple). Le code lié à ces touches devra donc modifier les *fps* désirés. Bornez les valeurs que peut prendre le nombre de générations par seconde entre 1 et un maximum de votre choix.
 
 ### Autres modifications possibles par l'utilisateur
 De la même manière, vous pouvez donner le contrôle à l'utilisateur sur différent paramètres de votre automate cellulaire. Implémentez au minimum les fonctionnalités suivantes: 
