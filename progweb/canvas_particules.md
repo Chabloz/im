@@ -24,7 +24,7 @@ Math.abs(x1 - x2) ** 2 + Math.abs(y1 - y2) ** 2 <= Math.abs(r1 + r2) ** 2;
 Finalement, pour tout les cercles en collisions avec la souris, récupérez l'angle entre la position  de la souris et le centre du cercle grâce à:
 
 ```js
-Math.atan2(x1 - x2, y1 - y2); // angle entre la souris en pos. (x1,y2) et le cercle en pos. (x2,y2) 
+Math.atan2(x1 - x2, y1 - y2); // angle entre la pos. (x2,y2) et (x1,y1) 
 ```
 et modifiez les vélocités (x et y) des cercles en collision.
 
