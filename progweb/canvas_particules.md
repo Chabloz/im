@@ -26,7 +26,7 @@ Finalement, pour tout les cercles en collisions avec la souris, récupérez l'an
 ```js
 Math.atan2(x1 - x2, y1 - y2); // angle entre la pos. (x2,y2) et (x1,y1) 
 ```
-et modifiez les vélocités (x et y) des cercles en collision.
+et modifiez les vélocités (x et y) des cercles en collisions.
 
 ### Animation de la couleur des cercles
 
