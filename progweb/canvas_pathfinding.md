@@ -156,3 +156,5 @@ tweenY = tweens.create({from: lastPos.y, to: nextPos.y, duration, after: tweenY,
 }});
 ```
 **g)** *lastPos* prend la valeur de *nextPos*. *lastCell* prend la valeur de *nextCell* et on recommence au point **c)**
+
+Finalement, modifiez votre méthode de gestion des clics. Lorsqu'un clic se produit, après le recalcul de *flowMap*, il vous faut supprimer toutes les *tweens* actuelles et appellé à nouveau votre fonction *generateTweens*.
