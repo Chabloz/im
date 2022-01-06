@@ -132,7 +132,7 @@ Commencez par créer dans votre programme principal un simple cercle. La positio
 
 ### Animation avec interpolation (*tweening*) 
 
-Créez dans votre programme principal une méthode *generateTweens* qui se chargera d'initialiser toutes les animations des mouvements entre la position actuelle du cercle et la position du centre de la case de destination suivante (trouvable via *flowMap*).  Cette méthode prendra une entité en paramètre (notre cercle) et s'occupera d'initialiser les interpolations (*tween*).  Comme aide, voici un exemple d'algorithme pour cette méthode :
+Créez dans votre programme principal une méthode *generateTweens* qui se chargera d'initialiser toutes les animations des mouvements entre la position actuelle du cercle et la position du centre de la case de destination suivante (trouvable via *flowMap*).  Cette méthode prendra une entité en paramètre le cercle (nommé **mob** dans l'aglo qui va suivre) et s'occupera d'initialiser les interpolations (*tween*) entre tous les points de passe pour atteindre sa destination. Comme aide, voici un exemple d'algorithme :
 
 **a)** Stocker la position initial {x, y} du cercle dans une variables nommée *lastPos*
 
