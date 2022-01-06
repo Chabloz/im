@@ -105,9 +105,25 @@ L'algorithme final pour afficher les flèches du flot devient alors pour chaque 
 
 Finalement, testez votre algorithme en dessinant ce flot dans votre programme principal.
 
-## Gestion des clicks sur la grille
+## Gestion des clics sur la grille
 
-Notre automate contenant actuellement que des cellules vivantes, il serait interessant de pouvoir modifier l'état *vivant/mort* d'une cellule. Une gestion du click de la souris sur l'une des celleules de l'automate semble approprié. 
+Notre automate contenant actuellement que des cellules vivantes, il serait interessant de pouvoir modifier l'état *vivant/mort* d'une cellule. Une gestion du clic de la souris sur l'une des cellules de l'automate semble approprié. 
+Voici un exemple de code qui permet d'obtenir la ligne et colonne de la grille en fonction de la position de la souris :
+
+```js
+const rect = ctx.canvas.getBoundingClientRect();
+const row = Math.floor((event.clientY - rect.top) / tileSize);
+const col = Math.floor((event.clientX - rect.left) / tileSize);
+``
+
+Lorsqu'un clic de souris se produit sur la grille, vous devez faire les choses suivantes:
+
+- Récupérer les {row, col} correspondant (grâce au code ci-dessus)
+- Changer l'etat *vivant/mort* de la cellule {row, col}
+- Refaire un appel à la méthode *flowFieldTo* pour que la *flowMap* soit mise à jour en conséquence
+
+Testez votre code en cliquant sur votre grille et en regardant que la couleur de la cellule change bien et que le *flow* est correctement recalculé.  
+
 
 ## Partie optionnelle: Génération et mouvement d'entités
 
