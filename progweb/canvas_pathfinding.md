@@ -122,34 +122,31 @@ Lorsqu'un clic de souris se produit sur la grille, vous devez faire les choses s
 - Changer l'etat *vivant/mort* de la cellule {row, col}
 - Refaire un appel à la méthode *flowFieldTo* pour que la *flowMap* soit mise à jour en conséquence
 
-Testez votre code en cliquant sur votre grille et en regardant que la couleur de la cellule change bien et que le *flow* est correctement recalculé.  
+Testez votre code en cliquant sur votre grille et en regardant que la couleur des cellules change bien et que le *flow* est correctement recalculé.  
 
+## Partie optionnelle (difficile): mouvement d'une entité par interpolation entre les points de passage.
 
-## Partie optionnelle: Génération et mouvement d'entités
+Maintenant que nous possédons l'information nécessaire pour trouver n'importe quel chemin d'un point de la grille à un autre, nous allons l'utiliser pour déplacer une entité (un simple cercle) sur un chemin entre une origine et une destination. 
 
-Maintenant que nous possédons l'information nécessaire pour trouver n'importe quel chemin d'un point de la grille à un autre, nous allons l'utiliser pour déplacer des entités (des cercles dans notre cas) sur un chemin entre une origine et une destination. Avant de coder une générateur d'entité (un *mob spawner* !), nous allons nous contenter de faire bouger un seul cercle. 
-
-Commencez par créer dans votre programme principal une méthode qui s'occupera de la création de ce cercle. La position (x, y) du cercle devra coïncider avec le centre de la case qui servira à la génération (*spawn*) de nos entités. Pour trouver le centre de la case sur le *canvas*, il vous faudra donc multiplier les coordonnées (row, col) de la case de départ avec la taille des cases et de trouver le centre de la case. Vous pouvez spécifier une vitesse de 0.1 [px/ms] et une couleur de votre choix (ou une aléatoire avec *randomcolor*).
+Commencez par créer dans votre programme principal un simple cercle. La position (x, y) du cercle devra coïncider avec le centre de la case qui fera office de point de départ (*spawn*). Pour trouver le centre de la case sur le *canvas*, il vous faudra donc multiplier les coordonnées {row, col} de la case de départ avec la taille des cases et de trouver le centre de la case (en ajoutant la moitié de la taille des cases). Vous pouvez spécifier une vitesse de 0.05 [px/ms] et une couleur de votre choix.
 
 ### Animation avec interpolation (*tweening*) 
 
-Créez dans votre programme principal une méthode *createTweenMob* qui se chargera d'initialiser l'animation du mouvement entre la position actuelle du cercle et la position du centre de la case de destination (trouvable via *flowMap*).  Cette méthode prendra une entité en paramètre (notre cercle) et s'occupera d'initialiser l'interpolation (*tween* ).  L'algorithme de cette méthode sera le suivant:
+Créez dans votre programme principal une méthode *generateTweens* qui se chargera d'initialiser toutes les animations des mouvements entre la position actuelle du cercle et la position du centre de la case de destination suivante (trouvable via *flowMap*).  Cette méthode prendra une entité en paramètre (notre cercle) et s'occupera d'initialiser les interpolations (*tween*).  Comme aide, voici un exemple d'algorithme pour cette méthode :
 
-- Trouver les coordonnées (row, col) de la case de la grille où se trouve notre cercle
-- Récupérer les coordonnées (row, col) de la destination grâce à *flowMap*. Si aucune destination n'est disponible, s'arrêter là.
-- Transformer les coordonnées (row, col) de la destination en position (x, y) du centre de la case dans le *canvas*
-- Calculer la distance entre la position actuelle du cercle et la destination (grâce au **théorème de Pythagore**)
-- Créer la *tween*.
+a) Stocker la position initial {x, y} du cercle dans une variables nommée *lastPos*
+b) Stocker les coordonnées {row, col} de la case de la grille où se trouve notre cercle à partir de *lastPos* dans une variable nommée *lastCell*
+c) Stocker les coordonnées {row, col} de la destination à partir de *lastCell* grâce à *flowMap* dans une variable nommée *nextCell* . Si aucune destination n'est disponible, s'arrêter là.
+d) Stocker la position {x, y} de la destination dans une variable *nextPos* en transformant les coordonnées de *nextCell* en {x, y}
+e) Calculer la distance entre *lastPos* et la destination (grâce au **théorème de Pythagore**)
+f) Créer deux *tweens*, l'une pour l'animation des x et l'autre pour les y en se basant sur le code suivant:
 
 ```js
-new TWEEN.Tween(mob) // où mob est votre cercle
-  .to(dest, distance / mob.speed) // où dest est le {x, y} de la destination
-  .onComplete(mob => {
-    createTweenMob(mob); // indique qu'à la fin de l'interpolation, on recommence
-  })
-  .start(); // "démarre" l'animation avec interpolation
+tweenX = tweens.create({from: lastPos.x, to: nextPos.x, duration, after: tweenX, animate: x => {
+  mob.x = x;
+}});
+tweenY = tweens.create({from: lastPos.y, to: nextPos.y, duration, after: tweenY, animate: y => {
+  mob.y = y;
+}});
 ```
-
-### Boucle d'animation
-
-Pour que *tween.js* anime votre cercle, il faut que vous appeliez la méthode *TWEEN.update()*. Créez donc une boucle d'animation avec *requestAnimationFrame* et appelez là. Votre méthode appelée à chaque *frame* devra aussi se charger de dessiner le cercle et la grille.
+g) *lastPos* prend la valeur de *nextPos*. *lastCell* prend la valeur de *nextCell* et on recommence au point c)
