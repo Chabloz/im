@@ -135,10 +135,15 @@ Commencez par créer dans votre programme principal un simple cercle. La positio
 Créez dans votre programme principal une méthode *generateTweens* qui se chargera d'initialiser toutes les animations des mouvements entre la position actuelle du cercle et la position du centre de la case de destination suivante (trouvable via *flowMap*).  Cette méthode prendra une entité en paramètre (notre cercle) et s'occupera d'initialiser les interpolations (*tween*).  Comme aide, voici un exemple d'algorithme pour cette méthode :
 
 a) Stocker la position initial {x, y} du cercle dans une variables nommée *lastPos*
+
 b) Stocker les coordonnées {row, col} de la case de la grille où se trouve notre cercle à partir de *lastPos* dans une variable nommée *lastCell*
+
 c) Stocker les coordonnées {row, col} de la destination à partir de *lastCell* grâce à *flowMap* dans une variable nommée *nextCell* . Si aucune destination n'est disponible, s'arrêter là.
+
 d) Stocker la position {x, y} de la destination dans une variable *nextPos* en transformant les coordonnées de *nextCell* en {x, y}
+
 e) Calculer la distance entre *lastPos* et la destination (grâce au **théorème de Pythagore**)
+
 f) Créer deux *tweens*, l'une pour l'animation des x et l'autre pour les y en se basant sur le code suivant:
 
 ```js
