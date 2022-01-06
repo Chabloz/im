@@ -154,4 +154,4 @@ tweenY = tweens.create({from: lastPos.y, to: nextPos.y, duration, after: tweenY,
   mob.y = y;
 }});
 ```
-**g)** *lastPos* prend la valeur de *nextPos*. *lastCell* prend la valeur de *nextCell* et on recommence au point c)
+**g)** *lastPos* prend la valeur de *nextPos*. *lastCell* prend la valeur de *nextCell* et on recommence au point **c)**
