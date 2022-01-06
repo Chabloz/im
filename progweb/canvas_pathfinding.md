@@ -158,3 +158,7 @@ tweenY = tweens.create({from: lastPos.y, to: nextPos.y, duration, after: tweenY,
 **g)** *lastPos* prend la valeur de *nextPos*. *lastCell* prend la valeur de *nextCell* et on recommence au point **c)**
 
 Finalement, modifiez votre méthode de gestion des clics. Lorsqu'un clic se produit, après le recalcul de *flowMap*, il vous faut supprimer toutes les *tweens* actuelles et appeller à nouveau votre fonction *generateTweens*.
+
+### Et avec de multiples entités (*mob spawner*)
+
+Vous avez survécu jusqu'ici ? Bravo ! Comme ultime défis, modifiez votre code pour générer un cercle toutes les secondes. Vous pouvez stocker vos cercles (*mobs*) dans un **Set** par exemple. Modifiez aussi votre fonction *generateTweens* pour que les cercles soient supprimé du **Set** lorsqu'ils n'ont plus de destination.
