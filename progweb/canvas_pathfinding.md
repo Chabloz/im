@@ -58,7 +58,7 @@ flowFieldTo(row, col) {
     // Get the first cell in the frontier
     const cell = frontier.shift();
     // For each of the "walkables" neighbors (all "alives" neighbors)
-    this.getWalkableNeighbors(cell.row, cell.col).forEach(next => {
+    this.getWalkableNeighbors(cell).forEach(next => {
       // Ignore allready visited cells
       if (this.flowMap[next.row][next.col] === false) {
         //  the current neighbor need to be visited. So we put it in the frontier.
@@ -69,21 +69,23 @@ flowFieldTo(row, col) {
     });
   }
   // The destination is the final step. There is no destination from it.
-  this.flowMap[row][col] = false; 
+  this.flowMap[row][col] = false;
 }
 ```
 
-Comme vous pouvez le remarquer, une seule méthode n'est pas fournie : *getWalkableNeighbors*. Cette méthode doit fournir un tableau contenant les voisins de la cellule de position (row, col), c'est à dire les cellules suivantes : (row + 1, col), (row - 1, col), (row, col + 1),  (row, col - 1), (row + 1, col - 1), (row + 1, col + 1),  (row - 1, col - 1), (row - 1, col + 1). Bien sûr, il faudra exclure (vous pouvez utiliser la méthode [filter](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter)) les cellules voisines mortes ou en dehors du tableau (pour gérer correctement les bords de la grille). Implémentez cette méthode, puis modifiez votre programme principal en rajoutant un appel à la méthode *flowFieldTo*. Faites un *console.log* de *flowMap* afin de vérifier que le flot est correctement calculé. Comme vous pourrez le voir dans votre console, *flowMap* contiendra pour chaque case les valeurs (row, col) du voisin de destination afin de se rapprocher de la destination finale.
+Comme vous pouvez le remarquer, une seule méthode n'est pas fournie : *getWalkableNeighbors*. Cette méthode doit fournir un tableau contenant les voisins de la cellule de position {row, col}, c'est à dire les cellules suivantes : {row: row + 1, col}, {row: row + 1, col}, {row, col: col + 1},  {row, col: col - 1}, {row: row + 1, col: col - 1}, {row: row + 1, col: col + 1},  {row: row - 1, col: col + 1} et {row: row - 1, col: col - 1}. Bien sûr, il faudra exclure (vous pouvez utiliser la méthode [filter](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter)) les cellules voisines mortes ou en dehors du tableau (pour gérer correctement les bords de la grille). Implémentez cette méthode, puis modifiez votre programme principal en rajoutant un appel à la méthode *flowFieldTo* vers une cellule quelconque. Faites un *console.log* de *flowMap* afin de vérifier que le flot est correctement calculé. Comme vous pourrez le voir dans votre console, *flowMap* contiendra pour chaque case les valeurs {row, col} du voisin de destination afin de se rapprocher de la destination finale.
  
 ### Dessin du flot
 
 Afin de visualiser plus clairement le résultat de l'algorithme précédent, nous allons ajouter une méthode de dessin du flot. Une flèche de direction dans chaque case, pointant dans la direction de la case suivante (désignée par *flowMap*) devrait être suffisante pour une bonne représentation. Nous pourrions bien sûr dessiner cette flèche, mais pour apprendre de nouvelles fonctionnalités de dessin sur le *canvas*, nous allons le faire avec l'affichage d'un caractère.  Notre page étant en UNICODE UTF-8,  il suffit donc de choisir l'un des nombreux caractères de flèche disponible dans ce jeu de caractère. Le caractère '→' devrait faire l'affaire. L'astuce est de faire pivoter la flèche d'un certain angle pour le faire pointer dans la bonne direction. Il faut aussi penser à la taille du caractère et à son centrage dans la cellule.  Pour ce qui est de la taille et du centrage, utilisez les méthodes suivante sur votre contexte de *canvas*:
+
 ```js
 ctx.font = `${this.tileSize / 2}px serif`; // Où tileSize est la largeur (et aussi hauteur) en [px] des cases
 ctx.textAlign = 'center';
 ctx.textBaseline = 'middle';
 ```
-Ainsi, votre flèche aura une taille équivalente à la moitié  de la taille d'une cellule. Il vous faut encore trouver le centre d'une cellule (row, col), mais vous devriez trouver facilement la formule.
+
+Ainsi, votre flèche aura une taille équivalente à la moitié  de la taille d'une cellule. Il vous faut encore trouver le centre d'une cellule {row, col}, mais vous devriez trouver facilement la formule.
 
 Pour ce qui est de l'angle de rotation, la méthode **Math.atan2** permet de facilement connaitre l'angle entre deux points grâce à la formule suivante :
 
@@ -95,13 +97,17 @@ Pour appliquer facilement cette rotation, effectuez une translation du *canvas* 
 
 L'algorithme final pour afficher les flèches du flot devient alors pour chaque case:
 
-- calculer la position du centre de la case (row, col)
-- calculer l'angle entre (row, col) et la case suivante (la destination) disponible dans *flowMap*
+- calculer la position du centre de la cellule {row, col}
+- calculer l'angle entre {row, col} et la cellule suivante (la destination) disponible dans *flowMap*
 - effectuer une translation et une rotation du contexte de *canvas*
 - Afficher le caractère  '→' en position (0, 0) 
 - Réinitialiser la translation et la rotation
 
 Finalement, testez votre algorithme en dessinant ce flot dans votre programme principal.
+
+## Gestion des clicks sur la grille
+
+Notre automate contenant actuellement que des cellules vivantes, il serait interessant de pouvoir modifier l'état *vivant/mort* d'une cellule. Une gestion du click de la souris sur l'une des celleules de l'automate semble approprié. 
 
 ## Partie optionnelle: Génération et mouvement d'entités
 
