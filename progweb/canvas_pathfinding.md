@@ -114,7 +114,7 @@ Voici un exemple de code qui permet d'obtenir la ligne et colonne de la grille e
 const rect = ctx.canvas.getBoundingClientRect();
 const row = Math.floor((event.clientY - rect.top) / tileSize);
 const col = Math.floor((event.clientX - rect.left) / tileSize);
-``
+```
 
 Lorsqu'un clic de souris se produit sur la grille, vous devez faire les choses suivantes:
 
