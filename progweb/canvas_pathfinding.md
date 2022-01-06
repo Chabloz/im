@@ -147,6 +147,7 @@ Créez dans votre programme principal une méthode *generateTweens* qui se charg
 **f)** Créer deux *tweens*, l'une pour l'animation des x et l'autre pour les y en se basant sur le code suivant:
 
 ```js
+const duration = dist / mob.speed;
 tweenX = tweens.create({from: lastPos.x, to: nextPos.x, duration, after: tweenX, animate: x => {
   mob.x = x;
 }});
