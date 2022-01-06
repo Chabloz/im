@@ -140,14 +140,14 @@ Créez dans votre programme principal une méthode *generateTweens* qui se charg
 
 **c)** Stocker les coordonnées {row, col} de la destination à partir de *lastCell* grâce à *flowMap* dans une variable nommée *nextCell* . Si aucune destination n'est disponible, s'arrêter là.
 
-**d)** Stocker la position {x, y} de la destination dans une variable *nextPos* en transformant les coordonnées de *nextCell* en {x, y}
+**d)** Stocker la position {x, y} de la destination dans une variable *nextPos* en transformant les coordonnées {row, col} de *nextCell* en {x, y}
 
-**e)** Calculer la distance entre *lastPos* et la destination (grâce au **théorème de Pythagore**)
+**e)** Calculer la distance entre *lastPos* et *nextPos* (grâce au **théorème de Pythagore**)
 
 **f)** Créer deux *tweens*, l'une pour l'animation des x et l'autre pour les y en se basant sur le code suivant:
 
 ```js
-const duration = dist / mob.speed;
+const duration = distance / mob.speed;
 tweenX = tweens.create({from: lastPos.x, to: nextPos.x, duration, after: tweenX, animate: x => {
   mob.x = x;
 }});
