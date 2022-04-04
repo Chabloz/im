@@ -12,7 +12,7 @@ cd webmobui
 npm install
 npm run dev
 ```
-Remplacez la première commande par la suivante si npm < 7
+Remplacez la première commande par la suivante si votre version de npm est < 7 :
 ```bash
 npm create vite@latest webmobui --template vue
 ```
