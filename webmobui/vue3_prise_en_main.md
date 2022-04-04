@@ -12,6 +12,10 @@ cd webmobui
 npm install
 npm run dev
 ```
+Remplacez la première commande par la suivante si npm < 7
+```bash
+npm create vite@latest my-vue-app --template vue
+```
 
 La dernière ligne lance un serveur HTTP de dev (sur le port 3000 par défaut). C'est la seule qu'il faudra donc refaire de temps en temps.
 
