@@ -3,7 +3,7 @@
 
 ## Mise en place
 
-L’objectif est d’effectuer une première “prise en main” du framework en explorant tout d'abord ses concepts sous jacents. Pour bien comprendre le fonctionnement du framework, nous n'allons pas utiliser d'outils de plus "haut niveau" (comme des gestionnaires de routage, de gestion d'états, ... ) . Nous utiliserons **npm** pour l'installation et la gestion des dépendances, ainsi que (**Vite JS**)[https://vitejs.dev/] pour le packaging et d'autres fonctionnalités. 
+L’objectif est d’effectuer une première “prise en main” du framework en explorant tout d'abord ses concepts sous jacents. Pour bien comprendre le fonctionnement du framework, nous n'allons pas utiliser d'outils de plus "haut niveau" (comme des gestionnaires de routage, de gestion d'états, ... ) . Nous utiliserons **npm** pour l'installation et la gestion des dépendances, ainsi que [**Vite JS**](https://vitejs.dev/) pour le packaging et d'autres fonctionnalités. 
 
 Commencez donc par créer un nouveau projet *Vue* via *Vite*:
 ```bash
