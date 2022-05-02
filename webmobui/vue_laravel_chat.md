@@ -68,7 +68,7 @@ Afin d’éviter que l’utilisateur « scroll » vers le bas pour voir les nouv
 chatMsg.value.scrollTop = chatMsg.value.scrollHeight;
 ```
 
-Où chatMsg est un (template ref)[https://vuejs.org/guide/essentials/template-refs.html#template-refs]
+Où chatMsg est un [template ref](https://vuejs.org/guide/essentials/template-refs.html#template-refs)
 
 
 ## Affichage des utilisateurs connectés
