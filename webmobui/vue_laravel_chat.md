@@ -24,6 +24,8 @@ fetch(url, {
 });
 ```
 
+Comme l'api n'est pas sur le même domaine, il est nécessaire d'accépter les cookies tiers (configuration à faire dans votre browser, vous pouvez par exemple rajouter une exception pour le nom de domaine du backend). 
+
 ## Etape du *Login*
 
 Normalement, les utilisateurs du chat devraient se connecter avec un compte utilisateur avant de pouvoir accéder au chat. Pour des raisons de simplification de la gestion des comptes utilisateurs, l’application ne procédera pas à un véritable login, mais demandera un simple "username" à l’utilisateur.
