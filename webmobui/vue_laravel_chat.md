@@ -32,13 +32,21 @@ Normalement, les utilisateurs du chat devraient se connecter avec un compte util
 Par défaut, l'utilisateur arrivera sur la partie *login*. Une fois authentifié, il verra alors la partie *chat*.
 
 La partie *login* sera composée d'un formulaire d’un champ de saisie pour le « username » de l’utilisateur (20 caractères maximum) et d’un bouton de « login ».
-Vous devez vérifier que le champ ne contient que des caractères alphabétiques (entre a et Z uniquement). En cas d’erreur, vous devez afficher un message adéquat sur la page de login pour en informer l’utilisateur. Pour tester qu’une chaine ne contient pas que des caractères entre 'A' et 'z', vous pouvez utiliser le code suivant:
+Vous devez vérifier que le champ ne contient que des caractères alphabétiques (entre a et Z uniquement). En cas d’erreur, vous devez afficher un message adéquat sur la page de login pour en informer l’utilisateur. Pour tester qu’une chaine ne contient pas que des caractères entre 'A' et 'z', vous pouvez utiliser le code JS suivant:
 
 ```js
 if (!username.value.match(/^[a-z]+$/i)) { 
    // username ne contient pas que des lettres [a-Z]
 }
 ```
+
+Ou directement avec une [validation en HTML](https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation):
+
+```html
+<input type="text" required pattern="[A-Za-z]+">
+```
+
+
  
  Une fois le "username" validé, lors du *submit* du formulaire, réalisez un fetch pour l'authentification sur le backend puis afficher le chat en cas de succès.
  Il est possible que le backend refuse le nom d'utilisateur dans le cas où il serait déjà pris par une autre personne, essayez de mettre en place cette gestion d'erreur.
