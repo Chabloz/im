@@ -64,7 +64,7 @@ export default class {
    * @param {integer} ind Indice
    */
   key(ind) {
-    let keys = [...this.keys()];
+    const keys = [...this.keys()];
     if (ind < 0 || ind >= keys.length) return null
     return keys[ind];
   }
@@ -73,7 +73,7 @@ export default class {
    * Returns a new Iterator object that contains the values for each element in the storage.
    */
   *values() {
-    for (let k of this.keys()) {
+    for (const k of this.keys()) {
       yield this.getItem(k);
     }
   }
@@ -82,7 +82,7 @@ export default class {
    * Returns a new Iterator object that contains an array of [key, value] for each element in the storage.
    */
   *entries() {
-    for (let k of this.keys()) {
+    for (const k of this.keys()) {
       yield [k, this.getItem(k)];
     }
   }
@@ -93,7 +93,7 @@ export default class {
    * @param {function} callback 
    */
   forEach(callback) {
-    for (let entrie of this) {
+    for (const entrie of this) {
       callback(entrie[1], entrie[0]);
     }
   }
@@ -109,8 +109,8 @@ export default class {
    * Return an object with a propertie key: value for each element in the storage.
    */
   toObject() {
-    let obj = {};
-    for (let ent of this) {
+    const obj = {};
+    for (const ent of this) {
       obj[ent[0]] = ent[1];
     }
     return obj;
@@ -177,7 +177,7 @@ export default class {
    * @param {string} key the name of the key you want to retrieve the value of.
    */
   getItem(key) {
-    let val = localStorage.getItem(`${this.options.name}_${key}`);
+    const val = localStorage.getItem(`${this.options.name}_${key}`);
     if (val == null) return null;
     return JSON.parse(val);
   }
@@ -199,7 +199,7 @@ export default class {
    * Clears all keys in the storage
    */
   clear() {
-    for (let key of this.keys()) {
+    for (const key of this.keys()) {
       localStorage.removeItem(`${this.options.name}_${key}`);    
     }
     this.storageKeys.clear();
