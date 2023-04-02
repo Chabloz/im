@@ -12,10 +12,6 @@ cd webmobui
 npm install
 npm run dev
 ```
-Remplacez la première commande par la suivante si votre version de npm est < 7 :
-```bash
-npm create vite@latest webmobui --template vue
-```
 
 La dernière ligne lance un serveur HTTP de dev (sur le port 3000 par défaut). C'est la seule qu'il faudra donc refaire de temps en temps.
 
