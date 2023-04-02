@@ -5,7 +5,7 @@
 
 L’objectif est d’effectuer une première “prise en main” du framework en explorant tout d'abord ses concepts sous jacents. Pour bien comprendre le fonctionnement du framework, nous n'allons pas utiliser d'outils de plus "haut niveau" (comme des gestionnaires de routage, de gestion d'états, ... ) . Nous utiliserons **npm** pour l'installation et la gestion des dépendances, ainsi que [**Vite JS**](https://vitejs.dev/) pour le packaging et d'autres fonctionnalités. 
 
-Commencez donc par créer un nouveau projet *Vue* via *Vite*:
+Commencez donc par créer un nouveau projet *Vue* via *Vite*. Lors de la première commande, si un choix s'offre à vous, prenez le framework  "Vue" et la variante "JavaScript".
 ```bash
 npm create vite@latest webmobui -- --template vue
 cd webmobui
