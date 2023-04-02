@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-La dernière ligne lance un serveur HTTP de dev (sur le port 3000 par défaut). C'est la seule qu'il faudra donc refaire de temps en temps.
+La dernière ligne lance un serveur HTTP de dev en local avec la fonctionnalité de "hot reloading" et autres foiritures de Vite.
 
 ## Prise en main du comportement réactif du framework
 
