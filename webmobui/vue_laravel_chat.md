@@ -24,7 +24,25 @@ fetch(url, {
 });
 ```
 
-Comme l'api n'est pas sur le même domaine, il est nécessaire d'accépter les cookies tiers (configuration à faire dans votre browser, vous pouvez par exemple rajouter une exception pour le nom de domaine du backend). 
+Comme l'api n'est pas sur le même domaine, il est nécessaire d'accépter les cookies tiers (configuration à faire dans votre browser, vous pouvez par exemple rajouter une exception pour le nom de domaine du backend). Une autre solution , peut-être plus propre, serait d'utiliser un proxy. Puisque nous utilisons vite, nous pourrions indiquer la configuration suivante dans le fichier vite.config.js :
+
+```js
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+export default defineConfig({
+  plugins: [vue()],
+  server: {
+    proxy : {
+      '/ws/chat/': {
+        target: 'https://chabloz.eu/ws/chat/',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/ws\/chat/, '')
+      }
+    }
+  }
+});
+```
 
 ## Etape du *Login*
 
