@@ -12,10 +12,12 @@ cd webmobui
 npm install
 npm run dev
 ```
-Vous pouvez installer la chose dans le doccier courant en uitilisant plutôt la commande suivante:
+Vous pouvez installer la chose dans le dossier courant en uitilisant plutôt les commandes suivantes:
 
 ```
 npm create vite@latest ./ -- --template vue
+npm install
+npm run dev
 ```
 
 La dernière ligne lance un serveur HTTP de dev en local avec la fonctionnalité de "hot reloading" et autres foiritures de Vite.
