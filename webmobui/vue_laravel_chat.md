@@ -2,9 +2,9 @@
 
 ## Mise en place
 
-**Objectifs**: créer une application Web simple avec gestion multi-utilisateurs sous la forme d'un système de *chat* simple. Pour des raisons pédagogiques, le chat ne sera pas fait via SSE ou WebSocket, mais via des pull du frontent vers le backend. Ceçi est bien sûr déconseillé pour une application à forte charge, mais il me semble important de voir en détail comment fonctionne un "pull" classique via le HTTP.
+**Objectifs**: créer une application Web simple avec gestion multi-utilisateurs sous la forme d'un système de *chat* simple. Pour des raisons pédagogiques, le chat ne sera pas fait via SSE ou WebSocket, mais via des pull du frontent vers le backend. Ceçi est bien sûr déconseillé pour une application à forte charge, mais il me semble important de voir tout d'abord un fonctionnement plus classique d'une application Web en tuilisant une communication HTTP (via un système "pull").
 
-Un backend d'exemple est accessible via un Web Service en JSON disponible en HTTPS. Il comporte cinq *services*, un fournit tous les nouveaux messages du chat pour un utilisateur, un autre permet l’ajout d’un message au chat, un permet de se « connecter », un dernier permet de se déconnecter et, finalement, un liste les utilisateurs connectés. Ces services d'exemple sont respectivement disponibles via les url suivantes : 
+Un backend d'exemple est accessible via un Web Service en JSON disponible en HTTPS. Il comporte cinq *services*, un fournit tous les nouveaux messages du chat pour un utilisateur, un autre permet l’ajout d’un message au chat, un permet de se « connecter », un dernier permet de se déconnecter et, finalement, un liste les utilisateurs connectés. Ces services d'exemple sont respectivement disponibles via : 
 
 https://chabloz.eu/api/chat/msg/get
 
@@ -57,7 +57,7 @@ Ou directement avec une [validation en HTML](https://developer.mozilla.org/fr/do
 <input type="text" required pattern="[A-Za-z]+">
 ```
 
-Les noms des utilisateurs doivent être unique. Dans le cas où il serait déjà pris par une autre personne, essayez de mettre en place cette gestion d'erreur et le feedback utilisateur associé. Cette partie de l'application peut être fait en "full backend classique" ou en VueJS.
+Les noms des utilisateurs doivent être unique. Dans le cas où il serait déjà pris par une autre personne, essayez de mettre en place cette gestion d'erreur et le feedback utilisateur associé. Cette partie de l'application peut être fait en "full backend classique" ou en VueJS. Si vous choissisez l'option "backend", les routes API de login et logout ne seront pas necessaire puisqu'elles seront des routes classiques de votre application backend.
 
 ##  Partie *chat*
 
