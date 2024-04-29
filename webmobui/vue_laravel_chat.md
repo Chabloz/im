@@ -8,9 +8,9 @@ Un backend d'exemple est accessible via un Web Service en JSON disponible en HTT
 
 https://chabloz.eu/api/chat/msg/get
 
-https://chabloz.eu/api/chat/msg/add?msg=XXX 
+https://chabloz.eu/api/chat/msg/add?msg=XXX (Pour votre app, changez ceci en POST)
 
-https://chabloz.eu/api/chat/user/login?user=XXX
+https://chabloz.eu/api/chat/user/login?user=XXX  (Pour votre app, changez ceci en POST)
 
 https://chabloz.eu/api/chat/user/logout
 
