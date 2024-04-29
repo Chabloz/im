@@ -107,6 +107,8 @@ clearInterval(timerFetchNewMsg);
 
 Vous pouvez le faire durant la phase "unmounted" du cycle de vie du composant: https://vuejs.org/api/composition-api-lifecycle.html#onunmounted
 
-## Débuggage
+## Débuggage et sécurité
 
-Reflechissez au système de session utilisé et essayez de trouver ce que cela pourrait engendrer comme bug. **Indication**: que se passera-t-il lorsque deux onglets sont connectés au serveur de chat ? Comment pourrait-on résoudre ce bug ?
+Reflechissez au système de session utilisé et essayez de trouver ce que cela pourrait engendrer comme bug. **Indication**: que se passera-t-il lorsque deux onglets sont connectés au serveur de chat ? Comment pourrait-on résoudre ce bug ? 
+
+Reflechissez aussi à la sécurité de votre application. Est-ce que les bases sont ok ?
