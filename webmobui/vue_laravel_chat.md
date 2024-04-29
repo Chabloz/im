@@ -2,29 +2,23 @@
 
 ## Mise en place
 
-**Objectifs**: créer une application Web simple avec gestion multi-utilisateurs sous la forme d'un système de *chat* simple.
+**Objectifs**: créer une application Web simple avec gestion multi-utilisateurs sous la forme d'un système de *chat* simple. Pour des raisons pédagogiques, le chat ne sera pas fait via SSE ou WebSocket, mais via des pull du frontent vers le backend. Ceçi est bien sûr déconseillé pour une application à forte charge, mais il me semble important de voir en détail comment fonctionne un "pull" classique via le HTTP.
 
-Le backend est accessible via un Web Service en JSON disponible en HTTPS. Ce WS comporte cinq *services*, un fournissant tous les messages du chat pour un utilisateur, un autre permettant l’ajout d’un message au chat, un permettant de se « connecter », un dernier permettant de se déconnecter et, finalement, un listant les utilisateurs connectés. Ces services sont respectivement disponibles via les url suivantes : 
+Un backend d'exemple est accessible via un Web Service en JSON disponible en HTTPS. Il comporte cinq *services*, un fournit tous les nouveaux messages du chat pour un utilisateur, un autre permet l’ajout d’un message au chat, un permet de se « connecter », un dernier permet de se déconnecter et, finalement, un liste les utilisateurs connectés. Ces services d'exemple sont respectivement disponibles via les url suivantes : 
 
-https://chabloz.eu/ws/chat/msg/get
+https://chabloz.eu/api/chat/msg/get
 
-https://chabloz.eu/ws/chat/msg/add?msg=XXX 
+https://chabloz.eu/api/chat/msg/add?msg=XXX 
 
-https://chabloz.eu/ws/chat/user/login?user=XXX
+https://chabloz.eu/api/chat/user/login?user=XXX
 
-https://chabloz.eu/ws/chat/user/logout
+https://chabloz.eu/api/chat/user/logout
 
-https://chabloz.eu/ws/chat/user/online
+https://chabloz.eu/api/chat/user/online
 
+Pour éviter le problème *stateless* de HTTP, l'application utilisera le concept de session.
 
-Pour éviter le problème *stateless* de HTTP, l'application utilisera le concept de session. Par défaut, l' API *fetch* ne passe pas les cookies lors d'une requête [*CORS*](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing). Pour le forcer à le faire, il vous faut rajouter le code suivant comme deuxième paramètre au *fetch*:
-```js
-fetch(url, {
-  credentials: 'include'
-});
-```
-
-Comme l'api n'est pas sur le même domaine, il est nécessaire d'accépter les cookies tiers (configuration à faire dans votre browser, vous pouvez par exemple rajouter une exception pour le nom de domaine du backend). Une autre solution , peut-être plus propre, serait d'utiliser un proxy. Puisque nous utilisons vite, nous pourrions indiquer la configuration suivante dans le fichier vite.config.js :
+Vous pouvez utiliser ces services de test pour votre front-end avant de devlopper les votres ou vous pouvez directement réaliser les mêmes services vous-même. Comme l'api de test n'est pas sur la même origine (domaine différent), il est nécessaire d'utiliser un proxy. Puisque nous utilisons Vite, vous pouvez le faire avec la configuration suivante dans le fichier vite.config.js :
 
 ```js
 import { defineConfig } from 'vite'
@@ -34,10 +28,10 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     proxy : {
-      '/ws/chat/': {
-        target: 'https://chabloz.eu/ws/chat/',
+      '/api/chat/': {
+        target: 'https://chabloz.eu/api/chat/',
         changeOrigin: true,
-        rewrite: path => path.replace(/^\/ws\/chat/, '')
+        rewrite: path => path.replace(/^\/api\/chat/, '')
       }
     }
   }
@@ -46,15 +40,14 @@ export default defineConfig({
 
 ## Etape du *Login*
 
-Normalement, les utilisateurs du chat devraient se connecter avec un compte utilisateur avant de pouvoir accéder au chat. Pour des raisons de simplification de la gestion des comptes utilisateurs, l’application ne procédera pas à un véritable login, mais demandera un simple "username" à l’utilisateur.
-Par défaut, l'utilisateur arrivera sur la partie *login*. Une fois authentifié, il verra alors la partie *chat*.
+Les utilisateurs du chat devraient se connecter avec un compte utilisateur avant de pouvoir accéder au chat. Pour des raisons de simplification de la gestion des comptes utilisateurs, l’application ne procédera pas à un véritable login, mais demandera un simple "username" à l’utilisateur. (Bien sûr, un vrai système d'authentification peut être mis en place si vous le souhaiter.) Par défaut, l'utilisateur arrivera sur la partie *login*. Une fois "authentifié", il verra alors la partie *chat*.
 
 La partie *login* sera composée d'un formulaire d’un champ de saisie pour le « username » de l’utilisateur (20 caractères maximum) et d’un bouton de « login ».
-Vous devez vérifier que le champ ne contient que des caractères alphabétiques (entre a et Z uniquement). En cas d’erreur, vous devez afficher un message adéquat sur la page de login pour en informer l’utilisateur. Pour tester qu’une chaine ne contient pas que des caractères entre 'A' et 'z', vous pouvez utiliser le code JS suivant:
+Vous devez vérifier que le username n'est composé que de caractères alphabétiques (entre a et Z uniquement). En cas d’erreur, vous devez afficher un message adéquat sur la page de login pour en informer l’utilisateur. Pour tester qu’une chaine ne contient pas que des caractères entre 'A' et 'z', vous pouvez utiliser le code JS suivant:
 
 ```js
 if (!username.value.match(/^[a-z]+$/i)) { 
-   // username ne contient pas que des lettres [a-Z]
+   // le username ne contient pas que des lettres [a-Z]
 }
 ```
 
@@ -64,10 +57,7 @@ Ou directement avec une [validation en HTML](https://developer.mozilla.org/fr/do
 <input type="text" required pattern="[A-Za-z]+">
 ```
 
-
- 
- Une fois le "username" validé, lors du *submit* du formulaire, réalisez un fetch pour l'authentification sur le backend puis afficher le chat en cas de succès.
- Il est possible que le backend refuse le nom d'utilisateur dans le cas où il serait déjà pris par une autre personne, essayez de mettre en place cette gestion d'erreur.
+Les noms des utilisateurs doivent être unique. Dans le cas où il serait déjà pris par une autre personne, essayez de mettre en place cette gestion d'erreur et le feedback utilisateur associé. Cette partie de l'application peut être fait en "full backend classique" ou en VueJS.
 
 ##  Partie *chat*
 
@@ -77,14 +67,16 @@ La page de chat doit contenir :
 - Un formulaire pour la saisie des messages du chat
 - Un bouton de déconnexion.
 
+Cette partie sera faites en VueJS en consommant votre API backend.
+
 ## Gestion de l'ajout de message
 
 Lorsque l'utilisateur soumet le formulaire (*submit*), il vous faut récupérer son message et l’envoyer au *backend*. Puis, pour une meilleure ergonomie, il faut vider le champ de saisie et y mettre remettre le *focus*.
-Pour cette partie, vous n'avez pas besoin de faire de vérification du message envoyé. 
+Avant l'envoit, vérifiez que le message n'est pas vide (il doit contenir entre 1 et 200 caractères). 
 
 ## Affichage des messages du *chat*
 
-Toutes les secondes (**pour vos tests, toutes les 5 secondes afin de ne pas surcharger le serveur !**), exécutez un appel au backend pour recevoir les nouveaux messages du *chat* et ajoutez les au chat. Pour exécuter une fonction toutes les 5 secondes vous pouvez utiliser le code suivant:
+Toutes les secondes (ou pour vos tests, toutes les 5 secondes), effectuez un appel au backend pour recevoir les nouveaux messages du *chat*. Pour exécuter une fonction toutes les 5 secondes vous pouvez utiliser le code suivant:
 
 ```js
 const timerFetchNewMsg = setInterval(fetchNewMsg, 5000); 
@@ -96,7 +88,7 @@ Afin d’éviter que l’utilisateur « scroll » vers le bas pour voir les nouv
 chatMsg.value.scrollTop = chatMsg.value.scrollHeight;
 ```
 
-Où chatMsg est un [template ref](https://vuejs.org/guide/essentials/template-refs.html#template-refs)
+Où chatMsg est une [template ref](https://vuejs.org/guide/essentials/template-refs.html#template-refs)
 
 
 ## Affichage des utilisateurs connectés
@@ -105,12 +97,9 @@ Toutes les 5 secondes, vous devez rafraichir la liste des utilisateurs connecté
 
 ## *logout*
 
-Lors d’un clic sur le bouton de déconnexion, il vous faut envoyer un message de déconnexion au backend puis: 
+Lors d’un clic sur le bouton de déconnexion, il vous faut envoyer un message de déconnexion au backend puis rediriger l'utilisateur sur la partie "login" du chat.
 
-- Stoppez les *timers* de la mise à jour des nouveaux messages et des utilisateurs connectés.
-- Basculer sur la partie "login" du chat
-
-Pour stopper les *timers*, utilisez la fonction *clearInterval* en lui passant le *timer*. Exemple:
+Si vous avez géré votre authentification en VueJS, n'oubliez pas de stopper les *timers*. Pour cela utilisez la fonction *clearInterval* en lui passant le *timer*. Exemple:
 
 ```js
 clearInterval(timerFetchNewMsg); 
