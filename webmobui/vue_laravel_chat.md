@@ -18,7 +18,7 @@ https://chabloz.eu/api/chat/user/online
 
 Pour éviter le problème *stateless* de HTTP, l'application utilisera le concept de session.
 
-Vous pouvez utiliser ces services de test pour votre front-end avant de devlopper les votres ou vous pouvez directement réaliser les mêmes services vous-même. Comme l'api de test n'est pas sur la même origine (domaine différent), il est nécessaire d'utiliser un proxy. Puisque nous utilisons Vite, vous pouvez le faire avec la configuration suivante dans le fichier vite.config.js :
+Vous pouvez utiliser ces services de test pour votre front-end avant de développer les votres ou vous pouvez directement réaliser les mêmes services vous-même. Comme l'api de test n'est pas sur la même origine (domaine différent), il est nécessaire d'utiliser un proxy. Puisque nous utilisons Vite, vous pouvez le faire avec la configuration suivante dans le fichier vite.config.js :
 
 ```js
 import { defineConfig } from 'vite'
