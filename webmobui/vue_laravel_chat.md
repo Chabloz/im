@@ -2,7 +2,7 @@
 
 ## Mise en place
 
-**Objectifs**: créer une application Web simple avec gestion multi-utilisateurs sous la forme d'un système de *chat* simple. Pour des raisons pédagogiques, le chat ne sera pas fait via SSE ou WebSocket, mais via des pull du frontent vers le backend. Ceçi est bien sûr déconseillé pour une application à forte charge, mais il me semble important de voir tout d'abord un fonctionnement plus classique d'une application Web en tuilisant une communication HTTP (via un système "pull").
+**Objectifs**: créer une application Web simple avec gestion multi-utilisateurs sous la forme d'un système de *chat* simple. Pour des raisons pédagogiques, le chat ne sera pas fait via SSE ou WebSocket, mais via des pull du frontend vers le backend. Ceci est bien sûr déconseillé pour une application à forte charge, mais il me semble important de voir tout d'abord un fonctionnement plus classique d'une application Web en utilisant une communication HTTP (via un système "pull").
 
 Un backend d'exemple est accessible via un Web Service en JSON disponible en HTTPS. Il comporte cinq *services*, un fournit tous les nouveaux messages du chat pour un utilisateur, un autre permet l’ajout d’un message au chat, un permet de se « connecter », un dernier permet de se déconnecter et, finalement, un liste les utilisateurs connectés. Ces services d'exemple sont respectivement disponibles via : 
 
