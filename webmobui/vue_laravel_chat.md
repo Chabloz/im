@@ -38,7 +38,7 @@ export default defineConfig({
 });
 ```
 
-Une fois cette configuration faites, vous pourrez alors utilise les url de l'API comme si elle était local. C'est à dire que dans votre code l'url https://chabloz.eu/api/chat/user/login?user=XXX deviendra /api/chat/user/login?user=XXX.
+Vous pourrez alors utiliser les url de l'API comme si elle était local. C'est à dire que dans votre code l'url https://chabloz.eu/api/chat/user/login?user=XXX deviendra /api/chat/user/login?user=XXX.
 
 ## Etape du *Login*
 
