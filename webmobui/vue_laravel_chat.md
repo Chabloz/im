@@ -38,6 +38,8 @@ export default defineConfig({
 });
 ```
 
+Une fois cette configuration faites, vous pourrez alors utilise les url de l'API comme si elle était local. C'est à dire que dans votre code l'url https://chabloz.eu/api/chat/user/login?user=XXX deviendra /api/chat/user/login?user=XXX.
+
 ## Etape du *Login*
 
 Les utilisateurs du chat devraient se connecter avec un compte utilisateur avant de pouvoir accéder au chat. Pour des raisons de simplification de la gestion des comptes utilisateurs, l’application ne procédera pas à un véritable login, mais demandera un simple "username" à l’utilisateur. (Bien sûr, un vrai système d'authentification peut être mis en place si vous le souhaiter.) Par défaut, l'utilisateur arrivera sur la partie *login*. Une fois "authentifié", il verra alors la partie *chat*.
