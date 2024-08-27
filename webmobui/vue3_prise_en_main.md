@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-La dernière ligne lance un serveur HTTP de dev en local avec la fonctionnalité de "hot reloading" et autres foiritures de Vite.
+La dernière ligne lance un serveur HTTP de dev en local avec la fonctionnalité de "hot reloading" et autres fioritures de Vite.
 
 ## Prise en main du comportement réactif du framework
 
